@@ -1,0 +1,36 @@
+nlu:
+- intent: greet
+  examples: |
+    - 你好
+    - 嗨
+    - 安安
+    - 不好意思
+    - 打擾了
+#    - Hi
+#    - Hey!
+#    - Hallo
+#    - Good day
+#    - Good morning
+- intent: help
+  examples: |
+    - 我需要查詢功能
+    - 有什麼功能
+    - 功能有哪些
+    - 你可以幹麻
+    - 教程
+    - 如何使用
+    - 使用說明
+    - 說明
+
+# - intent: subscribe
+#   examples: |
+#     - I want to get the newsletter
+#     - Can you send me the newsletter?
+#     - Can you sign me up for the newsletter?
+
+# - intent: inform
+#   examples: |
+#     - My email is example@example.com
+#     - random@example.com
+#     - Please send it to anything@example.com
+#     - Email is something@example.com

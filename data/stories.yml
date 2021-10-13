@@ -1,0 +1,18 @@
+stories:
+#  - story: greet and subscribe
+#    steps:
+#    - intent: greet
+#    - action: utter_greet
+#    - intent: subscribe
+#    - action: newsletter_form
+#    - active_loop: newsletter_form
+
+ - story: greet test
+   steps:
+   - intent: greet
+   - action: utter_greet
+
+ - story: help test
+   steps:
+   - intent: help
+   - action: utter_temp_help
