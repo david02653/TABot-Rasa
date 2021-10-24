@@ -12,3 +12,8 @@ rules:
 #    - action: newsletter_form
 #    - active_loop: null
 #    - action: utter_subscribed
+
+ - rule: frequent ask question
+   steps:
+   - intent: faq
+   - action: action_faq

@@ -28,15 +28,62 @@ nlu:
   example: |
     - 
 
-- intent: 
+- intent: classmap_ask
   examples: |
     - 
 
-- intent: 
+- intent: classmap_ask_content
   examples: |
     - 
 
-- intent: 
+- intent: classmap_ppt
   examples: |
     - 
 
+- intent: classmap_ppt_content
+  examples: |
+    - 
+
+- intent: classmap_search
+  examples: |
+    - 
+
+- intent: classmap_search_content
+  examples: |
+    - 
+
+- intent: classmap_map
+  examples: |
+    - 
+
+- intent: classmap_map_content
+  examples: |
+    - 
+
+- intent: classmap_suggest
+  examples: |
+    - 
+
+- intent: classmap_suggest_content
+  examples: |
+    - 
+
+- intent: personal_score_query
+  examples: |
+    - 
+
+- intent: personal_score_object
+  examples: |
+    - 
+
+- intent: personal_quiz_query
+  examples: |
+    - 
+
+- intent: personal_textbook_query
+  examples: |
+    - 
+
+- intent: suggest_review
+  examples: |
+    - 

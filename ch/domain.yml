@@ -5,6 +5,22 @@ session_config:
 intents:
 - greet
 - help
+- faq
+- classmap_ask
+- classmap_ask_content
+- classmap_ppt
+- classmap_ppt_content
+- classmap_search
+- classmap_search_content
+- classmap_map
+- classmap_map_content
+- classmap_suggest
+- classmap_suggest_content
+- personal_score_query
+- personal_score_object
+- personal_quiz_query
+- personal_textbook_query
+- suggest_review
 slots:
   email:
     type: unfeaturized
