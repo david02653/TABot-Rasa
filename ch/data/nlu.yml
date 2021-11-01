@@ -11,6 +11,7 @@ nlu:
 #    - Hallo
 #    - Good day
 #    - Good morning
+
 - intent: help
   examples: |
     - 我需要查詢功能
@@ -24,66 +25,367 @@ nlu:
     - 使用說明
     - 說明
 
-- intent: faq
-  example: |
-    - 
+# - intent: faq
+#   examples: |
+#     - 
 
-- intent: classmap_ask
+- intent: faq/java_garbled_code
   examples: |
-    - 
+    - 為何編輯Java程式會有亂碼?
+    - Java編譯出現亂碼怎麼辦?
 
-- intent: classmap_ask_content
+- intent: faq/chinese_annotation_compile
   examples: |
-    - 
+    - 如何解決遇到中文註解無法正確compile之情況？
+    - 有中文註解編譯不會過
+    - 加中文註解程式會壞掉
 
-- intent: classmap_ppt
+- intent: faq/vector_arraylist_difference
   examples: |
-    - 
+    - Vector與ArrayList之差異為何?
+    - vector跟arraylist差在哪裡?
+    - arraylist跟vector有差別嗎?
 
-- intent: classmap_ppt_content
+- intent: faq/java_bean
   examples: |
-    - 
+    - 什麼是Java Bean？為何要使用Java Bean？
+    - Java bean是啥
+    - java bean有用嗎?
+    - java bean怎麼用
+    - 為什麼要java bean
 
-- intent: classmap_search
+- intent: suggest_review_pass
   examples: |
-    - 
+    - 通過
+    - 可以
+    - 好
+    - 我覺得可以
+    - 好阿
+    - 好喔
 
-- intent: classmap_search_content
+- intent: suggest_review_fail
   examples: |
-    - 
+    - 不好
+    - 不通過
+    - 不行
+    - 不太好
+    - 再看看
 
-- intent: classmap_map
-  examples: |
-    - 
+# - intent: classmap_ask
+#   examples: |
+#     - 請問
 
-- intent: classmap_map_content
-  examples: |
-    - 
+# - intent: classmap_ask_content
+#   examples: |
+#     - 
 
-- intent: classmap_suggest
-  examples: |
-    - 
+# - intent: classmap_ppt
+#   examples: |
+#     - 
 
-- intent: classmap_suggest_content
-  examples: |
-    - 
+# - intent: classmap_ppt_content
+#   examples: |
+#     - 
+
+# - intent: classmap_search
+#   examples: |
+#     - 
+
+# - intent: classmap_search_content
+#   examples: |
+#     - 
+
+# - intent: classmap_map
+#   examples: |
+#     - 
+
+# - intent: classmap_map_content
+#   examples: |
+#     - 
+
+# - intent: classmap_suggest
+#   examples: |
+#     - 
+
+# - intent: classmap_suggest_content
+#   examples: |
+#     - 
 
 - intent: personal_score_query
   examples: |
-    - 
+    - 我想查詢個人成績
+    - 個人成績查詢
+    - 查詢個人成績
+    - 查詢成績
+    - 成績查詢
+    - 查成績
+    - 可以幫我看一下成績嗎
+    - 我的成績是多少
 
 - intent: personal_score_object
   examples: |
-    - 
+    - 我想查[作業一](query_target)
+    - 我想查[作業二](query_target)
+    - 我想查[作業三](query_target)
+    - 我想查[作業四](query_target)
+    - 我想查[作業五](query_target)
+    - 我想查[作業六](query_target)
+    - 我想查[作業七](query_target)
+    - 我想查[作業八](query_target)
+    - 我想查[作業九](query_target)
+    - 我想查[作業十](query_target)
+    - 我想查[期中考](query_target)
+    - 我想查[期末考](query_target)
+    - 我想查[小考一](query_target)
+    - 我想查[小考二](query_target)
+    - 我想查[小考三](query_target)
+    - 我想查[小考四](query_target)
+    - 我想查[小考五](query_target)
+    - 我想查[小考六](query_target)
+    - 我想查[小考七](query_target)
+    - 我想查[小考八](query_target)
+    - 我想查[小考九](query_target)
+    - 我想查[小考十](query_target)
+    - 我想查[作業一]的成績(query_target)
+    - 我想查[作業二]的成績(query_target)
+    - 我想查[作業三]的成績(query_target)
+    - 我想查[作業四]的成績(query_target)
+    - 我想查[作業五]的成績(query_target)
+    - 我想查[作業六]的成績(query_target)
+    - 我想查[作業七]的成績(query_target)
+    - 我想查[作業八]的成績(query_target)
+    - 我想查[作業九]的成績query_target)
+    - 我想查[作業十]的成績(query_target)
+    - 我想查[期中考]的成績(query_target)
+    - 我想查[期末考]的成績(query_target)
+    - 我想查[小考一]的成績(query_target)
+    - 我想查[小考二]的成績(query_target)
+    - 我想查[小考三]的成績(query_target)
+    - 我想查[小考四]的成績(query_target)
+    - 我想查[小考五]的成績(query_target)
+    - 我想查[小考六]的成績(query_target)
+    - 我想查[小考七]的成績(query_target)
+    - 我想查[小考八]的成績(query_target)
+    - 我想查[小考九]的成績(query_target)
+    - 我想查[小考十]的成績(query_target)
+    - [作業一](query_target)
+    - [作業二](query_target)
+    - [作業三](query_target)
+    - [作業四](query_target)
+    - [作業五](query_target)
+    - [作業六](query_target)
+    - [作業七](query_target)
+    - [作業八](query_target)
+    - [作業九](query_target)
+    - [作業十](query_target)
+    - [期中考](query_target)
+    - [期末考](query_target)
+    - [小考一](query_target)
+    - [小考二](query_target)
+    - [小考三](query_target)
+    - [小考四](query_target)
+    - [小考五](query_target)
+    - [小考六](query_target)
+    - [小考七](query_target)
+    - [小考八](query_target)
+    - [小考九](query_target)
+    - [小考十](query_target)
 
-- intent: personal_quiz_query
-  examples: |
-    - 
+# - intent: personal_quiz_query
+#   examples: |
+#     - 
 
-- intent: personal_textbook_query
-  examples: |
-    - 
+# - intent: personal_textbook_query
+#   examples: |
+#     - 
 
-- intent: suggest_review
+# - faq
+# - classmap_ask
+# - classmap_ask_content
+# - classmap_ppt
+# - classmap_ppt_content
+# - classmap_search
+# - classmap_search_content
+# - classmap_map
+# - classmap_map_content
+# - classmap_suggest
+# - classmap_suggest_content
+# - personal_score_query
+# - personal_score_object
+# - personal_quiz_query
+# - personal_textbook_query
+# - suggest_review
+
+- synonym: homework_1
   examples: |
-    - 
+    - 作業一
+    - 第一次作業
+    - 作業1
+    - homework1
+    - homework 1
+
+- synonym: homework_2
+  examples: |
+    - 作業二
+    - 第二次作業
+    - 作業2
+    - homework 2
+    - homework2
+
+- synonym: homework_3
+  examples: |
+    - 作業三
+    - 第三次作業
+    - 作業3
+    - homework3
+    - homework 3
+
+- synonym: homework_4
+  examples: |
+    - 作業四
+    - 第四次作業
+    - 作業4
+    - homework4
+    - homework 4
+
+- synonym: homework_5
+  examples: |
+    - 作業五
+    - 第五次作業
+    - 作業5
+    - homework5
+    - homework 5
+
+- synonym: homework_6
+  examples: |
+    - 作業六
+    - 第六次作業
+    - 作業6
+    - homework6
+    - homework 6
+
+- synonym: homework_7
+  examples: |
+    - 作業七
+    - 第七次作業
+    - 作業7
+    - homework7
+    - homework 7
+
+- synonym: homework_8
+  examples: |
+    - 作業八
+    - 第八次作業
+    - 作業8
+    - homework8
+    - homework 8
+
+- synonym: homework_9
+  examples: |
+    - 作業九
+    - 第九次作業
+    - 作業9
+    - homework9
+    - homework 9
+
+- synonym: homework_10
+  examples: |
+    - 作業十
+    - 第十次作業
+    - 作業10
+    - homework10
+    - homework 10
+
+- synonym: midterm_exam
+  examples: |
+    - 期中考
+    - 期中
+    - midterm exam
+    - midterm
+
+- synonym: final_exam
+  examples: |
+    - 期末考
+    - 期末
+    - final exam
+    - final
+
+- synonym: quiz_1
+  examples: |
+    - 小考一
+    - 第一次小考
+    - 小考1
+    - quiz 1
+    - quiz1
+
+- synonym: quiz_2
+  examples: |
+    - 小考二
+    - 第二次小考
+    - 小考2
+    - quiz 2
+    - quiz2
+
+- synonym: quiz_3
+  examples: |
+    - 小考三
+    - 第三次小考
+    - 小考3
+    - quiz 3
+    - quiz3
+
+- synonym: quiz_4
+  examples: |
+    - 小考四
+    - 第四次小考
+    - 小考4
+    - quiz 4
+    - quiz4
+
+- synonym: quiz_5
+  examples: |
+    - 小考五
+    - 第五次小考
+    - 小考5
+    - quiz 5
+    - quiz5
+
+- synonym: quiz_6
+  examples: |
+    - 小考六
+    - 第六次小考
+    - 小考6
+    - quiz 6
+    - quiz6
+
+- synonym: quiz_7
+  examples: |
+    - 小考七
+    - 第七次小考
+    - 小考7
+    - quiz 7
+    - quiz7
+
+- synonym: quiz_8
+  examples: |
+    - 小考八
+    - 第八次小考
+    - 小考8
+    - quiz 8
+    - quiz8
+
+- synonym: quiz_9
+  examples: |
+    - 小考九
+    - 第九次小考
+    - 小考9
+    - quiz 9
+    - quiz9
+
+- synonym: quiz_10
+  examples: |
+    - 小考十
+    - 第十次小考
+    - 小考10
+    - quiz 10
+    - quiz10

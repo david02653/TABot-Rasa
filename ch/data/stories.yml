@@ -1,12 +1,5 @@
+version: "2.0"
 stories:
-#  - story: greet and subscribe
-#    steps:
-#    - intent: greet
-#    - action: utter_greet
-#    - intent: subscribe
-#    - action: newsletter_form
-#    - active_loop: newsletter_form
-
  - story: greet test
    steps:
    - intent: greet
@@ -16,3 +9,82 @@ stories:
    steps:
    - intent: help
    - action: utter_temp_help
+
+#  - story: classmap ask 1
+#    steps:
+#    - intent: classmap_ask
+#    - action: confirm_classmap_ask
+#    - intent: classmap_ask_content
+#    - action: action_classmap_ask
+
+#  - story: classmap ask 2
+#    steps:
+#    - intent: classmap_ask
+#    - action: action_classmap_ask
+
+#  - story: classmap ppt 1
+#    steps:
+#    - intent: classmap_ppt
+#    - action: confirm_classmap_ppt
+#    - intent: classmap_ppt_content
+#    - action: action_classmap_ppt
+
+#  - story: classmap ppt 2
+#    steps:
+#    - intent: classmap_ppt
+#    - action: action_classmap_ppt
+
+#  - story: classmap search 1
+#    steps:
+#    - intent: classmap_search
+#    - action: confirm_classmap_search
+#    - intent: classmap_search_content
+#    - action: action_classmap_search
+
+#  - story: classmap search 2
+#    steps:
+#    - intent: classmap_search
+#    - action: action_classmap_search
+
+#  - story: classmap suggest 1
+#    steps:
+#    - intent: classmap_suggest
+#    - action: confirm_classmap_suggest
+#    - intent: classmap_suggest_content
+#    - action: action_classmap_suggest
+
+#  - story: classmap suggest 2
+#    steps:
+#    - intent: classmap_suggest
+#    - action: action_classmap_suggest
+
+#  - story: query personal score 1
+#    steps:
+#    - intent: personal_score_query
+#    - action: utter_confirm_personal_score_query
+#    - intent: personal_score_object
+#    - action: action_personal_score_query
+
+#  - story: query personal score 2
+#    steps:
+#    - intent: personal_score_object
+#    - action: action_personal_score_query
+
+#  - story: query personal textboot
+#    steps:
+#    - intent: personal_textbook_query
+#    - action: action_personal_textbook_query
+
+#  - story: query personal quiz
+#    steps:
+#    - intent: personal_quiz_query
+#    - action: action_personal_quiz_query
+ - story: review suggestion as pass
+   steps:
+   - intent: suggest_review_pass
+   - action: action_suggest_review_pass
+
+ - story: review suggestion as fail
+   steps:
+   - intent: suggest_review_fail
+   - action: action_suggest_review_fail

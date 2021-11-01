@@ -25,3 +25,50 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+from typing import Any, Text, Dict, List
+
+from rasa_sdk.events import SlotSet
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.interfaces import Action
+
+class ActionGreet(Action):
+    def name(self) -> Text:
+        return "action_greet"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            msg = {
+                "intent": "greet"
+            }
+            dispatcher.utter_message(format(msg))
+            return []
+
+class ActionSuggestionPass(Action):
+    def name(self) -> Text:
+        return "action_suggest_review_pass"
+    
+    def run(self, dispatcher: "CollectingDispatcher", 
+            tracker: Tracker, 
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            msg = {
+                "intent": "suggest_review_pass",
+                "reviewResult": True,
+                "endOfChat": True
+            }
+            dispatcher.utter_message(format(msg))
+            return []
+
+class ActionSuggestionFail(Action):
+    def name(self) -> Text:
+        return "action_suggest_review_fail"
+    def run(self, dispatcher: "CollectingDispatcher", 
+        tracker: Tracker, 
+        domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        msg = {
+            "intent": "suggest_review_fail",
+            "reviewResult": False,
+            "endOfChat": True
+        }
+        dispatcher.utter_message(format(msg))
+        return []

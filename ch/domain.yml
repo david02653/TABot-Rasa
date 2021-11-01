@@ -1,30 +1,21 @@
-version: '2.0'
+version: "2.0"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 intents:
 - greet
 - help
-- faq
-- classmap_ask
-- classmap_ask_content
-- classmap_ppt
-- classmap_ppt_content
-- classmap_search
-- classmap_search_content
-- classmap_map
-- classmap_map_content
-- classmap_suggest
-- classmap_suggest_content
+- faq:
+    use_entities: []
 - personal_score_query
 - personal_score_object
-- personal_quiz_query
-- personal_textbook_query
-- suggest_review
-slots:
-  email:
-    type: unfeaturized
-    influence_conversation: false
+- suggest_review_pass
+- suggest_review_fail
+
+entities:
+- query_target
+
 responses:
   utter_greet:
   - text: |
@@ -34,20 +25,50 @@ responses:
   utter_ask_email:
   - text: |
       What is your email address?
-  utter_subscribed:
-  - text: |
-      Check your inbox at {email} in order to finish subscribing to the newsletter!
-  - text: You're all set! Check your inbox at {email} to confirm your subscription.
   utter_temp_help:
   - text: 了解
   - text: 展示使用說明
   - text: 請求說明
+
+  utter_confirm_personal_score_query:
+  - custom:
+      intent: confirm_personal_score_query
+      responseMessage: 好喔, 那麼你想查的是哪個成績呢
+  
+  utter_faq/java_garbled_code:
+  - custom:
+      intent: faq/java_garbled_code
+  utter_faq/chinese_annotation_compile:
+  - custom:
+      intent: faq/chinese_annotation_compile
+  utter_faq/vector_arraylist_difference:
+  - custom:
+      intent: faq/vector_arraylist_difference
+  utter_faq/java_bean:
+  - custom:
+      intent: faq/java_bean
+
 actions:
-- '...'
-- utter_greet
-- utter_subscribed
-forms:
-  newsletter_form:
-    required_slots:
-      email:
-      - type: from_text
+- action_greet
+- action_suggest_review_pass
+- action_suggest_review_fail
+# - utter_faq/java_garbled_code
+# - utter_faq/chinese_annotation_compile
+# - utter_faq/vector_arraylist_difference
+# - utter_faq/java_bean
+
+
+# - classmap_ask
+# - classmap_ask_content
+# - classmap_ppt
+# - classmap_ppt_content
+# - classmap_search
+# - classmap_search_content
+# - classmap_map
+# - classmap_map_content
+# - classmap_suggest
+# - classmap_suggest_content
+# - personal_score_query
+# - personal_score_object
+# - personal_quiz_query
+# - personal_textbook_query
