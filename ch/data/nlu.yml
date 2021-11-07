@@ -205,6 +205,9 @@ nlu:
     - [閉包](search_target)是什麼
     - 我想查詢[閉包](search_target)是什麼
     - 什麼是[閉包](search_target)
+    - [html](search_target)是什麼
+    - 什麼是[css](search_target)
+    - 我想查什麼是[css](search_target)
 
 # - intent: classmap_map
 #   examples: |
