@@ -22,29 +22,29 @@ stories:
 #    - intent: classmap_ask
 #    - action: action_classmap_ask
 
-#  - story: classmap ppt 1
-#    steps:
-#    - intent: classmap_ppt
-#    - action: confirm_classmap_ppt
-#    - intent: classmap_ppt_content
-#    - action: action_classmap_ppt
+ - story: classmap ppt 1
+   steps:
+   - intent: classmap_ppt
+   - action: utter_confirm_classmap_ppt_query
+   - intent: classmap_ppt_content
+   - action: action_classmap_ppt
 
-#  - story: classmap ppt 2
-#    steps:
-#    - intent: classmap_ppt
-#    - action: action_classmap_ppt
+ - story: classmap ppt 2
+   steps:
+   - intent: classmap_ppt_content
+   - action: action_classmap_ppt
 
-#  - story: classmap search 1
-#    steps:
-#    - intent: classmap_search
-#    - action: confirm_classmap_search
-#    - intent: classmap_search_content
-#    - action: action_classmap_search
+ - story: classmap search 1
+   steps:
+   - intent: classmap_search
+   - action: utter_confirm_classmap_search
+   - intent: classmap_search_content
+   - action: action_classmap_search
 
-#  - story: classmap search 2
-#    steps:
-#    - intent: classmap_search
-#    - action: action_classmap_search
+ - story: classmap search 2
+   steps:
+   - intent: classmap_search_content
+   - action: action_classmap_search
 
 #  - story: classmap suggest 1
 #    steps:
@@ -53,32 +53,33 @@ stories:
 #    - intent: classmap_suggest_content
 #    - action: action_classmap_suggest
 
-#  - story: classmap suggest 2
-#    steps:
-#    - intent: classmap_suggest
-#    - action: action_classmap_suggest
+ - story: classmap suggest
+   steps:
+   - intent: classmap_suggest
+   - action: utter_classmap_suggest
 
-#  - story: query personal score 1
-#    steps:
-#    - intent: personal_score_query
-#    - action: utter_confirm_personal_score_query
-#    - intent: personal_score_object
-#    - action: action_personal_score_query
+ - story: query personal score 1
+   steps:
+   - intent: personal_score_query
+   - action: utter_confirm_personal_score_query
+   - intent: personal_score_object
+   - action: action_personal_score_query
 
-#  - story: query personal score 2
-#    steps:
-#    - intent: personal_score_object
-#    - action: action_personal_score_query
+ - story: query personal score 2
+   steps:
+   - intent: personal_score_object
+   - action: action_personal_score_query
 
-#  - story: query personal textboot
-#    steps:
-#    - intent: personal_textbook_query
-#    - action: action_personal_textbook_query
+ - story: query personal textboot
+   steps:
+   - intent: personal_textbook_query
+   - action: utter_personal_textbook_query
 
-#  - story: query personal quiz
-#    steps:
-#    - intent: personal_quiz_query
-#    - action: action_personal_quiz_query
+ - story: query personal quiz
+   steps:
+   - intent: personal_quiz_query
+   - action: utter_personal_quiz_query
+
  - story: review suggestion as pass
    steps:
    - intent: suggest_review_pass

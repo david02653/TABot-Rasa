@@ -72,3 +72,42 @@ class ActionSuggestionFail(Action):
         }
         dispatcher.utter_message(format(msg))
         return []
+
+class ActionPersonalScoreQuery(Action):
+    def name(self) -> Text:
+        return "action_personal_score_query"
+    def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        target = next(tracker.get_latest_entity_values("score_query_target"), None)
+        msg = {
+            "intent": "personal_score_query",
+            "target": target,
+            "endOfChat": True
+        }
+        dispatcher.utter_message(format(msg))
+        return []
+
+class ActionClassmapSearch(Action):
+    def name(self) -> Text:
+        return "action_classmap_search"
+    def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        keyword = next(tracker.get_latest_entity_values("search_target"), None)
+        msg = {
+            "intent": "classmap_search",
+            "target": keyword,
+            "endOfChat": True
+        }
+        dispatcher.utter_message(format(msg))
+        return []
+
+class ActionClassmapPpt(Action):
+    def name(self) -> Text:
+        return "action_classmap_ppt"
+    def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        target = next(tracker.get_latest_entity_values("ppt_query_target"), None)
+        msg = {
+            "intent": "classmap_ppt",
+            "target": target,
+            "endOfChat": True
+        }
+        dispatcher.utter_message(format(msg))
+        return []

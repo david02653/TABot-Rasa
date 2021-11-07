@@ -1,0 +1,39 @@
+version: '3.0'
+
+services:
+#  rasa:
+#    image: rasa/rasa:2.8.5-full
+#    restart: always
+#    networks: ['rasa-network']
+#    user: root
+#    ports:
+#      - "5005:5005"
+#    volumes:
+#      - "./:/app/"
+#    depends_on:
+#      - action_server
+#    command:
+#      - run
+##      - --model
+##      - /app/models/spacyModel.tar.gz
+#      - --endpoints
+#      - /app/endpoints.yml
+#      - -vv
+#      - --enable-api
+
+  action_server:
+    image: tabot/ch-action:v0.1
+    container_name: tabot-ch-action
+#    restart: always
+    networks: ['rasa-network']
+    ports:
+      - "5055:5055"
+    volumes:
+      - "./actions:/bot/actions"
+    command:
+      - start
+      - --actions
+      - actions
+      - -vv
+
+networks: {rasa-network: {}}

@@ -6,11 +6,6 @@ nlu:
     - 安安
     - 不好意思
     - 打擾了
-#    - Hi
-#    - Hey!
-#    - Hallo
-#    - Good day
-#    - Good morning
 
 - intent: help
   examples: |
@@ -24,10 +19,6 @@ nlu:
     - 如何使用
     - 使用說明
     - 說明
-
-# - intent: faq
-#   examples: |
-#     - 
 
 - intent: faq/java_garbled_code
   examples: |
@@ -54,6 +45,68 @@ nlu:
     - java bean怎麼用
     - 為什麼要java bean
 
+- intent: faq/package_import_path_classpath_difference
+  examples: |
+    - package, import, path, classpath的意思跟差別在哪裡阿
+    - package跟import跟path還有classpath有差別嗎
+    - import,classpath,path,package有什麼具體的差別嗎 
+
+- intent: faq/garbage_collection
+  examples: |
+    - 什麼時候會進行garbage collection?
+    - 程式什麼時候會進行garbage collection
+    - 垃圾回收什麼時候會進行阿
+    - garbage collection什麼時候會被執行
+
+- intent: faq/arraylist_to_list
+  examples: |
+    - 如何把arraylist轉換成array
+    - 要怎麼把arraylist轉成array
+    - arraylist怎麼轉成array
+    - arraylist要怎麼轉成array
+
+- intent: faq/layout
+  examples: |
+    - 要怎麼自訂元件的layout方式
+    - layout的方式要怎麼自訂,像是位置跟大小
+    - 元件的layout要怎麼改
+
+- intent: faq/icon_transparency
+  examples: |
+    - 要怎麼建立半透明的icon
+    - icon要怎麼改成半透明
+    - 要怎麼建半透明的icon
+
+- intent: faq/source_usage
+  examples: |
+    - 如何偵測java的資源使用情形跟效能
+    - java的效能跟資源使用情形怎麼看
+    - 怎麼看java的資源使用狀況跟效能
+
+# - intent: faq/jdk1-5_feature
+#   examples: |
+#     - jdk1.5有什麼新的特色
+#     - jdk1.5有什麼新的feature
+#     - jdk1.5有加什麼新feature
+
+# - intent: faq/jdk1-6_feature
+#   examples: |
+#     - jdk1.6有什麼新的特色
+#     - jdk1.6有什麼新的feature
+#     - jdk1.6有加什麼新feature
+
+# - intent: faq/jdk1-7_feature
+#   examples: |
+#     - jdk1.7有什麼新的特色
+#     - jdk1.7有什麼新的feature
+#     - jdk1.7有加什麼新feature
+
+# - intent: faq/jdk1-8_feature
+#   examples: |
+#     - jdk1.8有什麼新的特色
+#     - jdk1.8有什麼新的feature
+#     - jdk1.8有加什麼新feature
+
 - intent: suggest_review_pass
   examples: |
     - 通過
@@ -73,27 +126,85 @@ nlu:
 
 # - intent: classmap_ask
 #   examples: |
-#     - 請問
+#     - 請問什麼是[閉包](map_query_target)
+#     - [](map_query_target)
 
 # - intent: classmap_ask_content
 #   examples: |
 #     - 
 
-# - intent: classmap_ppt
-#   examples: |
-#     - 
+- intent: classmap_ppt
+  examples: |
+    - 我想查詢投影片資料
+    - 查詢頭影片資料
+    - 投影片資料
+    - 課程投影片
+    - 課程投影片資料
 
-# - intent: classmap_ppt_content
-#   examples: |
-#     - 
+- intent: classmap_ppt_content
+  examples: |
+    - 我想查[第一章](ppt_query_target)的投影片
+    - 我想查[第二章](ppt_query_target)的投影片
+    - 我想查[第三章](ppt_query_target)的投影片
+    - 我想查[第四章](ppt_query_target)的投影片
+    - 我想查[第五章](ppt_query_target)的投影片
+    - 我想查[第六章](ppt_query_target)的投影片
+    - 我想查[第七章](ppt_query_target)的投影片
+    - 我想查[第八章](ppt_query_target)的投影片
+    - 我想查[第九章](ppt_query_target)的投影片
+    - 我想查[第十章](ppt_query_target)的投影片
+    - 我想查[第十一章](ppt_query_target)的投影片
+    - 我想查[第十二章](ppt_query_target)的投影片
+    - 我想查[第十三章](ppt_query_target)的投影片
+    - 我想查[第十四章](ppt_query_target)的投影片
+    - 我想查[第十五章](ppt_query_target)的投影片
+    - [第一章](ppt_query_target)
+    - [第二章](ppt_query_target)
+    - [第三章](ppt_query_target)
+    - [第四章](ppt_query_target)
+    - [第五章](ppt_query_target)
+    - [第六章](ppt_query_target)
+    - [第七章](ppt_query_target)
+    - [第八章](ppt_query_target)
+    - [第九章](ppt_query_target)
+    - [第十章](ppt_query_target)
+    - [第十一章](ppt_query_target)
+    - [第十二章](ppt_query_target)
+    - [第十三章](ppt_query_target)
+    - [第十四章](ppt_query_target)
+    - [第十五章](ppt_query_target)
+    - [第一章](ppt_query_target)的投影片
+    - [第二章](ppt_query_target)的投影片
+    - [第三章](ppt_query_target)的投影片
+    - [第四章](ppt_query_target)的投影片
+    - [第五章](ppt_query_target)的投影片
+    - [第六章](ppt_query_target)的投影片
+    - [第七章](ppt_query_target)的投影片
+    - [第八章](ppt_query_target)的投影片
+    - [第九章](ppt_query_target)的投影片
+    - [第十章](ppt_query_target)的投影片
+    - [第十一章](ppt_query_target)的投影片
+    - [第十二章](ppt_query_target)的投影片
+    - [第十三章](ppt_query_target)的投影片
+    - [第十四章](ppt_query_target)的投影片
+    - [第十五章](ppt_query_target)的投影片
 
-# - intent: classmap_search
-#   examples: |
-#     - 
+- intent: classmap_search
+  examples: |
+    - 我想查尋課程地圖
+    - 查詢課程地圖
+    - 課程地圖查詢
+    - 課程地圖
+    - 查課程地圖
+    - 查課程知識
+    - 查詢課程知識
+    - 查詢課程相關知識
 
-# - intent: classmap_search_content
-#   examples: |
-#     - 
+- intent: classmap_search_content
+  examples: |
+    - [閉包](search_target)是什麼
+    - 我想查詢[閉包](search_target)是什麼
+    - 什麼是[閉包](search_target)
 
 # - intent: classmap_map
 #   examples: |
@@ -103,9 +214,12 @@ nlu:
 #   examples: |
 #     - 
 
-# - intent: classmap_suggest
-#   examples: |
-#     - 
+- intent: classmap_suggest
+  examples: |
+    - 我想推薦教材
+    - 我覺得可以增加新教材
+    - 推薦教材
+    - 新增教材
 
 # - intent: classmap_suggest_content
 #   examples: |
@@ -124,80 +238,84 @@ nlu:
 
 - intent: personal_score_object
   examples: |
-    - 我想查[作業一](query_target)
-    - 我想查[作業二](query_target)
-    - 我想查[作業三](query_target)
-    - 我想查[作業四](query_target)
-    - 我想查[作業五](query_target)
-    - 我想查[作業六](query_target)
-    - 我想查[作業七](query_target)
-    - 我想查[作業八](query_target)
-    - 我想查[作業九](query_target)
-    - 我想查[作業十](query_target)
-    - 我想查[期中考](query_target)
-    - 我想查[期末考](query_target)
-    - 我想查[小考一](query_target)
-    - 我想查[小考二](query_target)
-    - 我想查[小考三](query_target)
-    - 我想查[小考四](query_target)
-    - 我想查[小考五](query_target)
-    - 我想查[小考六](query_target)
-    - 我想查[小考七](query_target)
-    - 我想查[小考八](query_target)
-    - 我想查[小考九](query_target)
-    - 我想查[小考十](query_target)
-    - 我想查[作業一]的成績(query_target)
-    - 我想查[作業二]的成績(query_target)
-    - 我想查[作業三]的成績(query_target)
-    - 我想查[作業四]的成績(query_target)
-    - 我想查[作業五]的成績(query_target)
-    - 我想查[作業六]的成績(query_target)
-    - 我想查[作業七]的成績(query_target)
-    - 我想查[作業八]的成績(query_target)
-    - 我想查[作業九]的成績query_target)
-    - 我想查[作業十]的成績(query_target)
-    - 我想查[期中考]的成績(query_target)
-    - 我想查[期末考]的成績(query_target)
-    - 我想查[小考一]的成績(query_target)
-    - 我想查[小考二]的成績(query_target)
-    - 我想查[小考三]的成績(query_target)
-    - 我想查[小考四]的成績(query_target)
-    - 我想查[小考五]的成績(query_target)
-    - 我想查[小考六]的成績(query_target)
-    - 我想查[小考七]的成績(query_target)
-    - 我想查[小考八]的成績(query_target)
-    - 我想查[小考九]的成績(query_target)
-    - 我想查[小考十]的成績(query_target)
-    - [作業一](query_target)
-    - [作業二](query_target)
-    - [作業三](query_target)
-    - [作業四](query_target)
-    - [作業五](query_target)
-    - [作業六](query_target)
-    - [作業七](query_target)
-    - [作業八](query_target)
-    - [作業九](query_target)
-    - [作業十](query_target)
-    - [期中考](query_target)
-    - [期末考](query_target)
-    - [小考一](query_target)
-    - [小考二](query_target)
-    - [小考三](query_target)
-    - [小考四](query_target)
-    - [小考五](query_target)
-    - [小考六](query_target)
-    - [小考七](query_target)
-    - [小考八](query_target)
-    - [小考九](query_target)
-    - [小考十](query_target)
+    - 我想查[作業一](score_query_target)
+    - 我想查[作業二](score_query_target)
+    - 我想查[作業三](score_query_target)
+    - 我想查[作業四](score_query_target)
+    - 我想查[作業五](score_query_target)
+    - 我想查[作業六](score_query_target)
+    - 我想查[作業七](score_query_target)
+    - 我想查[作業八](score_query_target)
+    - 我想查[作業九](score_query_target)
+    - 我想查[作業十](score_query_target)
+    - 我想查[期中考](score_query_target)
+    - 我想查[期末考](score_query_target)
+    - 我想查[小考一](score_query_target)
+    - 我想查[小考二](score_query_target)
+    - 我想查[小考三](score_query_target)
+    - 我想查[小考四](score_query_target)
+    - 我想查[小考五](score_query_target)
+    - 我想查[小考六](score_query_target)
+    - 我想查[小考七](score_query_target)
+    - 我想查[小考八](score_query_target)
+    - 我想查[小考九](score_query_target)
+    - 我想查[小考十](score_query_target)
+    - 我想查[作業一](score_query_target)的成績
+    - 我想查[作業二](score_query_target)的成績
+    - 我想查[作業三](score_query_target)的成績
+    - 我想查[作業四](score_query_target)的成績
+    - 我想查[作業五](score_query_target)的成績
+    - 我想查[作業六](score_query_target)的成績
+    - 我想查[作業七](score_query_target)的成績
+    - 我想查[作業八](score_query_target)的成績
+    - 我想查[作業九](score_query_target)的成績
+    - 我想查[作業十](score_query_target)的成績
+    - 我想查[期中考](score_query_target)的成績
+    - 我想查[期末考](score_query_target)的成績
+    - 我想查[小考一](score_query_target)的成績
+    - 我想查[小考二](score_query_target)的成績
+    - 我想查[小考三](score_query_target)的成績
+    - 我想查[小考四](score_query_target)的成績
+    - 我想查[小考五](score_query_target)的成績
+    - 我想查[小考六](score_query_target)的成績
+    - 我想查[小考七](score_query_target)的成績
+    - 我想查[小考八](score_query_target)的成績
+    - 我想查[小考九](score_query_target)的成績
+    - 我想查[小考十](score_query_target)的成績
+    - [作業一](score_query_target)
+    - [作業二](score_query_target)
+    - [作業三](score_query_target)
+    - [作業四](score_query_target)
+    - [作業五](score_query_target)
+    - [作業六](score_query_target)
+    - [作業七](score_query_target)
+    - [作業八](score_query_target)
+    - [作業九](score_query_target)
+    - [作業十](score_query_target)
+    - [期中考](score_query_target)
+    - [期末考](score_query_target)
+    - [小考一](score_query_target)
+    - [小考二](score_query_target)
+    - [小考三](score_query_target)
+    - [小考四](score_query_target)
+    - [小考五](score_query_target)
+    - [小考六](score_query_target)
+    - [小考七](score_query_target)
+    - [小考八](score_query_target)
+    - [小考九](score_query_target)
+    - [小考十](score_query_target)
 
-# - intent: personal_quiz_query
-#   examples: |
-#     - 
+- intent: personal_quiz_query
+  examples: |
+    - 個人考題查詢
+    - 查詢個人考題
+    - 個人考題
 
-# - intent: personal_textbook_query
-#   examples: |
-#     - 
+- intent: personal_textbook_query
+  examples: |
+    - 查詢個人教材
+    - 個人教材
+    - 看個人教材
 
 # - faq
 # - classmap_ask
@@ -389,3 +507,108 @@ nlu:
     - 小考10
     - quiz 10
     - quiz10
+
+- synonym: chapter_1
+  examples: |
+    - chapter1
+    - chapter 1
+    - 第一章
+    - 第1章
+
+- synonym: chapter_2
+  examples: |
+    - chapter2
+    - chapter 2
+    - 第二章
+    - 第2章
+
+- synonym: chapter_3
+  examples: |
+    - chapter3
+    - chapter 3
+    - 第三章
+    - 第3章
+
+- synonym: chapter_4
+  examples: |
+    - chapter4
+    - chapter 4
+    - 第四章
+    - 第4章
+
+- synonym: chapter_5
+  examples: |
+    - chapter5
+    - chapter 5
+    - 第五章
+    - 第5章
+
+- synonym: chapter_6
+  examples: |
+    - chapter6
+    - chapter 6
+    - 第六章
+    - 第6章
+
+- synonym: chapter_7
+  examples: |
+    - chapter7
+    - chapter 7
+    - 第七章
+    - 第7章
+
+- synonym: chapter_8
+  examples: |
+    - chapter8
+    - chapter 8
+    - 第八章
+    - 第8章
+
+- synonym: chapter_9
+  examples: |
+    - chapter9
+    - chapter 9
+    - 第九章
+    - 第9章
+
+- synonym: chapter_10
+  examples: |
+    - chapter10
+    - chapter 10
+    - 第十章
+    - 第10章
+
+- synonym: chapter_11
+  examples: |
+    - chapter11
+    - chapter 11
+    - 第十一章
+    - 第11章
+
+- synonym: chapter_12
+  examples: |
+    - chapter12
+    - chapter 12
+    - 第十二章
+    - 第12章
+
+- synonym: chapter_13
+  examples: |
+    - chapter13
+    - chapter 13
+    - 第十三章
+    - 第13章
+
+- synonym: chapter_14
+  examples: |
+    - chapter14
+    - chapter 14
+    - 第十四章
+    - 第14章
+
+- synonym: chapter_15
+  examples: |
+    - chapter15
+    - chapter 15
+    - 第十五章
+    - 第15章

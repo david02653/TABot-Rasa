@@ -8,13 +8,22 @@ intents:
 - help
 - faq:
     use_entities: []
+- classmap_search
+- classmap_search_content
+- classmap_ppt
+- classmap_ppt_content
 - personal_score_query
 - personal_score_object
+- classmap_suggest
 - suggest_review_pass
 - suggest_review_fail
+- personal_quiz_query
+- personal_textbook_query
 
 entities:
-- query_target
+- score_query_target
+- ppt_query_target
+- search_target
 
 responses:
   utter_greet:
@@ -33,7 +42,25 @@ responses:
   utter_confirm_personal_score_query:
   - custom:
       intent: confirm_personal_score_query
-      responseMessage: 好喔, 那麼你想查的是哪個成績呢
+      responseMessage: "好喔, 那麼你想查的是哪個成績呢"
+  utter_confirm_classmap_ppt_query:
+  - custom:
+      intent: confirm_classmap_ppt_query
+      responseMessage: "好的, 你想查詢哪個章節的投影片"
+  utter_confirm_classmap_search:
+  - custom:
+      intent: confirm_classmap_search
+      responseMessage: "ok, 你想查詢什麼"
+  utter_classmap_suggest:
+  - custom:
+      intent: classmap_suggest
+      responseMessage: "ok, 你想推薦什麼"
+  utter_personal_quiz_query:
+  - custom:
+      intent: personal_quiz_query
+  utter_personal_textbook_query:
+  - custom:
+      intent: personal_textbook_query
   
   utter_faq/java_garbled_code:
   - custom:
@@ -47,11 +74,44 @@ responses:
   utter_faq/java_bean:
   - custom:
       intent: faq/java_bean
+  utter_faq/package_import_path_classpath_difference:
+  - custom:
+      intent: faq/package_import_path_classpath_difference
+  utter_faq/garbage_collection:
+  - custom:
+      intent: faq/garbage_collection
+  utter_faq/arraylist_to_list:
+  - custom:
+      intent: faq/arraylist_to_list
+  utter_faq/layout:
+  - custom:
+      intent: faq/layout
+  utter_faq/icon_transparency:
+  - custom:
+      intent: faq/icon_transparency
+  utter_faq/source_usage:
+  - custom:
+      intent: faq/source_usage
+  utter_faq/jdk1.5_feature:
+  - custom:
+      intent: faq/jdk1.5_feature
+  utter_faq/jdk1.6_feature:
+  - custom:
+      intent: faq/jdk1.6_feature
+  utter_faq/jdk1.7_feature:
+  - custom:
+      intent: faq/jdk1.7_feature
+  utter_faq/jdk1.8_feature:
+  - custom:
+      intent: faq/jdk1.8_feature
 
 actions:
 - action_greet
 - action_suggest_review_pass
 - action_suggest_review_fail
+- action_personal_score_query
+- action_classmap_search
+- action_classmap_ppt
 # - utter_faq/java_garbled_code
 # - utter_faq/chinese_annotation_compile
 # - utter_faq/vector_arraylist_difference
