@@ -41,7 +41,8 @@ class ActionGreet(Action):
             msg = {
                 "intent": "greet"
             }
-            dispatcher.utter_message(format(msg))
+            # dispatcher.utter_message(format(msg))
+            dispatcher.utter_custom_json(format(msg))
             return []
 
 class ActionSuggestionPass(Action):
@@ -56,7 +57,8 @@ class ActionSuggestionPass(Action):
                 "reviewResult": True,
                 "endOfChat": True
             }
-            dispatcher.utter_message(format(msg))
+            # dispatcher.utter_message(format(msg))
+            dispatcher.utter_custom_json(format(msg))
             return []
 
 class ActionSuggestionFail(Action):
@@ -70,7 +72,8 @@ class ActionSuggestionFail(Action):
             "reviewResult": False,
             "endOfChat": True
         }
-        dispatcher.utter_message(format(msg))
+        # dispatcher.utter_message(format(msg))
+        dispatcher.utter_custom_json(format(msg))
         return []
 
 class ActionPersonalScoreQuery(Action):
@@ -83,7 +86,8 @@ class ActionPersonalScoreQuery(Action):
             "target": target,
             "endOfChat": True
         }
-        dispatcher.utter_message(format(msg))
+        # dispatcher.utter_message(format(msg))
+        dispatcher.utter_custom_json(format(msg))
         return []
 
 class ActionClassmapSearch(Action):
@@ -96,7 +100,8 @@ class ActionClassmapSearch(Action):
             "target": keyword,
             "endOfChat": True
         }
-        dispatcher.utter_message(format(msg))
+        # dispatcher.utter_message(format(msg))
+        dispatcher.utter_custom_json(format(msg))
         return []
 
 class ActionClassmapPpt(Action):
@@ -109,5 +114,6 @@ class ActionClassmapPpt(Action):
             "target": target,
             "endOfChat": True
         }
-        dispatcher.utter_message(format(msg))
+        # dispatcher.utter_message(format(msg))
+        dispatcher.utter_custom_json(format(msg))
         return []

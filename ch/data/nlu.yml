@@ -124,15 +124,6 @@ nlu:
     - 不太好
     - 再看看
 
-# - intent: classmap_ask
-#   examples: |
-#     - 請問什麼是[閉包](map_query_target)
-#     - [](map_query_target)
-
-# - intent: classmap_ask_content
-#   examples: |
-#     - 
-
 - intent: classmap_ppt
   examples: |
     - 我想查詢投影片資料
