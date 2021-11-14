@@ -41,26 +41,32 @@ responses:
 
   utter_confirm_personal_score_query:
   - custom:
-      intent: confirm_personal_score_query
+      intent: personal_score_query
       responseMessage: "好喔, 那麼你想查的是哪個成績呢"
+      endOfChat: False
   utter_confirm_classmap_ppt_query:
   - custom:
-      intent: confirm_classmap_ppt_query
+      intent: classmap_ppt_query
       responseMessage: "好的, 你想查詢哪個章節的投影片"
+      endOfChat: False
   utter_confirm_classmap_search:
   - custom:
-      intent: confirm_classmap_search
+      intent: classmap_search
       responseMessage: "ok, 你想查詢什麼"
+      endOfChat: False
   utter_classmap_suggest:
   - custom:
       intent: classmap_suggest
       responseMessage: "ok, 你想推薦什麼"
+      endOfChat: False
   utter_personal_quiz_query:
   - custom:
       intent: personal_quiz_query
+      endOfChat: True
   utter_personal_textbook_query:
   - custom:
       intent: personal_textbook_query
+      endOfChat: True
   
   utter_faq/java_garbled_code:
   - custom:
