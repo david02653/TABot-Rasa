@@ -2,29 +2,68 @@ version: "2.0"
 
 stories:
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+ - story: greet test
+   steps:
+   - intent: greet
+   - action: utter_greet
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+ - story: classmap search 1
+   steps:
+   - intent: classmap_search
+   - action: utter_confirm_classmap_search
+   - intent: classmap_search_content
+   - action: action_classmap_search
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+ - story: classmap search 2
+   steps:
+   - intent: classmap_search_content
+   - action: action_classmap_search
+
+ - story: classmap ppt 1
+   steps:
+   - intent: classmap_ppt
+   - action: utter_confirm_classmap_ppt_query
+   - intent: classmap_ppt_content
+   - action: action_classmap_ppt
+
+ - story: classmap ppt 2
+   steps:
+   - intent: classmap_ppt_content
+   - action: action_classmap_ppt
+
+ - story: classmap suggest
+   steps:
+   - intent: classmap_suggest
+   - action: utter_classmap_suggest
+
+ - story: query personal score 1
+   steps:
+   - intent: personal_score_query
+   - action: utter_confirm_personal_score_query
+   - intent: personal_score_object
+   - action: action_personal_score_query
+
+ - story: query personal score 2
+   steps:
+   - intent: personal_score_object
+   - action: action_personal_score_query
+
+ - story: query personal textboot
+   steps:
+   - intent: personal_textbook_query
+   - action: utter_personal_textbook_query
+
+ - story: query personal quiz
+   steps:
+   - intent: personal_quiz_query
+   - action: utter_personal_quiz_query
+
+ - story: review suggestion as pass
+   steps:
+   - intent: suggest_review_pass
+   - action: action_suggest_review_pass
+
+ - story: review suggestion as fail
+   steps:
+   - intent: suggest_review_fail
+   - action: action_suggest_review_fail

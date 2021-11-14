@@ -17,21 +17,21 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+# - intent: goodbye
+#   examples: |
+#     - good afternoon
+#     - cu
+#     - good by
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
 
-- intent: affirm
+- intent: suggest_review_pass
   examples: |
     - yes
     - y
@@ -40,7 +40,7 @@ nlu:
     - that sounds good
     - correct
 
-- intent: deny
+- intent: suggest_review_fail
   examples: |
     - no
     - n
@@ -50,43 +50,497 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: faq/java_garbled_code
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - Why do garbled code pop out when i compile java program?
+    - what should i do with when garbled code show up while compiling java program?
 
-- intent: mood_unhappy
+- intent: faq/chinese_annotation_compile
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - How to solve error about chinese annotation compile？
+    - something goes wrong when i try to compile program with chinese annotation on it, what should i do
+    - compile failed with chinese annotation
 
-- intent: bot_challenge
+- intent: faq/vector_arraylist_difference
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - what is the difference between vector and arraylist
+    - Is there any difference between arraylist and vector?
+    - what is the exact difference between vector and arraylist
+
+- intent: faq/java_bean
+  examples: |
+    - what is java bean
+    - what can i do with java bean
+    - how java bean works
+    - how to use java bean
+    - why do i need java bean
+
+- intent: faq/package_import_path_classpath_difference
+  examples: |
+    - package, import, path, classpath, what is the difference
+    - why is there package, import, path and classpath
+    - explain difference between package, import, path and classpath
+
+- intent: faq/garbage_collection
+  examples: |
+    - when will the program execute garbage collection?
+    - garbage collection when
+    - what is garbage collection
+    - how do garbage collection works
+
+- intent: faq/arraylist_to_list
+  examples: |
+    - how to convert arraylist to list
+    - can i convert arraylist to list
+    - convert arrarylist to list
+    - cast arrayList into list
+
+- intent: faq/layout
+  examples: |
+    - how to define layout method
+    - i want to do some modify with layout, what should i do
+    - is there anyway to change object layout?
+
+- intent: faq/icon_transparency
+  examples: |
+    - how to create a transparent icon
+    - how to make icon transparency
+    - how to create transparenct icon
+
+- intent: faq/source_usage
+  examples: |
+    - how to detect source usage with java
+    - how to check java source usage
+    - check status of java source usage
+
+- intent: classmap_ppt
+  examples: |
+    - search power point
+    - search ppt
+    - ppt information
+    - I'd like to query ppt
+    - class ppt
+    - query power point
+    - query ppt
+
+- intent: classmap_ppt_content
+  examples: |
+    - i want to checkout slides of [chapter one](ppt_query_target)
+    - i want to checkout slides of [chapter two](ppt_query_target)
+    - i want to checkout slides of [chapter three](ppt_query_target)
+    - i want to checkout slides of [chapter four](ppt_query_target)
+    - i want to checkout slides of [chapter five](ppt_query_target)
+    - i want to checkout slides of [chapter six](ppt_query_target)
+    - i want to checkout slides of [chapter seven](ppt_query_target)
+    - i want to checkout slides of [chapter eight](ppt_query_target)
+    - i want to checkout slides of [chapter nine](ppt_query_target)
+    - i want to checkout slides of [chapter ten](ppt_query_target)
+    - i want to checkout slides of [chapter eleven](ppt_query_target)
+    - i want to checkout slides of [chapter twelve](ppt_query_target)
+    - i want to checkout slides of [chapter thirteen](ppt_query_target)
+    - i want to checkout slides of [chapter fourteen](ppt_query_target)
+    - i want to checkout slides of [chapter fifteen](ppt_query_target)
+    - slides of [chapter1](ppt_query_target)
+    - slides of [chapter2](ppt_query_target)
+    - slides of [chapter3](ppt_query_target)
+    - slides of [chapter4](ppt_query_target)
+    - slides of [chapter5](ppt_query_target)
+    - slides of [chapter6](ppt_query_target)
+    - slides of [chapter7](ppt_query_target)
+    - slides of [chapter8](ppt_query_target)
+    - slides of [chapter9](ppt_query_target)
+    - slides of [chapter10](ppt_query_target)
+    - slides of [chapter11](ppt_query_target)
+    - slides of [chapter12](ppt_query_target)
+    - slides of [chapter13](ppt_query_target)
+    - slides of [chapter14](ppt_query_target)
+    - slides of [chapter15](ppt_query_target)
+    - [chp one](ppt_query_target) power point
+    - [chp two](ppt_query_target) power point
+    - [chp three](ppt_query_target) power point
+    - [chp four](ppt_query_target) power point
+    - [chp five](ppt_query_target) power point
+    - [chp six](ppt_query_target) power point
+    - [chp seven](ppt_query_target) power point
+    - [chp eight](ppt_query_target) power point
+    - [chp nine](ppt_query_target) power point
+    - [chp ten](ppt_query_target) power point
+    - [chp eleven](ppt_query_target) power point
+    - [chp twelve](ppt_query_target) power point
+    - [chp thirteen](ppt_query_target) power point
+    - [chp fourteen](ppt_query_target) power point
+    - [chp fifteen](ppt_query_target) power point
+
+- intent: classmap_search
+  examples: |
+    - i want to query about classmap
+    - i want to query classmap
+    - query classmap
+    - search classmap
+    - classmap query
+    - classmap search
+
+- intent: classmap_search_content
+  examples: |
+    - what does [closure](search_target) means
+    - i want to search about [closure](search_target)
+    - what is [closure](search_target)
+    - what is [html](search_target)
+    - what is [css](search_target)
+    - i want to search what [css](search_target) means
+
+- intent: classmap_suggest
+  examples: |
+    - i want to recommand some textbook material
+    - i think i find something useful as textbook
+    - suggest textbook
+    - suggest textbook material
+    - how about add this into textbook
+
+- intent: personal_score_query
+  examples: |
+    - i want to search my personal score
+    - i want to check my personal score
+    - i want to check my personal grade
+    - search personal score
+    - search my personal grade
+    - search my personal score
+    - query my personal score
+    - search my score
+    - query my score
+    - check my score
+    - check my grade
+
+- intent: personal_score_object
+  examples: |
+    - i want to query my grade of [homework 1](score_query_target)
+    - i want to query my grade of [homework 2](score_query_target)
+    - i want to query my grade of [homework 3](score_query_target)
+    - i want to query my grade of [homework 4](score_query_target)
+    - i want to query my grade of [homework 5](score_query_target)
+    - i want to query my grade of [homework 6](score_query_target)
+    - i want to query my grade of [homework 7](score_query_target)
+    - i want to query my grade of [homework 8](score_query_target)
+    - i want to query my grade of [homework 9](score_query_target)
+    - i want to query my grade of [homework 10](score_query_target)
+    - i want to query my grade of [midterm exam](score_query_target)
+    - i want to query my grade of [final exam](score_query_target)
+    - i want to query my grade of [quiz 1](score_query_target)
+    - i want to query my grade of [quiz 2](score_query_target)
+    - i want to query my grade of [quiz 3](score_query_target)
+    - i want to query my grade of [quiz 4](score_query_target)
+    - i want to query my grade of [quiz 5](score_query_target)
+    - i want to query my grade of [quiz 6](score_query_target)
+    - i want to query my grade of [quiz 7](score_query_target)
+    - i want to query my grade of [quiz 8](score_query_target)
+    - i want to query my grade of [quiz 9](score_query_target)
+    - i want to query my grade of [quiz 10](score_query_target)
+    - query my grade of [homework 1](score_query_target)
+    - query my grade of [homework 2](score_query_target)
+    - query my grade of [homework 3](score_query_target)
+    - query my grade of [homework 4](score_query_target)
+    - query my grade of [homework 5](score_query_target)
+    - query my grade of [homework 6](score_query_target)
+    - query my grade of [homework 7](score_query_target)
+    - query my grade of [homework 8](score_query_target)
+    - query my grade of [homework 9](score_query_target)
+    - query my grade of [homework 10](score_query_target)
+    - query my grade of [midterm exam](score_query_target)
+    - query my grade of [final exam](score_query_target)
+    - query my grade of [quiz 1](score_query_target)
+    - query my grade of [quiz 2](score_query_target)
+    - query my grade of [quiz 3](score_query_target)
+    - query my grade of [quiz 4](score_query_target)
+    - query my grade of [quiz 5](score_query_target)
+    - query my grade of [quiz 6](score_query_target)
+    - query my grade of [quiz 7](score_query_target)
+    - query my grade of [quiz 8](score_query_target)
+    - query my grade of [quiz 9](score_query_target)
+    - query my grade of [quiz 10](score_query_target)
+    - [homework 1](score_query_target)
+    - [homework 2](score_query_target)
+    - [homework 3](score_query_target)
+    - [homework 4](score_query_target)
+    - [homework 5](score_query_target)
+    - [homework 6](score_query_target)
+    - [homework 7](score_query_target)
+    - [homework 8](score_query_target)
+    - [homework 9](score_query_target)
+    - [homework 10](score_query_target)
+    - [midterm exam](score_query_target)
+    - [final exam](score_query_target)
+    - [quiz 1](score_query_target)
+    - [quiz 2](score_query_target)
+    - [quiz 3](score_query_target)
+    - [quiz 4](score_query_target)
+    - [quiz 5](score_query_target)
+    - [quiz 6](score_query_target)
+    - [quiz 7](score_query_target)
+    - [quiz 8](score_query_target)
+    - [quiz 9](score_query_target)
+    - [quiz 10](score_query_target)
+
+- intent: personal_quiz_query
+  examples: |
+    - query personal quiz
+    - personal quiz query
+    - personal quiz
+    - search personal quiz
+
+- intent: personal_textbook_query
+  examples: |
+    - query personal textbook
+    - search personal textbook
+    - personal textbook
+
+- synonym: homework_1
+  examples: |
+    - homework 1
+    - homework1
+    - homework one
+
+- synonym: homework_2
+  examples: |
+    - homework two
+    - homework 2
+    - homework2
+
+- synonym: homework_3
+  examples: |
+    - homework3
+    - homework 3
+    - homework three
+
+- synonym: homework_4
+  examples: |
+    - homework four
+    - homework4
+    - homework 4
+
+- synonym: homework_5
+  examples: |
+    - homework five
+    - homework5
+    - homework 5
+
+- synonym: homework_6
+  examples: |
+    - homework six
+    - homework6
+    - homework 6
+
+- synonym: homework_7
+  examples: |
+    - homework seven
+    - homework7
+    - homework 7
+
+- synonym: homework_8
+  examples: |
+    - homework eight
+    - homework8
+    - homework 8
+
+- synonym: homework_9
+  examples: |
+    - homework nine
+    - homework9
+    - homework 9
+
+- synonym: homework_10
+  examples: |
+    - homework ten
+    - homework10
+    - homework 10
+
+- synonym: midterm_exam
+  examples: |
+    - midterm exam
+    - midterm
+    - mid
+
+- synonym: final_exam
+  examples: |
+    - final exam
+    - final
+    - fin
+
+- synonym: quiz_1
+  examples: |
+    - quiz one
+    - quiz 1
+    - quiz1
+
+- synonym: quiz_2
+  examples: |
+    - quiz two
+    - quiz 2
+    - quiz2
+
+- synonym: quiz_3
+  examples: |
+    - quiz three
+    - quiz 3
+    - quiz3
+
+- synonym: quiz_4
+  examples: |
+    - quiz four
+    - quiz 4
+    - quiz4
+
+- synonym: quiz_5
+  examples: |
+    - quiz five
+    - quiz 5
+    - quiz5
+
+- synonym: quiz_6
+  examples: |
+    - quiz six
+    - quiz 6
+    - quiz6
+
+- synonym: quiz_7
+  examples: |
+    - quiz seven
+    - quiz 7
+    - quiz7
+
+- synonym: quiz_8
+  examples: |
+    - quiz eight
+    - quiz 8
+    - quiz8
+
+- synonym: quiz_9
+  examples: |
+    - quiz nine
+    - quiz 9
+    - quiz9
+
+- synonym: quiz_10
+  examples: |
+    - quiz ten
+    - quiz 10
+    - quiz10
+
+- synonym: chapter_1
+  examples: |
+    - chapter1
+    - chapter 1
+    - chapter one
+    - chp one
+    - chp1
+
+- synonym: chapter_2
+  examples: |
+    - chapter2
+    - chapter 2
+    - chapter two
+    - chp2
+    - chp two
+
+- synonym: chapter_3
+  examples: |
+    - chapter3
+    - chapter 3
+    - chapter three
+    - chp three
+    - chp3
+
+- synonym: chapter_4
+  examples: |
+    - chapter4
+    - chapter 4
+    - chapter four
+    - chp four
+    - chp4
+
+- synonym: chapter_5
+  examples: |
+    - chapter5
+    - chapter 5
+    - chp five
+    - chp5
+    - chapter five
+
+- synonym: chapter_6
+  examples: |
+    - chapter6
+    - chapter 6
+    - chapter six
+    - chp six
+    - chp6
+
+- synonym: chapter_7
+  examples: |
+    - chapter7
+    - chapter 7
+    - chapter seven
+    - chp7
+    - chp seven
+
+- synonym: chapter_8
+  examples: |
+    - chapter8
+    - chapter 8
+    - chp8
+    - chapter eight
+    - chp eight
+
+- synonym: chapter_9
+  examples: |
+    - chapter9
+    - chapter 9
+    - chp nine
+    - chapter nine
+    - chp9
+
+- synonym: chapter_10
+  examples: |
+    - chapter10
+    - chapter 10
+    - chapter ten
+    - chp ten
+    - chp10
+
+- synonym: chapter_11
+  examples: |
+    - chapter11
+    - chapter 11
+    - chaper eleven
+    - chp11
+    - chp eleven
+
+- synonym: chapter_12
+  examples: |
+    - chapter12
+    - chapter 12
+    - chapter twelve
+    - chp12
+    - chp twelve
+
+- synonym: chapter_13
+  examples: |
+    - chapter13
+    - chapter 13
+    - chapter thirteen
+    - chp13
+    - chp thirteen
+
+- synonym: chapter_14
+  examples: |
+    - chapter14
+    - chapter 14
+    - chp14
+    - chapter fourteen
+    - chp fourteen
+
+- synonym: chapter_15
+  examples: |
+    - chapter15
+    - chapter 15
+    - chp15
+    - chp fifteen
+    - chapter fifteen
