@@ -41,22 +41,22 @@ responses:
 
   utter_confirm_personal_score_query:
   - custom:
-      intent: personal_score_query
+      intent: confirm_personal_score_query
       responseMessage: "好喔, 那麼你想查的是哪個成績呢"
       endOfChat: False
   utter_confirm_classmap_ppt_query:
   - custom:
-      intent: classmap_ppt_query
+      intent: confirm_classmap_ppt_query
       responseMessage: "好的, 你想查詢哪個章節的投影片"
       endOfChat: False
   utter_confirm_classmap_search:
   - custom:
-      intent: classmap_search
+      intent: confirm_classmap_search
       responseMessage: "ok, 你想查詢什麼"
       endOfChat: False
   utter_classmap_suggest:
   - custom:
-      intent: classmap_suggest
+      intent: confirm_classmap_suggest
       responseMessage: "ok, 你想推薦什麼"
       endOfChat: False
   utter_personal_quiz_query:
@@ -71,45 +71,59 @@ responses:
   utter_faq/java_garbled_code:
   - custom:
       intent: faq/java_garbled_code
+      endOfChat: True
   utter_faq/chinese_annotation_compile:
   - custom:
       intent: faq/chinese_annotation_compile
+      endOfChat: True
   utter_faq/vector_arraylist_difference:
   - custom:
       intent: faq/vector_arraylist_difference
+      endOfChat: True
   utter_faq/java_bean:
   - custom:
       intent: faq/java_bean
+      endOfChat: True
   utter_faq/package_import_path_classpath_difference:
   - custom:
       intent: faq/package_import_path_classpath_difference
+      endOfChat: True
   utter_faq/garbage_collection:
   - custom:
       intent: faq/garbage_collection
+      endOfChat: True
   utter_faq/arraylist_to_list:
   - custom:
       intent: faq/arraylist_to_list
+      endOfChat: True
   utter_faq/layout:
   - custom:
       intent: faq/layout
+      endOfChat: True
   utter_faq/icon_transparency:
   - custom:
       intent: faq/icon_transparency
+      endOfChat: True
   utter_faq/source_usage:
   - custom:
       intent: faq/source_usage
+      endOfChat: True
   utter_faq/jdk1.5_feature:
   - custom:
       intent: faq/jdk1.5_feature
+      endOfChat: True
   utter_faq/jdk1.6_feature:
   - custom:
       intent: faq/jdk1.6_feature
+      endOfChat: True
   utter_faq/jdk1.7_feature:
   - custom:
       intent: faq/jdk1.7_feature
+      endOfChat: True
   utter_faq/jdk1.8_feature:
   - custom:
       intent: faq/jdk1.8_feature
+      endOfChat: True
 
 actions:
 - action_greet
