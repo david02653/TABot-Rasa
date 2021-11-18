@@ -61,6 +61,14 @@ nlu:
     - something goes wrong when i try to compile program with chinese annotation on it, what should i do
     - compile failed with chinese annotation
 
+- intent: faq/chinese_garbled
+  examples: |
+    - Why are garbled characters displayed when reading Chinese files?
+    - Why are garbled characters appearing when reading Chinese files?
+    - Garbled characters when reading Chinese files
+    - Chinese files are garbled
+    - Chinese file garbled problem
+
 - intent: faq/vector_arraylist_difference
   examples: |
     - what is the difference between vector and arraylist
@@ -88,7 +96,7 @@ nlu:
     - what is garbage collection
     - how do garbage collection works
 
-- intent: faq/arraylist_to_list
+- intent: faq/arraylist_to_array
   examples: |
     - how to convert arraylist to list
     - can i convert arraylist to list

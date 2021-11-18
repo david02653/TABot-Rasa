@@ -55,12 +55,16 @@ responses:
   - custom:
       intent: personal_textbook_query
   
+# add chinese_garbled
   utter_faq/java_garbled_code:
   - custom:
       intent: faq/java_garbled_code
   utter_faq/chinese_annotation_compile:
   - custom:
       intent: faq/chinese_annotation_compile
+  utter_faq/chinese_garbled:
+  - custom:
+      intent: faq/chinese_garbled
   utter_faq/vector_arraylist_difference:
   - custom:
       intent: faq/vector_arraylist_difference
@@ -73,9 +77,9 @@ responses:
   utter_faq/garbage_collection:
   - custom:
       intent: faq/garbage_collection
-  utter_faq/arraylist_to_list:
+  utter_faq/arraylist_to_array:
   - custom:
-      intent: faq/arraylist_to_list
+      intent: faq/arraylist_to_array
   utter_faq/layout:
   - custom:
       intent: faq/layout
