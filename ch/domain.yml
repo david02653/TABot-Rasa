@@ -56,9 +56,9 @@ responses:
       endOfChat: False
   utter_classmap_suggest:
   - custom:
-      intent: confirm_classmap_suggest
+      intent: classmap_suggest
       responseMessage: "ok, 你想推薦什麼"
-      endOfChat: False
+      endOfChat: True
   utter_personal_quiz_query:
   - custom:
       intent: personal_quiz_query
