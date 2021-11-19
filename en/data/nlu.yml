@@ -17,6 +17,18 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: help
+  examples: |
+    - I need query function
+    - What's the function?
+    - What are the functions?
+    - What can you do?
+    - Tutorial
+    - how to use?
+    - Instructions
+    - illustrate
+    - getting Started
+
 # - intent: goodbye
 #   examples: |
 #     - good afternoon
@@ -39,6 +51,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - ok
+    - OK
 
 - intent: suggest_review_fail
   examples: |
@@ -49,17 +63,30 @@ nlu:
     - don't like that
     - no way
     - not really
+    - NO
 
 - intent: faq/java_garbled_code
   examples: |
     - Why do garbled code pop out when i compile java program?
     - what should i do with when garbled code show up while compiling java program?
+    - Why are there garbled characters when editing Java programs?
+    - What should I do if garbled codes appear in Java compilation?
+    - Java garbled problem
+    - Java garbled
 
 - intent: faq/chinese_annotation_compile
   examples: |
     - How to solve error about chinese annotation compile？
     - something goes wrong when i try to compile program with chinese annotation on it, what should i do
     - compile failed with chinese annotation
+    - How to solve the problem that Chinese annotations cannot be compile correctly?
+    - Cannot compile with Chinese annotations
+    - Adding Chinese annotation program will break
+    - Chinese annotation is abnormal
+    - Why can't you comment in Chinese
+    - What should I do if the Chinese annotation fails
+    - Chinese annotations cannot be compiled
+    - Unable to compile Chinese annotations
 
 - intent: faq/chinese_garbled
   examples: |
@@ -74,6 +101,11 @@ nlu:
     - what is the difference between vector and arraylist
     - Is there any difference between arraylist and vector?
     - what is the exact difference between vector and arraylist
+    - Expansion of arraylist and vector
+    - Expansion of array lists and vectors
+    - container of vector and arraylist
+    - container for vector and arraylist
+    - Vector and array list container
 
 - intent: faq/java_bean
   examples: |
@@ -82,12 +114,29 @@ nlu:
     - how java bean works
     - how to use java bean
     - why do i need java bean
+    - What is Java Bean? Why use Java Bean?
+    - What is the Java bean
+    - Is java bean useful?
+    - How to use java bean
+    - Why do you want a java bean
+    - Define java bean
+    - Definition of java bean
+    - How to use java bean
+    - java bean
 
 - intent: faq/package_import_path_classpath_difference
   examples: |
     - package, import, path, classpath, what is the difference
     - why is there package, import, path and classpath
     - explain difference between package, import, path and classpath
+    - What is the meaning and difference of package, import, path, classpath?
+    - Is there a difference between package and import, path and classpath?
+    - Is there any specific difference between import, classpath, path, and package?
+    - import,classpath,path,package
+    - The difference between import, classpath, path, package
+    - What is the difference between import, classpath, path, package
+    - How to distinguish import, classpath, path, package
+    - Distinguish import, classpath, path, package
 
 - intent: faq/garbage_collection
   examples: |
@@ -95,6 +144,15 @@ nlu:
     - garbage collection when
     - what is garbage collection
     - how do garbage collection works
+    - When will garbage collection be carried out?
+    - When will the program carry out garbage collection
+    - When will garbage collection take place?
+    - When will garbage collection be executed
+    - Java's garbage collection mechanism
+    - Garbage collection mechanism of jvm
+    - Principle of garbage collection
+    - Why do we need garbage collection
+    - garbage collection
 
 - intent: faq/arraylist_to_array
   examples: |
@@ -102,24 +160,79 @@ nlu:
     - can i convert arraylist to list
     - convert arrarylist to list
     - cast arrayList into list
+    - How to convert arraylist to array
+    - arraylist to array
+    - Convert arraylist to array
 
 - intent: faq/layout
   examples: |
     - how to define layout method
     - i want to do some modify with layout, what should i do
     - is there anyway to change object layout?
+    - How to customize the layout of components
+    - How to customize the layout, such as location and size
+    - How to change the layout of components
+    - How to lay out components
+    - How to arrange components
+    - How to configure the components
+    - How to typeset components
+    - Custom component layout
+    - Component layout
 
 - intent: faq/icon_transparency
   examples: |
     - how to create a transparent icon
     - how to make icon transparency
     - how to create transparenct icon
+    - How to create a translucent icon
+    - How to change the icon to translucent
+    - How to build a translucent icon
+    - Create semi-transparent icons
+    - Translucent icon
+    - The icon is changed to semi-transparent
 
 - intent: faq/source_usage
   examples: |
     - how to detect source usage with java
     - how to check java source usage
     - check status of java source usage
+    - How to detect the resource usage and performance of java
+    - How to see the performance of java and resource usage
+    - How to see the resource usage and performance of java
+    - Java's performance and resource usage
+    - Java's resource usage and performance
+
+- intent: faq/jdk1-5_feature
+    examples: |
+      - What are the new features of jdk1.5
+      - What's new in jdk1.5
+      - What new features are added to jdk1.5
+      - Features of jdk1.5
+      - jdk1.5
+
+  - intent: faq/jdk1-6_feature
+    examples: |
+      - What are the new features of jdk1.6
+      - What's new in jdk1.6
+      - What new features are added to jdk1.6
+      - Features of jdk1.6
+      - jdk1.6
+
+  - intent: faq/jdk1-7_feature
+    examples: |
+      - What are the new features of jdk1.7
+      - What's new in jdk1.7
+      - What new features are added to jdk1.7
+      - Features of jdk1.7
+      - jdk1.7
+
+  - intent: faq/jdk1-8_feature
+    examples: |
+      - What new features are added to jdk1.8
+      - What are the new features of jdk1.8
+      - What's new in jdk1.8
+      - Features of jdk1.8
+      - jdk1.8
 
 - intent: classmap_ppt
   examples: |
@@ -130,6 +243,11 @@ nlu:
     - class ppt
     - query power point
     - query ppt
+    - I want to inquire about the slideshow information
+    - Query slide information
+    - Slideshow information
+    - Course slides
+    - Course slide materials
 
 - intent: classmap_ppt_content
   examples: |
@@ -187,6 +305,14 @@ nlu:
     - search classmap
     - classmap query
     - classmap search
+    - I want to find the course map
+    - Check the course map
+    - Course map query
+    - Course map
+    - Check the course map
+    - Check course knowledge
+    - Query course knowledge
+    - Inquire about course related knowledge
 
 - intent: classmap_search_content
   examples: |
@@ -294,12 +420,31 @@ nlu:
     - personal quiz query
     - personal quiz
     - search personal quiz
+    - Personal examination question inquiry
+    - Query individual exam questions
+    - Individual exam questions
+    - Recommend personalized exam questions
+    - Practice personalized exam questions
+    - Personalized exam review
+    - Practice personalized questions
+    - Practice questions
+    - Practice exam questions
+    - Exam Questions Review
 
 - intent: personal_textbook_query
   examples: |
     - query personal textbook
     - search personal textbook
     - personal textbook
+    - Query personal teaching materials
+    - Personal teaching materials
+    - View personal textbooks
+    - Recommend personalized teaching materials
+    - Practice personalized textbooks
+    - Personalized textbook review
+    - Practice personalized textbooks
+    - Practice materials
+    - Textbook review
 
 - synonym: homework_1
   examples: |

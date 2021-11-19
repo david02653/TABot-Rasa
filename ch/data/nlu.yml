@@ -142,6 +142,8 @@ nlu:
       - 如何偵測java的資源使用情形跟效能
       - java的效能跟資源使用情形怎麼看
       - 怎麼看java的資源使用狀況跟效能
+      - java的效能與資源使用狀況
+      - java的資源使用狀況與效能
 
   - intent: faq/jdk1-5_feature
     examples: |
