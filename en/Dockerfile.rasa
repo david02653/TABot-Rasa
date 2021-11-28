@@ -1,0 +1,10 @@
+FROM rasa/rasa:2.8.5-full
+
+# use root user to install dependency
+USER root
+
+# RUN python -m spacy download zh_core_web_md
+# RUN python -m spacy link zh_core_web_md
+
+# switch back to normal user
+USER 1001
