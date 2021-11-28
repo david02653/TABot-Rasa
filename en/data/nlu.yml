@@ -188,6 +188,7 @@ nlu:
     - what is [html](search_target)
     - what is [css](search_target)
     - i want to search what [css](search_target) means
+    - i want to know about [Arrays](search_target)
 
 - intent: classmap_suggest
   examples: |
