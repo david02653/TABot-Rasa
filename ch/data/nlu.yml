@@ -347,6 +347,7 @@ nlu:
 
   - intent: classmap_search_content
     examples: |
+      - 
       
 
   # - intent: classmap_map
