@@ -34,6 +34,7 @@ nlu:
       - Java亂碼問題
       - Java亂碼
       - java出現亂碼
+      - test
 
   - intent: faq/chinese_annotation_compile
     examples: |
