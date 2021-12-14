@@ -31,157 +31,226 @@ nlu:
     examples: |
       - 軟體開發包含哪些主要活動？
       - 軟體開發要做哪些事情。
+      - 軟體開發的步驟
+      - 軟體開發的流程
   
   - intent: faq/user_requirement
     examples: |
       - 使用者需求是甚麼？
       - 使用者需求的定義？
+      - 使用者需求
+      - 何謂使用者需求
   
   - intent: faq/system_requirement
     examples: |
       - 系統需求是甚麼？
       - 系統需求的定義？
+      - 系統需求
+      - 何謂系統需求
 
   - intent: faq/functional_requirement
     examples: |
       - 功能需求是甚麼？
       - 功能需求的定義？
+      - 功能需求
+      - 何謂功能需求
 
   - intent: faq/functional_requirement_2
     examples: |
       - 有功能需求的案例嗎？
+      - 功能需求的案例
+      - 舉例功能需求
 
   - intent: faq/non_functional_requirement
     examples: |
       - 非功能需求是甚麼？
       - 非功能需求的定義？ 
+      - 非功能需求 
+      - 何謂非功能需求 
 
   - intent: faq/non_functional_requirement_2
     examples: |
       - 有非功能需求的案例嗎？
+      - 非功能需求的案例
+      - 舉例非功能需求
 
   - intent: faq/concept_of_operation
     examples: |
       - 怎麼寫操作概念？
       - 操作概念是甚麼？
+      - 操作概念
+      - 操作概念如何寫？
 
   - intent: faq/MVP
     examples: |
       - MVP是甚麼？
       - MVP的定義？ 
+      - MVP
 
   - intent: faq/wireframe
     examples: |
       - 線框圖是甚麼？
+      - 線框圖
       - Wireframe是甚麼？
+      - Wireframe
+      - 何謂Wireframe
   
   - intent: faq/wireframe_1
     examples: |
       - 線框圖怎麼畫？
+      - 線框圖如何畫？
+      - 如何畫線框圖
       - 有沒有畫線框圖的準則？
   
   - intent: faq/requirement_analyze
     examples: |
       - 需求分析有哪些準則？
+      - 需求分析的準則？
+      - 需求分析
 
   - intent: faq/uml
     examples: |
       - UML是甚麼？
+      - UML
 
   - intent: faq/use_case
     examples: |
       - 使用案例規格是甚麼？
+      - 使用案例規格
+      - 使用案例的規格
+      - use case
 
   - intent: faq/PM
     examples: |
       - 專案管理會做甚麼？
+      - 專案管理的工作
+      - 專案管理
+      - PM
 
   - intent: faq/WBS
     examples: |
       - 甚麼是WBS？
+      - WBS
       - 甚麼是工作分解結構？
+      - 工作分解結構？
 
   - intent: faq/project_forecast
     examples: |
       - 如何進行專案預估？
+      - 專案預估
       - 如何進行工作預估？
+      - 工作預估
 
   - intent: faq/risk
     examples: |
       - 風險是甚麼？
+      - 風險
+      - risk
   
   - intent: faq/board
     examples: |
       - 看板的使用方式？
       - 看板的基本用法？
+      - 看板是什麼
+      - 看板
   
   - intent: faq/dependency_and_association
     examples: |
       - 相依與關聯不一樣在哪裡？
+      - 相依與關聯
   
   - intent: faq/aggregation_and_composition
     examples: |
       - 組合與聚合不一樣在哪裡？
+      - 組合與聚合
 
   - intent: faq/abstraction
     examples: |
       - 抽象化是甚麼？
+      - 何謂抽象化
+      - 抽象化
 
   - intent: faq/modularity
     examples: |
       - 模組化是甚麼？
+      - 何謂模組化
+      - 模組化
 
   - intent: faq/concept_of_operation
     examples: |
       - 凝聚力是甚麼？ 
+      - 何謂凝聚力 
+      - 凝聚力 
 
   - intent: faq/coupling
     examples: |
       - 耦合力是甚麼？
+      - 何謂耦合力
+      - 耦合力
 
   - intent: faq/cohesion_and_coupling_rate
     examples: |
       - 為什麼要High Cohesion, Low Coupling是好的？
       - High Cohesion, Low Coupling是甚麼意思？
+      - High Cohesion, Low Coupling
 
   - intent: faq/system_design
     examples: |
       - 系統設計包含哪些工作?
+      - 系統設計的工作內容
+      - 何謂系統設計
+      - 系統設計
 
   - intent: faq/architecture_design
     examples: |
       - 甚麼是架構設計？
+      - 何謂架構設計
+      - 架構設計
   
   - intent: faq/architecture_design_2
     examples: |
       - 一般Web前後端分離架構分為哪幾層？
+      - Web前後端如何分層
+      - Web前後端的分層
   
   - intent: faq/architecture_design_3
     examples: |
       - 有沒有建議的架構設計方法？
+      - 架構設計方法
+      - 架構如何設計
 
   - intent: faq/interface
     examples: |
       - 甚麼是介面？
       - 介面是甚麼？
       - 介面要怎麼設計？
+      - interface
+      - 介面
 
   - intent: faq/interface_2
     examples: |
       - 介面跟系統整合有甚麼關係？
       - 介面設計跟整合的關聯性是甚麼？
+      - 介面設計跟整合的關聯性
+      - 介面跟系統整合的關係
+      - 介面跟系統整合
 
   - intent: faq/interface_3
     examples: |
       - 介面設計是設計使用者介面(User Interface)嗎?
+      - 介面設計與設計使用者介面
+      - 介面設計與UI
 
   - intent: faq/interface_4
     examples: |
       - 有沒有介面設計的案例？
+      - 介面設計的案例
 
   - intent: faq/design_issue
     examples: |
       - 設計議題(design issue)是甚麼？
+      - design issue
+      - 設計議題
 
   - intent: suggest_review_pass
     examples: |
