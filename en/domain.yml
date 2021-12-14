@@ -61,6 +61,7 @@ responses:
       intent: personal_textbook_query
       endOfChat: True
   
+# add chinese_garbled
   utter_faq/java_garbled_code:
   - custom:
       intent: faq/java_garbled_code
@@ -68,6 +69,10 @@ responses:
   utter_faq/chinese_annotation_compile:
   - custom:
       intent: faq/chinese_annotation_compile
+      endOfChat: True
+  utter_faq/chinese_garbled:
+  - custom:
+      intent: faq/chinese_garbled
       endOfChat: True
   utter_faq/vector_arraylist_difference:
   - custom:
@@ -85,9 +90,9 @@ responses:
   - custom:
       intent: faq/garbage_collection
       endOfChat: True
-  utter_faq/arraylist_to_list:
+  utter_faq/arraylist_to_array:
   - custom:
-      intent: faq/arraylist_to_list
+      intent: faq/arraylist_to_array
       endOfChat: True
   utter_faq/layout:
   - custom:

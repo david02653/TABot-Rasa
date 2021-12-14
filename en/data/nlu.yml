@@ -17,6 +17,18 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: help
+  examples: |
+    - I need query function
+    - What's the function?
+    - What are the functions?
+    - What can you do?
+    - Tutorial
+    - how to use?
+    - Instructions
+    - illustrate
+    - getting Started
+
 # - intent: goodbye
 #   examples: |
 #     - good afternoon
@@ -39,6 +51,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - ok
+    - OK
 
 - intent: suggest_review_fail
   examples: |
@@ -49,23 +63,49 @@ nlu:
     - don't like that
     - no way
     - not really
+    - NO
 
 - intent: faq/java_garbled_code
   examples: |
     - Why do garbled code pop out when i compile java program?
     - what should i do with when garbled code show up while compiling java program?
+    - Why are there garbled characters when editing Java programs?
+    - What should I do if garbled codes appear in Java compilation?
+    - Java garbled problem
+    - Java garbled
 
 - intent: faq/chinese_annotation_compile
   examples: |
     - How to solve error about chinese annotation compile？
     - something goes wrong when i try to compile program with chinese annotation on it, what should i do
     - compile failed with chinese annotation
+    - How to solve the problem that Chinese annotations cannot be compile correctly?
+    - Cannot compile with Chinese annotations
+    - Adding Chinese annotation program will break
+    - Chinese annotation is abnormal
+    - Why can't you comment in Chinese
+    - What should I do if the Chinese annotation fails
+    - Chinese annotations cannot be compiled
+    - Unable to compile Chinese annotations
+
+- intent: faq/chinese_garbled
+  examples: |
+    - Why are garbled characters displayed when reading Chinese files?
+    - Why are garbled characters appearing when reading Chinese files?
+    - Garbled characters when reading Chinese files
+    - Chinese files are garbled
+    - Chinese file garbled problem
 
 - intent: faq/vector_arraylist_difference
   examples: |
     - what is the difference between vector and arraylist
     - Is there any difference between arraylist and vector?
     - what is the exact difference between vector and arraylist
+    - Expansion of arraylist and vector
+    - Expansion of array lists and vectors
+    - container of vector and arraylist
+    - container for vector and arraylist
+    - Vector and array list container
 
 - intent: faq/java_bean
   examples: |
@@ -74,12 +114,29 @@ nlu:
     - how java bean works
     - how to use java bean
     - why do i need java bean
+    - What is Java Bean? Why use Java Bean?
+    - What is the Java bean
+    - Is java bean useful?
+    - How to use java bean
+    - Why do you want a java bean
+    - Define java bean
+    - Definition of java bean
+    - How to use java bean
+    - java bean
 
 - intent: faq/package_import_path_classpath_difference
   examples: |
     - package, import, path, classpath, what is the difference
     - why is there package, import, path and classpath
     - explain difference between package, import, path and classpath
+    - What is the meaning and difference of package, import, path, classpath?
+    - Is there a difference between package and import, path and classpath?
+    - Is there any specific difference between import, classpath, path, and package?
+    - import,classpath,path,package
+    - The difference between import, classpath, path, package
+    - What is the difference between import, classpath, path, package
+    - How to distinguish import, classpath, path, package
+    - Distinguish import, classpath, path, package
 
 - intent: faq/garbage_collection
   examples: |
@@ -87,31 +144,95 @@ nlu:
     - garbage collection when
     - what is garbage collection
     - how do garbage collection works
+    - When will garbage collection be carried out?
+    - When will the program carry out garbage collection
+    - When will garbage collection take place?
+    - When will garbage collection be executed
+    - Java's garbage collection mechanism
+    - Garbage collection mechanism of jvm
+    - Principle of garbage collection
+    - Why do we need garbage collection
+    - garbage collection
 
-- intent: faq/arraylist_to_list
+- intent: faq/arraylist_to_array
   examples: |
     - how to convert arraylist to list
     - can i convert arraylist to list
     - convert arrarylist to list
     - cast arrayList into list
+    - How to convert arraylist to array
+    - arraylist to array
+    - Convert arraylist to array
 
 - intent: faq/layout
   examples: |
     - how to define layout method
     - i want to do some modify with layout, what should i do
     - is there anyway to change object layout?
+    - How to customize the layout of components
+    - How to customize the layout, such as location and size
+    - How to change the layout of components
+    - How to lay out components
+    - How to arrange components
+    - How to configure the components
+    - How to typeset components
+    - Custom component layout
+    - Component layout
 
 - intent: faq/icon_transparency
   examples: |
     - how to create a transparent icon
     - how to make icon transparency
     - how to create transparenct icon
+    - How to create a translucent icon
+    - How to change the icon to translucent
+    - How to build a translucent icon
+    - Create semi-transparent icons
+    - Translucent icon
+    - The icon is changed to semi-transparent
 
 - intent: faq/source_usage
   examples: |
     - how to detect source usage with java
     - how to check java source usage
     - check status of java source usage
+    - How to detect the resource usage and performance of java
+    - How to see the performance of java and resource usage
+    - How to see the resource usage and performance of java
+    - Java's performance and resource usage
+    - Java's resource usage and performance
+
+- intent: faq/jdk1-5_feature
+    examples: |
+      - What are the new features of jdk1.5
+      - What's new in jdk1.5
+      - What new features are added to jdk1.5
+      - Features of jdk1.5
+      - jdk1.5
+
+  - intent: faq/jdk1-6_feature
+    examples: |
+      - What are the new features of jdk1.6
+      - What's new in jdk1.6
+      - What new features are added to jdk1.6
+      - Features of jdk1.6
+      - jdk1.6
+
+  - intent: faq/jdk1-7_feature
+    examples: |
+      - What are the new features of jdk1.7
+      - What's new in jdk1.7
+      - What new features are added to jdk1.7
+      - Features of jdk1.7
+      - jdk1.7
+
+  - intent: faq/jdk1-8_feature
+    examples: |
+      - What new features are added to jdk1.8
+      - What are the new features of jdk1.8
+      - What's new in jdk1.8
+      - Features of jdk1.8
+      - jdk1.8
 
 - intent: classmap_ppt
   examples: |
@@ -122,6 +243,11 @@ nlu:
     - class ppt
     - query power point
     - query ppt
+    - I want to inquire about the slideshow information
+    - Query slide information
+    - Slideshow information
+    - Course slides
+    - Course slide materials
 
 - intent: classmap_ppt_content
   examples: |
@@ -179,6 +305,14 @@ nlu:
     - search classmap
     - classmap query
     - classmap search
+    - I want to find the course map
+    - Check the course map
+    - Course map query
+    - Course map
+    - Check the course map
+    - Check course knowledge
+    - Query course knowledge
+    - Inquire about course related knowledge
 
 - intent: classmap_search_content
   examples: |
@@ -189,6 +323,311 @@ nlu:
     - what is [css](search_target)
     - i want to search what [css](search_target) means
     - i want to know about [Arrays](search_target)
+    - what is [Introduction](search_target)
+    - what is [Introduction to Java Applications](search_target)
+    - what is [First Program in Java](search_target)
+    - what is [Modifying Your First Java Program](search_target)
+    - what is [printf](search_target)
+    - what is [print text](search_target)
+    - what is [Displaying Text with printf](search_target)
+    - what is [Another Application](search_target)
+    - what is [Memory Concepts](search_target)
+    - what is [Arithmetic](search_target)
+    - what is [Decision Making](search_target)
+    - what is [Instance Variables](search_target)
+    - what is [Variables](search_target)
+    - what is [Primitive Types](search_target)
+    - what is [Reference Types](search_target)
+    - what is [Initializing Objects with Constructors](search_target)
+    - what is [Account Class](search_target)
+    - what is [Account Class with a Balance](search_target)
+    - what is [Control](search_target)
+    - what is [Control Statements](search_target)
+    - what is [Sentinel-Controlled Repetition](search_target)
+    - what is [while loop](search_target)
+    - what is [Essentials of Counter-Controlled Repetition](search_target)
+    - what is [for loop](search_target)
+    - what is [for Repetition Statement](search_target)
+    - what is [Examples Using the for Statement](search_target)
+    - what is [switch Multiple-Selection Statement](search_target)
+    - what is [switch](search_target)
+    - what is [Strings in switch Statements](search_target)
+    - what is [break](search_target)
+    - what is [continue](search_target)
+    - what is [Logical Operators](search_target)
+    - what is [Methods](search_target)
+    - what is [Program Modules in Java](search_target)
+    - what is [Modules](search_target)
+    - what is [static Fields](search_target)
+    - what is [static Methods](search_target)
+    - what is [Class Math](search_target)
+    - what is [Notes on Declaring and Using Methods](search_target)
+    - what is [Argument Promotion and Casting](search_target)
+    - what is [Promotion](search_target)
+    - what is [Casting](search_target)
+    - what is [Secure Random-Number Generation](search_target)
+    - what is [Random](search_target)
+    - what is [enum](search_target)
+    - what is [Introducing enum Types](search_target)
+    - what is [Scope of Declarations](search_target)
+    - what is [Method Overloading](search_target)
+    - what is [Overload](search_target)
+    - what is [Variable-Length Argument Lists](search_target)
+    - what is [Command](search_target)
+    - what is [Using Command-Line Arguments](search_target)
+    - what is [Arrays](search_target)
+    - what is [Class Arrays](search_target)
+    - what is [Introduction to Collections and Class ArrayList](search_target)
+    - what is [ArrayList](search_target)
+    - what is [Classes and Objects](search_target)
+    - what is [Time Class Case Study](search_target)
+    - what is [Controlling Access to Members](search_target)
+    - what is [Referring to the Current Object's Members with the this Reference](search_target)
+    - what is [Overloaded Constructors](search_target)
+    - what is [Default and No-Argument Constructors](search_target)
+    - what is [Notes on Set and Get Methods](search_target)
+    - what is [Composition](search_target)
+    - what is [Aggregation](search_target)
+    - what is [enum Types](search_target)
+    - what is [Garbage Collection](search_target)
+    - what is [static Class Members](search_target)
+    - what is [Static Import](search_target)
+    - what is [final Instance Variables](search_target)
+    - what is [Package Access](search_target)
+    - what is [Inheritance](search_target)
+    - what is [Superclasses and Subclasses](search_target)
+    - what is [protected Members](search_target)
+    - what is [Relationship Between Superclasses and Subclasses](search_target)
+    - what is [Constructors in Subclasses](search_target)
+    - i want to search about [Introduction](search_target)
+    - i want to search about [Introduction to Java Applications](search_target)
+    - i want to search about [First Program in Java](search_target)
+    - i want to search about [Modifying Your First Java Program](search_target)
+    - i want to search about [printf](search_target)
+    - i want to search about [print text](search_target)
+    - i want to search about [Displaying Text with printf](search_target)
+    - i want to search about [Another Application](search_target)
+    - i want to search about [Memory Concepts](search_target)
+    - i want to search about [Arithmetic](search_target)
+    - i want to search about [Decision Making](search_target)
+    - i want to search about [Instance Variables](search_target)
+    - i want to search about [Variables](search_target)
+    - i want to search about [Primitive Types](search_target)
+    - i want to search about [Reference Types](search_target)
+    - i want to search about [Initializing Objects with Constructors](search_target)
+    - i want to search about [Account Class](search_target)
+    - i want to search about [Account Class with a Balance](search_target)
+    - i want to search about [Control](search_target)
+    - i want to search about [Control Statements](search_target)
+    - i want to search about [Sentinel-Controlled Repetition](search_target)
+    - i want to search about [while loop](search_target)
+    - i want to search about [Essentials of Counter-Controlled Repetition](search_target)
+    - i want to search about [for loop](search_target)
+    - i want to search about [for Repetition Statement](search_target)
+    - i want to search about [Examples Using the for Statement](search_target)
+    - i want to search about [switch Multiple-Selection Statement](search_target)
+    - i want to search about [switch](search_target)
+    - i want to search about [Strings in switch Statements](search_target)
+    - i want to search about [break](search_target)
+    - i want to search about [continue](search_target)
+    - i want to search about [Logical Operators](search_target)
+    - i want to search about [Methods](search_target)
+    - i want to search about [Program Modules in Java](search_target)
+    - i want to search about [Modules](search_target)
+    - i want to search about [static Fields](search_target)
+    - i want to search about [static Methods](search_target)
+    - i want to search about [Class Math](search_target)
+    - i want to search about [Notes on Declaring and Using Methods](search_target)
+    - i want to search about [Argument Promotion and Casting](search_target)
+    - i want to search about [Promotion](search_target)
+    - i want to search about [Casting](search_target)
+    - i want to search about [Secure Random-Number Generation](search_target)
+    - i want to search about [Random](search_target)
+    - i want to search about [enum](search_target)
+    - i want to search about [Introducing enum Types](search_target)
+    - i want to search about [Scope of Declarations](search_target)
+    - i want to search about [Method Overloading](search_target)
+    - i want to search about [Overload](search_target)
+    - i want to search about [Variable-Length Argument Lists](search_target)
+    - i want to search about [Command](search_target)
+    - i want to search about [Using Command-Line Arguments](search_target)
+    - i want to search about [Arrays](search_target)
+    - i want to search about [Class Arrays](search_target)
+    - i want to search about [Introduction to Collections and Class ArrayList](search_target)
+    - i want to search about [ArrayList](search_target)
+    - i want to search about [Classes and Objects](search_target)
+    - i want to search about [Time Class Case Study](search_target)
+    - i want to search about [Controlling Access to Members](search_target)
+    - i want to search about [Referring to the Current Object's Members with the this Reference](search_target)
+    - i want to search about [Overloaded Constructors](search_target)
+    - i want to search about [Default and No-Argument Constructors](search_target)
+    - i want to search about [Notes on Set and Get Methods](search_target)
+    - i want to search about [Composition](search_target)
+    - i want to search about [Aggregation](search_target)
+    - i want to search about [enum Types](search_target)
+    - i want to search about [Garbage Collection](search_target)
+    - i want to search about [static Class Members](search_target)
+    - i want to search about [Static Import](search_target)
+    - i want to search about [final Instance Variables](search_target)
+    - i want to search about [Package Access](search_target)
+    - i want to search about [Inheritance](search_target)
+    - i want to search about [Superclasses and Subclasses](search_target)
+    - i want to search about [protected Members](search_target)
+    - i want to search about [Relationship Between Superclasses and Subclasses](search_target)
+    - i want to search about [Constructors in Subclasses](search_target)
+    - i want to search what [Introduction](search_target) means
+    - i want to search what [Introduction to Java Applications](search_target) means
+    - i want to search what [First Program in Java](search_target) means
+    - i want to search what [Modifying Your First Java Program](search_target) means
+    - i want to search what [printf](search_target) means
+    - i want to search what [print text](search_target) means
+    - i want to search what [Displaying Text with printf](search_target) means
+    - i want to search what [Another Application](search_target) means
+    - i want to search what [Memory Concepts](search_target) means
+    - i want to search what [Arithmetic](search_target) means
+    - i want to search what [Decision Making](search_target) means
+    - i want to search what [Instance Variables](search_target) means
+    - i want to search what [Variables](search_target) means
+    - i want to search what [Primitive Types](search_target) means
+    - i want to search what [Reference Types](search_target) means
+    - i want to search what [Initializing Objects with Constructors](search_target) means
+    - i want to search what [Account Class](search_target) means
+    - i want to search what [Account Class with a Balance](search_target) means
+    - i want to search what [Control](search_target) means
+    - i want to search what [Control Statements](search_target) means
+    - i want to search what [Sentinel-Controlled Repetition](search_target) means
+    - i want to search what [while loop](search_target) means
+    - i want to search what [Essentials of Counter-Controlled Repetition](search_target) means
+    - i want to search what [for loop](search_target) means
+    - i want to search what [for Repetition Statement](search_target) means
+    - i want to search what [Examples Using the for Statement](search_target) means
+    - i want to search what [switch Multiple-Selection Statement](search_target) means
+    - i want to search what [switch](search_target) means
+    - i want to search what [Strings in switch Statements](search_target) means
+    - i want to search what [break](search_target) means
+    - i want to search what [continue](search_target) means
+    - i want to search what [Logical Operators](search_target) means
+    - i want to search what [Methods](search_target) means
+    - i want to search what [Program Modules in Java](search_target) means
+    - i want to search what [Modules](search_target) means
+    - i want to search what [static Fields](search_target) means
+    - i want to search what [static Methods](search_target) means
+    - i want to search what [Class Math](search_target) means
+    - i want to search what [Notes on Declaring and Using Methods](search_target) means
+    - i want to search what [Argument Promotion and Casting](search_target) means
+    - i want to search what [Promotion](search_target) means
+    - i want to search what [Casting](search_target) means
+    - i want to search what [Secure Random-Number Generation](search_target) means
+    - i want to search what [Random](search_target) means
+    - i want to search what [enum](search_target) means
+    - i want to search what [Introducing enum Types](search_target) means
+    - i want to search what [Scope of Declarations](search_target) means
+    - i want to search what [Method Overloading](search_target) means
+    - i want to search what [Overload](search_target) means
+    - i want to search what [Variable-Length Argument Lists](search_target) means
+    - i want to search what [Command](search_target) means
+    - i want to search what [Using Command-Line Arguments](search_target) means
+    - i want to search what [Arrays](search_target) means
+    - i want to search what [Class Arrays](search_target) means
+    - i want to search what [Introduction to Collections and Class ArrayList](search_target) means
+    - i want to search what [ArrayList](search_target) means
+    - i want to search what [Classes and Objects](search_target) means
+    - i want to search what [Time Class Case Study](search_target) means
+    - i want to search what [Controlling Access to Members](search_target) means
+    - i want to search what [Referring to the Current Object's Members with the this Reference](search_target) means
+    - i want to search what [Overloaded Constructors](search_target) means
+    - i want to search what [Default and No-Argument Constructors](search_target) means
+    - i want to search what [Notes on Set and Get Methods](search_target) means
+    - i want to search what [Composition](search_target) means
+    - i want to search what [Aggregation](search_target) means
+    - i want to search what [enum Types](search_target) means
+    - i want to search what [Garbage Collection](search_target) means
+    - i want to search what [static Class Members](search_target) means
+    - i want to search what [Static Import](search_target) means
+    - i want to search what [final Instance Variables](search_target) means
+    - i want to search what [Package Access](search_target) means
+    - i want to search what [Inheritance](search_target) means
+    - i want to search what [Superclasses and Subclasses](search_target) means
+    - i want to search what [protected Members](search_target) means
+    - i want to search what [Relationship Between Superclasses and Subclasses](search_target) means
+    - i want to search what [Constructors in Subclasses](search_target) means
+    - what does [Introduction](search_target) means
+    - what does [Introduction to Java Applications](search_target) means
+    - what does [First Program in Java](search_target) means
+    - what does [Modifying Your First Java Program](search_target) means
+    - what does [printf](search_target) means
+    - what does [print text](search_target) means
+    - what does [Displaying Text with printf](search_target) means
+    - what does [Another Application](search_target) means
+    - what does [Memory Concepts](search_target) means
+    - what does [Arithmetic](search_target) means
+    - what does [Decision Making](search_target) means
+    - what does [Instance Variables](search_target) means
+    - what does [Variables](search_target) means
+    - what does [Primitive Types](search_target) means
+    - what does [Reference Types](search_target) means
+    - what does [Initializing Objects with Constructors](search_target) means
+    - what does [Account Class](search_target) means
+    - what does [Account Class with a Balance](search_target) means
+    - what does [Control](search_target) means
+    - what does [Control Statements](search_target) means
+    - what does [Sentinel-Controlled Repetition](search_target) means
+    - what does [while loop](search_target) means
+    - what does [Essentials of Counter-Controlled Repetition](search_target) means
+    - what does [for loop](search_target) means
+    - what does [for Repetition Statement](search_target) means
+    - what does [Examples Using the for Statement](search_target) means
+    - what does [switch Multiple-Selection Statement](search_target) means
+    - what does [switch](search_target) means
+    - what does [Strings in switch Statements](search_target) means
+    - what does [break](search_target) means
+    - what does [continue](search_target) means
+    - what does [Logical Operators](search_target) means
+    - what does [Methods](search_target) means
+    - what does [Program Modules in Java](search_target) means
+    - what does [Modules](search_target) means
+    - what does [static Fields](search_target) means
+    - what does [static Methods](search_target) means
+    - what does [Class Math](search_target) means
+    - what does [Notes on Declaring and Using Methods](search_target) means
+    - what does [Argument Promotion and Casting](search_target) means
+    - what does [Promotion](search_target) means
+    - what does [Casting](search_target) means
+    - what does [Secure Random-Number Generation](search_target) means
+    - what does [Random](search_target) means
+    - what does [enum](search_target) means
+    - what does [Introducing enum Types](search_target) means
+    - what does [Scope of Declarations](search_target) means
+    - what does [Method Overloading](search_target) means
+    - what does [Overload](search_target) means
+    - what does [Variable-Length Argument Lists](search_target) means
+    - what does [Command](search_target) means
+    - what does [Using Command-Line Arguments](search_target) means
+    - what does [Arrays](search_target) means
+    - what does [Class Arrays](search_target) means
+    - what does [Introduction to Collections and Class ArrayList](search_target) means
+    - what does [ArrayList](search_target) means
+    - what does [Classes and Objects](search_target) means
+    - what does [Time Class Case Study](search_target) means
+    - what does [Controlling Access to Members](search_target) means
+    - what does [Referring to the Current Object's Members with the this Reference](search_target) means
+    - what does [Overloaded Constructors](search_target) means
+    - what does [Default and No-Argument Constructors](search_target) means
+    - what does [Notes on Set and Get Methods](search_target) means
+    - what does [Composition](search_target) means
+    - what does [Aggregation](search_target) means
+    - what does [enum Types](search_target) means
+    - what does [Garbage Collection](search_target) means
+    - what does [static Class Members](search_target) means
+    - what does [Static Import](search_target) means
+    - what does [final Instance Variables](search_target) means
+    - what does [Package Access](search_target) means
+    - what does [Inheritance](search_target) means
+    - what does [Superclasses and Subclasses](search_target) means
+    - what does [protected Members](search_target) means
+    - what does [Relationship Between Superclasses and Subclasses](search_target) means
+    - what does [Constructors in Subclasses](search_target) means
+
 
 - intent: classmap_suggest
   examples: |
@@ -287,12 +726,31 @@ nlu:
     - personal quiz query
     - personal quiz
     - search personal quiz
+    - Personal examination question inquiry
+    - Query individual exam questions
+    - Individual exam questions
+    - Recommend personalized exam questions
+    - Practice personalized exam questions
+    - Personalized exam review
+    - Practice personalized questions
+    - Practice questions
+    - Practice exam questions
+    - Exam Questions Review
 
 - intent: personal_textbook_query
   examples: |
     - query personal textbook
     - search personal textbook
     - personal textbook
+    - Query personal teaching materials
+    - Personal teaching materials
+    - View personal textbooks
+    - Recommend personalized teaching materials
+    - Practice personalized textbooks
+    - Personalized textbook review
+    - Practice personalized textbooks
+    - Practice materials
+    - Textbook review
 
 - synonym: homework_1
   examples: |

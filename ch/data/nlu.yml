@@ -1,608 +1,958 @@
 nlu:
-- intent: greet
-  examples: |
-    - 你好
-    - 嗨
-    - 安安
-    - 不好意思
-    - 打擾了
-
-- intent: help
-  examples: |
-    - 我需要查詢功能
-    - 有什麼功能
-    - 有哪些功能
-    - 功能有哪些
-    - 你可以幹麻
-    - 你可以做什麼
-    - 教程
-    - 如何使用
-    - 使用說明
-    - 說明
-
-- intent: faq/java_garbled_code
-  examples: |
-    - 為何編輯Java程式會有亂碼?
-    - Java編譯出現亂碼怎麼辦?
-
-- intent: faq/chinese_annotation_compile
-  examples: |
-    - 如何解決遇到中文註解無法正確compile之情況？
-    - 有中文註解編譯不會過
-    - 加中文註解程式會壞掉
-
-- intent: faq/vector_arraylist_difference
-  examples: |
-    - Vector與ArrayList之差異為何?
-    - vector跟arraylist差在哪裡?
-    - arraylist跟vector有差別嗎?
-
-- intent: faq/java_bean
-  examples: |
-    - 什麼是Java Bean？為何要使用Java Bean？
-    - Java bean是啥
-    - java bean有用嗎?
-    - java bean怎麼用
-    - 為什麼要java bean
-
-- intent: faq/package_import_path_classpath_difference
-  examples: |
-    - package, import, path, classpath的意思跟差別在哪裡阿
-    - package跟import跟path還有classpath有差別嗎
-    - import,classpath,path,package有什麼具體的差別嗎 
-
-- intent: faq/garbage_collection
-  examples: |
-    - 什麼時候會進行garbage collection?
-    - 程式什麼時候會進行garbage collection
-    - 垃圾回收什麼時候會進行阿
-    - garbage collection什麼時候會被執行
-
-- intent: faq/arraylist_to_list
-  examples: |
-    - 如何把arraylist轉換成array
-    - 要怎麼把arraylist轉成array
-    - arraylist怎麼轉成array
-    - arraylist要怎麼轉成array
-
-- intent: faq/layout
-  examples: |
-    - 要怎麼自訂元件的layout方式
-    - layout的方式要怎麼自訂,像是位置跟大小
-    - 元件的layout要怎麼改
-
-- intent: faq/icon_transparency
-  examples: |
-    - 要怎麼建立半透明的icon
-    - icon要怎麼改成半透明
-    - 要怎麼建半透明的icon
-
-- intent: faq/source_usage
-  examples: |
-    - 如何偵測java的資源使用情形跟效能
-    - java的效能跟資源使用情形怎麼看
-    - 怎麼看java的資源使用狀況跟效能
-
-# - intent: faq/jdk1-5_feature
-#   examples: |
-#     - jdk1.5有什麼新的特色
-#     - jdk1.5有什麼新的feature
-#     - jdk1.5有加什麼新feature
-
-# - intent: faq/jdk1-6_feature
-#   examples: |
-#     - jdk1.6有什麼新的特色
-#     - jdk1.6有什麼新的feature
-#     - jdk1.6有加什麼新feature
-
-# - intent: faq/jdk1-7_feature
-#   examples: |
-#     - jdk1.7有什麼新的特色
-#     - jdk1.7有什麼新的feature
-#     - jdk1.7有加什麼新feature
-
-# - intent: faq/jdk1-8_feature
-#   examples: |
-#     - jdk1.8有什麼新的特色
-#     - jdk1.8有什麼新的feature
-#     - jdk1.8有加什麼新feature
-
-- intent: suggest_review_pass
-  examples: |
-    - 通過
-    - 可以
-    - 好
-    - 我覺得可以
-    - 好阿
-    - 好喔
-
-- intent: suggest_review_fail
-  examples: |
-    - 不好
-    - 不通過
-    - 不行
-    - 不太好
-    - 再看看
-
-- intent: classmap_ppt
-  examples: |
-    - 我想查詢投影片資料
-    - 查詢頭影片資料
-    - 投影片資料
-    - 課程投影片
-    - 課程投影片資料
-
-- intent: classmap_ppt_content
-  examples: |
-    - 我想查[第一章](ppt_query_target)的投影片
-    - 我想查[第二章](ppt_query_target)的投影片
-    - 我想查[第三章](ppt_query_target)的投影片
-    - 我想查[第四章](ppt_query_target)的投影片
-    - 我想查[第五章](ppt_query_target)的投影片
-    - 我想查[第六章](ppt_query_target)的投影片
-    - 我想查[第七章](ppt_query_target)的投影片
-    - 我想查[第八章](ppt_query_target)的投影片
-    - 我想查[第九章](ppt_query_target)的投影片
-    - 我想查[第十章](ppt_query_target)的投影片
-    - 我想查[第十一章](ppt_query_target)的投影片
-    - 我想查[第十二章](ppt_query_target)的投影片
-    - 我想查[第十三章](ppt_query_target)的投影片
-    - 我想查[第十四章](ppt_query_target)的投影片
-    - 我想查[第十五章](ppt_query_target)的投影片
-    - [第一章](ppt_query_target)
-    - [第二章](ppt_query_target)
-    - [第三章](ppt_query_target)
-    - [第四章](ppt_query_target)
-    - [第五章](ppt_query_target)
-    - [第六章](ppt_query_target)
-    - [第七章](ppt_query_target)
-    - [第八章](ppt_query_target)
-    - [第九章](ppt_query_target)
-    - [第十章](ppt_query_target)
-    - [第十一章](ppt_query_target)
-    - [第十二章](ppt_query_target)
-    - [第十三章](ppt_query_target)
-    - [第十四章](ppt_query_target)
-    - [第十五章](ppt_query_target)
-    - [第一章](ppt_query_target)的投影片
-    - [第二章](ppt_query_target)的投影片
-    - [第三章](ppt_query_target)的投影片
-    - [第四章](ppt_query_target)的投影片
-    - [第五章](ppt_query_target)的投影片
-    - [第六章](ppt_query_target)的投影片
-    - [第七章](ppt_query_target)的投影片
-    - [第八章](ppt_query_target)的投影片
-    - [第九章](ppt_query_target)的投影片
-    - [第十章](ppt_query_target)的投影片
-    - [第十一章](ppt_query_target)的投影片
-    - [第十二章](ppt_query_target)的投影片
-    - [第十三章](ppt_query_target)的投影片
-    - [第十四章](ppt_query_target)的投影片
-    - [第十五章](ppt_query_target)的投影片
-
-- intent: classmap_search
-  examples: |
-    - 我想查尋課程地圖
-    - 查詢課程地圖
-    - 課程地圖查詢
-    - 課程地圖
-    - 查課程地圖
-    - 查課程知識
-    - 查詢課程知識
-    - 查詢課程相關知識
-
-- intent: classmap_search_content
-  examples: |
-    - [閉包](search_target)是什麼
-    - 我想查詢[閉包](search_target)是什麼
-    - 什麼是[閉包](search_target)
-    - [html](search_target)是什麼
-    - 什麼是[css](search_target)
-    - 我想查什麼是[css](search_target)
-
-# - intent: classmap_map
-#   examples: |
-#     - 
-
-# - intent: classmap_map_content
-#   examples: |
-#     - 
-
-- intent: classmap_suggest
-  examples: |
-    - 我想推薦教材
-    - 我覺得可以增加新教材
-    - 推薦教材
-    - 新增教材
-
-# - intent: classmap_suggest_content
-#   examples: |
-#     - 
-
-- intent: personal_score_query
-  examples: |
-    - 我想查詢個人成績
-    - 個人成績查詢
-    - 查詢個人成績
-    - 查詢成績
-    - 成績查詢
-    - 查成績
-    - 可以幫我看一下成績嗎
-    - 我的成績是多少
-
-- intent: personal_score_object
-  examples: |
-    - 我想查[作業一](score_query_target)
-    - 我想查[作業二](score_query_target)
-    - 我想查[作業三](score_query_target)
-    - 我想查[作業四](score_query_target)
-    - 我想查[作業五](score_query_target)
-    - 我想查[作業六](score_query_target)
-    - 我想查[作業七](score_query_target)
-    - 我想查[作業八](score_query_target)
-    - 我想查[作業九](score_query_target)
-    - 我想查[作業十](score_query_target)
-    - 我想查[期中考](score_query_target)
-    - 我想查[期末考](score_query_target)
-    - 我想查[小考一](score_query_target)
-    - 我想查[小考二](score_query_target)
-    - 我想查[小考三](score_query_target)
-    - 我想查[小考四](score_query_target)
-    - 我想查[小考五](score_query_target)
-    - 我想查[小考六](score_query_target)
-    - 我想查[小考七](score_query_target)
-    - 我想查[小考八](score_query_target)
-    - 我想查[小考九](score_query_target)
-    - 我想查[小考十](score_query_target)
-    - 我想查[作業一](score_query_target)的成績
-    - 我想查[作業二](score_query_target)的成績
-    - 我想查[作業三](score_query_target)的成績
-    - 我想查[作業四](score_query_target)的成績
-    - 我想查[作業五](score_query_target)的成績
-    - 我想查[作業六](score_query_target)的成績
-    - 我想查[作業七](score_query_target)的成績
-    - 我想查[作業八](score_query_target)的成績
-    - 我想查[作業九](score_query_target)的成績
-    - 我想查[作業十](score_query_target)的成績
-    - 我想查[期中考](score_query_target)的成績
-    - 我想查[期末考](score_query_target)的成績
-    - 我想查[小考一](score_query_target)的成績
-    - 我想查[小考二](score_query_target)的成績
-    - 我想查[小考三](score_query_target)的成績
-    - 我想查[小考四](score_query_target)的成績
-    - 我想查[小考五](score_query_target)的成績
-    - 我想查[小考六](score_query_target)的成績
-    - 我想查[小考七](score_query_target)的成績
-    - 我想查[小考八](score_query_target)的成績
-    - 我想查[小考九](score_query_target)的成績
-    - 我想查[小考十](score_query_target)的成績
-    - [作業一](score_query_target)
-    - [作業二](score_query_target)
-    - [作業三](score_query_target)
-    - [作業四](score_query_target)
-    - [作業五](score_query_target)
-    - [作業六](score_query_target)
-    - [作業七](score_query_target)
-    - [作業八](score_query_target)
-    - [作業九](score_query_target)
-    - [作業十](score_query_target)
-    - [期中考](score_query_target)
-    - [期末考](score_query_target)
-    - [小考一](score_query_target)
-    - [小考二](score_query_target)
-    - [小考三](score_query_target)
-    - [小考四](score_query_target)
-    - [小考五](score_query_target)
-    - [小考六](score_query_target)
-    - [小考七](score_query_target)
-    - [小考八](score_query_target)
-    - [小考九](score_query_target)
-    - [小考十](score_query_target)
-
-- intent: personal_quiz_query
-  examples: |
-    - 個人考題查詢
-    - 查詢個人考題
-    - 個人考題
-
-- intent: personal_textbook_query
-  examples: |
-    - 查詢個人教材
-    - 個人教材
-    - 看個人教材
-
-# - faq
-# - classmap_ask
-# - classmap_ask_content
-# - classmap_ppt
-# - classmap_ppt_content
-# - classmap_search
-# - classmap_search_content
-# - classmap_map
-# - classmap_map_content
-# - classmap_suggest
-# - classmap_suggest_content
-# - personal_score_query
-# - personal_score_object
-# - personal_quiz_query
-# - personal_textbook_query
-# - suggest_review
-
-- synonym: homework_1
-  examples: |
-    - 作業一
-    - 第一次作業
-    - 作業1
-    - homework1
-    - homework 1
-
-- synonym: homework_2
-  examples: |
-    - 作業二
-    - 第二次作業
-    - 作業2
-    - homework 2
-    - homework2
-
-- synonym: homework_3
-  examples: |
-    - 作業三
-    - 第三次作業
-    - 作業3
-    - homework3
-    - homework 3
-
-- synonym: homework_4
-  examples: |
-    - 作業四
-    - 第四次作業
-    - 作業4
-    - homework4
-    - homework 4
-
-- synonym: homework_5
-  examples: |
-    - 作業五
-    - 第五次作業
-    - 作業5
-    - homework5
-    - homework 5
-
-- synonym: homework_6
-  examples: |
-    - 作業六
-    - 第六次作業
-    - 作業6
-    - homework6
-    - homework 6
-
-- synonym: homework_7
-  examples: |
-    - 作業七
-    - 第七次作業
-    - 作業7
-    - homework7
-    - homework 7
-
-- synonym: homework_8
-  examples: |
-    - 作業八
-    - 第八次作業
-    - 作業8
-    - homework8
-    - homework 8
-
-- synonym: homework_9
-  examples: |
-    - 作業九
-    - 第九次作業
-    - 作業9
-    - homework9
-    - homework 9
-
-- synonym: homework_10
-  examples: |
-    - 作業十
-    - 第十次作業
-    - 作業10
-    - homework10
-    - homework 10
-
-- synonym: midterm_exam
-  examples: |
-    - 期中考
-    - 期中
-    - midterm exam
-    - midterm
-
-- synonym: final_exam
-  examples: |
-    - 期末考
-    - 期末
-    - final exam
-    - final
-
-- synonym: quiz_1
-  examples: |
-    - 小考一
-    - 第一次小考
-    - 小考1
-    - quiz 1
-    - quiz1
-
-- synonym: quiz_2
-  examples: |
-    - 小考二
-    - 第二次小考
-    - 小考2
-    - quiz 2
-    - quiz2
-
-- synonym: quiz_3
-  examples: |
-    - 小考三
-    - 第三次小考
-    - 小考3
-    - quiz 3
-    - quiz3
-
-- synonym: quiz_4
-  examples: |
-    - 小考四
-    - 第四次小考
-    - 小考4
-    - quiz 4
-    - quiz4
-
-- synonym: quiz_5
-  examples: |
-    - 小考五
-    - 第五次小考
-    - 小考5
-    - quiz 5
-    - quiz5
-
-- synonym: quiz_6
-  examples: |
-    - 小考六
-    - 第六次小考
-    - 小考6
-    - quiz 6
-    - quiz6
-
-- synonym: quiz_7
-  examples: |
-    - 小考七
-    - 第七次小考
-    - 小考7
-    - quiz 7
-    - quiz7
-
-- synonym: quiz_8
-  examples: |
-    - 小考八
-    - 第八次小考
-    - 小考8
-    - quiz 8
-    - quiz8
-
-- synonym: quiz_9
-  examples: |
-    - 小考九
-    - 第九次小考
-    - 小考9
-    - quiz 9
-    - quiz9
-
-- synonym: quiz_10
-  examples: |
-    - 小考十
-    - 第十次小考
-    - 小考10
-    - quiz 10
-    - quiz10
-
-- synonym: chapter_1
-  examples: |
-    - chapter1
-    - chapter 1
-    - 第一章
-    - 第1章
-
-- synonym: chapter_2
-  examples: |
-    - chapter2
-    - chapter 2
-    - 第二章
-    - 第2章
-
-- synonym: chapter_3
-  examples: |
-    - chapter3
-    - chapter 3
-    - 第三章
-    - 第3章
-
-- synonym: chapter_4
-  examples: |
-    - chapter4
-    - chapter 4
-    - 第四章
-    - 第4章
-
-- synonym: chapter_5
-  examples: |
-    - chapter5
-    - chapter 5
-    - 第五章
-    - 第5章
-
-- synonym: chapter_6
-  examples: |
-    - chapter6
-    - chapter 6
-    - 第六章
-    - 第6章
-
-- synonym: chapter_7
-  examples: |
-    - chapter7
-    - chapter 7
-    - 第七章
-    - 第7章
-
-- synonym: chapter_8
-  examples: |
-    - chapter8
-    - chapter 8
-    - 第八章
-    - 第8章
-
-- synonym: chapter_9
-  examples: |
-    - chapter9
-    - chapter 9
-    - 第九章
-    - 第9章
-
-- synonym: chapter_10
-  examples: |
-    - chapter10
-    - chapter 10
-    - 第十章
-    - 第10章
-
-- synonym: chapter_11
-  examples: |
-    - chapter11
-    - chapter 11
-    - 第十一章
-    - 第11章
-
-- synonym: chapter_12
-  examples: |
-    - chapter12
-    - chapter 12
-    - 第十二章
-    - 第12章
-
-- synonym: chapter_13
-  examples: |
-    - chapter13
-    - chapter 13
-    - 第十三章
-    - 第13章
-
-- synonym: chapter_14
-  examples: |
-    - chapter14
-    - chapter 14
-    - 第十四章
-    - 第14章
-
-- synonym: chapter_15
-  examples: |
-    - chapter15
-    - chapter 15
-    - 第十五章
-    - 第15章
+  - intent: greet
+    examples: |
+      - 你好
+      - 嗨
+      - 安安
+      - 不好意思
+      - 打擾了
+      - hi
+      - hello
+      - 早安
+      - 午安
+      - 晚安
+
+  - intent: help
+    examples: |
+      - 我需要查詢功能
+      - 有什麼功能
+      - 有哪些功能
+      - 功能有哪些
+      - 你可以幹麻
+      - 你可以做什麼
+      - 教程
+      - 如何使用
+      - 使用說明
+      - 說明
+      - 我該如何使用
+      - 入門
+
+  - intent: faq/java_garbled_code
+    examples: |
+      - 為何編輯Java程式會有亂碼?
+      - Java編譯出現亂碼怎麼辦?
+      - Java亂碼問題
+      - Java亂碼
+      - java出現亂碼
+
+  - intent: faq/chinese_annotation_compile
+    examples: |
+      - 如何解決遇到中文註解無法正確compile之情況？
+      - 有中文註解編譯不會過
+      - 加中文註解程式會壞掉
+      - 中文註解異常
+      - 為什麼不能用中文註解
+      - 中文註解失敗怎麼辦
+      - 中文註解無法編譯
+      - 無法編譯中文註解
+
+  - intent: faq/chinese_garbled
+    examples: |
+      - 為何讀取中文檔案會顯示亂碼?
+      - 為何讀取中文檔案會出現亂碼?
+      - 讀取中文檔案出現亂碼
+      - 中文檔案有亂碼
+      - 中文檔案亂碼問題
+
+  - intent: faq/vector_arraylist_difference
+    examples: |
+      - Vector與ArrayList之差異為何?
+      - vector跟arraylist差在哪裡?
+      - arraylist跟vector有差別嗎?
+      - arraylist跟vector的差別
+      - vector跟arraylist的差別
+      - arraylist與vector的差別
+      - vector與arraylist的差別
+      - arraylist和vector的差別
+      - vector和arraylist的差別
+
+  - intent: faq/java_bean
+    examples: |
+      - 什麼是Java Bean？為何要使用Java Bean？
+      - Java bean是啥
+      - java bean有用嗎?
+      - java bean怎麼用
+      - 為什麼要java bean
+      - 定義java bean
+      - java bean的定義
+      - java bean是什麼
+      - 如何使用java bean
+      - java bean
+
+  - intent: faq/package_import_path_classpath_difference
+    examples: |
+      - package, import, path, classpath的意思跟差別在哪裡阿
+      - package跟import跟path還有classpath有差別嗎
+      - import,classpath,path,package有什麼具體的差別嗎
+      - import,classpath,path,package
+      - import,classpath,path,package的差別
+      - import,classpath,path,package有什麼不同
+      - 如何區分import,classpath,path,package
+      - 區分import,classpath,path,package
+
+  - intent: faq/garbage_collection
+    examples: |
+      - 什麼時候會進行garbage collection?
+      - 程式什麼時候會進行garbage collection
+      - 垃圾回收什麼時候會進行阿
+      - garbage collection什麼時候會被執行
+      - java的garbage collection機制
+      - jvm的garbage collection機制
+      - garbage collection的原理
+      - 為什麼需要garbage collection
+      - garbage collection
+      - 垃圾回收
+
+  - intent: faq/arraylist_to_array
+    examples: |
+      - 如何把arraylist轉換成array
+      - 要怎麼把arraylist轉成array
+      - arraylist怎麼轉成array
+      - arraylist要怎麼轉成array
+      - arraylist to array
+      - arraylist轉換成array
+      - arraylist轉成array
+
+  - intent: faq/layout
+    examples: |
+      - 要怎麼自訂元件的layout方式
+      - layout的方式要怎麼自訂,像是位置跟大小
+      - 元件的layout要怎麼改
+      - 元件如何layout
+      - 元件如何編排
+      - 元件如何配置
+      - 元件如何排版
+      - 自定義元件layout
+      - 自訂元件layout
+      - 元件layout
+
+  - intent: faq/icon_transparency
+    examples: |
+      - 要怎麼建立半透明的icon
+      - 如何建立半透明的icon
+      - icon要怎麼改成半透明
+      - 要怎麼建半透明的icon
+      - 半透明的icon要怎麼建
+      - 建立半透明的icon
+      - 半透明的icon
+      - icon修改成半透明
+
+  - intent: faq/source_usage
+    examples: |
+      - 如何偵測java的資源使用情形跟效能
+      - java的效能跟資源使用情形怎麼看
+      - 怎麼看java的資源使用狀況跟效能
+      - java的效能與資源使用狀況
+      - java的資源使用狀況與效能
+
+  - intent: faq/jdk1-5_feature
+    examples: |
+      - jdk1.5有什麼新的特色
+      - jdk1.5有什麼新的feature
+      - jdk1.5有加什麼新feature
+      - jdk1.5的特色
+      - jdk1.5
+
+  - intent: faq/jdk1-6_feature
+    examples: |
+      - jdk1.6有什麼新的特色
+      - jdk1.6有什麼新的feature
+      - jdk1.6有加什麼新feature
+      - jdk1.6的特色
+      - jdk1.6
+
+  - intent: faq/jdk1-7_feature
+    examples: |
+      - jdk1.7有什麼新的特色
+      - jdk1.7有什麼新的feature
+      - jdk1.7有加什麼新feature
+      - jdk1.7的特色
+      - jdk1.7
+
+  - intent: faq/jdk1-8_feature
+    examples: |
+      - jdk1.8有什麼新的特色
+      - jdk1.8有什麼新的feature
+      - jdk1.8有加什麼新feature
+      - jdk1.8的特色
+      - jdk1.8
+
+  - intent: suggest_review_pass
+    examples: |
+      - 通過
+      - 可以
+      - 好
+      - 我覺得可以
+      - 好阿
+      - 好喔
+      - OK
+      - ok
+      - 0k
+      - 0K
+
+  - intent: suggest_review_fail
+    examples: |
+      - 不好
+      - 不通過
+      - 不行
+      - 不太好
+      - 再看看
+      - NO
+      - no
+      - No
+      - N0
+      - 不
+
+  - intent: classmap_ppt
+    examples: |
+      - 我想查詢投影片資料
+      - 查詢投影片資料
+      - 投影片資料
+      - 課程投影片
+      - 課程投影片資料
+
+  - intent: classmap_ppt_content
+    examples: |
+      - 我想查[第一章](ppt_query_target)的投影片
+      - 我想查[第二章](ppt_query_target)的投影片
+      - 我想查[第三章](ppt_query_target)的投影片
+      - 我想查[第四章](ppt_query_target)的投影片
+      - 我想查[第五章](ppt_query_target)的投影片
+      - 我想查[第六章](ppt_query_target)的投影片
+      - 我想查[第七章](ppt_query_target)的投影片
+      - 我想查[第八章](ppt_query_target)的投影片
+      - 我想查[第九章](ppt_query_target)的投影片
+      - 我想查[第十章](ppt_query_target)的投影片
+      - 我想查[第十一章](ppt_query_target)的投影片
+      - 我想查[第十二章](ppt_query_target)的投影片
+      - 我想查[第十三章](ppt_query_target)的投影片
+      - 我想查[第十四章](ppt_query_target)的投影片
+      - 我想查[第十五章](ppt_query_target)的投影片
+      - [第一章](ppt_query_target)
+      - [第二章](ppt_query_target)
+      - [第三章](ppt_query_target)
+      - [第四章](ppt_query_target)
+      - [第五章](ppt_query_target)
+      - [第六章](ppt_query_target)
+      - [第七章](ppt_query_target)
+      - [第八章](ppt_query_target)
+      - [第九章](ppt_query_target)
+      - [第十章](ppt_query_target)
+      - [第十一章](ppt_query_target)
+      - [第十二章](ppt_query_target)
+      - [第十三章](ppt_query_target)
+      - [第十四章](ppt_query_target)
+      - [第十五章](ppt_query_target)
+      - [第一章](ppt_query_target)的投影片
+      - [第二章](ppt_query_target)的投影片
+      - [第三章](ppt_query_target)的投影片
+      - [第四章](ppt_query_target)的投影片
+      - [第五章](ppt_query_target)的投影片
+      - [第六章](ppt_query_target)的投影片
+      - [第七章](ppt_query_target)的投影片
+      - [第八章](ppt_query_target)的投影片
+      - [第九章](ppt_query_target)的投影片
+      - [第十章](ppt_query_target)的投影片
+      - [第十一章](ppt_query_target)的投影片
+      - [第十二章](ppt_query_target)的投影片
+      - [第十三章](ppt_query_target)的投影片
+      - [第十四章](ppt_query_target)的投影片
+      - [第十五章](ppt_query_target)的投影片
+
+  - intent: classmap_search
+    examples: |
+      - 我想查尋課程地圖
+      - 查詢課程地圖
+      - 課程地圖查詢
+      - 課程地圖
+      - 查課程地圖
+      - 查課程知識
+      - 查詢課程知識
+      - 查詢課程相關知識
+
+  - intent: classmap_search_content
+    examples: |
+      - [閉包](search_target)是什麼
+      - 我想查詢[閉包](search_target)是什麼
+      - 什麼是[閉包](search_target)
+      - [html](search_target)是什麼
+      - 什麼是[css](search_target)
+      - 我想查什麼是[css](search_target)
+      - 我想查詢[簡介](search_target)
+      - 我想查詢[Java專案](search_target)
+      - 我想查詢[第一個程式](search_target)
+      - 我想查詢[顯示文字](search_target)
+      - 我想查詢[另一個應用](search_target)
+      - 我想查詢[記憶結構](search_target)
+      - 我想查詢[算術](search_target)
+      - 我想查詢[決策](search_target)
+      - 我想查詢[變數](search_target)
+      - 我想查詢[基本型態](search_target)
+      - 我想查詢[參考型態](search_target)
+      - 我想查詢[型態](search_target)
+      - 我想查詢[建構子](search_target)
+      - 我想查詢[建構式](search_target)
+      - 我想查詢[構造函數](search_target)
+      - 我想查詢[構造方法](search_target)
+      - 我想查詢[Constructor](search_target)
+      - 我想查詢[帳戶類別](search_target)
+      - 我想查詢[類別](search_target)
+      - 我想查詢[控制敘述](search_target)
+      - 我想查詢[特定資料結束](search_target)
+      - 我想查詢[迴圈](search_target)
+      - 我想查詢[while loop](search_target)
+      - 我想查詢[計數式迴圈](search_target)
+      - 我想查詢[for loop](search_target)
+      - 我想查詢[範例](search_target)
+      - 我想查詢[條件式](search_target)
+      - 我想查詢[switch](search_target)
+      - 我想查詢[break](search_target)
+      - 我想查詢[continue](search_target)
+      - 我想查詢[邏輯運算](search_target)
+      - 我想查詢[Logical Operators](search_target)
+      - 我想查詢[方法](search_target)
+      - 我想查詢[Methods](search_target)
+      - 我想查詢[Modules](search_target)
+      - 我想查詢[Program Modules in Java](search_target)
+      - 我想查詢[靜態類別](search_target)
+      - 我想查詢[靜態欄位](search_target)
+      - 我想查詢[Class Math](search_target)
+      - 我想查詢[static Fields](search_target)
+      - 我想查詢[static Methods](search_target)
+      - 我想查詢[方法注意事項](search_target)
+      - 我想查詢[Casting](search_target)
+      - 我想查詢[晉升](search_target)
+      - 我想查詢[轉型](search_target)
+      - 我想查詢[隨機變數](search_target)
+      - 我想查詢[Random](search_target)
+      - 我想查詢[列舉](search_target)
+      - 我想查詢[枚舉型態](search_target)
+      - 我想查詢[enum](search_target)
+      - 我想查詢[聲明範圍](search_target)
+      - 我想查詢[Scope of Declarations](search_target)
+      - 我想查詢[範例](search_target)
+      - 我想查詢[多載](search_target)
+      - 我想查詢[Overload](search_target)
+      - 我想查詢[Variable-Length Argument Lists](search_target)
+      - 我想查詢[不定長度引數](search_target)
+      - 我想查詢[命令列引數](search_target)
+      - 我想查詢[Command](search_target)
+      - 我想查詢[Using Command-Line Arguments](search_target)
+      - 我想查詢[Arrays](search_target)
+      - 我想查詢[陣列](search_target)
+      - 我想查詢[Arrays](search_target)
+      - 我想查詢[Class Arrays](search_target)
+      - 我想查詢[ArrayList](search_target)
+      - 我想查詢[Classes and Objects](search_target)
+      - 我想查詢[Objects](search_target)
+      - 我想查詢[Time Class Case Study](search_target)
+      - 我想查詢[Controlling Access to Members](search_target)
+      - 我想查詢[Referring to the Current Object's Members with the this Reference](search_target)
+      - 我想查詢[Overloaded Constructors](search_target)
+      - 我想查詢[Default and No-Argument Constructors](search_target)
+      - 我想查詢[Notes on Set and Get Methods](search_target)
+      - 我想查詢[Aggregation](search_target)
+      - 我想查詢[Composition](search_target)
+      - 我想查詢[enum Types](search_target)
+      - 我想查詢[Garbage Collection](search_target)
+      - 我想查詢[static Class Members](search_target)
+      - 我想查詢[Static Import](search_target)
+      - 我想查詢[final Instance Variables](search_target)
+      - 我想查詢[Package Access](search_target)
+      - 我想查詢[Inheritance](search_target)
+      - 我想查詢[Superclasses and Subclasses](search_target)
+      - 我想查詢[protected Members](search_target)
+      - 我想查詢[Relationship Between Superclasses and Subclasses](search_target)
+      - 我想查詢[Constructors in Subclasses](search_target)
+      - 什麼是[簡介](search_target)
+      - 什麼是[Java專案](search_target)
+      - 什麼是[第一個程式](search_target)
+      - 什麼是[顯示文字](search_target)
+      - 什麼是[另一個應用](search_target)
+      - 什麼是[記憶結構](search_target)
+      - 什麼是[算術](search_target)
+      - 什麼是[決策](search_target)
+      - 什麼是[變數](search_target)
+      - 什麼是[基本型態](search_target)
+      - 什麼是[參考型態](search_target)
+      - 什麼是[型態](search_target)
+      - 什麼是[建構子](search_target)
+      - 什麼是[建構式](search_target)
+      - 什麼是[構造函數](search_target)
+      - 什麼是[構造方法](search_target)
+      - 什麼是[Constructor](search_target)
+      - 什麼是[帳戶類別](search_target)
+      - 什麼是[類別](search_target)
+      - 什麼是[控制敘述](search_target)
+      - 什麼是[特定資料結束](search_target)
+      - 什麼是[迴圈](search_target)
+      - 什麼是[while loop](search_target)
+      - 什麼是[計數式迴圈](search_target)
+      - 什麼是[for loop](search_target)
+      - 什麼是[範例](search_target)
+      - 什麼是[條件式](search_target)
+      - 什麼是[switch](search_target)
+      - 什麼是[break](search_target)
+      - 什麼是[continue](search_target)
+      - 什麼是[邏輯運算](search_target)
+      - 什麼是[Logical Operators](search_target)
+      - 什麼是[方法](search_target)
+      - 什麼是[Methods](search_target)
+      - 什麼是[Modules](search_target)
+      - 什麼是[Program Modules in Java](search_target)
+      - 什麼是[靜態類別](search_target)
+      - 什麼是[靜態欄位](search_target)
+      - 什麼是[Class Math](search_target)
+      - 什麼是[static Fields](search_target)
+      - 什麼是[static Methods](search_target)
+      - 什麼是[方法注意事項](search_target)
+      - 什麼是[Casting](search_target)
+      - 什麼是[晉升](search_target)
+      - 什麼是[轉型](search_target)
+      - 什麼是[隨機變數](search_target)
+      - 什麼是[Random](search_target)
+      - 什麼是[列舉](search_target)
+      - 什麼是[枚舉型態](search_target)
+      - 什麼是[enum](search_target)
+      - 什麼是[聲明範圍](search_target)
+      - 什麼是[Scope of Declarations](search_target)
+      - 什麼是[範例](search_target)
+      - 什麼是[多載](search_target)
+      - 什麼是[Overload](search_target)
+      - 什麼是[Variable-Length Argument Lists](search_target)
+      - 什麼是[不定長度引數](search_target)
+      - 什麼是[命令列引數](search_target)
+      - 什麼是[Command](search_target)
+      - 什麼是[Using Command-Line Arguments](search_target)
+      - 什麼是[Arrays](search_target)
+      - 什麼是[陣列](search_target)
+      - 什麼是[Arrays](search_target)
+      - 什麼是[Class Arrays](search_target)
+      - 什麼是[ArrayList](search_target)
+      - 什麼是[Classes and Objects](search_target)
+      - 什麼是[Objects](search_target)
+      - 什麼是[Time Class Case Study](search_target)
+      - 什麼是[Controlling Access to Members](search_target)
+      - 什麼是[Referring to the Current Object's Members with the this Reference](search_target)
+      - 什麼是[Overloaded Constructors](search_target)
+      - 什麼是[Default and No-Argument Constructors](search_target)
+      - 什麼是[Notes on Set and Get Methods](search_target)
+      - 什麼是[Aggregation](search_target)
+      - 什麼是[Composition](search_target)
+      - 什麼是[enum Types](search_target)
+      - 什麼是[Garbage Collection](search_target)
+      - 什麼是[static Class Members](search_target)
+      - 什麼是[Static Import](search_target)
+      - 什麼是[final Instance Variables](search_target)
+      - 什麼是[Package Access](search_target)
+      - 什麼是[Inheritance](search_target)
+      - 什麼是[Superclasses and Subclasses](search_target)
+      - 什麼是[protected Members](search_target)
+      - 什麼是[Relationship Between Superclasses and Subclasses](search_target)
+      - 什麼是[Constructors in Subclasses](search_target)
+      - [簡介](search_target)是什麼
+      - [Java專案](search_target)是什麼
+      - [第一個程式](search_target)是什麼
+      - [顯示文字](search_target)是什麼
+      - [另一個應用](search_target)是什麼
+      - [記憶結構](search_target)是什麼
+      - [算術](search_target)是什麼
+      - [決策](search_target)是什麼
+      - [變數](search_target)是什麼
+      - [基本型態](search_target)是什麼
+      - [參考型態](search_target)是什麼
+      - [型態](search_target)是什麼
+      - [建構子](search_target)是什麼
+      - [建構式](search_target)是什麼
+      - [構造函數](search_target)是什麼
+      - [構造方法](search_target)是什麼
+      - [Constructor](search_target)是什麼
+      - [帳戶類別](search_target)是什麼
+      - [類別](search_target)是什麼
+      - [控制敘述](search_target)是什麼
+      - [特定資料結束](search_target)是什麼
+      - [迴圈](search_target)是什麼
+      - [while loop](search_target)是什麼
+      - [計數式迴圈](search_target)是什麼
+      - [for loop](search_target)是什麼
+      - [範例](search_target)是什麼
+      - [條件式](search_target)是什麼
+      - [switch](search_target)是什麼
+      - [break](search_target)是什麼
+      - [continue](search_target)是什麼
+      - [邏輯運算](search_target)是什麼
+      - [Logical Operators](search_target)是什麼
+      - [方法](search_target)是什麼
+      - [Methods](search_target)是什麼
+      - [Modules](search_target)是什麼
+      - [Program Modules in Java](search_target)是什麼
+      - [靜態類別](search_target)是什麼
+      - [靜態欄位](search_target)是什麼
+      - [Class Math](search_target)是什麼
+      - [static Fields](search_target)是什麼
+      - [static Methods](search_target)是什麼
+      - [方法注意事項](search_target)是什麼
+      - [Casting](search_target)是什麼
+      - [晉升](search_target)是什麼
+      - [轉型](search_target)是什麼
+      - [隨機變數](search_target)是什麼
+      - [Random](search_target)是什麼
+      - [列舉](search_target)是什麼
+      - [枚舉型態](search_target)是什麼
+      - [enum](search_target)是什麼
+      - [聲明範圍](search_target)是什麼
+      - [Scope of Declarations](search_target)是什麼
+      - [範例](search_target)是什麼
+      - [多載](search_target)是什麼
+      - [Overload](search_target)是什麼
+      - [Variable-Length Argument Lists](search_target)是什麼
+      - [不定長度引數](search_target)是什麼
+      - [命令列引數](search_target)是什麼
+      - [Command](search_target)是什麼
+      - [Using Command-Line Arguments](search_target)是什麼
+      - [Arrays](search_target)是什麼
+      - [陣列](search_target)是什麼
+      - [Arrays](search_target)是什麼
+      - [Class Arrays](search_target)是什麼
+      - [ArrayList](search_target)是什麼
+      - [Classes and Objects](search_target)是什麼
+      - [Objects](search_target)是什麼
+      - [Time Class Case Study](search_target)是什麼
+      - [Controlling Access to Members](search_target)是什麼
+      - [Referring to the Current Object's Members with the this Reference](search_target)是什麼
+      - [Overloaded Constructors](search_target)是什麼
+      - [Default and No-Argument Constructors](search_target)是什麼
+      - [Notes on Set and Get Methods](search_target)是什麼
+      - [Aggregation](search_target)是什麼
+      - [Composition](search_target)是什麼
+      - [enum Types](search_target)是什麼
+      - [Garbage Collection](search_target)是什麼
+      - [static Class Members](search_target)是什麼
+      - [Static Import](search_target)是什麼
+      - [final Instance Variables](search_target)是什麼
+      - [Package Access](search_target)是什麼
+      - [Inheritance](search_target)是什麼
+      - [Superclasses and Subclasses](search_target)是什麼
+      - [protected Members](search_target)是什麼
+      - [Relationship Between Superclasses and Subclasses](search_target)是什麼
+      - [Constructors in Subclasses](search_target)是什麼
+
+  # - intent: classmap_map
+  #   examples: |
+  #     -
+
+  # - intent: classmap_map_content
+  #   examples: |
+  #     -
+
+  - intent: classmap_suggest
+    examples: |
+      - 我想推薦教材
+      - 我覺得可以增加新教材
+      - 推薦教材
+      - 新增教材
+
+  # - intent: classmap_suggest_content
+  #   examples: |
+  #     -
+
+  - intent: personal_score_query
+    examples: |
+      - 我想查詢個人成績
+      - 個人成績查詢
+      - 查詢個人成績
+      - 查詢成績
+      - 成績查詢
+      - 查成績
+      - 可以幫我看一下成績嗎
+      - 我的成績是多少
+
+  - intent: personal_score_object
+    examples: |
+      - 我想查[作業一](score_query_target)
+      - 我想查[作業二](score_query_target)
+      - 我想查[作業三](score_query_target)
+      - 我想查[作業四](score_query_target)
+      - 我想查[作業五](score_query_target)
+      - 我想查[作業六](score_query_target)
+      - 我想查[作業七](score_query_target)
+      - 我想查[作業八](score_query_target)
+      - 我想查[作業九](score_query_target)
+      - 我想查[作業十](score_query_target)
+      - 我想查[期中考](score_query_target)
+      - 我想查[期末考](score_query_target)
+      - 我想查[小考一](score_query_target)
+      - 我想查[小考二](score_query_target)
+      - 我想查[小考三](score_query_target)
+      - 我想查[小考四](score_query_target)
+      - 我想查[小考五](score_query_target)
+      - 我想查[小考六](score_query_target)
+      - 我想查[小考七](score_query_target)
+      - 我想查[小考八](score_query_target)
+      - 我想查[小考九](score_query_target)
+      - 我想查[小考十](score_query_target)
+      - 我想查[作業一](score_query_target)的成績
+      - 我想查[作業二](score_query_target)的成績
+      - 我想查[作業三](score_query_target)的成績
+      - 我想查[作業四](score_query_target)的成績
+      - 我想查[作業五](score_query_target)的成績
+      - 我想查[作業六](score_query_target)的成績
+      - 我想查[作業七](score_query_target)的成績
+      - 我想查[作業八](score_query_target)的成績
+      - 我想查[作業九](score_query_target)的成績
+      - 我想查[作業十](score_query_target)的成績
+      - 我想查[期中考](score_query_target)的成績
+      - 我想查[期末考](score_query_target)的成績
+      - 我想查[小考一](score_query_target)的成績
+      - 我想查[小考二](score_query_target)的成績
+      - 我想查[小考三](score_query_target)的成績
+      - 我想查[小考四](score_query_target)的成績
+      - 我想查[小考五](score_query_target)的成績
+      - 我想查[小考六](score_query_target)的成績
+      - 我想查[小考七](score_query_target)的成績
+      - 我想查[小考八](score_query_target)的成績
+      - 我想查[小考九](score_query_target)的成績
+      - 我想查[小考十](score_query_target)的成績
+      - [作業一](score_query_target)
+      - [作業二](score_query_target)
+      - [作業三](score_query_target)
+      - [作業四](score_query_target)
+      - [作業五](score_query_target)
+      - [作業六](score_query_target)
+      - [作業七](score_query_target)
+      - [作業八](score_query_target)
+      - [作業九](score_query_target)
+      - [作業十](score_query_target)
+      - [期中考](score_query_target)
+      - [期末考](score_query_target)
+      - [小考一](score_query_target)
+      - [小考二](score_query_target)
+      - [小考三](score_query_target)
+      - [小考四](score_query_target)
+      - [小考五](score_query_target)
+      - [小考六](score_query_target)
+      - [小考七](score_query_target)
+      - [小考八](score_query_target)
+      - [小考九](score_query_target)
+      - [小考十](score_query_target)
+
+  - intent: personal_quiz_query
+    examples: |
+      - 個人考題查詢
+      - 查詢個人考題
+      - 個人考題
+      - 推薦個人化考題
+      - 練習個人化考題
+      - 個人化考題複習
+      - 練習個人化題目
+      - 練習題目
+      - 練習考題
+      - 考題複習
+
+  - intent: personal_textbook_query
+    examples: |
+      - 查詢個人教材
+      - 個人教材
+      - 看個人教材
+      - 推薦個人化教材
+      - 練習個人化教材
+      - 個人化教材複習
+      - 練習個人化教材
+      - 練習教材
+      - 教材複習
+
+  # - faq
+  # - classmap_ask
+  # - classmap_ask_content
+  # - classmap_ppt
+  # - classmap_ppt_content
+  # - classmap_search
+  # - classmap_search_content
+  # - classmap_map
+  # - classmap_map_content
+  # - classmap_suggest
+  # - classmap_suggest_content
+  # - personal_score_query
+  # - personal_score_object
+  # - personal_quiz_query
+  # - personal_textbook_query
+  # - suggest_review
+
+  - synonym: homework_1
+    examples: |
+      - 作業一
+      - 第一次作業
+      - 作業1
+      - homework1
+      - homework 1
+
+  - synonym: homework_2
+    examples: |
+      - 作業二
+      - 第二次作業
+      - 作業2
+      - homework 2
+      - homework2
+
+  - synonym: homework_3
+    examples: |
+      - 作業三
+      - 第三次作業
+      - 作業3
+      - homework3
+      - homework 3
+
+  - synonym: homework_4
+    examples: |
+      - 作業四
+      - 第四次作業
+      - 作業4
+      - homework4
+      - homework 4
+
+  - synonym: homework_5
+    examples: |
+      - 作業五
+      - 第五次作業
+      - 作業5
+      - homework5
+      - homework 5
+
+  - synonym: homework_6
+    examples: |
+      - 作業六
+      - 第六次作業
+      - 作業6
+      - homework6
+      - homework 6
+
+  - synonym: homework_7
+    examples: |
+      - 作業七
+      - 第七次作業
+      - 作業7
+      - homework7
+      - homework 7
+
+  - synonym: homework_8
+    examples: |
+      - 作業八
+      - 第八次作業
+      - 作業8
+      - homework8
+      - homework 8
+
+  - synonym: homework_9
+    examples: |
+      - 作業九
+      - 第九次作業
+      - 作業9
+      - homework9
+      - homework 9
+
+  - synonym: homework_10
+    examples: |
+      - 作業十
+      - 第十次作業
+      - 作業10
+      - homework10
+      - homework 10
+
+  - synonym: midterm_exam
+    examples: |
+      - 期中考
+      - 期中
+      - midterm exam
+      - midterm
+
+  - synonym: final_exam
+    examples: |
+      - 期末考
+      - 期末
+      - final exam
+      - final
+
+  - synonym: quiz_1
+    examples: |
+      - 小考一
+      - 第一次小考
+      - 小考1
+      - quiz 1
+      - quiz1
+
+  - synonym: quiz_2
+    examples: |
+      - 小考二
+      - 第二次小考
+      - 小考2
+      - quiz 2
+      - quiz2
+
+  - synonym: quiz_3
+    examples: |
+      - 小考三
+      - 第三次小考
+      - 小考3
+      - quiz 3
+      - quiz3
+
+  - synonym: quiz_4
+    examples: |
+      - 小考四
+      - 第四次小考
+      - 小考4
+      - quiz 4
+      - quiz4
+
+  - synonym: quiz_5
+    examples: |
+      - 小考五
+      - 第五次小考
+      - 小考5
+      - quiz 5
+      - quiz5
+
+  - synonym: quiz_6
+    examples: |
+      - 小考六
+      - 第六次小考
+      - 小考6
+      - quiz 6
+      - quiz6
+
+  - synonym: quiz_7
+    examples: |
+      - 小考七
+      - 第七次小考
+      - 小考7
+      - quiz 7
+      - quiz7
+
+  - synonym: quiz_8
+    examples: |
+      - 小考八
+      - 第八次小考
+      - 小考8
+      - quiz 8
+      - quiz8
+
+  - synonym: quiz_9
+    examples: |
+      - 小考九
+      - 第九次小考
+      - 小考9
+      - quiz 9
+      - quiz9
+
+  - synonym: quiz_10
+    examples: |
+      - 小考十
+      - 第十次小考
+      - 小考10
+      - quiz 10
+      - quiz10
+
+  - synonym: chapter_1
+    examples: |
+      - chapter1
+      - chapter 1
+      - 第一章
+      - 第1章
+
+  - synonym: chapter_2
+    examples: |
+      - chapter2
+      - chapter 2
+      - 第二章
+      - 第2章
+
+  - synonym: chapter_3
+    examples: |
+      - chapter3
+      - chapter 3
+      - 第三章
+      - 第3章
+
+  - synonym: chapter_4
+    examples: |
+      - chapter4
+      - chapter 4
+      - 第四章
+      - 第4章
+
+  - synonym: chapter_5
+    examples: |
+      - chapter5
+      - chapter 5
+      - 第五章
+      - 第5章
+
+  - synonym: chapter_6
+    examples: |
+      - chapter6
+      - chapter 6
+      - 第六章
+      - 第6章
+
+  - synonym: chapter_7
+    examples: |
+      - chapter7
+      - chapter 7
+      - 第七章
+      - 第7章
+
+  - synonym: chapter_8
+    examples: |
+      - chapter8
+      - chapter 8
+      - 第八章
+      - 第8章
+
+  - synonym: chapter_9
+    examples: |
+      - chapter9
+      - chapter 9
+      - 第九章
+      - 第9章
+
+  - synonym: chapter_10
+    examples: |
+      - chapter10
+      - chapter 10
+      - 第十章
+      - 第10章
+
+  - synonym: chapter_11
+    examples: |
+      - chapter11
+      - chapter 11
+      - 第十一章
+      - 第11章
+
+  - synonym: chapter_12
+    examples: |
+      - chapter12
+      - chapter 12
+      - 第十二章
+      - 第12章
+
+  - synonym: chapter_13
+    examples: |
+      - chapter13
+      - chapter 13
+      - 第十三章
+      - 第13章
+
+  - synonym: chapter_14
+    examples: |
+      - chapter14
+      - chapter 14
+      - 第十四章
+      - 第14章
+
+  - synonym: chapter_15
+    examples: |
+      - chapter15
+      - chapter 15
+      - 第十五章
+      - 第15章

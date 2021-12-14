@@ -20,6 +20,13 @@ intents:
 - personal_quiz_query
 - personal_textbook_query
 
+# - action_greet
+# - action_suggest_review_pass
+# - action_suggest_review_fail
+# - action_personal_score_query
+# - action_classmap_search
+# - action_classmap_ppt
+
 entities:
 - score_query_target
 - ppt_query_target
@@ -31,9 +38,9 @@ responses:
       Hello! How can I help you?
   - text: |
       Hi!
-  utter_ask_email:
-  - text: |
-      What is your email address?
+#   utter_ask_email:
+#   - text: |
+#       What is your email address?
   utter_temp_help:
   - text: 了解
   - text: 展示使用說明
@@ -68,6 +75,7 @@ responses:
       intent: personal_textbook_query
       endOfChat: True
   
+# add chinese_garbled
   utter_faq/java_garbled_code:
   - custom:
       intent: faq/java_garbled_code
@@ -75,6 +83,10 @@ responses:
   utter_faq/chinese_annotation_compile:
   - custom:
       intent: faq/chinese_annotation_compile
+      endOfChat: True
+  utter_faq/chinese_garbled:
+  - custom:
+      intent: faq/chinese_garbled
       endOfChat: True
   utter_faq/vector_arraylist_difference:
   - custom:
@@ -92,9 +104,9 @@ responses:
   - custom:
       intent: faq/garbage_collection
       endOfChat: True
-  utter_faq/arraylist_to_list:
+  utter_faq/arraylist_to_array:
   - custom:
-      intent: faq/arraylist_to_list
+      intent: faq/arraylist_to_array
       endOfChat: True
   utter_faq/layout:
   - custom:
