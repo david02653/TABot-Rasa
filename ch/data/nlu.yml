@@ -33,14 +33,14 @@ nlu:
       - 軟體開發要做哪些事情。
       - 軟體開發的步驟
       - 軟體開發的流程
-  
+
   - intent: faq/user_requirement
     examples: |
       - 使用者需求是甚麼？
       - 使用者需求的定義？
       - 使用者需求
       - 何謂使用者需求
-  
+
   - intent: faq/system_requirement
     examples: |
       - 系統需求是甚麼？
@@ -66,7 +66,7 @@ nlu:
       - 非功能需求是甚麼？
       - 非功能需求的定義？ 
       - 非功能需求 
-      - 何謂非功能需求 
+      - 何謂非功能需求
 
   - intent: faq/non_functional_requirement_2
     examples: |
@@ -94,14 +94,14 @@ nlu:
       - Wireframe是甚麼？
       - Wireframe
       - 何謂Wireframe
-  
+
   - intent: faq/wireframe_1
     examples: |
       - 線框圖怎麼畫？
       - 線框圖如何畫？
       - 如何畫線框圖
       - 有沒有畫線框圖的準則？
-  
+
   - intent: faq/requirement_analyze
     examples: |
       - 需求分析有哪些準則？
@@ -146,19 +146,19 @@ nlu:
       - 風險是甚麼？
       - 風險
       - risk
-  
+
   - intent: faq/board
     examples: |
       - 看板的使用方式？
       - 看板的基本用法？
       - 看板是什麼
       - 看板
-  
+
   - intent: faq/dependency_and_association
     examples: |
       - 相依與關聯不一樣在哪裡？
       - 相依與關聯
-  
+
   - intent: faq/aggregation_and_composition
     examples: |
       - 組合與聚合不一樣在哪裡？
@@ -180,7 +180,7 @@ nlu:
     examples: |
       - 凝聚力是甚麼？ 
       - 何謂凝聚力 
-      - 凝聚力 
+      - 凝聚力
 
   - intent: faq/coupling
     examples: |
@@ -206,13 +206,13 @@ nlu:
       - 甚麼是架構設計？
       - 何謂架構設計
       - 架構設計
-  
+
   - intent: faq/architecture_design_2
     examples: |
       - 一般Web前後端分離架構分為哪幾層？
       - Web前後端如何分層
       - Web前後端的分層
-  
+
   - intent: faq/architecture_design_3
     examples: |
       - 有沒有建議的架構設計方法？
@@ -518,27 +518,505 @@ nlu:
       - 我想查詢[工作待辦清單](search_target)
       - 我想查詢[可描述功能需求](search_target)
       - 我想查詢[預估點數](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
-      - 我想查詢[閉包](search_target)
+      - 我想查詢[Sprint Planning](search_target)
+      - 我想查詢[Daily Scrum](search_target)
+      - 我想查詢[Sprint Review](search_target)
+      - 我想查詢[Sprint Retrospective](search_target)
+      - 我想查詢[Scrum Master的特質](search_target)
+      - 我想查詢[Scrum Master](search_target)
+      - 我想查詢[Scrum框架](search_target)
+      - 我想查詢[價值導向](search_target)
+      - 我想查詢[迭代式](search_target)
+      - 我想查詢[TDD Process](search_target)
+      - 我想查詢[Refactor as needed](search_target)
+      - 我想查詢[效能測試](search_target)
+      - 我想查詢[需求設計](search_target)
+      - 我想查詢[A/B測試](search_target)
+      - 我想查詢[安全性測試](search_target)
+      - 我想查詢[預防](search_target)
+      - 我想查詢[測試方法](search_target)
+      - 我想查詢[軟體開發流程](search_target)
+      - 我想查詢[開發或維護軟體系統為目標](search_target)
+      - 我想查詢[Scope](search_target)
+      - 我想查詢[time](search_target)
+      - 我想查詢[cost](search_target)
+      - 我想查詢[quality](search_target)
+      - 我想查詢[專案管理](search_target)
+      - 我想查詢[Initiating](search_target)
+      - 我想查詢[Planning](search_target)
+      - 我想查詢[Controlling](search_target)
+      - 我想查詢[Executing](search_target)
+      - 我想查詢[Closing](search_target)
+      - 我想查詢[WBS](search_target)
+      - 我想查詢[DoD提出](search_target)
+      - 我想查詢[樹狀階層式](search_target)
+      - 我想查詢[時程](search_target)
+      - 我想查詢[所需人力](search_target)
+      - 我想查詢[產品規模或複雜度](search_target)
+      - 我想查詢[Activity estimation](search_target)
+      - 我想查詢[Project Lifecycle](search_target)
+      - 我想查詢[定期會議](search_target)
+      - 我想查詢[里程碑會議](search_target)
+      - 我想查詢[專案監控的步驟](search_target)
+      - 我想查詢[Location](search_target)
+      - 我想查詢[Attendance](search_target)
+      - 我想查詢[Administrative Closure](search_target)
+      - 我想查詢[Contract Close-out](search_target)
+      - 我想查詢[Initiating](search_target)
+      - 我想查詢[Planning](search_target)
+      - 我想查詢[Controlling](search_target)
+      - 我想查詢[Executing](search_target)
+      - 我想查詢[Closing](search_target)
+      - 我想查詢[GanttProject](search_target)
+      - 我想查詢[ProjectLibre](search_target)
+      - 我想查詢[Microsoft Office Project](search_target)
+      - 什麼是[問題癥結](search_target)
+      - 什麼是[複雜性](search_target)
+      - 什麼是[一致性](search_target)
+      - 什麼是[隱藏性](search_target)
+      - 什麼是[易變性](search_target)
+      - 什麼是[方法](search_target)
+      - 什麼是[工具](search_target)
+      - 什麼是[流程](search_target)
+      - 什麼是[需求分析](search_target)
+      - 什麼是[設計](search_target)
+      - 什麼是[實作與整合](search_target)
+      - 什麼是[測試](search_target)
+      - 什麼是[專案管理](search_target)
+      - 什麼是[瀑布式開發流程](search_target)
+      - 什麼是[雛型模型](search_target)
+      - 什麼是[極限製程](search_target)
+      - 什麼是[SCRUM](search_target)
+      - 什麼是[功能性使用者需求](search_target)
+      - 什麼是[功能性系統需求](search_target)
+      - 什麼是[非功能性使用者需求](search_target)
+      - 什麼是[非功能性系統需求](search_target)
+      - 什麼是[軟體需求規格書](search_target)
+      - 什麼是[services the system should provide](search_target)
+      - 什麼是[particular inputs/situations](search_target)
+      - 什麼是[constraints on the services/development process/standards](search_target)
+      - 什麼是[系統品質的要求與限制](search_target)
+      - 什麼是[系統應該具備的特性](search_target)
+      - 什麼是[產品需求](search_target)
+      - 什麼是[組織需求](search_target)
+      - 什麼是[外部需求](search_target)
+      - 什麼是[Non-Functional User Requirement](search_target)
+      - 什麼是[Non-Functional System Requirement](search_target)
+      - 什麼是[Speed](search_target)
+      - 什麼是[Size](search_target)
+      - 什麼是[Ease of use](search_target)
+      - 什麼是[Reliability](search_target)
+      - 什麼是[Portability](search_target)
+      - 什麼是[可行性分析](search_target)
+      - 什麼是[需求擷取(人物誌,線框圖)](search_target)
+      - 什麼是[需求分析](search_target)
+      - 什麼是[需求規格化](search_target)
+      - 什麼是[需求確認](search_target)
+      - 什麼是[UML圖形的分類](search_target)
+      - 什麼是[UML工具](search_target)
+      - 什麼是[使用案例](search_target)
+      - 什麼是[行為者](search_target)
+      - 什麼是[Base use case](search_target)
+      - 什麼是[Extension use case](search_target)
+      - 什麼是[使用案例的一般化](search_target)
+      - 什麼是[將屬性與操作放入到合適類別中](search_target)
+      - 什麼是[設定類別間的關係](search_target)
+      - 什麼是[描述系統中物件的類型](search_target)
+      - 什麼是[類型間的各種靜態關係](search_target)
+      - 什麼是[類別(Class)](search_target)
+      - 什麼是[物件(Object)](search_target)
+      - 什麼是[屬性(Attribute)](search_target)
+      - 什麼是[方法(Method)](search_target)
+      - 什麼是[類別關聯性(Relationship)](search_target)
+      - 什麼是["Uses a"和"Knows a"關係](search_target)
+      - 什麼是[Dependency](search_target)
+      - 什麼是[Association](search_target)
+      - 什麼是[Aggregation](search_target)
+      - 什麼是[Composition](search_target)
+      - 什麼是["Is a"和"Has a"關係](search_target)
+      - 什麼是["Is a"和"Can do"關係](search_target)
+      - 什麼是[抽象類別](search_target)
+      - 什麼是[抽象方法](search_target)
+      - 什麼是[需求敘述](search_target)
+      - 什麼是[識別出所有的類別](search_target)
+      - 什麼是[建立類別間的關係](search_target)
+      - 什麼是[設定屬性](search_target)
+      - 什麼是[設定方法](search_target)
+      - 什麼是[Project Management](search_target)
+      - 什麼是[專案初始與規劃](search_target)
+      - 什麼是[專案執行](search_target)
+      - 什麼是[專案監控](search_target)
+      - 什麼是[樹狀階層式架構](search_target)
+      - 什麼是[產品規模](search_target)
+      - 什麼是[複雜度](search_target)
+      - 什麼是[所需人力](search_target)
+      - 什麼是[所需時程](search_target)
+      - 什麼是[同時工作數量](search_target)
+      - 什麼是[抽象化階層](search_target)
+      - 什麼是[程序抽象化](search_target)
+      - 什麼是[資料抽象化](search_target)
+      - 什麼是[軟體單元](search_target)
+      - 什麼是[High Cohesion](search_target)
+      - 什麼是[Low Coupling](search_target)
+      - 什麼是[靜態面與動態面](search_target)
+      - 什麼是[模組](search_target)
+      - 什麼是[Module](search_target)
+      - 什麼是[階層架構樣式](search_target)
+      - 什麼是[儲存庫架構](search_target)
+      - 什麼是[分散式架構樣式](search_target)
+      - 什麼是[管狀架構](search_target)
+      - 什麼是[Top-Down Strategy](search_target)
+      - 什麼是[介面設計](search_target)
+      - 什麼是[資料設計](search_target)
+      - 什麼是[UML活動圖](search_target)
+      - 什麼是[使用者介面設計](search_target)
+      - 什麼是[結構設計](search_target)
+      - 什麼是[行為設計](search_target)
+      - 什麼是[議題內容](search_target)
+      - 什麼是[可能解決方案](search_target)
+      - 什麼是[最後解決方案](search_target)
+      - 什麼是[決策理由](search_target)
+      - 什麼是[元件細部描述](search_target)
+      - 什麼是[同理心](search_target)
+      - 什麼是[面談](search_target)
+      - 什麼是[問卷](search_target)
+      - 什麼是[使用者觀察](search_target)
+      - 什麼是[閉需求定義包](search_target)
+      - 什麼是[創意動腦](search_target)
+      - 什麼是[製作原型](search_target)
+      - 什麼是[規格書審查](search_target)
+      - 什麼是[雛型展示](search_target)
+      - 什麼是[需求追溯表](search_target)
+      - 什麼是[垂直追溯表](search_target)
+      - 什麼是[水平追溯表](search_target)
+      - 什麼是[功能凝聚力](search_target)
+      - 什麼是[循序凝聚力](search_target)
+      - 什麼是[溝通凝聚力](search_target)
+      - 什麼是[程序凝聚力](search_target)
+      - 什麼是[暫時凝聚力](search_target)
+      - 什麼是[資料耦合力](search_target)
+      - 什麼是[資料結構耦合](search_target)
+      - 什麼是[控制耦合力](search_target)
+      - 什麼是[全域耦合力](search_target)
+      - 什麼是[違反DIP](search_target)
+      - 什麼是[符合DIP](search_target)
+      - 什麼是[OCP](search_target)
+      - 什麼是[REP](search_target)
+      - 什麼是[CCP](search_target)
+      - 什麼是[CRP](search_target)
+      - 什麼是[發現錯誤](search_target)
+      - 什麼是[評估品質](search_target)
+      - 什麼是[測試和除錯的不同](search_target)
+      - 什麼是[軟體錯誤](search_target)
+      - 什麼是[測試案例](search_target)
+      - 什麼是[黑箱測試](search_target)
+      - 什麼是[白箱測試](search_target)
+      - 什麼是[窮舉性測試](search_target)
+      - 什麼是[選擇性測試](search_target)
+      - 什麼是[最有效率](search_target)
+      - 什麼是[程式的穩定性](search_target)
+      - 什麼是[敘述覆蓋](search_target)
+      - 什麼是[條件覆蓋](search_target)
+      - 什麼是[設計測試案例](search_target)
+      - 什麼是[黑箱等價劃分](search_target)
+      - 什麼是[軟體測試V模型](search_target)
+      - 什麼是[單元測試](search_target)
+      - 什麼是[Junit](search_target)
+      - 什麼是[整合測試](search_target)
+      - 什麼是[系統測試](search_target)
+      - 什麼是[效能測試](search_target)
+      - 什麼是[驗收測試](search_target)
+      - 什麼是[軟體測試步驟](search_target)
+      - 什麼是[測試規劃](search_target)
+      - 什麼是[測試案例](search_target)
+      - 什麼是[測試結果分析](search_target)
+      - 什麼是[SCRUM](search_target)
+      - 什麼是[瀑布模型](search_target)
+      - 什麼是[敏捷宣言](search_target)
+      - 什麼是[敏捷式的方法](search_target)
+      - 什麼是[實務流程](search_target)
+      - 什麼是[迭代](search_target)
+      - 什麼是[遞增式](search_target)
+      - 什麼是[產品待辦清單](search_target)
+      - 什麼是[工作待辦清單](search_target)
+      - 什麼是[可描述功能需求](search_target)
+      - 什麼是[預估點數](search_target)
+      - 什麼是[Sprint Planning](search_target)
+      - 什麼是[Daily Scrum](search_target)
+      - 什麼是[Sprint Review](search_target)
+      - 什麼是[Sprint Retrospective](search_target)
+      - 什麼是[Scrum Master的特質](search_target)
+      - 什麼是[Scrum Master](search_target)
+      - 什麼是[Scrum框架](search_target)
+      - 什麼是[價值導向](search_target)
+      - 什麼是[迭代式](search_target)
+      - 什麼是[TDD Process](search_target)
+      - 什麼是[Refactor as needed](search_target)
+      - 什麼是[效能測試](search_target)
+      - 什麼是[需求設計](search_target)
+      - 什麼是[A/B測試](search_target)
+      - 什麼是[安全性測試](search_target)
+      - 什麼是[預防](search_target)
+      - 什麼是[測試方法](search_target)
+      - 什麼是[軟體開發流程](search_target)
+      - 什麼是[開發或維護軟體系統為目標](search_target)
+      - 什麼是[Scope](search_target)
+      - 什麼是[time](search_target)
+      - 什麼是[cost](search_target)
+      - 什麼是[quality](search_target)
+      - 什麼是[專案管理](search_target)
+      - 什麼是[Initiating](search_target)
+      - 什麼是[Planning](search_target)
+      - 什麼是[Controlling](search_target)
+      - 什麼是[Executing](search_target)
+      - 什麼是[Closing](search_target)
+      - 什麼是[WBS](search_target)
+      - 什麼是[DoD提出](search_target)
+      - 什麼是[樹狀階層式](search_target)
+      - 什麼是[時程](search_target)
+      - 什麼是[所需人力](search_target)
+      - 什麼是[產品規模或複雜度](search_target)
+      - 什麼是[Activity estimation](search_target)
+      - 什麼是[Project Lifecycle](search_target)
+      - 什麼是[定期會議](search_target)
+      - 什麼是[里程碑會議](search_target)
+      - 什麼是[專案監控的步驟](search_target)
+      - 什麼是[Location](search_target)
+      - 什麼是[Attendance](search_target)
+      - 什麼是[Administrative Closure](search_target)
+      - 什麼是[Contract Close-out](search_target)
+      - 什麼是[Initiating](search_target)
+      - 什麼是[Planning](search_target)
+      - 什麼是[Controlling](search_target)
+      - 什麼是[Executing](search_target)
+      - 什麼是[Closing](search_target)
+      - 什麼是[GanttProject](search_target)
+      - 什麼是[ProjectLibre](search_target)
+      - 什麼是[Microsoft Office Project](search_target)
       - 什麼是[閉包](search_target)
-      - [閉包](search_target)是什麼
-      
+      - [問題癥結](search_target)是什麼
+      - [複雜性](search_target)是什麼
+      - [一致性](search_target)是什麼
+      - [隱藏性](search_target)是什麼
+      - [易變性](search_target)是什麼
+      - [方法](search_target)是什麼
+      - [工具](search_target)是什麼
+      - [流程](search_target)是什麼
+      - [需求分析](search_target)是什麼
+      - [設計](search_target)是什麼
+      - [實作與整合](search_target)是什麼
+      - [測試](search_target)是什麼
+      - [專案管理](search_target)是什麼
+      - [瀑布式開發流程](search_target)是什麼
+      - [雛型模型](search_target)是什麼
+      - [極限製程](search_target)是什麼
+      - [SCRUM](search_target)是什麼
+      - [功能性使用者需求](search_target)是什麼
+      - [功能性系統需求](search_target)是什麼
+      - [非功能性使用者需求](search_target)是什麼
+      - [非功能性系統需求](search_target)是什麼
+      - [軟體需求規格書](search_target)是什麼
+      - [services the system should provide](search_target)是什麼
+      - [particular inputs/situations](search_target)是什麼
+      - [constraints on the services/development process/standards](search_target)是什麼
+      - [系統品質的要求與限制](search_target)是什麼
+      - [系統應該具備的特性](search_target)是什麼
+      - [產品需求](search_target)是什麼
+      - [組織需求](search_target)是什麼
+      - [外部需求](search_target)是什麼
+      - [Non-Functional User Requirement](search_target)是什麼
+      - [Non-Functional System Requirement](search_target)是什麼
+      - [Speed](search_target)是什麼
+      - [Size](search_target)是什麼
+      - [Ease of use](search_target)是什麼
+      - [Reliability](search_target)是什麼
+      - [Portability](search_target)是什麼
+      - [可行性分析](search_target)是什麼
+      - [需求擷取(人物誌,線框圖)](search_target)是什麼
+      - [需求分析](search_target)是什麼
+      - [需求規格化](search_target)是什麼
+      - [需求確認](search_target)是什麼
+      - [UML圖形的分類](search_target)是什麼
+      - [UML工具](search_target)是什麼
+      - [使用案例](search_target)是什麼
+      - [行為者](search_target)是什麼
+      - [Base use case](search_target)是什麼
+      - [Extension use case](search_target)是什麼
+      - [使用案例的一般化](search_target)是什麼
+      - [將屬性與操作放入到合適類別中](search_target)是什麼
+      - [設定類別間的關係](search_target)是什麼
+      - [描述系統中物件的類型](search_target)是什麼
+      - [類型間的各種靜態關係](search_target)是什麼
+      - [類別(Class)](search_target)是什麼
+      - [物件(Object)](search_target)是什麼
+      - [屬性(Attribute)](search_target)是什麼
+      - [方法(Method)](search_target)是什麼
+      - [類別關聯性(Relationship)](search_target)是什麼
+      - ["Uses a"和"Knows a"關係](search_target)是什麼
+      - [Dependency](search_target)是什麼
+      - [Association](search_target)是什麼
+      - [Aggregation](search_target)是什麼
+      - [Composition](search_target)是什麼
+      - ["Is a"和"Has a"關係](search_target)是什麼
+      - ["Is a"和"Can do"關係](search_target)是什麼
+      - [抽象類別](search_target)是什麼
+      - [抽象方法](search_target)是什麼
+      - [需求敘述](search_target)是什麼
+      - [識別出所有的類別](search_target)是什麼
+      - [建立類別間的關係](search_target)是什麼
+      - [設定屬性](search_target)是什麼
+      - [設定方法](search_target)是什麼
+      - [Project Management](search_target)是什麼
+      - [專案初始與規劃](search_target)是什麼
+      - [專案執行](search_target)是什麼
+      - [專案監控](search_target)是什麼
+      - [樹狀階層式架構](search_target)是什麼
+      - [產品規模](search_target)是什麼
+      - [複雜度](search_target)是什麼
+      - [所需人力](search_target)是什麼
+      - [所需時程](search_target)是什麼
+      - [同時工作數量](search_target)是什麼
+      - [抽象化階層](search_target)是什麼
+      - [程序抽象化](search_target)是什麼
+      - [資料抽象化](search_target)是什麼
+      - [軟體單元](search_target)是什麼
+      - [High Cohesion](search_target)是什麼
+      - [Low Coupling](search_target)是什麼
+      - [靜態面與動態面](search_target)是什麼
+      - [模組](search_target)是什麼
+      - [Module](search_target)是什麼
+      - [階層架構樣式](search_target)是什麼
+      - [儲存庫架構](search_target)是什麼
+      - [分散式架構樣式](search_target)是什麼
+      - [管狀架構](search_target)是什麼
+      - [Top-Down Strategy](search_target)是什麼
+      - [介面設計](search_target)是什麼
+      - [資料設計](search_target)是什麼
+      - [UML活動圖](search_target)是什麼
+      - [使用者介面設計](search_target)是什麼
+      - [結構設計](search_target)是什麼
+      - [行為設計](search_target)是什麼
+      - [議題內容](search_target)是什麼
+      - [可能解決方案](search_target)是什麼
+      - [最後解決方案](search_target)是什麼
+      - [決策理由](search_target)是什麼
+      - [元件細部描述](search_target)是什麼
+      - [同理心](search_target)是什麼
+      - [面談](search_target)是什麼
+      - [問卷](search_target)是什麼
+      - [使用者觀察](search_target)是什麼
+      - [閉需求定義包](search_target)是什麼
+      - [創意動腦](search_target)是什麼
+      - [製作原型](search_target)是什麼
+      - [規格書審查](search_target)是什麼
+      - [雛型展示](search_target)是什麼
+      - [需求追溯表](search_target)是什麼
+      - [垂直追溯表](search_target)是什麼
+      - [水平追溯表](search_target)是什麼
+      - [功能凝聚力](search_target)是什麼
+      - [循序凝聚力](search_target)是什麼
+      - [溝通凝聚力](search_target)是什麼
+      - [程序凝聚力](search_target)是什麼
+      - [暫時凝聚力](search_target)是什麼
+      - [資料耦合力](search_target)是什麼
+      - [資料結構耦合](search_target)是什麼
+      - [控制耦合力](search_target)是什麼
+      - [全域耦合力](search_target)是什麼
+      - [違反DIP](search_target)是什麼
+      - [符合DIP](search_target)是什麼
+      - [OCP](search_target)是什麼
+      - [REP](search_target)是什麼
+      - [CCP](search_target)是什麼
+      - [CRP](search_target)是什麼
+      - [發現錯誤](search_target)是什麼
+      - [評估品質](search_target)是什麼
+      - [測試和除錯的不同](search_target)是什麼
+      - [軟體錯誤](search_target)是什麼
+      - [測試案例](search_target)是什麼
+      - [黑箱測試](search_target)是什麼
+      - [白箱測試](search_target)是什麼
+      - [窮舉性測試](search_target)是什麼
+      - [選擇性測試](search_target)是什麼
+      - [最有效率](search_target)是什麼
+      - [程式的穩定性](search_target)是什麼
+      - [敘述覆蓋](search_target)是什麼
+      - [條件覆蓋](search_target)是什麼
+      - [設計測試案例](search_target)是什麼
+      - [黑箱等價劃分](search_target)是什麼
+      - [軟體測試V模型](search_target)是什麼
+      - [單元測試](search_target)是什麼
+      - [Junit](search_target)是什麼
+      - [整合測試](search_target)是什麼
+      - [系統測試](search_target)是什麼
+      - [效能測試](search_target)是什麼
+      - [驗收測試](search_target)是什麼
+      - [軟體測試步驟](search_target)是什麼
+      - [測試規劃](search_target)是什麼
+      - [測試案例](search_target)是什麼
+      - [測試結果分析](search_target)是什麼
+      - [SCRUM](search_target)是什麼
+      - [瀑布模型](search_target)是什麼
+      - [敏捷宣言](search_target)是什麼
+      - [敏捷式的方法](search_target)是什麼
+      - [實務流程](search_target)是什麼
+      - [迭代](search_target)是什麼
+      - [遞增式](search_target)是什麼
+      - [產品待辦清單](search_target)是什麼
+      - [工作待辦清單](search_target)是什麼
+      - [可描述功能需求](search_target)是什麼
+      - [預估點數](search_target)是什麼
+      - [Sprint Planning](search_target)是什麼
+      - [Daily Scrum](search_target)是什麼
+      - [Sprint Review](search_target)是什麼
+      - [Sprint Retrospective](search_target)是什麼
+      - [Scrum Master的特質](search_target)是什麼
+      - [Scrum Master](search_target)是什麼
+      - [Scrum框架](search_target)是什麼
+      - [價值導向](search_target)是什麼
+      - [迭代式](search_target)是什麼
+      - [TDD Process](search_target)是什麼
+      - [Refactor as needed](search_target)是什麼
+      - [效能測試](search_target)是什麼
+      - [需求設計](search_target)是什麼
+      - [A/B測試](search_target)是什麼
+      - [安全性測試](search_target)是什麼
+      - [預防](search_target)是什麼
+      - [測試方法](search_target)是什麼
+      - [軟體開發流程](search_target)是什麼
+      - [開發或維護軟體系統為目標](search_target)是什麼
+      - [Scope](search_target)是什麼
+      - [time](search_target)是什麼
+      - [cost](search_target)是什麼
+      - [quality](search_target)是什麼
+      - [專案管理](search_target)是什麼
+      - [Initiating](search_target)是什麼
+      - [Planning](search_target)是什麼
+      - [Controlling](search_target)是什麼
+      - [Executing](search_target)是什麼
+      - [Closing](search_target)是什麼
+      - [WBS](search_target)是什麼
+      - [DoD提出](search_target)是什麼
+      - [樹狀階層式](search_target)是什麼
+      - [時程](search_target)是什麼
+      - [所需人力](search_target)是什麼
+      - [產品規模或複雜度](search_target)是什麼
+      - [Activity estimation](search_target)是什麼
+      - [Project Lifecycle](search_target)是什麼
+      - [定期會議](search_target)是什麼
+      - [里程碑會議](search_target)是什麼
+      - [專案監控的步驟](search_target)是什麼
+      - [Location](search_target)是什麼
+      - [Attendance](search_target)是什麼
+      - [Administrative Closure](search_target)是什麼
+      - [Contract Close-out](search_target)是什麼
+      - [Initiating](search_target)是什麼
+      - [Planning](search_target)是什麼
+      - [Controlling](search_target)是什麼
+      - [Executing](search_target)是什麼
+      - [Closing](search_target)是什麼
+      - [GanttProject](search_target)是什麼
+      - [ProjectLibre](search_target)是什麼
+      - [Microsoft Office Project](search_target)是什麼
 
   # - intent: classmap_map
   #   examples: |
