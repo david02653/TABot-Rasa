@@ -10,18 +10,6 @@ stories:
    - intent: help
    - action: utter_temp_help
 
-#  - story: classmap ask 1
-#    steps:
-#    - intent: classmap_ask
-#    - action: confirm_classmap_ask
-#    - intent: classmap_ask_content
-#    - action: action_classmap_ask
-
-#  - story: classmap ask 2
-#    steps:
-#    - intent: classmap_ask
-#    - action: action_classmap_ask
-
  - story: classmap ppt 1
    steps:
    - intent: classmap_ppt
