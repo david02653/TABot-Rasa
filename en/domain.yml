@@ -24,13 +24,16 @@ entities:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - custom:
+      intent: greet
+      endOfChat: True
+  utter_help:
+  - custom:
+      intent: help
+      endOfChat: True
 
   utter_did_that_help:
   - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
 
   utter_confirm_personal_score_query:
   - custom:
