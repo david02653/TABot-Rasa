@@ -214,7 +214,7 @@ nlu:
     - What is modularization
     - Modularization
 
-- intent: faq/concept_of_operation
+- intent: faq/cohesion
   examples: |
     - What is cohesion?
     - What is cohesion

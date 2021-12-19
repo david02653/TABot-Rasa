@@ -68,66 +68,175 @@ responses:
       intent: personal_textbook_query
       endOfChat: True
   
-# add chinese_garbled
-  utter_faq/java_garbled_code:
+# faq response
+  utter_faq/software_engineering:
   - custom:
-      intent: faq/java_garbled_code
+      intent: faq/software_engineering
       endOfChat: True
-  utter_faq/chinese_annotation_compile:
+  
+  utter_faq/user_requirement:
   - custom:
-      intent: faq/chinese_annotation_compile
+      intent: faq/user_requirement
       endOfChat: True
-  utter_faq/chinese_garbled:
+
+  utter_faq/system_requirement:
   - custom:
-      intent: faq/chinese_garbled
+      intent: faq/system_requirement
       endOfChat: True
-  utter_faq/vector_arraylist_difference:
+
+  utter_faq/functional_requirement_2:
   - custom:
-      intent: faq/vector_arraylist_difference
+      intent: faq/functional_requirement_2
       endOfChat: True
-  utter_faq/java_bean:
+
+  utter_faq/non_functional_requirement:
   - custom:
-      intent: faq/java_bean
+      intent: faq/non_functional_requirement
       endOfChat: True
-  utter_faq/package_import_path_classpath_difference:
+
+  utter_faq/non_functional_requirement_2:
   - custom:
-      intent: faq/package_import_path_classpath_difference
+      intent: faq/non_functional_requirement_2
       endOfChat: True
-  utter_faq/garbage_collection:
+
+  utter_faq/concept_of_operation:
   - custom:
-      intent: faq/garbage_collection
+      intent: faq/concept_of_operation
       endOfChat: True
-  utter_faq/arraylist_to_array:
+
+  utter_faq/MVP:
   - custom:
-      intent: faq/arraylist_to_array
+      intent: faq/MVP
       endOfChat: True
-  utter_faq/layout:
+
+  utter_faq/wireframe:
   - custom:
-      intent: faq/layout
+      intent: faq/wireframe
       endOfChat: True
-  utter_faq/icon_transparency:
+
+  utter_faq/wireframe_1:
   - custom:
-      intent: faq/icon_transparency
+      intent: faq/wireframe_1
       endOfChat: True
-  utter_faq/source_usage:
+
+  utter_faq/requirement_analyze:
   - custom:
-      intent: faq/source_usage
+      intent: faq/requirement_analyze
       endOfChat: True
-  utter_faq/jdk1.5_feature:
+
+  utter_faq/uml:
   - custom:
-      intent: faq/jdk1.5_feature
+      intent: faq/uml
       endOfChat: True
-  utter_faq/jdk1.6_feature:
+
+  utter_faq/use_case:
   - custom:
-      intent: faq/jdk1.6_feature
+      intent: faq/use_case
       endOfChat: True
-  utter_faq/jdk1.7_feature:
+
+  utter_faq/PM:
   - custom:
-      intent: faq/jdk1.7_feature
+      intent: faq/PM
       endOfChat: True
-  utter_faq/jdk1.8_feature:
+
+  utter_faq/WBS:
   - custom:
-      intent: faq/jdk1.8_feature
+      intent: faq/WBS
+      endOfChat: True
+
+  utter_faq/project_forecast:
+  - custom:
+      intent: faq/project_forecast
+      endOfChat: True
+
+  utter_faq/risk:
+  - custom:
+      intent: faq/risk
+      endOfChat: True
+
+  utter_faq/board:
+  - custom:
+      intent: faq/board
+      endOfChat: True
+
+  utter_faq/dependency_and_association:
+  - custom:
+      intent: faq/dependency_and_association
+      endOfChat: True
+
+  utter_faq/aggregation_and_composition:
+  - custom:
+      intent: faq/aggregation_and_composition
+      endOfChat: True
+
+  utter_faq/abstraction:
+  - custom:
+      intent: faq/abstraction
+      endOfChat: True
+
+  utter_faq/modularity:
+  - custom:
+      intent: faq/modularity
+      endOfChat: True
+
+  utter_faq/cohesion:
+  - custom:
+      intent: faq/cohesion
+      endOfChat: True
+
+  utter_faq/coupling:
+  - custom:
+      intent: faq/coupling
+      endOfChat: True
+
+  utter_faq/cohesion_and_coupling_rate:
+  - custom:
+      intent: faq/cohesion_and_coupling_rate
+      endOfChat: True
+
+  utter_faq/system_design:
+  - custom:
+      intent: faq/system_design
+      endOfChat: True
+
+  utter_faq/architecture_design:
+  - custom:
+      intent: faq/architecture_design
+      endOfChat: True
+
+  utter_faq/architecture_design_2:
+  - custom:
+      intent: faq/architecture_design_2
+      endOfChat: True
+
+  utter_faq/architecture_design_3:
+  - custom:
+      intent: faq/architecture_design_3
+      endOfChat: True
+
+  utter_faq/interface:
+  - custom:
+      intent: faq/interface
+      endOfChat: True
+
+  utter_faq/interface_2:
+  - custom:
+      intent: faq/interface_2
+      endOfChat: True
+
+  utter_faq/interface_3:
+  - custom:
+      intent: faq/interface_3
+      endOfChat: True
+
+  utter_faq/interface_4:
+  - custom:
+      intent: faq/interface_4
+      endOfChat: True
+
+  utter_faq/design_issue:
+  - custom:
+      intent: faq/design_issue
       endOfChat: True
 
 actions:

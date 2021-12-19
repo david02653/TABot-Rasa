@@ -176,7 +176,7 @@ nlu:
       - 何謂模組化
       - 模組化
 
-  - intent: faq/concept_of_operation
+  - intent: faq/cohesion
     examples: |
       - 凝聚力是甚麼？ 
       - 何謂凝聚力 
