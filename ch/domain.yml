@@ -34,7 +34,7 @@ entities:
 
 responses:
   utter_greet:
-  - custome:
+  - custom:
       intent: greet
       endOfChat: True
   utter_temp_help:

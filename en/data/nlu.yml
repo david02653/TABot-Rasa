@@ -203,36 +203,36 @@ nlu:
     - Java's resource usage and performance
 
 - intent: faq/jdk1-5_feature
-    examples: |
-      - What are the new features of jdk1.5
-      - What's new in jdk1.5
-      - What new features are added to jdk1.5
-      - Features of jdk1.5
-      - jdk1.5
+  examples: |
+    - What are the new features of jdk1.5
+    - What's new in jdk1.5
+    - What new features are added to jdk1.5
+    - Features of jdk1.5
+    - jdk1.5
 
-  - intent: faq/jdk1-6_feature
-    examples: |
-      - What are the new features of jdk1.6
-      - What's new in jdk1.6
-      - What new features are added to jdk1.6
-      - Features of jdk1.6
-      - jdk1.6
+- intent: faq/jdk1-6_feature
+  examples: |
+    - What are the new features of jdk1.6
+    - What's new in jdk1.6
+    - What new features are added to jdk1.6
+    - Features of jdk1.6
+    - jdk1.6
 
-  - intent: faq/jdk1-7_feature
-    examples: |
-      - What are the new features of jdk1.7
-      - What's new in jdk1.7
-      - What new features are added to jdk1.7
-      - Features of jdk1.7
-      - jdk1.7
+- intent: faq/jdk1-7_feature
+  examples: |
+    - What are the new features of jdk1.7
+    - What's new in jdk1.7
+    - What new features are added to jdk1.7
+    - Features of jdk1.7
+    - jdk1.7
 
-  - intent: faq/jdk1-8_feature
-    examples: |
-      - What new features are added to jdk1.8
-      - What are the new features of jdk1.8
-      - What's new in jdk1.8
-      - Features of jdk1.8
-      - jdk1.8
+- intent: faq/jdk1-8_feature
+  examples: |
+    - What new features are added to jdk1.8
+    - What are the new features of jdk1.8
+    - What's new in jdk1.8
+    - Features of jdk1.8
+    - jdk1.8
 
 - intent: classmap_ppt
   examples: |
@@ -697,6 +697,8 @@ nlu:
     - query my grade of [quiz 8](score_query_target)
     - query my grade of [quiz 9](score_query_target)
     - query my grade of [quiz 10](score_query_target)
+    - query my grade of [peer evaluation](score_query_target)
+    - query my grade of [project evaluation](score_query_target)
     - [homework 1](score_query_target)
     - [homework 2](score_query_target)
     - [homework 3](score_query_target)
@@ -719,6 +721,8 @@ nlu:
     - [quiz 8](score_query_target)
     - [quiz 9](score_query_target)
     - [quiz 10](score_query_target)
+    - [peer evaluation](score_query_target)
+    - [project evaluation](score_query_target)
 
 - intent: personal_quiz_query
   examples: |
@@ -1003,3 +1007,14 @@ nlu:
     - chp15
     - chp fifteen
     - chapter fifteen
+
+- synonym: project
+  examples: |
+    - peer assessment
+    - project evaluation
+    - project score
+    - evaluation score
+    - peer assessment score
+    - peer assessment grade
+    - project grade
+    - project evaluation grade
