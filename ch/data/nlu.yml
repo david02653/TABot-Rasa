@@ -1018,24 +1018,12 @@ nlu:
       - [ProjectLibre](search_target)是什麼
       - [Microsoft Office Project](search_target)是什麼
 
-  # - intent: classmap_map
-  #   examples: |
-  #     -
-
-  # - intent: classmap_map_content
-  #   examples: |
-  #     -
-
   - intent: classmap_suggest
     examples: |
       - 我想推薦教材
       - 我覺得可以增加新教材
       - 推薦教材
       - 新增教材
-
-  # - intent: classmap_suggest_content
-  #   examples: |
-  #     -
 
   - intent: personal_score_query
     examples: |
@@ -1145,23 +1133,6 @@ nlu:
       - 練習個人化教材
       - 練習教材
       - 教材複習
-
-  # - faq
-  # - classmap_ask
-  # - classmap_ask_content
-  # - classmap_ppt
-  # - classmap_ppt_content
-  # - classmap_search
-  # - classmap_search_content
-  # - classmap_map
-  # - classmap_map_content
-  # - classmap_suggest
-  # - classmap_suggest_content
-  # - personal_score_query
-  # - personal_score_object
-  # - personal_quiz_query
-  # - personal_textbook_query
-  # - suggest_review
 
   - synonym: homework_1
     examples: |

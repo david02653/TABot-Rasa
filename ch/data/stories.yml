@@ -34,13 +34,6 @@ stories:
    - intent: classmap_search_content
    - action: action_classmap_search
 
-#  - story: classmap suggest 1
-#    steps:
-#    - intent: classmap_suggest
-#    - action: confirm_classmap_suggest
-#    - intent: classmap_suggest_content
-#    - action: action_classmap_suggest
-
  - story: classmap suggest
    steps:
    - intent: classmap_suggest
