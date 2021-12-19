@@ -1094,6 +1094,8 @@ nlu:
       - 我想查[小考八](score_query_target)的成績
       - 我想查[小考九](score_query_target)的成績
       - 我想查[小考十](score_query_target)的成績
+      - 我想查[專案互評](score_query_target)的成績
+      - 我想查[互評成績](score_query_target)的成績
       - [作業一](score_query_target)
       - [作業二](score_query_target)
       - [作業三](score_query_target)
@@ -1116,6 +1118,8 @@ nlu:
       - [小考八](score_query_target)
       - [小考九](score_query_target)
       - [小考十](score_query_target)
+      - [專案互評](score_query_target)
+      - [互評成績](score_query_target)
 
   - intent: personal_quiz_query
     examples: |
@@ -1437,3 +1441,12 @@ nlu:
       - chapter 15
       - 第十五章
       - 第15章
+
+  - synonym: project
+    examples: |
+      - 專案成績
+      - 專案互評
+      - 專案互評成績
+      - 互評成績
+      - 互評
+      - 專案

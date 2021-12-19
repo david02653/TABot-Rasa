@@ -34,17 +34,13 @@ entities:
 
 responses:
   utter_greet:
-  - text: |
-      Hello! How can I help you?
-  - text: |
-      Hi!
-#   utter_ask_email:
-#   - text: |
-#       What is your email address?
+  - custom:
+      intent: greet
+      endOfChat: True
   utter_temp_help:
-  - text: 了解
-  - text: 展示使用說明
-  - text: 請求說明
+  - custom:
+      intent: help
+      endOfChat: True
 
   utter_confirm_personal_score_query:
   - custom:
