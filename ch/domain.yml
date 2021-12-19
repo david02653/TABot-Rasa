@@ -80,6 +80,11 @@ responses:
       intent: faq/system_requirement
       endOfChat: True
 
+  utter_faq/functional_requirement:
+  - custom:
+      intent: faq/functional_requirement
+      endOfChat: True
+
   utter_faq/functional_requirement_2:
   - custom:
       intent: faq/functional_requirement_2
