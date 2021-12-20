@@ -2,4 +2,6 @@ ch/todo.md
 ch/.config/
 ch/.keras/
 ch/models/dump/
+ch/models/*
 en/models/dump/
+en/models/*
