@@ -5,3 +5,6 @@ ch/models/dump/
 ch/models/*
 en/models/dump/
 en/models/*
+en/tests/
+en/.config/
+en/.keras/

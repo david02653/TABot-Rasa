@@ -7,6 +7,11 @@ stories:
    - intent: greet
    - action: utter_greet
 
+ - story: help
+   steps:
+   - intent: help
+   - action: utter_help
+
  - story: classmap search 1
    steps:
    - intent: classmap_search

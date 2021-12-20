@@ -214,7 +214,7 @@ nlu:
     - What is modularization
     - Modularization
 
-- intent: faq/concept_of_operation
+- intent: faq/cohesion
   examples: |
     - What is cohesion?
     - What is cohesion
@@ -1334,6 +1334,8 @@ nlu:
     - query my grade of [quiz 8](score_query_target)
     - query my grade of [quiz 9](score_query_target)
     - query my grade of [quiz 10](score_query_target)
+    - query my grade of [peer assessment](score_query_target)
+    - query my grade of [project evaluation](score_query_target)
     - [homework 1](score_query_target)
     - [homework 2](score_query_target)
     - [homework 3](score_query_target)
@@ -1356,6 +1358,8 @@ nlu:
     - [quiz 8](score_query_target)
     - [quiz 9](score_query_target)
     - [quiz 10](score_query_target)
+    - [peer assessment](score_query_target)
+    - [project evaluation](score_query_target)
 
 - intent: personal_quiz_query
   examples: |
@@ -1640,3 +1644,16 @@ nlu:
     - chp15
     - chp fifteen
     - chapter fifteen
+
+- synonym: project
+  examples: |
+    - peer assessment
+    - project evaluation
+    - project score
+    - project grade
+    - evaluation grade
+    - evaluation score
+    - peer assessment grade
+    - peer assessment score
+    - project evaluation grade
+    - project evaluation score
