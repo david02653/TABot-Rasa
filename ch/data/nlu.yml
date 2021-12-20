@@ -336,7 +336,7 @@ nlu:
 
   - intent: classmap_search
     examples: |
-      - 我想查尋課程地圖
+      - 我想查詢課程地圖
       - 查詢課程地圖
       - 課程地圖查詢
       - 課程地圖
