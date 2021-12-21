@@ -43,27 +43,28 @@ nlu:
 #     - bye bye
 #     - see you later
 
-- intent: suggest_review_pass
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - ok
-    - OK
+# manual review suggest for now
+# - intent: suggest_review_pass
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+#     - ok
+#     - OK
 
-- intent: suggest_review_fail
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - NO
+# - intent: suggest_review_fail
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+#     - NO
 
 - intent: faq/software_engineering
   examples: |

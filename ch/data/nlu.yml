@@ -252,31 +252,32 @@ nlu:
       - design issue
       - 設計議題
 
-  - intent: suggest_review_pass
-    examples: |
-      - 通過
-      - 可以
-      - 好
-      - 我覺得可以
-      - 好阿
-      - 好喔
-      - OK
-      - ok
-      - 0k
-      - 0K
+# manual review suggest for now
+  # - intent: suggest_review_pass
+  #   examples: |
+  #     - 通過
+  #     - 可以
+  #     - 好
+  #     - 我覺得可以
+  #     - 好阿
+  #     - 好喔
+  #     - OK
+  #     - ok
+  #     - 0k
+  #     - 0K
 
-  - intent: suggest_review_fail
-    examples: |
-      - 不好
-      - 不通過
-      - 不行
-      - 不太好
-      - 再看看
-      - NO
-      - no
-      - No
-      - N0
-      - 不
+  # - intent: suggest_review_fail
+  #   examples: |
+  #     - 不好
+  #     - 不通過
+  #     - 不行
+  #     - 不太好
+  #     - 再看看
+  #     - NO
+  #     - no
+  #     - No
+  #     - N0
+  #     - 不
 
   - intent: classmap_ppt
     examples: |

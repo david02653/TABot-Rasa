@@ -61,12 +61,13 @@ stories:
    - intent: personal_quiz_query
    - action: utter_personal_quiz_query
 
- - story: review suggestion as pass
-   steps:
-   - intent: suggest_review_pass
-   - action: action_suggest_review_pass
+# manual review suggest for now
+#  - story: review suggestion as pass
+#    steps:
+#    - intent: suggest_review_pass
+#    - action: action_suggest_review_pass
 
- - story: review suggestion as fail
-   steps:
-   - intent: suggest_review_fail
-   - action: action_suggest_review_fail
+#  - story: review suggestion as fail
+#    steps:
+#    - intent: suggest_review_fail
+#    - action: action_suggest_review_fail
