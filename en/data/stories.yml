@@ -58,6 +58,23 @@ stories:
    - intent: personal_textbook_query
    - action: utter_personal_textbook_query
 
+ - story: query supplement all
+   steps:
+   - intent: supplement_search_all
+   - action: utter_supplement_search_all
+
+ - story: supplement search single 1
+   steps:
+   - intent: supplement_search_single
+   - action: utter_supplement_search_single
+   - intent: supplement_search_single
+   - action: action_supplement_single
+
+ - story: supplement search single 2
+   steps:
+   - intent: supplement_search_single
+   - action: action_supplement_single
+
  - story: query personal quiz
    steps:
    - intent: personal_quiz_query

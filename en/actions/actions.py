@@ -118,3 +118,16 @@ class ActionClassmapPpt(Action):
         # dispatcher.utter_message(format(msg))
         dispatcher.utter_custom_json(format(msg))
         return []
+
+class ActionSupplementSingle(Action):
+    def name(self) -> Text:
+        return "action_supplement_single"
+    def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        entity = next(tracker.get_latest_entity_values("supplement_target"), "None")
+        msg = {
+            "intent": "supplement_single",
+            "entity": entity,
+            "endOfChat": True
+        }
+        dispatcher.utter_custom_json(format(msg))
+        return []

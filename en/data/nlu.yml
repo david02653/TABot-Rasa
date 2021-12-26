@@ -17,17 +17,17 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: help
-  examples: |
-    - I need query function
-    - What's the function?
-    - What are the functions?
-    - What can you do?
-    - Tutorial
-    - how to use?
-    - Instructions
-    - illustrate
-    - getting Started
+# - intent: help
+#   examples: |
+#     - I need query function
+#     - What's the function?
+#     - What are the functions?
+#     - What can you do?
+#     - Tutorial
+#     - how to use?
+#     - Instructions
+#     - illustrate
+#     - getting Started
 
 # - intent: goodbye
 #   examples: |
@@ -354,6 +354,62 @@ nlu:
     - [chp fourteen](ppt_query_target) power point
     - [chp fifteen](ppt_query_target) power point
 
+- intent: supplement_search_all
+  examples: |
+    - I want to check all supplementary information
+    - Check all supplementary information
+    - All supplementary information inquiries
+    - All supplementary information
+    - Check all supplementary information
+    - Check all supplementary knowledge
+    - Check all course supplements
+    - Query all extracurricular supplementary knowledge
+    - Query all extracurricular supplementary materials
+    - I want to check all the supplementary information
+    - Query all supplementary information
+    - All supplementary information query
+    - All supplementary information
+    - Check all supplementary information
+    - Check all supplementary knowledge
+    - Check all course supplements
+    - Query all extracurricular supplementary knowledge
+    - Query all extracurricular supplementary materials
+
+- intent: supplement_search_single
+  examples: |
+    - I want to inquire about supplementary information
+    - Query supplementary information
+    - Supplementary information query
+    - additional materials
+    - Check supplementary information
+    - Check supplementary knowledge
+    - Query course supplement
+    - Inquire about extracurricular supplementary knowledge
+    - Query extracurricular supplementary information
+
+- intent: supplement_search_single_content
+  examples: |
+    - I want to query [refactoring](supplement_target)
+    - I want to query [DevOps](supplement_target)
+    - I want to query [Devops Pipeline](supplement_target)
+    - I want to query [DevOps Light Talk](supplement_target)
+    - I want to query [design pattern](supplement_target)
+    - Query [refactoring](supplement_target)
+    - Query [DevOps](supplement_target)
+    - Query [Devops Pipeline](supplement_target)
+    - Query [DevOps Light Talk](supplement_target)
+    - Query [design pattern](supplement_target)
+    - [refactoring](supplement_target) query
+    - [DevOps](supplement_target) query
+    - [Devops Pipeline](supplement_target) query
+    - [DevOps Light Talk](supplement_target) query
+    - [design pattern](supplement_target) query
+    - [refactoring](supplement_target)
+    - [DevOps](supplement_target)
+    - [Devops Pipeline](supplement_target)
+    - [DevOps Light Talk](supplement_target)
+    - [design pattern](supplement_target)
+
 - intent: classmap_search
   examples: |
     - i want to query about classmap
@@ -373,898 +429,898 @@ nlu:
 
 - intent: classmap_search_content
   examples: |
-    -I want to search [problem crux](search_target)
-    -I want to query [complexity](search_target)
-    -I want to query [consistency](search_target)
-    -I want to query [hidden](search_target)
-    -I want to query [variability](search_target)
-    -I want to search [method](search_target)
-    -I want to search [tool](search_target)
-    -I want to query [process](search_target)
-    -I want to query [demand analysis](search_target)
-    -I want to query [design](search_target)
-    -I want to query [implementation and integration](search_target)
-    -I want to query [test](search_target)
-    -I want to query [Project Management](search_target)
-    -I want to query [waterfall development process](search_target)
-    -I want to query [prototype model](search_target)
-    -I want to search for [extremely limited range](search_target)
-    -I want to search [SCRUM](search_target)
-    -I want to query [functional user requirements](search_target)
-    -I want to query [functional system requirements](search_target)
-    -I want to search for [non-functional user requirements](search_target)
-    -I want to query [non-functional system requirements](search_target)
-    -I want to query [software requirements specification](search_target)
-    -I want to query [services the system should provide](search_target)
-    -I want to query [particular inputs/situations](search_target)
-    -I want to query [constraints on the services/development process/standards](search_target)
-    -I want to query [System Quality Requirements and Limitations](search_target)
-    -I want to query [features that the system should have](search_target)
-    -I want to query [product requirements](search_target)
-    -I want to query [organizational requirements](search_target)
-    -I want to query [external requirements](search_target)
-    -I want to query [Non-Functional User Requirement](search_target)
-    -I want to query [Non-Functional System Requirement](search_target)
-    -I want to query [Speed](search_target)
-    -I want to query [Size](search_target)
-    -I want to query [Ease of use](search_target)
-    -I want to query [Reliability](search_target)
-    -I want to query [Portability](search_target)
-    -I want to query [feasibility analysis](search_target)
-    -I want to search for [demand extraction (character history, wireframe)](search_target)
-    -I want to query [demand analysis](search_target)
-    -I want to query [Requirement Normalization](search_target)
-    -I want to search [demand confirmation](search_target)
-    -I want to query [UML graphics classification](search_target)
-    -I want to query [UML tools](search_target)
-    -I want to query [use case](search_target)
-    -I want to query [actor](search_target)
-    -I want to query [Base use case](search_target)
-    -I want to query [Extension use case](search_target)
-    -I want to query [Generalization of Use Cases](search_target)
-    -I want to query [put attributes and operations into appropriate categories] (search_target)
-    -I want to query [set the relationship between categories](search_target)
-    -I want to query [describe the type of object in the system](search_target)
-    -I want to query [various static relationships between types](search_target)
-    -I want to query [category(Class)](search_target)
-    -I want to search for [物件(Object)](search_target)
-    -I want to query [Attribute (Attribute)](search_target)
-    -I want to query [Method (Method)] (search_target)
-    -I want to query [Category Relation (Relationship)](search_target)
-    -I want to query ["Uses a" and "Knows a" relationship](search_target)
-    -I want to query [Dependency](search_target)
-    -I want to query [Association](search_target)
-    -I want to query [Aggregation](search_target)
-    -I want to query [Composition](search_target)
-    -I want to query ["Is a" and "Has a" relationship](search_target)
-    -I want to query ["Is a" and "Can do" relationship] (search_target)
-    -I want to search for [abstract category](search_target)
-    -I want to query [abstract method](search_target)
-    -I want to search [requirement description](search_target)
-    -I want to search [identify all categories](search_target)
-    -I want to query [establish relationship between categories](search_target)
-    -I want to query [set attribute](search_target)
-    -I want to search [setting method](search_target)
-    -I want to query [Project Management](search_target)
-    -I want to query [Project Initialization and Planning](search_target)
-    -I want to search [project execution](search_target)
-    -I want to query [Project Monitoring](search_target)
-    -I want to query [tree hierarchical structure](search_target)
-    -I want to query [product size](search_target)
-    -I want to query [complexity](search_target)
-    -I want to search for [required manpower](search_target)
-    -I want to search [required time course](search_target)
-    -I want to query [number of simultaneous jobs](search_target)
-    -I want to search for [abstract level](search_target)
-    -I want to query [program abstraction](search_target)
-    -I want to search for [data abstraction](search_target)
-    -I want to search for [software unit](search_target)
-    -I want to query [High Cohesion](search_target)
-    -I want to query [Low Coupling](search_target)
-    -I want to query [static surface and dynamic surface](search_target)
-    -I want to search for [module](search_target)
-    -I want to query [Module](search_target)
-    -I want to query [hierarchical structure style](search_target)
-    -I want to query [repository schema](search_target)
-    -I want to query [distributed architecture style](search_target)
-    -I want to query [tubular architecture](search_target)
-    -I want to query [Top-Down Strategy](search_target)
-    -I want to query [interface design](search_target)
-    -I want to search [data design](search_target)
-    -I want to query [UML activity diagram](search_target)
-    -I want to query [User Interface Design](search_target)
-    -I want to query [Structural Design](search_target)
-    -I want to query [behavior design](search_target)
-    -I want to search [topic content](search_target)
-    -I want to query [possible solutions](search_target)
-    -I want to query [final solution](search_target)
-    -I want to query [decision reason](search_target)
-    -I want to query [component detailed description](search_target)
-    -I want to query [empathy](search_target)
-    -I want to query [Interview](search_target)
-    -I want to search [questionnaire](search_target)
-    -I want to query [user observation](search_target)
-    -I want to query [closed demand definition package](search_target)
-    -I want to search for [Creative Brain](search_target)
-    -I want to query [Prototype](search_target)
-    -I want to query [Specification Review](search_target)
-    -I want to query [prototype display](search_target)
-    -I want to query [demand traceability table](search_target)
-    -I want to query [vertical traceability table](search_target)
-    -I want to query [horizontal traceability table](search_target)
-    -I want to query [functional cohesion](search_target)
-    -I want to query [sequential cohesion](search_target)
-    -I want to query [communication cohesion](search_target)
-    -I want to query [program cohesion](search_target)
-    -I want to query [temporary cohesion](search_target)
-    -I want to query [data coupling force](search_target)
-    -I want to query [data structure coupling](search_target)
-    -I want to query [Control Coupling Force](search_target)
-    -I want to query [Global Coupling Force](search_target)
-    -I want to query [DIP violation](search_target)
-    -I want to search [Compliant with DIP](search_target)
-    -I want to query [OCP](search_target)
-    -I want to query [REP](search_target)
-    -I want to search [CCP](search_target)
-    -I want to search [CRP](search_target)
-    -I want to query [found error](search_target)
-    -I want to query [assessment quality](search_target)
-    -I want to query [the difference between testing and debugging](search_target)
-    -I want to search for [software error](search_target)
-    -I want to query [test case](search_target)
-    -I want to query [black box test](search_target)
-    -I want to query [white box test](search_target)
-    -I want to query [exhaustive test](search_target)
-    -I want to query [selective test](search_target)
-    -I want to query [most efficient](search_target)
-    -I want to check [program stability](search_target)
-    -I want to query [narrative coverage](search_target)
-    -I want to query [condition coverage](search_target)
-    -I want to query [design test case](search_target)
-    -I want to query [Black Box Equivalent Division](search_target)
-    -I want to query [software test V model](search_target)
-    -I want to query [unit test](search_target)
-    -I want to query [Junit](search_target)
-    -I want to query [integration test](search_target)
-    -I want to query [System Test](search_target)
-    -I want to query [performance test](search_target)
-    -I want to query [acceptance test](search_target)
-    -I want to query [software test steps](search_target)
-    -I want to query [test planning](search_target)
-    -I want to query [test case](search_target)
-    -I want to query [test result analysis](search_target)
-    -I want to search [SCRUM](search_target)
-    -I want to query [waterfall model](search_target)
-    -I want to query [Agile Manifesto](search_target)
-    -I want to search for [agile method](search_target)
-    -I want to query [practical process](search_target)
-    -I want to query [iteration](search_target)
-    -I want to query [incremental](search_target)
-    -I want to query [product to-do list](search_target)
-    -I want to search [work to do list](search_target)
-    -I want to search for [describeable functional requirements](search_target)
-    -I want to query [estimated points](search_target)
-    -I want to query [Sprint Planning](search_target)
-    -I want to query [Daily Scrum](search_target)
-    -I want to query [Sprint Review](search_target)
-    -I want to query [Sprint Retrospective](search_target)
-    -I want to query [Scrum Master's Traits](search_target)
-    -I want to query [Scrum Master](search_target)
-    -I want to query [Scrum framework](search_target)
-    -I want to query [value-oriented](search_target)
-    -I want to query [iterative](search_target)
-    -I want to query [TDD Process](search_target)
-    -I want to query [Refactor as needed](search_target)
-    -I want to query [performance test](search_target)
-    -I want to query [demand design](search_target)
-    -I want to query [A/B test](search_target)
-    -I want to query [Security Test](search_target)
-    -I want to query [prevention](search_target)
-    -I want to query [test method](search_target)
-    -I want to query [software development process](search_target)
-    -I want to query [Develop or maintain software system as the target](search_target)
-    -I want to query [Scope](search_target)
-    -I want to query [time](search_target)
-    -I want to query [cost](search_target)
-    -I want to query [quality](search_target)
-    -I want to query [Project Management](search_target)
-    -I want to query [Initiating](search_target)
-    -I want to query [Planning](search_target)
-    -I want to query [Controlling](search_target)
-    -I want to query [Executing](search_target)
-    -I want to query [Closing](search_target)
-    -I want to search [WBS](search_target)
-    -I want to query [DoD proposed](search_target)
-    -I want to search [tree hierarchical](search_target)
-    -I want to query [时间程](search_target)
-    -I want to search for [required manpower](search_target)
-    -I want to query [product size or complexity](search_target)
-    -I want to query [Activity estimation](search_target)
-    -I want to query [Project Lifecycle](search_target)
-    -I want to query [regular meeting](search_target)
-    -I want to query [milestone meeting](search_target)
-    -I want to query [project monitoring steps](search_target)
-    -I want to query [Location](search_target)
-    -I want to query [Attendance](search_target)
-    -I want to query [Administrative Closure](search_target)
-    -I want to query [Contract Close-out](search_target)
-    -I want to query [Initiating](search_target)
-    -I want to query [Planning](search_target)
-    -I want to query [Controlling](search_target)
-    -I want to query [Executing](search_target)
-    -I want to query [Closing](search_target)
-    -I want to query [GanttProject](search_target)
-    -I want to query [ProjectLibre](search_target)
-    -I want to query [Microsoft Office Project](search_target)
-    -what does [problem crux](search_target) means
-    -what does [complexity](search_target) means
-    -what does [consistency](search_target) means
-    -what does [hidden](search_target) means
-    -what does [variability](search_target) means
-    -what does [method](search_target) means
-    -what does [tool](search_target) means
-    -what does [process](search_target) means
-    -what does [demand analysis](search_target) means
-    -what does [design](search_target) means
-    -what does [implementation and integration](search_target) means
-    -what does [test](search_target) means
-    -what does [Project Management](search_target) means
-    -what does [waterfall development process](search_target) means
-    -what does [prototype model](search_target) means
-    -what does for [extremely limited range](search_target) means
-    -what does [SCRUM](search_target) means
-    -what does [functional user requirements](search_target) means
-    -what does [functional system requirements](search_target) means
-    -what does for [non-functional user requirements](search_target) means
-    -what does [non-functional system requirements](search_target) means
-    -what does [software requirements specification](search_target) means
-    -what does [services the system should provide](search_target) means
-    -what does [particular inputs/situations](search_target) means
-    -what does [constraints on the services/development process/standards](search_target) means
-    -what does [System Quality Requirements and Limitations](search_target) means
-    -what does [features that the system should have](search_target) means
-    -what does [product requirements](search_target) means
-    -what does [organizational requirements](search_target) means
-    -what does [external requirements](search_target) means
-    -what does [Non-Functional User Requirement](search_target) means
-    -what does [Non-Functional System Requirement](search_target) means
-    -what does [Speed](search_target) means
-    -what does [Size](search_target) means
-    -what does [Ease of use](search_target) means
-    -what does [Reliability](search_target) means
-    -what does [Portability](search_target) means
-    -what does [feasibility analysis](search_target) means
-    -what does for [demand extraction (character history, wireframe)](search_target) means
-    -what does [demand analysis](search_target) means
-    -what does [Requirement Normalization](search_target) means
-    -what does [demand confirmation](search_target) means
-    -what does [UML graphics classification](search_target) means
-    -what does [UML tools](search_target) means
-    -what does [use case](search_target) means
-    -what does [actor](search_target) means
-    -what does [Base use case](search_target) means
-    -what does [Extension use case](search_target) means
-    -what does [Generalization of Use Cases](search_target) means
-    -what does [put attributes and operations into appropriate categories] (search_target) means
-    -what does [set the relationship between categories](search_target) means
-    -what does [describe the type of object in the system](search_target) means
-    -what does [various static relationships between types](search_target) means
-    -what does [category(Class)](search_target) means
-    -what does for [物件(Object)](search_target) means
-    -what does [Attribute (Attribute)](search_target) means
-    -what does [Method (Method)] (search_target) means
-    -what does [Category Relation (Relationship)](search_target) means
-    -what does ["Uses a" and "Knows a" relationship](search_target) means
-    -what does [Dependency](search_target) means
-    -what does [Association](search_target) means
-    -what does [Aggregation](search_target) means
-    -what does [Composition](search_target) means
-    -what does ["Is a" and "Has a" relationship](search_target) means
-    -what does ["Is a" and "Can do" relationship] (search_target) means
-    -what does for [abstract category](search_target) means
-    -what does [abstract method](search_target) means
-    -what does [requirement description](search_target) means
-    -what does [identify all categories](search_target) means
-    -what does [establish relationship between categories](search_target) means
-    -what does [set attribute](search_target) means
-    -what does [setting method](search_target) means
-    -what does [Project Management](search_target) means
-    -what does [Project Initialization and Planning](search_target) means
-    -what does [project execution](search_target) means
-    -what does [Project Monitoring](search_target) means
-    -what does [tree hierarchical structure](search_target) means
-    -what does [product size](search_target) means
-    -what does [complexity](search_target) means
-    -what does for [required manpower](search_target) means
-    -what does [required time course](search_target) means
-    -what does [number of simultaneous jobs](search_target) means
-    -what does for [abstract level](search_target) means
-    -what does [program abstraction](search_target) means
-    -what does for [data abstraction](search_target) means
-    -what does for [software unit](search_target) means
-    -what does [High Cohesion](search_target) means
-    -what does [Low Coupling](search_target) means
-    -what does [static surface and dynamic surface](search_target) means
-    -what does for [module](search_target) means
-    -what does [Module](search_target) means
-    -what does [hierarchical structure style](search_target) means
-    -what does [repository schema](search_target) means
-    -what does [distributed architecture style](search_target) means
-    -what does [tubular architecture](search_target) means
-    -what does [Top-Down Strategy](search_target) means
-    -what does [interface design](search_target) means
-    -what does [data design](search_target) means
-    -what does [UML activity diagram](search_target) means
-    -what does [User Interface Design](search_target) means
-    -what does [Structural Design](search_target) means
-    -what does [behavior design](search_target) means
-    -what does [topic content](search_target) means
-    -what does [possible solutions](search_target) means
-    -what does [final solution](search_target) means
-    -what does [decision reason](search_target) means
-    -what does [component detailed description](search_target) means
-    -what does [empathy](search_target) means
-    -what does [Interview](search_target) means
-    -what does [questionnaire](search_target) means
-    -what does [user observation](search_target) means
-    -what does [closed demand definition package](search_target) means
-    -what does for [Creative Brain](search_target) means
-    -what does [Prototype](search_target) means
-    -what does [Specification Review](search_target) means
-    -what does [prototype display](search_target) means
-    -what does [demand traceability table](search_target) means
-    -what does [vertical traceability table](search_target) means
-    -what does [horizontal traceability table](search_target) means
-    -what does [functional cohesion](search_target) means
-    -what does [sequential cohesion](search_target) means
-    -what does [communication cohesion](search_target) means
-    -what does [program cohesion](search_target) means
-    -what does [temporary cohesion](search_target) means
-    -what does [data coupling force](search_target) means
-    -what does [data structure coupling](search_target) means
-    -what does [Control Coupling Force](search_target) means
-    -what does [Global Coupling Force](search_target) means
-    -what does [DIP violation](search_target) means
-    -what does [Compliant with DIP](search_target) means
-    -what does [OCP](search_target) means
-    -what does [REP](search_target) means
-    -what does [CCP](search_target) means
-    -what does [CRP](search_target) means
-    -what does [found error](search_target) means
-    -what does [assessment quality](search_target) means
-    -what does [the difference between testing and debugging](search_target) means
-    -what does for [software error](search_target) means
-    -what does [test case](search_target) means
-    -what does [black box test](search_target) means
-    -what does [white box test](search_target) means
-    -what does [exhaustive test](search_target) means
-    -what does [selective test](search_target) means
-    -what does [most efficient](search_target) means
-    -what does [program stability](search_target) means
-    -what does [narrative coverage](search_target) means
-    -what does [condition coverage](search_target) means
-    -what does [design test case](search_target) means
-    -what does [Black Box Equivalent Division](search_target) means
-    -what does [software test V model](search_target) means
-    -what does [unit test](search_target) means
-    -what does [Junit](search_target) means
-    -what does [integration test](search_target) means
-    -what does [System Test](search_target) means
-    -what does [performance test](search_target) means
-    -what does [acceptance test](search_target) means
-    -what does [software test steps](search_target) means
-    -what does [test planning](search_target) means
-    -what does [test case](search_target) means
-    -what does [test result analysis](search_target) means
-    -what does [SCRUM](search_target) means
-    -what does [waterfall model](search_target) means
-    -what does [Agile Manifesto](search_target) means
-    -what does for [agile method](search_target) means
-    -what does [practical process](search_target) means
-    -what does [iteration](search_target) means
-    -what does [incremental](search_target) means
-    -what does [product to-do list](search_target) means
-    -what does [work to do list](search_target) means
-    -what does for [describeable functional requirements](search_target) means
-    -what does [estimated points](search_target) means
-    -what does [Sprint Planning](search_target) means
-    -what does [Daily Scrum](search_target) means
-    -what does [Sprint Review](search_target) means
-    -what does [Sprint Retrospective](search_target) means
-    -what does [Scrum Master's Traits](search_target) means
-    -what does [Scrum Master](search_target) means
-    -what does [Scrum framework](search_target) means
-    -what does [value-oriented](search_target) means
-    -what does [iterative](search_target) means
-    -what does [TDD Process](search_target) means
-    -what does [Refactor as needed](search_target) means
-    -what does [performance test](search_target) means
-    -what does [demand design](search_target) means
-    -what does [A/B test](search_target) means
-    -what does [Security Test](search_target) means
-    -what does [prevention](search_target) means
-    -what does [test method](search_target) means
-    -what does [software development process](search_target) means
-    -what does [Develop or maintain software system as the target](search_target) means
-    -what does [Scope](search_target) means
-    -what does [time](search_target) means
-    -what does [cost](search_target) means
-    -what does [quality](search_target) means
-    -what does [Project Management](search_target) means
-    -what does [Initiating](search_target) means
-    -what does [Planning](search_target) means
-    -what does [Controlling](search_target) means
-    -what does [Executing](search_target) means
-    -what does [Closing](search_target) means
-    -what does [WBS](search_target) means
-    -what does [DoD proposed](search_target) means
-    -what does [tree hierarchical](search_target) means
-    -what does [时间程](search_target) means
-    -what does for [required manpower](search_target) means
-    -what does [product size or complexity](search_target) means
-    -what does [Activity estimation](search_target) means
-    -what does [Project Lifecycle](search_target) means
-    -what does [regular meeting](search_target) means
-    -what does [milestone meeting](search_target) means
-    -what does [project monitoring steps](search_target) means
-    -what does [Location](search_target) means
-    -what does [Attendance](search_target) means
-    -what does [Administrative Closure](search_target) means
-    -what does [Contract Close-out](search_target) means
-    -what does [Initiating](search_target) means
-    -what does [Planning](search_target) means
-    -what does [Controlling](search_target) means
-    -what does [Executing](search_target) means
-    -what does [Closing](search_target) means
-    -what does [GanttProject](search_target) means
-    -what does [ProjectLibre](search_target) means
-    -what does [Microsoft Office Project](search_target) means
-    -i want to search about [problem crux](search_target)
-    -i want to search about [complexity](search_target)
-    -i want to search about [consistency](search_target)
-    -i want to search about [hidden](search_target)
-    -i want to search about [variability](search_target)
-    -i want to search about [method](search_target)
-    -i want to search about [tool](search_target)
-    -i want to search about [process](search_target)
-    -i want to search about [demand analysis](search_target)
-    -i want to search about [design](search_target)
-    -i want to search about [implementation and integration](search_target)
-    -i want to search about [test](search_target)
-    -i want to search about [Project Management](search_target)
-    -i want to search about [waterfall development process](search_target)
-    -i want to search about [prototype model](search_target)
-    -i want to search about for [extremely limited range](search_target)
-    -i want to search about [SCRUM](search_target)
-    -i want to search about [functional user requirements](search_target)
-    -i want to search about [functional system requirements](search_target)
-    -i want to search about for [non-functional user requirements](search_target)
-    -i want to search about [non-functional system requirements](search_target)
-    -i want to search about [software requirements specification](search_target)
-    -i want to search about [services the system should provide](search_target)
-    -i want to search about [particular inputs/situations](search_target)
-    -i want to search about [constraints on the services/development process/standards](search_target)
-    -i want to search about [System Quality Requirements and Limitations](search_target)
-    -i want to search about [features that the system should have](search_target)
-    -i want to search about [product requirements](search_target)
-    -i want to search about [organizational requirements](search_target)
-    -i want to search about [external requirements](search_target)
-    -i want to search about [Non-Functional User Requirement](search_target)
-    -i want to search about [Non-Functional System Requirement](search_target)
-    -i want to search about [Speed](search_target)
-    -i want to search about [Size](search_target)
-    -i want to search about [Ease of use](search_target)
-    -i want to search about [Reliability](search_target)
-    -i want to search about [Portability](search_target)
-    -i want to search about [feasibility analysis](search_target)
-    -i want to search about for [demand extraction (character history, wireframe)](search_target)
-    -i want to search about [demand analysis](search_target)
-    -i want to search about [Requirement Normalization](search_target)
-    -i want to search about [demand confirmation](search_target)
-    -i want to search about [UML graphics classification](search_target)
-    -i want to search about [UML tools](search_target)
-    -i want to search about [use case](search_target)
-    -i want to search about [actor](search_target)
-    -i want to search about [Base use case](search_target)
-    -i want to search about [Extension use case](search_target)
-    -i want to search about [Generalization of Use Cases](search_target)
-    -i want to search about [put attributes and operations into appropriate categories] (search_target)
-    -i want to search about [set the relationship between categories](search_target)
-    -i want to search about [describe the type of object in the system](search_target)
-    -i want to search about [various static relationships between types](search_target)
-    -i want to search about [category(Class)](search_target)
-    -i want to search about for [物件(Object)](search_target)
-    -i want to search about [Attribute (Attribute)](search_target)
-    -i want to search about [Method (Method)] (search_target)
-    -i want to search about [Category Relation (Relationship)](search_target)
-    -i want to search about ["Uses a" and "Knows a" relationship](search_target)
-    -i want to search about [Dependency](search_target)
-    -i want to search about [Association](search_target)
-    -i want to search about [Aggregation](search_target)
-    -i want to search about [Composition](search_target)
-    -i want to search about ["Is a" and "Has a" relationship](search_target)
-    -i want to search about ["Is a" and "Can do" relationship] (search_target)
-    -i want to search about for [abstract category](search_target)
-    -i want to search about [abstract method](search_target)
-    -i want to search about [requirement description](search_target)
-    -i want to search about [identify all categories](search_target)
-    -i want to search about [establish relationship between categories](search_target)
-    -i want to search about [set attribute](search_target)
-    -i want to search about [setting method](search_target)
-    -i want to search about [Project Management](search_target)
-    -i want to search about [Project Initialization and Planning](search_target)
-    -i want to search about [project execution](search_target)
-    -i want to search about [Project Monitoring](search_target)
-    -i want to search about [tree hierarchical structure](search_target)
-    -i want to search about [product size](search_target)
-    -i want to search about [complexity](search_target)
-    -i want to search about for [required manpower](search_target)
-    -i want to search about [required time course](search_target)
-    -i want to search about [number of simultaneous jobs](search_target)
-    -i want to search about for [abstract level](search_target)
-    -i want to search about [program abstraction](search_target)
-    -i want to search about for [data abstraction](search_target)
-    -i want to search about for [software unit](search_target)
-    -i want to search about [High Cohesion](search_target)
-    -i want to search about [Low Coupling](search_target)
-    -i want to search about [static surface and dynamic surface](search_target)
-    -i want to search about for [module](search_target)
-    -i want to search about [Module](search_target)
-    -i want to search about [hierarchical structure style](search_target)
-    -i want to search about [repository schema](search_target)
-    -i want to search about [distributed architecture style](search_target)
-    -i want to search about [tubular architecture](search_target)
-    -i want to search about [Top-Down Strategy](search_target)
-    -i want to search about [interface design](search_target)
-    -i want to search about [data design](search_target)
-    -i want to search about [UML activity diagram](search_target)
-    -i want to search about [User Interface Design](search_target)
-    -i want to search about [Structural Design](search_target)
-    -i want to search about [behavior design](search_target)
-    -i want to search about [topic content](search_target)
-    -i want to search about [possible solutions](search_target)
-    -i want to search about [final solution](search_target)
-    -i want to search about [decision reason](search_target)
-    -i want to search about [component detailed description](search_target)
-    -i want to search about [empathy](search_target)
-    -i want to search about [Interview](search_target)
-    -i want to search about [questionnaire](search_target)
-    -i want to search about [user observation](search_target)
-    -i want to search about [closed demand definition package](search_target)
-    -i want to search about for [Creative Brain](search_target)
-    -i want to search about [Prototype](search_target)
-    -i want to search about [Specification Review](search_target)
-    -i want to search about [prototype display](search_target)
-    -i want to search about [demand traceability table](search_target)
-    -i want to search about [vertical traceability table](search_target)
-    -i want to search about [horizontal traceability table](search_target)
-    -i want to search about [functional cohesion](search_target)
-    -i want to search about [sequential cohesion](search_target)
-    -i want to search about [communication cohesion](search_target)
-    -i want to search about [program cohesion](search_target)
-    -i want to search about [temporary cohesion](search_target)
-    -i want to search about [data coupling force](search_target)
-    -i want to search about [data structure coupling](search_target)
-    -i want to search about [Control Coupling Force](search_target)
-    -i want to search about [Global Coupling Force](search_target)
-    -i want to search about [DIP violation](search_target)
-    -i want to search about [Compliant with DIP](search_target)
-    -i want to search about [OCP](search_target)
-    -i want to search about [REP](search_target)
-    -i want to search about [CCP](search_target)
-    -i want to search about [CRP](search_target)
-    -i want to search about [found error](search_target)
-    -i want to search about [assessment quality](search_target)
-    -i want to search about [the difference between testing and debugging](search_target)
-    -i want to search about for [software error](search_target)
-    -i want to search about [test case](search_target)
-    -i want to search about [black box test](search_target)
-    -i want to search about [white box test](search_target)
-    -i want to search about [exhaustive test](search_target)
-    -i want to search about [selective test](search_target)
-    -i want to search about [most efficient](search_target)
-    -i want to search about [program stability](search_target)
-    -i want to search about [narrative coverage](search_target)
-    -i want to search about [condition coverage](search_target)
-    -i want to search about [design test case](search_target)
-    -i want to search about [Black Box Equivalent Division](search_target)
-    -i want to search about [software test V model](search_target)
-    -i want to search about [unit test](search_target)
-    -i want to search about [Junit](search_target)
-    -i want to search about [integration test](search_target)
-    -i want to search about [System Test](search_target)
-    -i want to search about [performance test](search_target)
-    -i want to search about [acceptance test](search_target)
-    -i want to search about [software test steps](search_target)
-    -i want to search about [test planning](search_target)
-    -i want to search about [test case](search_target)
-    -i want to search about [test result analysis](search_target)
-    -i want to search about [SCRUM](search_target)
-    -i want to search about [waterfall model](search_target)
-    -i want to search about [Agile Manifesto](search_target)
-    -i want to search about for [agile method](search_target)
-    -i want to search about [practical process](search_target)
-    -i want to search about [iteration](search_target)
-    -i want to search about [incremental](search_target)
-    -i want to search about [product to-do list](search_target)
-    -i want to search about [work to do list](search_target)
-    -i want to search about for [describeable functional requirements](search_target)
-    -i want to search about [estimated points](search_target)
-    -i want to search about [Sprint Planning](search_target)
-    -i want to search about [Daily Scrum](search_target)
-    -i want to search about [Sprint Review](search_target)
-    -i want to search about [Sprint Retrospective](search_target)
-    -i want to search about [Scrum Master's Traits](search_target)
-    -i want to search about [Scrum Master](search_target)
-    -i want to search about [Scrum framework](search_target)
-    -i want to search about [value-oriented](search_target)
-    -i want to search about [iterative](search_target)
-    -i want to search about [TDD Process](search_target)
-    -i want to search about [Refactor as needed](search_target)
-    -i want to search about [performance test](search_target)
-    -i want to search about [demand design](search_target)
-    -i want to search about [A/B test](search_target)
-    -i want to search about [Security Test](search_target)
-    -i want to search about [prevention](search_target)
-    -i want to search about [test method](search_target)
-    -i want to search about [software development process](search_target)
-    -i want to search about [Develop or maintain software system as the target](search_target)
-    -i want to search about [Scope](search_target)
-    -i want to search about [time](search_target)
-    -i want to search about [cost](search_target)
-    -i want to search about [quality](search_target)
-    -i want to search about [Project Management](search_target)
-    -i want to search about [Initiating](search_target)
-    -i want to search about [Planning](search_target)
-    -i want to search about [Controlling](search_target)
-    -i want to search about [Executing](search_target)
-    -i want to search about [Closing](search_target)
-    -i want to search about [WBS](search_target)
-    -i want to search about [DoD proposed](search_target)
-    -i want to search about [tree hierarchical](search_target)
-    -i want to search about [时间程](search_target)
-    -i want to search about for [required manpower](search_target)
-    -i want to search about [product size or complexity](search_target)
-    -i want to search about [Activity estimation](search_target)
-    -i want to search about [Project Lifecycle](search_target)
-    -i want to search about [regular meeting](search_target)
-    -i want to search about [milestone meeting](search_target)
-    -i want to search about [project monitoring steps](search_target)
-    -i want to search about [Location](search_target)
-    -i want to search about [Attendance](search_target)
-    -i want to search about [Administrative Closure](search_target)
-    -i want to search about [Contract Close-out](search_target)
-    -i want to search about [Initiating](search_target)
-    -i want to search about [Planning](search_target)
-    -i want to search about [Controlling](search_target)
-    -i want to search about [Executing](search_target)
-    -i want to search about [Closing](search_target)
-    -i want to search about [GanttProject](search_target)
-    -i want to search about [ProjectLibre](search_target)
-    -i want to search about [Microsoft Office Project](search_target)
-    -what is [problem crux](search_target)
-    -what is [complexity](search_target)
-    -what is [consistency](search_target)
-    -what is [hidden](search_target)
-    -what is [variability](search_target)
-    -what is [method](search_target)
-    -what is [tool](search_target)
-    -what is [process](search_target)
-    -what is [demand analysis](search_target)
-    -what is [design](search_target)
-    -what is [implementation and integration](search_target)
-    -what is [test](search_target)
-    -what is [Project Management](search_target)
-    -what is [waterfall development process](search_target)
-    -what is [prototype model](search_target)
-    -what is for [extremely limited range](search_target)
-    -what is [SCRUM](search_target)
-    -what is [functional user requirements](search_target)
-    -what is [functional system requirements](search_target)
-    -what is for [non-functional user requirements](search_target)
-    -what is [non-functional system requirements](search_target)
-    -what is [software requirements specification](search_target)
-    -what is [services the system should provide](search_target)
-    -what is [particular inputs/situations](search_target)
-    -what is [constraints on the services/development process/standards](search_target)
-    -what is [System Quality Requirements and Limitations](search_target)
-    -what is [features that the system should have](search_target)
-    -what is [product requirements](search_target)
-    -what is [organizational requirements](search_target)
-    -what is [external requirements](search_target)
-    -what is [Non-Functional User Requirement](search_target)
-    -what is [Non-Functional System Requirement](search_target)
-    -what is [Speed](search_target)
-    -what is [Size](search_target)
-    -what is [Ease of use](search_target)
-    -what is [Reliability](search_target)
-    -what is [Portability](search_target)
-    -what is [feasibility analysis](search_target)
-    -what is for [demand extraction (character history, wireframe)](search_target)
-    -what is [demand analysis](search_target)
-    -what is [Requirement Normalization](search_target)
-    -what is [demand confirmation](search_target)
-    -what is [UML graphics classification](search_target)
-    -what is [UML tools](search_target)
-    -what is [use case](search_target)
-    -what is [actor](search_target)
-    -what is [Base use case](search_target)
-    -what is [Extension use case](search_target)
-    -what is [Generalization of Use Cases](search_target)
-    -what is [put attributes and operations into appropriate categories] (search_target)
-    -what is [set the relationship between categories](search_target)
-    -what is [describe the type of object in the system](search_target)
-    -what is [various static relationships between types](search_target)
-    -what is [category(Class)](search_target)
-    -what is for [物件(Object)](search_target)
-    -what is [Attribute (Attribute)](search_target)
-    -what is [Method (Method)] (search_target)
-    -what is [Category Relation (Relationship)](search_target)
-    -what is ["Uses a" and "Knows a" relationship](search_target)
-    -what is [Dependency](search_target)
-    -what is [Association](search_target)
-    -what is [Aggregation](search_target)
-    -what is [Composition](search_target)
-    -what is ["Is a" and "Has a" relationship](search_target)
-    -what is ["Is a" and "Can do" relationship] (search_target)
-    -what is for [abstract category](search_target)
-    -what is [abstract method](search_target)
-    -what is [requirement description](search_target)
-    -what is [identify all categories](search_target)
-    -what is [establish relationship between categories](search_target)
-    -what is [set attribute](search_target)
-    -what is [setting method](search_target)
-    -what is [Project Management](search_target)
-    -what is [Project Initialization and Planning](search_target)
-    -what is [project execution](search_target)
-    -what is [Project Monitoring](search_target)
-    -what is [tree hierarchical structure](search_target)
-    -what is [product size](search_target)
-    -what is [complexity](search_target)
-    -what is for [required manpower](search_target)
-    -what is [required time course](search_target)
-    -what is [number of simultaneous jobs](search_target)
-    -what is for [abstract level](search_target)
-    -what is [program abstraction](search_target)
-    -what is for [data abstraction](search_target)
-    -what is for [software unit](search_target)
-    -what is [High Cohesion](search_target)
-    -what is [Low Coupling](search_target)
-    -what is [static surface and dynamic surface](search_target)
-    -what is for [module](search_target)
-    -what is [Module](search_target)
-    -what is [hierarchical structure style](search_target)
-    -what is [repository schema](search_target)
-    -what is [distributed architecture style](search_target)
-    -what is [tubular architecture](search_target)
-    -what is [Top-Down Strategy](search_target)
-    -what is [interface design](search_target)
-    -what is [data design](search_target)
-    -what is [UML activity diagram](search_target)
-    -what is [User Interface Design](search_target)
-    -what is [Structural Design](search_target)
-    -what is [behavior design](search_target)
-    -what is [topic content](search_target)
-    -what is [possible solutions](search_target)
-    -what is [final solution](search_target)
-    -what is [decision reason](search_target)
-    -what is [component detailed description](search_target)
-    -what is [empathy](search_target)
-    -what is [Interview](search_target)
-    -what is [questionnaire](search_target)
-    -what is [user observation](search_target)
-    -what is [closed demand definition package](search_target)
-    -what is for [Creative Brain](search_target)
-    -what is [Prototype](search_target)
-    -what is [Specification Review](search_target)
-    -what is [prototype display](search_target)
-    -what is [demand traceability table](search_target)
-    -what is [vertical traceability table](search_target)
-    -what is [horizontal traceability table](search_target)
-    -what is [functional cohesion](search_target)
-    -what is [sequential cohesion](search_target)
-    -what is [communication cohesion](search_target)
-    -what is [program cohesion](search_target)
-    -what is [temporary cohesion](search_target)
-    -what is [data coupling force](search_target)
-    -what is [data structure coupling](search_target)
-    -what is [Control Coupling Force](search_target)
-    -what is [Global Coupling Force](search_target)
-    -what is [DIP violation](search_target)
-    -what is [Compliant with DIP](search_target)
-    -what is [OCP](search_target)
-    -what is [REP](search_target)
-    -what is [CCP](search_target)
-    -what is [CRP](search_target)
-    -what is [found error](search_target)
-    -what is [assessment quality](search_target)
-    -what is [the difference between testing and debugging](search_target)
-    -what is for [software error](search_target)
-    -what is [test case](search_target)
-    -what is [black box test](search_target)
-    -what is [white box test](search_target)
-    -what is [exhaustive test](search_target)
-    -what is [selective test](search_target)
-    -what is [most efficient](search_target)
-    -what is [program stability](search_target)
-    -what is [narrative coverage](search_target)
-    -what is [condition coverage](search_target)
-    -what is [design test case](search_target)
-    -what is [Black Box Equivalent Division](search_target)
-    -what is [software test V model](search_target)
-    -what is [unit test](search_target)
-    -what is [Junit](search_target)
-    -what is [integration test](search_target)
-    -what is [System Test](search_target)
-    -what is [performance test](search_target)
-    -what is [acceptance test](search_target)
-    -what is [software test steps](search_target)
-    -what is [test planning](search_target)
-    -what is [test case](search_target)
-    -what is [test result analysis](search_target)
-    -what is [SCRUM](search_target)
-    -what is [waterfall model](search_target)
-    -what is [Agile Manifesto](search_target)
-    -what is for [agile method](search_target)
-    -what is [practical process](search_target)
-    -what is [iteration](search_target)
-    -what is [incremental](search_target)
-    -what is [product to-do list](search_target)
-    -what is [work to do list](search_target)
-    -what is for [describeable functional requirements](search_target)
-    -what is [estimated points](search_target)
-    -what is [Sprint Planning](search_target)
-    -what is [Daily Scrum](search_target)
-    -what is [Sprint Review](search_target)
-    -what is [Sprint Retrospective](search_target)
-    -what is [Scrum Master's Traits](search_target)
-    -what is [Scrum Master](search_target)
-    -what is [Scrum framework](search_target)
-    -what is [value-oriented](search_target)
-    -what is [iterative](search_target)
-    -what is [TDD Process](search_target)
-    -what is [Refactor as needed](search_target)
-    -what is [performance test](search_target)
-    -what is [demand design](search_target)
-    -what is [A/B test](search_target)
-    -what is [Security Test](search_target)
-    -what is [prevention](search_target)
-    -what is [test method](search_target)
-    -what is [software development process](search_target)
-    -what is [Develop or maintain software system as the target](search_target)
-    -what is [Scope](search_target)
-    -what is [time](search_target)
-    -what is [cost](search_target)
-    -what is [quality](search_target)
-    -what is [Project Management](search_target)
-    -what is [Initiating](search_target)
-    -what is [Planning](search_target)
-    -what is [Controlling](search_target)
-    -what is [Executing](search_target)
-    -what is [Closing](search_target)
-    -what is [WBS](search_target)
-    -what is [DoD proposed](search_target)
-    -what is [tree hierarchical](search_target)
-    -what is [时间程](search_target)
-    -what is for [required manpower](search_target)
-    -what is [product size or complexity](search_target)
-    -what is [Activity estimation](search_target)
-    -what is [Project Lifecycle](search_target)
-    -what is [regular meeting](search_target)
-    -what is [milestone meeting](search_target)
-    -what is [project monitoring steps](search_target)
-    -what is [Location](search_target)
-    -what is [Attendance](search_target)
-    -what is [Administrative Closure](search_target)
-    -what is [Contract Close-out](search_target)
-    -what is [Initiating](search_target)
-    -what is [Planning](search_target)
-    -what is [Controlling](search_target)
-    -what is [Executing](search_target)
-    -what is [Closing](search_target)
-    -what is [GanttProject](search_target)
-    -what is [ProjectLibre](search_target)
-    -what is [Microsoft Office Project](search_target)
+    - I want to search [problem crux](search_target)
+    - I want to query [complexity](search_target)
+    - I want to query [consistency](search_target)
+    - I want to query [hidden](search_target)
+    - I want to query [variability](search_target)
+    - I want to search [method](search_target)
+    - I want to search [tool](search_target)
+    - I want to query [process](search_target)
+    - I want to query [demand analysis](search_target)
+    - I want to query [design](search_target)
+    - I want to query [implementation and integration](search_target)
+    - I want to query [test](search_target)
+    - I want to query [Project Management](search_target)
+    - I want to query [waterfall development process](search_target)
+    - I want to query [prototype model](search_target)
+    - I want to search for [extremely limited range](search_target)
+    - I want to search [SCRUM](search_target)
+    - I want to query [functional user requirements](search_target)
+    - I want to query [functional system requirements](search_target)
+    - I want to search for [non-functional user requirements](search_target)
+    - I want to query [non-functional system requirements](search_target)
+    - I want to query [software requirements specification](search_target)
+    - I want to query [services the system should provide](search_target)
+    - I want to query [particular inputs/situations](search_target)
+    - I want to query [constraints on the services/development process/standards](search_target)
+    - I want to query [System Quality Requirements and Limitations](search_target)
+    - I want to query [features that the system should have](search_target)
+    - I want to query [product requirements](search_target)
+    - I want to query [organizational requirements](search_target)
+    - I want to query [external requirements](search_target)
+    - I want to query [Non-Functional User Requirement](search_target)
+    - I want to query [Non-Functional System Requirement](search_target)
+    - I want to query [Speed](search_target)
+    - I want to query [Size](search_target)
+    - I want to query [Ease of use](search_target)
+    - I want to query [Reliability](search_target)
+    - I want to query [Portability](search_target)
+    - I want to query [feasibility analysis](search_target)
+    - I want to search for [demand extraction (character history, wireframe)](search_target)
+    - I want to query [demand analysis](search_target)
+    - I want to query [Requirement Normalization](search_target)
+    - I want to search [demand confirmation](search_target)
+    - I want to query [UML graphics classification](search_target)
+    - I want to query [UML tools](search_target)
+    - I want to query [use case](search_target)
+    - I want to query [actor](search_target)
+    - I want to query [Base use case](search_target)
+    - I want to query [Extension use case](search_target)
+    - I want to query [Generalization of Use Cases](search_target)
+    - I want to query [put attributes and operations into appropriate categories] (search_target)
+    - I want to query [set the relationship between categories](search_target)
+    - I want to query [describe the type of object in the system](search_target)
+    - I want to query [various static relationships between types](search_target)
+    - I want to query [category(Class)](search_target)
+    - I want to search for [物件(Object)](search_target)
+    - I want to query [Attribute (Attribute)](search_target)
+    - I want to query [Method (Method)] (search_target)
+    - I want to query [Category Relation (Relationship)](search_target)
+    - I want to query ["Uses a" and "Knows a" relationship](search_target)
+    - I want to query [Dependency](search_target)
+    - I want to query [Association](search_target)
+    - I want to query [Aggregation](search_target)
+    - I want to query [Composition](search_target)
+    - I want to query ["Is a" and "Has a" relationship](search_target)
+    - I want to query ["Is a" and "Can do" relationship] (search_target)
+    - I want to search for [abstract category](search_target)
+    - I want to query [abstract method](search_target)
+    - I want to search [requirement description](search_target)
+    - I want to search [identify all categories](search_target)
+    - I want to query [establish relationship between categories](search_target)
+    - I want to query [set attribute](search_target)
+    - I want to search [setting method](search_target)
+    - I want to query [Project Management](search_target)
+    - I want to query [Project Initialization and Planning](search_target)
+    - I want to search [project execution](search_target)
+    - I want to query [Project Monitoring](search_target)
+    - I want to query [tree hierarchical structure](search_target)
+    - I want to query [product size](search_target)
+    - I want to query [complexity](search_target)
+    - I want to search for [required manpower](search_target)
+    - I want to search [required time course](search_target)
+    - I want to query [number of simultaneous jobs](search_target)
+    - I want to search for [abstract level](search_target)
+    - I want to query [program abstraction](search_target)
+    - I want to search for [data abstraction](search_target)
+    - I want to search for [software unit](search_target)
+    - I want to query [High Cohesion](search_target)
+    - I want to query [Low Coupling](search_target)
+    - I want to query [static surface and dynamic surface](search_target)
+    - I want to search for [module](search_target)
+    - I want to query [Module](search_target)
+    - I want to query [hierarchical structure style](search_target)
+    - I want to query [repository schema](search_target)
+    - I want to query [distributed architecture style](search_target)
+    - I want to query [tubular architecture](search_target)
+    - I want to query [Top-Down Strategy](search_target)
+    - I want to query [interface design](search_target)
+    - I want to search [data design](search_target)
+    - I want to query [UML activity diagram](search_target)
+    - I want to query [User Interface Design](search_target)
+    - I want to query [Structural Design](search_target)
+    - I want to query [behavior design](search_target)
+    - I want to search [topic content](search_target)
+    - I want to query [possible solutions](search_target)
+    - I want to query [final solution](search_target)
+    - I want to query [decision reason](search_target)
+    - I want to query [component detailed description](search_target)
+    - I want to query [empathy](search_target)
+    - I want to query [Interview](search_target)
+    - I want to search [questionnaire](search_target)
+    - I want to query [user observation](search_target)
+    - I want to query [closed demand definition package](search_target)
+    - I want to search for [Creative Brain](search_target)
+    - I want to query [Prototype](search_target)
+    - I want to query [Specification Review](search_target)
+    - I want to query [prototype display](search_target)
+    - I want to query [demand traceability table](search_target)
+    - I want to query [vertical traceability table](search_target)
+    - I want to query [horizontal traceability table](search_target)
+    - I want to query [functional cohesion](search_target)
+    - I want to query [sequential cohesion](search_target)
+    - I want to query [communication cohesion](search_target)
+    - I want to query [program cohesion](search_target)
+    - I want to query [temporary cohesion](search_target)
+    - I want to query [data coupling force](search_target)
+    - I want to query [data structure coupling](search_target)
+    - I want to query [Control Coupling Force](search_target)
+    - I want to query [Global Coupling Force](search_target)
+    - I want to query [DIP violation](search_target)
+    - I want to search [Compliant with DIP](search_target)
+    - I want to query [OCP](search_target)
+    - I want to query [REP](search_target)
+    - I want to search [CCP](search_target)
+    - I want to search [CRP](search_target)
+    - I want to query [found error](search_target)
+    - I want to query [assessment quality](search_target)
+    - I want to query [the difference between testing and debugging](search_target)
+    - I want to search for [software error](search_target)
+    - I want to query [test case](search_target)
+    - I want to query [black box test](search_target)
+    - I want to query [white box test](search_target)
+    - I want to query [exhaustive test](search_target)
+    - I want to query [selective test](search_target)
+    - I want to query [most efficient](search_target)
+    - I want to check [program stability](search_target)
+    - I want to query [narrative coverage](search_target)
+    - I want to query [condition coverage](search_target)
+    - I want to query [design test case](search_target)
+    - I want to query [Black Box Equivalent Division](search_target)
+    - I want to query [software test V model](search_target)
+    - I want to query [unit test](search_target)
+    - I want to query [Junit](search_target)
+    - I want to query [integration test](search_target)
+    - I want to query [System Test](search_target)
+    - I want to query [performance test](search_target)
+    - I want to query [acceptance test](search_target)
+    - I want to query [software test steps](search_target)
+    - I want to query [test planning](search_target)
+    - I want to query [test case](search_target)
+    - I want to query [test result analysis](search_target)
+    - I want to search [SCRUM](search_target)
+    - I want to query [waterfall model](search_target)
+    - I want to query [Agile Manifesto](search_target)
+    - I want to search for [agile method](search_target)
+    - I want to query [practical process](search_target)
+    - I want to query [iteration](search_target)
+    - I want to query [incremental](search_target)
+    - I want to query [product to-do list](search_target)
+    - I want to search [work to do list](search_target)
+    - I want to search for [describeable functional requirements](search_target)
+    - I want to query [estimated points](search_target)
+    - I want to query [Sprint Planning](search_target)
+    - I want to query [Daily Scrum](search_target)
+    - I want to query [Sprint Review](search_target)
+    - I want to query [Sprint Retrospective](search_target)
+    - I want to query [Scrum Master's Traits](search_target)
+    - I want to query [Scrum Master](search_target)
+    - I want to query [Scrum framework](search_target)
+    - I want to query [value-oriented](search_target)
+    - I want to query [iterative](search_target)
+    - I want to query [TDD Process](search_target)
+    - I want to query [Refactor as needed](search_target)
+    - I want to query [performance test](search_target)
+    - I want to query [demand design](search_target)
+    - I want to query [A/B test](search_target)
+    - I want to query [Security Test](search_target)
+    - I want to query [prevention](search_target)
+    - I want to query [test method](search_target)
+    - I want to query [software development process](search_target)
+    - I want to query [Develop or maintain software system as the target](search_target)
+    - I want to query [Scope](search_target)
+    - I want to query [time](search_target)
+    - I want to query [cost](search_target)
+    - I want to query [quality](search_target)
+    - I want to query [Project Management](search_target)
+    - I want to query [Initiating](search_target)
+    - I want to query [Planning](search_target)
+    - I want to query [Controlling](search_target)
+    - I want to query [Executing](search_target)
+    - I want to query [Closing](search_target)
+    - I want to search [WBS](search_target)
+    - I want to query [DoD proposed](search_target)
+    - I want to search [tree hierarchical](search_target)
+    - I want to query [时间程](search_target)
+    - I want to search for [required manpower](search_target)
+    - I want to query [product size or complexity](search_target)
+    - I want to query [Activity estimation](search_target)
+    - I want to query [Project Lifecycle](search_target)
+    - I want to query [regular meeting](search_target)
+    - I want to query [milestone meeting](search_target)
+    - I want to query [project monitoring steps](search_target)
+    - I want to query [Location](search_target)
+    - I want to query [Attendance](search_target)
+    - I want to query [Administrative Closure](search_target)
+    - I want to query [Contract Close-out](search_target)
+    - I want to query [Initiating](search_target)
+    - I want to query [Planning](search_target)
+    - I want to query [Controlling](search_target)
+    - I want to query [Executing](search_target)
+    - I want to query [Closing](search_target)
+    - I want to query [GanttProject](search_target)
+    - I want to query [ProjectLibre](search_target)
+    - I want to query [Microsoft Office Project](search_target)
+    - what does [problem crux](search_target) means
+    - what does [complexity](search_target) means
+    - what does [consistency](search_target) means
+    - what does [hidden](search_target) means
+    - what does [variability](search_target) means
+    - what does [method](search_target) means
+    - what does [tool](search_target) means
+    - what does [process](search_target) means
+    - what does [demand analysis](search_target) means
+    - what does [design](search_target) means
+    - what does [implementation and integration](search_target) means
+    - what does [test](search_target) means
+    - what does [Project Management](search_target) means
+    - what does [waterfall development process](search_target) means
+    - what does [prototype model](search_target) means
+    - what does for [extremely limited range](search_target) means
+    - what does [SCRUM](search_target) means
+    - what does [functional user requirements](search_target) means
+    - what does [functional system requirements](search_target) means
+    - what does for [non-functional user requirements](search_target) means
+    - what does [non-functional system requirements](search_target) means
+    - what does [software requirements specification](search_target) means
+    - what does [services the system should provide](search_target) means
+    - what does [particular inputs/situations](search_target) means
+    - what does [constraints on the services/development process/standards](search_target) means
+    - what does [System Quality Requirements and Limitations](search_target) means
+    - what does [features that the system should have](search_target) means
+    - what does [product requirements](search_target) means
+    - what does [organizational requirements](search_target) means
+    - what does [external requirements](search_target) means
+    - what does [Non-Functional User Requirement](search_target) means
+    - what does [Non-Functional System Requirement](search_target) means
+    - what does [Speed](search_target) means
+    - what does [Size](search_target) means
+    - what does [Ease of use](search_target) means
+    - what does [Reliability](search_target) means
+    - what does [Portability](search_target) means
+    - what does [feasibility analysis](search_target) means
+    - what does for [demand extraction (character history, wireframe)](search_target) means
+    - what does [demand analysis](search_target) means
+    - what does [Requirement Normalization](search_target) means
+    - what does [demand confirmation](search_target) means
+    - what does [UML graphics classification](search_target) means
+    - what does [UML tools](search_target) means
+    - what does [use case](search_target) means
+    - what does [actor](search_target) means
+    - what does [Base use case](search_target) means
+    - what does [Extension use case](search_target) means
+    - what does [Generalization of Use Cases](search_target) means
+    - what does [put attributes and operations into appropriate categories] (search_target) means
+    - what does [set the relationship between categories](search_target) means
+    - what does [describe the type of object in the system](search_target) means
+    - what does [various static relationships between types](search_target) means
+    - what does [category(Class)](search_target) means
+    - what does for [物件(Object)](search_target) means
+    - what does [Attribute (Attribute)](search_target) means
+    - what does [Method (Method)] (search_target) means
+    - what does [Category Relation (Relationship)](search_target) means
+    - what does ["Uses a" and "Knows a" relationship](search_target) means
+    - what does [Dependency](search_target) means
+    - what does [Association](search_target) means
+    - what does [Aggregation](search_target) means
+    - what does [Composition](search_target) means
+    - what does ["Is a" and "Has a" relationship](search_target) means
+    - what does ["Is a" and "Can do" relationship] (search_target) means
+    - what does for [abstract category](search_target) means
+    - what does [abstract method](search_target) means
+    - what does [requirement description](search_target) means
+    - what does [identify all categories](search_target) means
+    - what does [establish relationship between categories](search_target) means
+    - what does [set attribute](search_target) means
+    - what does [setting method](search_target) means
+    - what does [Project Management](search_target) means
+    - what does [Project Initialization and Planning](search_target) means
+    - what does [project execution](search_target) means
+    - what does [Project Monitoring](search_target) means
+    - what does [tree hierarchical structure](search_target) means
+    - what does [product size](search_target) means
+    - what does [complexity](search_target) means
+    - what does for [required manpower](search_target) means
+    - what does [required time course](search_target) means
+    - what does [number of simultaneous jobs](search_target) means
+    - what does for [abstract level](search_target) means
+    - what does [program abstraction](search_target) means
+    - what does for [data abstraction](search_target) means
+    - what does for [software unit](search_target) means
+    - what does [High Cohesion](search_target) means
+    - what does [Low Coupling](search_target) means
+    - what does [static surface and dynamic surface](search_target) means
+    - what does for [module](search_target) means
+    - what does [Module](search_target) means
+    - what does [hierarchical structure style](search_target) means
+    - what does [repository schema](search_target) means
+    - what does [distributed architecture style](search_target) means
+    - what does [tubular architecture](search_target) means
+    - what does [Top-Down Strategy](search_target) means
+    - what does [interface design](search_target) means
+    - what does [data design](search_target) means
+    - what does [UML activity diagram](search_target) means
+    - what does [User Interface Design](search_target) means
+    - what does [Structural Design](search_target) means
+    - what does [behavior design](search_target) means
+    - what does [topic content](search_target) means
+    - what does [possible solutions](search_target) means
+    - what does [final solution](search_target) means
+    - what does [decision reason](search_target) means
+    - what does [component detailed description](search_target) means
+    - what does [empathy](search_target) means
+    - what does [Interview](search_target) means
+    - what does [questionnaire](search_target) means
+    - what does [user observation](search_target) means
+    - what does [closed demand definition package](search_target) means
+    - what does for [Creative Brain](search_target) means
+    - what does [Prototype](search_target) means
+    - what does [Specification Review](search_target) means
+    - what does [prototype display](search_target) means
+    - what does [demand traceability table](search_target) means
+    - what does [vertical traceability table](search_target) means
+    - what does [horizontal traceability table](search_target) means
+    - what does [functional cohesion](search_target) means
+    - what does [sequential cohesion](search_target) means
+    - what does [communication cohesion](search_target) means
+    - what does [program cohesion](search_target) means
+    - what does [temporary cohesion](search_target) means
+    - what does [data coupling force](search_target) means
+    - what does [data structure coupling](search_target) means
+    - what does [Control Coupling Force](search_target) means
+    - what does [Global Coupling Force](search_target) means
+    - what does [DIP violation](search_target) means
+    - what does [Compliant with DIP](search_target) means
+    - what does [OCP](search_target) means
+    - what does [REP](search_target) means
+    - what does [CCP](search_target) means
+    - what does [CRP](search_target) means
+    - what does [found error](search_target) means
+    - what does [assessment quality](search_target) means
+    - what does [the difference between testing and debugging](search_target) means
+    - what does for [software error](search_target) means
+    - what does [test case](search_target) means
+    - what does [black box test](search_target) means
+    - what does [white box test](search_target) means
+    - what does [exhaustive test](search_target) means
+    - what does [selective test](search_target) means
+    - what does [most efficient](search_target) means
+    - what does [program stability](search_target) means
+    - what does [narrative coverage](search_target) means
+    - what does [condition coverage](search_target) means
+    - what does [design test case](search_target) means
+    - what does [Black Box Equivalent Division](search_target) means
+    - what does [software test V model](search_target) means
+    - what does [unit test](search_target) means
+    - what does [Junit](search_target) means
+    - what does [integration test](search_target) means
+    - what does [System Test](search_target) means
+    - what does [performance test](search_target) means
+    - what does [acceptance test](search_target) means
+    - what does [software test steps](search_target) means
+    - what does [test planning](search_target) means
+    - what does [test case](search_target) means
+    - what does [test result analysis](search_target) means
+    - what does [SCRUM](search_target) means
+    - what does [waterfall model](search_target) means
+    - what does [Agile Manifesto](search_target) means
+    - what does for [agile method](search_target) means
+    - what does [practical process](search_target) means
+    - what does [iteration](search_target) means
+    - what does [incremental](search_target) means
+    - what does [product to-do list](search_target) means
+    - what does [work to do list](search_target) means
+    - what does for [describeable functional requirements](search_target) means
+    - what does [estimated points](search_target) means
+    - what does [Sprint Planning](search_target) means
+    - what does [Daily Scrum](search_target) means
+    - what does [Sprint Review](search_target) means
+    - what does [Sprint Retrospective](search_target) means
+    - what does [Scrum Master's Traits](search_target) means
+    - what does [Scrum Master](search_target) means
+    - what does [Scrum framework](search_target) means
+    - what does [value-oriented](search_target) means
+    - what does [iterative](search_target) means
+    - what does [TDD Process](search_target) means
+    - what does [Refactor as needed](search_target) means
+    - what does [performance test](search_target) means
+    - what does [demand design](search_target) means
+    - what does [A/B test](search_target) means
+    - what does [Security Test](search_target) means
+    - what does [prevention](search_target) means
+    - what does [test method](search_target) means
+    - what does [software development process](search_target) means
+    - what does [Develop or maintain software system as the target](search_target) means
+    - what does [Scope](search_target) means
+    - what does [time](search_target) means
+    - what does [cost](search_target) means
+    - what does [quality](search_target) means
+    - what does [Project Management](search_target) means
+    - what does [Initiating](search_target) means
+    - what does [Planning](search_target) means
+    - what does [Controlling](search_target) means
+    - what does [Executing](search_target) means
+    - what does [Closing](search_target) means
+    - what does [WBS](search_target) means
+    - what does [DoD proposed](search_target) means
+    - what does [tree hierarchical](search_target) means
+    - what does [时间程](search_target) means
+    - what does for [required manpower](search_target) means
+    - what does [product size or complexity](search_target) means
+    - what does [Activity estimation](search_target) means
+    - what does [Project Lifecycle](search_target) means
+    - what does [regular meeting](search_target) means
+    - what does [milestone meeting](search_target) means
+    - what does [project monitoring steps](search_target) means
+    - what does [Location](search_target) means
+    - what does [Attendance](search_target) means
+    - what does [Administrative Closure](search_target) means
+    - what does [Contract Close-out](search_target) means
+    - what does [Initiating](search_target) means
+    - what does [Planning](search_target) means
+    - what does [Controlling](search_target) means
+    - what does [Executing](search_target) means
+    - what does [Closing](search_target) means
+    - what does [GanttProject](search_target) means
+    - what does [ProjectLibre](search_target) means
+    - what does [Microsoft Office Project](search_target) means
+    - i want to search about [problem crux](search_target)
+    - i want to search about [complexity](search_target)
+    - i want to search about [consistency](search_target)
+    - i want to search about [hidden](search_target)
+    - i want to search about [variability](search_target)
+    - i want to search about [method](search_target)
+    - i want to search about [tool](search_target)
+    - i want to search about [process](search_target)
+    - i want to search about [demand analysis](search_target)
+    - i want to search about [design](search_target)
+    - i want to search about [implementation and integration](search_target)
+    - i want to search about [test](search_target)
+    - i want to search about [Project Management](search_target)
+    - i want to search about [waterfall development process](search_target)
+    - i want to search about [prototype model](search_target)
+    - i want to search about for [extremely limited range](search_target)
+    - i want to search about [SCRUM](search_target)
+    - i want to search about [functional user requirements](search_target)
+    - i want to search about [functional system requirements](search_target)
+    - i want to search about for [non-functional user requirements](search_target)
+    - i want to search about [non-functional system requirements](search_target)
+    - i want to search about [software requirements specification](search_target)
+    - i want to search about [services the system should provide](search_target)
+    - i want to search about [particular inputs/situations](search_target)
+    - i want to search about [constraints on the services/development process/standards](search_target)
+    - i want to search about [System Quality Requirements and Limitations](search_target)
+    - i want to search about [features that the system should have](search_target)
+    - i want to search about [product requirements](search_target)
+    - i want to search about [organizational requirements](search_target)
+    - i want to search about [external requirements](search_target)
+    - i want to search about [Non-Functional User Requirement](search_target)
+    - i want to search about [Non-Functional System Requirement](search_target)
+    - i want to search about [Speed](search_target)
+    - i want to search about [Size](search_target)
+    - i want to search about [Ease of use](search_target)
+    - i want to search about [Reliability](search_target)
+    - i want to search about [Portability](search_target)
+    - i want to search about [feasibility analysis](search_target)
+    - i want to search about for [demand extraction (character history, wireframe)](search_target)
+    - i want to search about [demand analysis](search_target)
+    - i want to search about [Requirement Normalization](search_target)
+    - i want to search about [demand confirmation](search_target)
+    - i want to search about [UML graphics classification](search_target)
+    - i want to search about [UML tools](search_target)
+    - i want to search about [use case](search_target)
+    - i want to search about [actor](search_target)
+    - i want to search about [Base use case](search_target)
+    - i want to search about [Extension use case](search_target)
+    - i want to search about [Generalization of Use Cases](search_target)
+    - i want to search about [put attributes and operations into appropriate categories] (search_target)
+    - i want to search about [set the relationship between categories](search_target)
+    - i want to search about [describe the type of object in the system](search_target)
+    - i want to search about [various static relationships between types](search_target)
+    - i want to search about [category(Class)](search_target)
+    - i want to search about for [物件(Object)](search_target)
+    - i want to search about [Attribute (Attribute)](search_target)
+    - i want to search about [Method (Method)] (search_target)
+    - i want to search about [Category Relation (Relationship)](search_target)
+    - i want to search about ["Uses a" and "Knows a" relationship](search_target)
+    - i want to search about [Dependency](search_target)
+    - i want to search about [Association](search_target)
+    - i want to search about [Aggregation](search_target)
+    - i want to search about [Composition](search_target)
+    - i want to search about ["Is a" and "Has a" relationship](search_target)
+    - i want to search about ["Is a" and "Can do" relationship] (search_target)
+    - i want to search about for [abstract category](search_target)
+    - i want to search about [abstract method](search_target)
+    - i want to search about [requirement description](search_target)
+    - i want to search about [identify all categories](search_target)
+    - i want to search about [establish relationship between categories](search_target)
+    - i want to search about [set attribute](search_target)
+    - i want to search about [setting method](search_target)
+    - i want to search about [Project Management](search_target)
+    - i want to search about [Project Initialization and Planning](search_target)
+    - i want to search about [project execution](search_target)
+    - i want to search about [Project Monitoring](search_target)
+    - i want to search about [tree hierarchical structure](search_target)
+    - i want to search about [product size](search_target)
+    - i want to search about [complexity](search_target)
+    - i want to search about for [required manpower](search_target)
+    - i want to search about [required time course](search_target)
+    - i want to search about [number of simultaneous jobs](search_target)
+    - i want to search about for [abstract level](search_target)
+    - i want to search about [program abstraction](search_target)
+    - i want to search about for [data abstraction](search_target)
+    - i want to search about for [software unit](search_target)
+    - i want to search about [High Cohesion](search_target)
+    - i want to search about [Low Coupling](search_target)
+    - i want to search about [static surface and dynamic surface](search_target)
+    - i want to search about for [module](search_target)
+    - i want to search about [Module](search_target)
+    - i want to search about [hierarchical structure style](search_target)
+    - i want to search about [repository schema](search_target)
+    - i want to search about [distributed architecture style](search_target)
+    - i want to search about [tubular architecture](search_target)
+    - i want to search about [Top-Down Strategy](search_target)
+    - i want to search about [interface design](search_target)
+    - i want to search about [data design](search_target)
+    - i want to search about [UML activity diagram](search_target)
+    - i want to search about [User Interface Design](search_target)
+    - i want to search about [Structural Design](search_target)
+    - i want to search about [behavior design](search_target)
+    - i want to search about [topic content](search_target)
+    - i want to search about [possible solutions](search_target)
+    - i want to search about [final solution](search_target)
+    - i want to search about [decision reason](search_target)
+    - i want to search about [component detailed description](search_target)
+    - i want to search about [empathy](search_target)
+    - i want to search about [Interview](search_target)
+    - i want to search about [questionnaire](search_target)
+    - i want to search about [user observation](search_target)
+    - i want to search about [closed demand definition package](search_target)
+    - i want to search about for [Creative Brain](search_target)
+    - i want to search about [Prototype](search_target)
+    - i want to search about [Specification Review](search_target)
+    - i want to search about [prototype display](search_target)
+    - i want to search about [demand traceability table](search_target)
+    - i want to search about [vertical traceability table](search_target)
+    - i want to search about [horizontal traceability table](search_target)
+    - i want to search about [functional cohesion](search_target)
+    - i want to search about [sequential cohesion](search_target)
+    - i want to search about [communication cohesion](search_target)
+    - i want to search about [program cohesion](search_target)
+    - i want to search about [temporary cohesion](search_target)
+    - i want to search about [data coupling force](search_target)
+    - i want to search about [data structure coupling](search_target)
+    - i want to search about [Control Coupling Force](search_target)
+    - i want to search about [Global Coupling Force](search_target)
+    - i want to search about [DIP violation](search_target)
+    - i want to search about [Compliant with DIP](search_target)
+    - i want to search about [OCP](search_target)
+    - i want to search about [REP](search_target)
+    - i want to search about [CCP](search_target)
+    - i want to search about [CRP](search_target)
+    - i want to search about [found error](search_target)
+    - i want to search about [assessment quality](search_target)
+    - i want to search about [the difference between testing and debugging](search_target)
+    - i want to search about for [software error](search_target)
+    - i want to search about [test case](search_target)
+    - i want to search about [black box test](search_target)
+    - i want to search about [white box test](search_target)
+    - i want to search about [exhaustive test](search_target)
+    - i want to search about [selective test](search_target)
+    - i want to search about [most efficient](search_target)
+    - i want to search about [program stability](search_target)
+    - i want to search about [narrative coverage](search_target)
+    - i want to search about [condition coverage](search_target)
+    - i want to search about [design test case](search_target)
+    - i want to search about [Black Box Equivalent Division](search_target)
+    - i want to search about [software test V model](search_target)
+    - i want to search about [unit test](search_target)
+    - i want to search about [Junit](search_target)
+    - i want to search about [integration test](search_target)
+    - i want to search about [System Test](search_target)
+    - i want to search about [performance test](search_target)
+    - i want to search about [acceptance test](search_target)
+    - i want to search about [software test steps](search_target)
+    - i want to search about [test planning](search_target)
+    - i want to search about [test case](search_target)
+    - i want to search about [test result analysis](search_target)
+    - i want to search about [SCRUM](search_target)
+    - i want to search about [waterfall model](search_target)
+    - i want to search about [Agile Manifesto](search_target)
+    - i want to search about for [agile method](search_target)
+    - i want to search about [practical process](search_target)
+    - i want to search about [iteration](search_target)
+    - i want to search about [incremental](search_target)
+    - i want to search about [product to-do list](search_target)
+    - i want to search about [work to do list](search_target)
+    - i want to search about for [describeable functional requirements](search_target)
+    - i want to search about [estimated points](search_target)
+    - i want to search about [Sprint Planning](search_target)
+    - i want to search about [Daily Scrum](search_target)
+    - i want to search about [Sprint Review](search_target)
+    - i want to search about [Sprint Retrospective](search_target)
+    - i want to search about [Scrum Master's Traits](search_target)
+    - i want to search about [Scrum Master](search_target)
+    - i want to search about [Scrum framework](search_target)
+    - i want to search about [value-oriented](search_target)
+    - i want to search about [iterative](search_target)
+    - i want to search about [TDD Process](search_target)
+    - i want to search about [Refactor as needed](search_target)
+    - i want to search about [performance test](search_target)
+    - i want to search about [demand design](search_target)
+    - i want to search about [A/B test](search_target)
+    - i want to search about [Security Test](search_target)
+    - i want to search about [prevention](search_target)
+    - i want to search about [test method](search_target)
+    - i want to search about [software development process](search_target)
+    - i want to search about [Develop or maintain software system as the target](search_target)
+    - i want to search about [Scope](search_target)
+    - i want to search about [time](search_target)
+    - i want to search about [cost](search_target)
+    - i want to search about [quality](search_target)
+    - i want to search about [Project Management](search_target)
+    - i want to search about [Initiating](search_target)
+    - i want to search about [Planning](search_target)
+    - i want to search about [Controlling](search_target)
+    - i want to search about [Executing](search_target)
+    - i want to search about [Closing](search_target)
+    - i want to search about [WBS](search_target)
+    - i want to search about [DoD proposed](search_target)
+    - i want to search about [tree hierarchical](search_target)
+    - i want to search about [时间程](search_target)
+    - i want to search about for [required manpower](search_target)
+    - i want to search about [product size or complexity](search_target)
+    - i want to search about [Activity estimation](search_target)
+    - i want to search about [Project Lifecycle](search_target)
+    - i want to search about [regular meeting](search_target)
+    - i want to search about [milestone meeting](search_target)
+    - i want to search about [project monitoring steps](search_target)
+    - i want to search about [Location](search_target)
+    - i want to search about [Attendance](search_target)
+    - i want to search about [Administrative Closure](search_target)
+    - i want to search about [Contract Close-out](search_target)
+    - i want to search about [Initiating](search_target)
+    - i want to search about [Planning](search_target)
+    - i want to search about [Controlling](search_target)
+    - i want to search about [Executing](search_target)
+    - i want to search about [Closing](search_target)
+    - i want to search about [GanttProject](search_target)
+    - i want to search about [ProjectLibre](search_target)
+    - i want to search about [Microsoft Office Project](search_target)
+    - what is [problem crux](search_target)
+    - what is [complexity](search_target)
+    - what is [consistency](search_target)
+    - what is [hidden](search_target)
+    - what is [variability](search_target)
+    - what is [method](search_target)
+    - what is [tool](search_target)
+    - what is [process](search_target)
+    - what is [demand analysis](search_target)
+    - what is [design](search_target)
+    - what is [implementation and integration](search_target)
+    - what is [test](search_target)
+    - what is [Project Management](search_target)
+    - what is [waterfall development process](search_target)
+    - what is [prototype model](search_target)
+    - what is for [extremely limited range](search_target)
+    - what is [SCRUM](search_target)
+    - what is [functional user requirements](search_target)
+    - what is [functional system requirements](search_target)
+    - what is for [non-functional user requirements](search_target)
+    - what is [non-functional system requirements](search_target)
+    - what is [software requirements specification](search_target)
+    - what is [services the system should provide](search_target)
+    - what is [particular inputs/situations](search_target)
+    - what is [constraints on the services/development process/standards](search_target)
+    - what is [System Quality Requirements and Limitations](search_target)
+    - what is [features that the system should have](search_target)
+    - what is [product requirements](search_target)
+    - what is [organizational requirements](search_target)
+    - what is [external requirements](search_target)
+    - what is [Non-Functional User Requirement](search_target)
+    - what is [Non-Functional System Requirement](search_target)
+    - what is [Speed](search_target)
+    - what is [Size](search_target)
+    - what is [Ease of use](search_target)
+    - what is [Reliability](search_target)
+    - what is [Portability](search_target)
+    - what is [feasibility analysis](search_target)
+    - what is for [demand extraction (character history, wireframe)](search_target)
+    - what is [demand analysis](search_target)
+    - what is [Requirement Normalization](search_target)
+    - what is [demand confirmation](search_target)
+    - what is [UML graphics classification](search_target)
+    - what is [UML tools](search_target)
+    - what is [use case](search_target)
+    - what is [actor](search_target)
+    - what is [Base use case](search_target)
+    - what is [Extension use case](search_target)
+    - what is [Generalization of Use Cases](search_target)
+    - what is [put attributes and operations into appropriate categories] (search_target)
+    - what is [set the relationship between categories](search_target)
+    - what is [describe the type of object in the system](search_target)
+    - what is [various static relationships between types](search_target)
+    - what is [category(Class)](search_target)
+    - what is for [物件(Object)](search_target)
+    - what is [Attribute (Attribute)](search_target)
+    - what is [Method (Method)] (search_target)
+    - what is [Category Relation (Relationship)](search_target)
+    - what is ["Uses a" and "Knows a" relationship](search_target)
+    - what is [Dependency](search_target)
+    - what is [Association](search_target)
+    - what is [Aggregation](search_target)
+    - what is [Composition](search_target)
+    - what is ["Is a" and "Has a" relationship](search_target)
+    - what is ["Is a" and "Can do" relationship] (search_target)
+    - what is for [abstract category](search_target)
+    - what is [abstract method](search_target)
+    - what is [requirement description](search_target)
+    - what is [identify all categories](search_target)
+    - what is [establish relationship between categories](search_target)
+    - what is [set attribute](search_target)
+    - what is [setting method](search_target)
+    - what is [Project Management](search_target)
+    - what is [Project Initialization and Planning](search_target)
+    - what is [project execution](search_target)
+    - what is [Project Monitoring](search_target)
+    - what is [tree hierarchical structure](search_target)
+    - what is [product size](search_target)
+    - what is [complexity](search_target)
+    - what is for [required manpower](search_target)
+    - what is [required time course](search_target)
+    - what is [number of simultaneous jobs](search_target)
+    - what is for [abstract level](search_target)
+    - what is [program abstraction](search_target)
+    - what is for [data abstraction](search_target)
+    - what is for [software unit](search_target)
+    - what is [High Cohesion](search_target)
+    - what is [Low Coupling](search_target)
+    - what is [static surface and dynamic surface](search_target)
+    - what is for [module](search_target)
+    - what is [Module](search_target)
+    - what is [hierarchical structure style](search_target)
+    - what is [repository schema](search_target)
+    - what is [distributed architecture style](search_target)
+    - what is [tubular architecture](search_target)
+    - what is [Top-Down Strategy](search_target)
+    - what is [interface design](search_target)
+    - what is [data design](search_target)
+    - what is [UML activity diagram](search_target)
+    - what is [User Interface Design](search_target)
+    - what is [Structural Design](search_target)
+    - what is [behavior design](search_target)
+    - what is [topic content](search_target)
+    - what is [possible solutions](search_target)
+    - what is [final solution](search_target)
+    - what is [decision reason](search_target)
+    - what is [component detailed description](search_target)
+    - what is [empathy](search_target)
+    - what is [Interview](search_target)
+    - what is [questionnaire](search_target)
+    - what is [user observation](search_target)
+    - what is [closed demand definition package](search_target)
+    - what is for [Creative Brain](search_target)
+    - what is [Prototype](search_target)
+    - what is [Specification Review](search_target)
+    - what is [prototype display](search_target)
+    - what is [demand traceability table](search_target)
+    - what is [vertical traceability table](search_target)
+    - what is [horizontal traceability table](search_target)
+    - what is [functional cohesion](search_target)
+    - what is [sequential cohesion](search_target)
+    - what is [communication cohesion](search_target)
+    - what is [program cohesion](search_target)
+    - what is [temporary cohesion](search_target)
+    - what is [data coupling force](search_target)
+    - what is [data structure coupling](search_target)
+    - what is [Control Coupling Force](search_target)
+    - what is [Global Coupling Force](search_target)
+    - what is [DIP violation](search_target)
+    - what is [Compliant with DIP](search_target)
+    - what is [OCP](search_target)
+    - what is [REP](search_target)
+    - what is [CCP](search_target)
+    - what is [CRP](search_target)
+    - what is [found error](search_target)
+    - what is [assessment quality](search_target)
+    - what is [the difference between testing and debugging](search_target)
+    - what is for [software error](search_target)
+    - what is [test case](search_target)
+    - what is [black box test](search_target)
+    - what is [white box test](search_target)
+    - what is [exhaustive test](search_target)
+    - what is [selective test](search_target)
+    - what is [most efficient](search_target)
+    - what is [program stability](search_target)
+    - what is [narrative coverage](search_target)
+    - what is [condition coverage](search_target)
+    - what is [design test case](search_target)
+    - what is [Black Box Equivalent Division](search_target)
+    - what is [software test V model](search_target)
+    - what is [unit test](search_target)
+    - what is [Junit](search_target)
+    - what is [integration test](search_target)
+    - what is [System Test](search_target)
+    - what is [performance test](search_target)
+    - what is [acceptance test](search_target)
+    - what is [software test steps](search_target)
+    - what is [test planning](search_target)
+    - what is [test case](search_target)
+    - what is [test result analysis](search_target)
+    - what is [SCRUM](search_target)
+    - what is [waterfall model](search_target)
+    - what is [Agile Manifesto](search_target)
+    - what is for [agile method](search_target)
+    - what is [practical process](search_target)
+    - what is [iteration](search_target)
+    - what is [incremental](search_target)
+    - what is [product to-do list](search_target)
+    - what is [work to do list](search_target)
+    - what is for [describeable functional requirements](search_target)
+    - what is [estimated points](search_target)
+    - what is [Sprint Planning](search_target)
+    - what is [Daily Scrum](search_target)
+    - what is [Sprint Review](search_target)
+    - what is [Sprint Retrospective](search_target)
+    - what is [Scrum Master's Traits](search_target)
+    - what is [Scrum Master](search_target)
+    - what is [Scrum framework](search_target)
+    - what is [value-oriented](search_target)
+    - what is [iterative](search_target)
+    - what is [TDD Process](search_target)
+    - what is [Refactor as needed](search_target)
+    - what is [performance test](search_target)
+    - what is [demand design](search_target)
+    - what is [A/B test](search_target)
+    - what is [Security Test](search_target)
+    - what is [prevention](search_target)
+    - what is [test method](search_target)
+    - what is [software development process](search_target)
+    - what is [Develop or maintain software system as the target](search_target)
+    - what is [Scope](search_target)
+    - what is [time](search_target)
+    - what is [cost](search_target)
+    - what is [quality](search_target)
+    - what is [Project Management](search_target)
+    - what is [Initiating](search_target)
+    - what is [Planning](search_target)
+    - what is [Controlling](search_target)
+    - what is [Executing](search_target)
+    - what is [Closing](search_target)
+    - what is [WBS](search_target)
+    - what is [DoD proposed](search_target)
+    - what is [tree hierarchical](search_target)
+    - what is [时间程](search_target)
+    - what is for [required manpower](search_target)
+    - what is [product size or complexity](search_target)
+    - what is [Activity estimation](search_target)
+    - what is [Project Lifecycle](search_target)
+    - what is [regular meeting](search_target)
+    - what is [milestone meeting](search_target)
+    - what is [project monitoring steps](search_target)
+    - what is [Location](search_target)
+    - what is [Attendance](search_target)
+    - what is [Administrative Closure](search_target)
+    - what is [Contract Close-out](search_target)
+    - what is [Initiating](search_target)
+    - what is [Planning](search_target)
+    - what is [Controlling](search_target)
+    - what is [Executing](search_target)
+    - what is [Closing](search_target)
+    - what is [GanttProject](search_target)
+    - what is [ProjectLibre](search_target)
+    - what is [Microsoft Office Project](search_target)
 
 
 - intent: classmap_suggest

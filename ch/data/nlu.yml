@@ -335,17 +335,6 @@ nlu:
       - [第十四章](ppt_query_target)的投影片
       - [第十五章](ppt_query_target)的投影片
 
-  - intent: classmap_search
-    examples: |
-      - 我想查詢課程地圖
-      - 查詢課程地圖
-      - 課程地圖查詢
-      - 課程地圖
-      - 查課程地圖
-      - 查課程知識
-      - 查詢課程知識
-      - 查詢課程相關知識
-
   - intent: supplement_search_all
     examples: |
       - 我想查詢所有補充資料
@@ -417,6 +406,17 @@ nlu:
       - [莊晏](supplement_target)
       - [設計模式](supplement_target)
       - [design pattern](supplement_target)
+
+  - intent: classmap_search
+    examples: |
+      - 我想查詢課程地圖
+      - 查詢課程地圖
+      - 課程地圖查詢
+      - 課程地圖
+      - 查課程地圖
+      - 查課程知識
+      - 查詢課程知識
+      - 查詢課程相關知識
 
   - intent: classmap_search_content
     examples: |
