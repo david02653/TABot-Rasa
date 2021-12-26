@@ -346,6 +346,78 @@ nlu:
       - 查詢課程知識
       - 查詢課程相關知識
 
+  - intent: supplement_search_all
+    examples: |
+      - 我想查詢所有補充資料
+      - 查詢所有補充資料
+      - 所有補充資料查詢
+      - 所有補充資料
+      - 查所有補充資料
+      - 查所有補充知識
+      - 查詢所有課程補充
+      - 查詢所有課外補充知識
+      - 查詢所有課外補充資料
+      - 我想查詢全部的補充資料
+      - 查詢全部的補充資料
+      - 全部的補充資料查詢
+      - 全部的補充資料
+      - 查全部的補充資料
+      - 查全部的補充知識
+      - 查詢全部的課程補充
+      - 查詢全部的課外補充知識
+      - 查詢全部的課外補充資料
+
+  - intent: supplement_search_single
+    examples: |
+      - 我想查詢補充資料
+      - 查詢補充資料
+      - 補充資料查詢
+      - 補充資料
+      - 查補充資料
+      - 查補充知識
+      - 查詢課程補充
+      - 查詢課外補充知識
+      - 查詢課外補充資料
+
+  - intent: supplement_search_single_content
+    examples: |
+      - 我想查詢[軟體重構](supplement_target)
+      - 我想查詢[refactoring](supplement_target)
+      - 我想查詢[DevOps](supplement_target)
+      - 我想查詢[Devops Pipeline](supplement_target)
+      - 我想查詢[范振原](supplement_target)
+      - 我想查詢[DevOps Light Talk](supplement_target)
+      - 我想查詢[莊晏](supplement_target)
+      - 我想查詢[設計模式](supplement_target)
+      - 我想查詢[design pattern](supplement_target)
+      - 查詢[軟體重構](supplement_target)
+      - 查詢[refactoring](supplement_target)
+      - 查詢[DevOps](supplement_target)
+      - 查詢[Devops Pipeline](supplement_target)
+      - 查詢[范振原](supplement_target)
+      - 查詢[DevOps Light Talk](supplement_target)
+      - 查詢[莊晏](supplement_target)
+      - 查詢[設計模式](supplement_target)
+      - 查詢[design pattern](supplement_target)
+      - [軟體重構](supplement_target)查詢
+      - [refactoring](supplement_target)查詢
+      - [DevOps](supplement_target)查詢
+      - [Devops Pipeline](supplement_target)查詢
+      - [范振原](supplement_target)查詢
+      - [DevOps Light Talk](supplement_target)查詢
+      - [莊晏](supplement_target)查詢
+      - [設計模式](supplement_target)查詢
+      - [design pattern](supplement_target)查詢
+      - [軟體重構](supplement_target)
+      - [refactoring](supplement_target)
+      - [DevOps](supplement_target)
+      - [Devops Pipeline](supplement_target)
+      - [范振原](supplement_target)
+      - [DevOps Light Talk](supplement_target)
+      - [莊晏](supplement_target)
+      - [設計模式](supplement_target)
+      - [design pattern](supplement_target)
+
   - intent: classmap_search_content
     examples: |
       - 我想查詢[問題癥結](search_target)

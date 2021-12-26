@@ -3,8 +3,10 @@ ch/.config/
 ch/.keras/
 ch/models/dump/
 ch/models/*
+ch/models/
 en/models/dump/
 en/models/*
+en/models/
 en/tests/
 en/.config/
 en/.keras/
