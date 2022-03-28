@@ -46,39 +46,6 @@ nlu:
       - 中文註解無法編譯
       - 無法編譯中文註解
 
-  - intent: faq/chinese_garbled
-    examples: |
-      - 為何讀取中文檔案會顯示亂碼?
-      - 為何讀取中文檔案會出現亂碼?
-      - 讀取中文檔案出現亂碼
-      - 中文檔案有亂碼
-      - 中文檔案亂碼問題
-
-  - intent: faq/vector_arraylist_difference
-    examples: |
-      - Vector與ArrayList之差異為何?
-      - vector跟arraylist差在哪裡?
-      - arraylist跟vector有差別嗎?
-      - arraylist跟vector的差別
-      - vector跟arraylist的差別
-      - arraylist與vector的差別
-      - vector與arraylist的差別
-      - arraylist和vector的差別
-      - vector和arraylist的差別
-
-  - intent: faq/java_bean
-    examples: |
-      - 什麼是Java Bean？為何要使用Java Bean？
-      - Java bean是啥
-      - java bean有用嗎?
-      - java bean怎麼用
-      - 為什麼要java bean
-      - 定義java bean
-      - java bean的定義
-      - java bean是什麼
-      - 如何使用java bean
-      - java bean
-
   - intent: faq/package_import_path_classpath_difference
     examples: |
       - package, import, path, classpath的意思跟差別在哪裡阿
@@ -102,6 +69,18 @@ nlu:
       - 為什麼需要garbage collection
       - garbage collection
       - 垃圾回收
+
+  - intent: faq/vector_arraylist_difference
+    examples: |
+      - Vector與ArrayList之差異為何?
+      - vector跟arraylist差在哪裡?
+      - arraylist跟vector有差別嗎?
+      - arraylist跟vector的差別
+      - vector跟arraylist的差別
+      - arraylist與vector的差別
+      - vector與arraylist的差別
+      - arraylist和vector的差別
+      - vector和arraylist的差別
 
   - intent: faq/arraylist_to_array
     examples: |
@@ -136,6 +115,27 @@ nlu:
       - 建立半透明的icon
       - 半透明的icon
       - icon修改成半透明
+
+  - intent: faq/chinese_garbled
+    examples: |
+      - 為何讀取中文檔案會顯示亂碼?
+      - 為何讀取中文檔案會出現亂碼?
+      - 讀取中文檔案出現亂碼
+      - 中文檔案有亂碼
+      - 中文檔案亂碼問題
+
+  - intent: faq/java_bean
+    examples: |
+      - 什麼是Java Bean？為何要使用Java Bean？
+      - Java bean是啥
+      - java bean有用嗎?
+      - java bean怎麼用
+      - 為什麼要java bean
+      - 定義java bean
+      - java bean的定義
+      - java bean是什麼
+      - 如何使用java bean
+      - java bean
 
   - intent: faq/source_usage
     examples: |
@@ -272,270 +272,426 @@ nlu:
 
   - intent: classmap_search_content
     examples: |
-      - [閉包](search_target)是什麼
-      - 我想查詢[閉包](search_target)是什麼
-      - 什麼是[閉包](search_target)
-      - [html](search_target)是什麼
-      - 什麼是[css](search_target)
-      - 我想查什麼是[css](search_target)
-      - 我想查詢[簡介](search_target)
-      - 我想查詢[Java專案](search_target)
-      - 我想查詢[第一個程式](search_target)
-      - 我想查詢[顯示文字](search_target)
-      - 我想查詢[另一個應用](search_target)
-      - 我想查詢[記憶結構](search_target)
-      - 我想查詢[算術](search_target)
-      - 我想查詢[決策](search_target)
-      - 我想查詢[變數](search_target)
-      - 我想查詢[基本型態](search_target)
-      - 我想查詢[參考型態](search_target)
-      - 我想查詢[型態](search_target)
-      - 我想查詢[建構子](search_target)
-      - 我想查詢[建構式](search_target)
-      - 我想查詢[構造函數](search_target)
-      - 我想查詢[構造方法](search_target)
-      - 我想查詢[Constructor](search_target)
-      - 我想查詢[帳戶類別](search_target)
-      - 我想查詢[類別](search_target)
-      - 我想查詢[控制敘述](search_target)
-      - 我想查詢[特定資料結束](search_target)
-      - 我想查詢[迴圈](search_target)
-      - 我想查詢[while loop](search_target)
-      - 我想查詢[計數式迴圈](search_target)
-      - 我想查詢[for loop](search_target)
-      - 我想查詢[範例](search_target)
-      - 我想查詢[條件式](search_target)
-      - 我想查詢[switch](search_target)
-      - 我想查詢[break](search_target)
-      - 我想查詢[continue](search_target)
-      - 我想查詢[邏輯運算](search_target)
-      - 我想查詢[Logical Operators](search_target)
-      - 我想查詢[方法](search_target)
-      - 我想查詢[Methods](search_target)
-      - 我想查詢[Modules](search_target)
-      - 我想查詢[Program Modules in Java](search_target)
-      - 我想查詢[靜態類別](search_target)
-      - 我想查詢[靜態欄位](search_target)
-      - 我想查詢[Class Math](search_target)
-      - 我想查詢[static Fields](search_target)
-      - 我想查詢[static Methods](search_target)
-      - 我想查詢[方法注意事項](search_target)
-      - 我想查詢[Casting](search_target)
-      - 我想查詢[晉升](search_target)
-      - 我想查詢[轉型](search_target)
-      - 我想查詢[隨機變數](search_target)
-      - 我想查詢[Random](search_target)
-      - 我想查詢[列舉](search_target)
-      - 我想查詢[枚舉型態](search_target)
-      - 我想查詢[enum](search_target)
-      - 我想查詢[聲明範圍](search_target)
-      - 我想查詢[Scope of Declarations](search_target)
-      - 我想查詢[範例](search_target)
-      - 我想查詢[多載](search_target)
-      - 我想查詢[Overload](search_target)
-      - 我想查詢[Variable-Length Argument Lists](search_target)
-      - 我想查詢[不定長度引數](search_target)
-      - 我想查詢[命令列引數](search_target)
-      - 我想查詢[Command](search_target)
-      - 我想查詢[Using Command-Line Arguments](search_target)
-      - 我想查詢[Arrays](search_target)
-      - 我想查詢[陣列](search_target)
-      - 我想查詢[Arrays](search_target)
-      - 我想查詢[Class Arrays](search_target)
-      - 我想查詢[ArrayList](search_target)
-      - 我想查詢[Classes and Objects](search_target)
-      - 我想查詢[Objects](search_target)
-      - 我想查詢[Time Class Case Study](search_target)
-      - 我想查詢[Controlling Access to Members](search_target)
-      - 我想查詢[Referring to the Current Object's Members with the this Reference](search_target)
-      - 我想查詢[Overloaded Constructors](search_target)
-      - 我想查詢[Default and No-Argument Constructors](search_target)
-      - 我想查詢[Notes on Set and Get Methods](search_target)
-      - 我想查詢[Aggregation](search_target)
-      - 我想查詢[Composition](search_target)
-      - 我想查詢[enum Types](search_target)
-      - 我想查詢[Garbage Collection](search_target)
-      - 我想查詢[static Class Members](search_target)
-      - 我想查詢[Static Import](search_target)
-      - 我想查詢[final Instance Variables](search_target)
-      - 我想查詢[Package Access](search_target)
-      - 我想查詢[Inheritance](search_target)
-      - 我想查詢[Superclasses and Subclasses](search_target)
-      - 我想查詢[protected Members](search_target)
-      - 我想查詢[Relationship Between Superclasses and Subclasses](search_target)
-      - 我想查詢[Constructors in Subclasses](search_target)
-      - 什麼是[簡介](search_target)
-      - 什麼是[Java專案](search_target)
-      - 什麼是[第一個程式](search_target)
-      - 什麼是[顯示文字](search_target)
-      - 什麼是[另一個應用](search_target)
-      - 什麼是[記憶結構](search_target)
-      - 什麼是[算術](search_target)
-      - 什麼是[決策](search_target)
-      - 什麼是[變數](search_target)
-      - 什麼是[基本型態](search_target)
-      - 什麼是[參考型態](search_target)
-      - 什麼是[型態](search_target)
-      - 什麼是[建構子](search_target)
-      - 什麼是[建構式](search_target)
-      - 什麼是[構造函數](search_target)
-      - 什麼是[構造方法](search_target)
-      - 什麼是[Constructor](search_target)
-      - 什麼是[帳戶類別](search_target)
-      - 什麼是[類別](search_target)
-      - 什麼是[控制敘述](search_target)
-      - 什麼是[特定資料結束](search_target)
-      - 什麼是[迴圈](search_target)
-      - 什麼是[while loop](search_target)
-      - 什麼是[計數式迴圈](search_target)
-      - 什麼是[for loop](search_target)
-      - 什麼是[範例](search_target)
-      - 什麼是[條件式](search_target)
-      - 什麼是[switch](search_target)
-      - 什麼是[break](search_target)
-      - 什麼是[continue](search_target)
-      - 什麼是[邏輯運算](search_target)
-      - 什麼是[Logical Operators](search_target)
-      - 什麼是[方法](search_target)
-      - 什麼是[Methods](search_target)
-      - 什麼是[Modules](search_target)
-      - 什麼是[Program Modules in Java](search_target)
-      - 什麼是[靜態類別](search_target)
-      - 什麼是[靜態欄位](search_target)
-      - 什麼是[Class Math](search_target)
-      - 什麼是[static Fields](search_target)
-      - 什麼是[static Methods](search_target)
-      - 什麼是[方法注意事項](search_target)
-      - 什麼是[Casting](search_target)
-      - 什麼是[晉升](search_target)
-      - 什麼是[轉型](search_target)
-      - 什麼是[隨機變數](search_target)
-      - 什麼是[Random](search_target)
-      - 什麼是[列舉](search_target)
-      - 什麼是[枚舉型態](search_target)
-      - 什麼是[enum](search_target)
-      - 什麼是[聲明範圍](search_target)
-      - 什麼是[Scope of Declarations](search_target)
-      - 什麼是[範例](search_target)
-      - 什麼是[多載](search_target)
-      - 什麼是[Overload](search_target)
-      - 什麼是[Variable-Length Argument Lists](search_target)
-      - 什麼是[不定長度引數](search_target)
-      - 什麼是[命令列引數](search_target)
-      - 什麼是[Command](search_target)
-      - 什麼是[Using Command-Line Arguments](search_target)
-      - 什麼是[Arrays](search_target)
-      - 什麼是[陣列](search_target)
-      - 什麼是[Arrays](search_target)
-      - 什麼是[Class Arrays](search_target)
-      - 什麼是[ArrayList](search_target)
-      - 什麼是[Classes and Objects](search_target)
-      - 什麼是[Objects](search_target)
-      - 什麼是[Time Class Case Study](search_target)
-      - 什麼是[Controlling Access to Members](search_target)
-      - 什麼是[Referring to the Current Object's Members with the this Reference](search_target)
-      - 什麼是[Overloaded Constructors](search_target)
-      - 什麼是[Default and No-Argument Constructors](search_target)
-      - 什麼是[Notes on Set and Get Methods](search_target)
-      - 什麼是[Aggregation](search_target)
-      - 什麼是[Composition](search_target)
-      - 什麼是[enum Types](search_target)
-      - 什麼是[Garbage Collection](search_target)
-      - 什麼是[static Class Members](search_target)
-      - 什麼是[Static Import](search_target)
-      - 什麼是[final Instance Variables](search_target)
-      - 什麼是[Package Access](search_target)
-      - 什麼是[Inheritance](search_target)
-      - 什麼是[Superclasses and Subclasses](search_target)
-      - 什麼是[protected Members](search_target)
-      - 什麼是[Relationship Between Superclasses and Subclasses](search_target)
-      - 什麼是[Constructors in Subclasses](search_target)
-      - [簡介](search_target)是什麼
-      - [Java專案](search_target)是什麼
-      - [第一個程式](search_target)是什麼
-      - [顯示文字](search_target)是什麼
-      - [另一個應用](search_target)是什麼
-      - [記憶結構](search_target)是什麼
-      - [算術](search_target)是什麼
-      - [決策](search_target)是什麼
-      - [變數](search_target)是什麼
-      - [基本型態](search_target)是什麼
-      - [參考型態](search_target)是什麼
-      - [型態](search_target)是什麼
-      - [建構子](search_target)是什麼
-      - [建構式](search_target)是什麼
-      - [構造函數](search_target)是什麼
-      - [構造方法](search_target)是什麼
-      - [Constructor](search_target)是什麼
-      - [帳戶類別](search_target)是什麼
-      - [類別](search_target)是什麼
-      - [控制敘述](search_target)是什麼
-      - [特定資料結束](search_target)是什麼
-      - [迴圈](search_target)是什麼
-      - [while loop](search_target)是什麼
-      - [計數式迴圈](search_target)是什麼
-      - [for loop](search_target)是什麼
-      - [範例](search_target)是什麼
-      - [條件式](search_target)是什麼
-      - [switch](search_target)是什麼
-      - [break](search_target)是什麼
-      - [continue](search_target)是什麼
-      - [邏輯運算](search_target)是什麼
+      - [TIOBE Index for February 2022](search_target)是什麼
+      - [TIOBE Index: Very Long Term History](search_target)是什麼
+      - [Java跨平台特性](search_target)是什麼
+      - [Java平台](search_target)是什麼
+      - [安裝與執行Java程式的基本流程](search_target)是什麼
+      - [Java版本歷史](search_target)是什麼
+      - [Introduction](search_target)是什麼
+      - [Your First Program in Java: Printing a Line of Text](search_target)是什麼
+      - [Modifying Your First Java Program](search_target)是什麼
+      - [Displaying Text with printf](search_target)是什麼
+      - [Another Application: Adding Integers](search_target)是什麼
+      - [import Declarations](search_target)是什麼
+      - [Declaring and Creating a Scanner to Obtain User Input from the Keyboard](search_target)是什麼
+      - [Declaring Variables to Store Integers](search_target)是什麼
+      - [Prompting the User for Input](search_target)是什麼
+      - [Obtaining an int as Input from the User](search_target)是什麼
+      - [Displaying the Result of the Calculation](search_target)是什麼
+      - [Memory Concepts](search_target)是什麼
+      - [Java基本資料型態](search_target)是什麼
+      - [Arithmetic](search_target)是什麼
+      - [Decision Making: Equality and Relational Operators](search_target)是什麼
+      - [Object](search_target)是什麼
+      - [Class and Encapsulation](search_target)是什麼
+      - [Class and Object Instances](search_target)是什麼
+      - [Instance Variables, set Methods and get Methods](search_target)是什麼
+      - [Account Class with an Instance Variable, a set Method and a get Method](search_target)是什麼
+      - [AccountTest Class That Creates and Uses an Object of Class Account](search_target)是什麼
+      - [Compiling and Executing an App with Multiple Classes](search_target)是什麼
+      - [Account UML Class Diagram with an Instance Variable and set and get Methods](search_target)是什麼
+      - [Additional Notes on Class AccountTest](search_target)是什麼
+      - [Software Engineering with private Instance Variables and public set and get Methods](search_target)是什麼
+      - [Primitive Types vs. Reference Types](search_target)是什麼
+      - [Account Class: Initializing Objects with Constructors](search_target)是什麼
+      - [Declaring an Account Constructor for Custom Object Initialization](search_target)是什麼
+      - [Class AccountTest: Initializing Account Objects When They’re Created](search_target)是什麼
+      - [Account Class with a Balance; Floating-Point Numbers and Type double](search_target)是什麼
+      - [Account Class with a balance Instance Variable of Type double](search_target)是什麼
+      - [AccountTest Class to Use Class Account](search_target)是什麼
+      - [Primitive Types](search_target)是什麼
+      - [Literal 文字](search_target)是什麼
+      - [合法基本資料型態變數設定](search_target)是什麼
+      - [資料型態轉換(Data Type Casting)](search_target)是什麼
+      - [Package and Import](search_target)是什麼
+      - [PATH and CLASSPATH環境變數](search_target)是什麼
+      - [Introduction](search_target)是什麼
+      - [Formulating Algorithms: Sentinel-Controlled Repetition](search_target)是什麼
+      - [Essentials of Counter-Controlled Repetition](search_target)是什麼
+      - [for Repetition Statement](search_target)是什麼
+      - [switch Multiple-Selection Statement](search_target)是什麼
+      - [Class AutoPolicy Case Study: Strings in switch Statements](search_target)是什麼
+      - [break and continue Statements](search_target)是什麼
       - [Logical Operators](search_target)是什麼
-      - [方法](search_target)是什麼
-      - [Methods](search_target)是什麼
-      - [Modules](search_target)是什麼
+      - [Introduction](search_target)是什麼
       - [Program Modules in Java](search_target)是什麼
-      - [靜態類別](search_target)是什麼
-      - [靜態欄位](search_target)是什麼
-      - [Class Math](search_target)是什麼
-      - [static Fields](search_target)是什麼
-      - [static Methods](search_target)是什麼
-      - [方法注意事項](search_target)是什麼
-      - [Casting](search_target)是什麼
-      - [晉升](search_target)是什麼
-      - [轉型](search_target)是什麼
-      - [隨機變數](search_target)是什麼
-      - [Random](search_target)是什麼
-      - [列舉](search_target)是什麼
-      - [枚舉型態](search_target)是什麼
-      - [enum](search_target)是什麼
-      - [聲明範圍](search_target)是什麼
+      - [static Methods, static Fields and Class Math](search_target)是什麼
+      - [Notes on Declaring and Using Methods](search_target)是什麼
+      - [Argument Promotion and Casting](search_target)是什麼
+      - [Case Study: Secure Random-Number Generation](search_target)是什麼
+      - [Case Study: A Game of Chance; Introducing enum Types](search_target)是什麼
       - [Scope of Declarations](search_target)是什麼
-      - [範例](search_target)是什麼
-      - [多載](search_target)是什麼
-      - [Overload](search_target)是什麼
-      - [Variable-Length Argument Lists](search_target)是什麼
-      - [不定長度引數](search_target)是什麼
-      - [命令列引數](search_target)是什麼
-      - [Command](search_target)是什麼
-      - [Using Command-Line Arguments](search_target)是什麼
+      - [Method Overloading](search_target)是什麼
       - [Arrays](search_target)是什麼
-      - [陣列](search_target)是什麼
-      - [Arrays](search_target)是什麼
-      - [Class Arrays](search_target)是什麼
-      - [ArrayList](search_target)是什麼
-      - [Classes and Objects](search_target)是什麼
-      - [Objects](search_target)是什麼
+      - [Declaring and Creating Arrays](search_target)是什麼
+      - [Examples Using Arrays](search_target)是什麼
+      - [Creating and Initializing an Array](search_target)是什麼
+      - [Using an Array Initializer](search_target)是什麼
+      - [Calculating the Values to Store in an Array](search_target)是什麼
+      - [Using Arrays to Analyze Survey Results](search_target)是什麼
+      - [Exception Handling: Processing the Incorrect Response](search_target)是什麼
+      - [The try Statement](search_target)是什麼
+      - [Executing the catch Block](search_target)是什麼
+      - [toString Method of the Exception Parameter](search_target)是什麼
+      - [Case Study: Card Shuffling and Dealing Simulation](search_target)是什麼
+      - [Enhanced for Statement](search_target)是什麼
+      - [Passing Arrays to Methods](search_target)是什麼
+      - [Pass-By-Value vs. Pass-By-Reference](search_target)是什麼
+      - [Multidimensional Arrays](search_target)是什麼
+      - [Introduction](search_target)是什麼
       - [Time Class Case Study](search_target)是什麼
       - [Controlling Access to Members](search_target)是什麼
-      - [Referring to the Current Object's Members with the this Reference](search_target)是什麼
-      - [Overloaded Constructors](search_target)是什麼
+      - [Referring to the Current Object’s Members with the this Reference](search_target)是什麼
+      - [Time Class Case Study: Overloaded Constructors](search_target)是什麼
       - [Default and No-Argument Constructors](search_target)是什麼
       - [Notes on Set and Get Methods](search_target)是什麼
-      - [Aggregation](search_target)是什麼
-      - [Composition](search_target)是什麼
+      - [Composition (Aggregation)](search_target)是什麼
       - [enum Types](search_target)是什麼
       - [Garbage Collection](search_target)是什麼
       - [static Class Members](search_target)是什麼
-      - [Static Import](search_target)是什麼
+      - [static Import](search_target)是什麼
       - [final Instance Variables](search_target)是什麼
       - [Package Access](search_target)是什麼
-      - [Inheritance](search_target)是什麼
+      - [Introduction](search_target)是什麼
       - [Superclasses and Subclasses](search_target)是什麼
       - [protected Members](search_target)是什麼
       - [Relationship Between Superclasses and Subclasses](search_target)是什麼
+      - [Creating and Using a CommissionEmployee Class](search_target)是什麼
+      - [Creating and Using a BasePlus-CommissionEmployee Class](search_target)是什麼
+      - [Creating a CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy](search_target)是什麼
+      - [CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy Using protected Instance Variables](search_target)是什麼
       - [Constructors in Subclasses](search_target)是什麼
+      - [Override觀念釐清](search_target)是什麼
+      - [Introduction](search_target)是什麼
+      - [Polymorphism Examples](search_target)是什麼
+      - [Demonstrating Polymorphic Behavior](search_target)是什麼
+      - [Abstract Classes and Methods](search_target)是什麼
+      - [Case Study: Payroll System Using Polymorphism](search_target)是什麼
+      - [Abstract Superclass Employee](search_target)是什麼
+      - [Polymorphic Processing, Operator instanceof and Downcasting](search_target)是什麼
+      - [Summary of the Allowed Assignments Between Superclass and Subclass Variables](search_target)是什麼
+      - [final Methods and Classes](search_target)是什麼
+      - [A Deeper Explanation of Issues with Calling Methods from Constructors](search_target)是什麼
+      - [Creating and Using Interfaces](search_target)是什麼
+      - [Developing a Payable Hierarchy](search_target)是什麼
+      - [Interface Payable](search_target)是什麼
+      - [Class Invoice](search_target)是什麼
+      - [Modifying Class Employee to Implement Interface Payable](search_target)是什麼
+      - [Modifying Class SalariedEmployee for Use in the Payable Hierarchy](search_target)是什麼
+      - [Using Interface Payable to Process Invoices and Employees Polymorphically](search_target)是什麼
+      - [default Interface Methods](search_target)是什麼
+      - [Introduction](search_target)是什麼
+      - [Simple GUI-Based Input/Output with JOptionPane](search_target)是什麼
+      - [Overview of Swing Components](search_target)是什麼
+      - [Displaying Text and Images in a Window](search_target)是什麼
+      - [Text Fields and an Introduction to Event Handling with Nested Classes](search_target)是什麼
+      - [Event, Event Source, and Event Listener](search_target)是什麼
+      - [Common GUI Event Types and Listener Interfaces](search_target)是什麼
+      - [How Event Handling Works](search_target)是什麼
+      - [JButton](search_target)是什麼
+      - [Buttons That Maintain State](search_target)是什麼
+      - [JCheckBox](search_target)是什麼
+      - [JRadioButton](search_target)是什麼
+      - [JComboBox; Using an Anonymous Inner Class for Event Handling](search_target)是什麼
+      - [JList](search_target)是什麼
+      - [Mouse Event Handling](search_target)是什麼
+      - [Adapter Classes](search_target)是什麼
+      - [JPanel Subclass for Drawing with the Mouse](search_target)是什麼
+      - [Key Event Handling](search_target)是什麼
+      - [Introduction to Layout Managers](search_target)是什麼
+      - [Using Panels to Manage More Complex Layouts](search_target)是什麼
+      - [JTextArea](search_target)是什麼
+            - 我想查詢[TIOBE Index for February 2022](search_target)
+      - 我想查詢[TIOBE Index: Very Long Term History](search_target)
+      - 我想查詢[Java跨平台特性](search_target)
+      - 我想查詢[Java平台](search_target)
+      - 我想查詢[安裝與執行Java程式的基本流程](search_target)
+      - 我想查詢[Java版本歷史](search_target)
+      - 我想查詢[Introduction](search_target)
+      - 我想查詢[Your First Program in Java: Printing a Line of Text](search_target)
+      - 我想查詢[Modifying Your First Java Program](search_target)
+      - 我想查詢[Displaying Text with printf](search_target)
+      - 我想查詢[Another Application: Adding Integers](search_target)
+      - 我想查詢[import Declarations](search_target)
+      - 我想查詢[Declaring and Creating a Scanner to Obtain User Input from the Keyboard](search_target)
+      - 我想查詢[Declaring Variables to Store Integers](search_target)
+      - 我想查詢[Prompting the User for Input](search_target)
+      - 我想查詢[Obtaining an int as Input from the User](search_target)
+      - 我想查詢[Displaying the Result of the Calculation](search_target)
+      - 我想查詢[Memory Concepts](search_target)
+      - 我想查詢[Java基本資料型態](search_target)
+      - 我想查詢[Arithmetic](search_target)
+      - 我想查詢[Decision Making: Equality and Relational Operators](search_target)
+      - 我想查詢[Object](search_target)
+      - 我想查詢[Class and Encapsulation](search_target)
+      - 我想查詢[Class and Object Instances](search_target)
+      - 我想查詢[Instance Variables, set Methods and get Methods](search_target)
+      - 我想查詢[Account Class with an Instance Variable, a set Method and a get Method](search_target)
+      - 我想查詢[AccountTest Class That Creates and Uses an Object of Class Account](search_target)
+      - 我想查詢[Compiling and Executing an App with Multiple Classes](search_target)
+      - 我想查詢[Account UML Class Diagram with an Instance Variable and set and get Methods](search_target)
+      - 我想查詢[Additional Notes on Class AccountTest](search_target)
+      - 我想查詢[Software Engineering with private Instance Variables and public set and get Methods](search_target)
+      - 我想查詢[Primitive Types vs. Reference Types](search_target)
+      - 我想查詢[Account Class: Initializing Objects with Constructors](search_target)
+      - 我想查詢[Declaring an Account Constructor for Custom Object Initialization](search_target)
+      - 我想查詢[Class AccountTest: Initializing Account Objects When They’re Created](search_target)
+      - 我想查詢[Account Class with a Balance; Floating-Point Numbers and Type double](search_target)
+      - 我想查詢[Account Class with a balance Instance Variable of Type double](search_target)
+      - 我想查詢[AccountTest Class to Use Class Account](search_target)
+      - 我想查詢[Primitive Types](search_target)
+      - 我想查詢[Literal 文字](search_target)
+      - 我想查詢[合法基本資料型態變數設定](search_target)
+      - 我想查詢[資料型態轉換(Data Type Casting)](search_target)
+      - 我想查詢[Package and Import](search_target)
+      - 我想查詢[PATH and CLASSPATH環境變數](search_target)
+      - 我想查詢[Introduction](search_target)
+      - 我想查詢[Formulating Algorithms: Sentinel-Controlled Repetition](search_target)
+      - 我想查詢[Essentials of Counter-Controlled Repetition](search_target)
+      - 我想查詢[for Repetition Statement](search_target)
+      - 我想查詢[switch Multiple-Selection Statement](search_target)
+      - 我想查詢[Class AutoPolicy Case Study: Strings in switch Statements](search_target)
+      - 我想查詢[break and continue Statements](search_target)
+      - 我想查詢[Logical Operators](search_target)
+      - 我想查詢[Introduction](search_target)
+      - 我想查詢[Program Modules in Java](search_target)
+      - 我想查詢[static Methods, static Fields and Class Math](search_target)
+      - 我想查詢[Notes on Declaring and Using Methods](search_target)
+      - 我想查詢[Argument Promotion and Casting](search_target)
+      - 我想查詢[Case Study: Secure Random-Number Generation](search_target)
+      - 我想查詢[Case Study: A Game of Chance; Introducing enum Types](search_target)
+      - 我想查詢[Scope of Declarations](search_target)
+      - 我想查詢[Method Overloading](search_target)
+      - 我想查詢[Arrays](search_target)
+      - 我想查詢[Declaring and Creating Arrays](search_target)
+      - 我想查詢[Examples Using Arrays](search_target)
+      - 我想查詢[Creating and Initializing an Array](search_target)
+      - 我想查詢[Using an Array Initializer](search_target)
+      - 我想查詢[Calculating the Values to Store in an Array](search_target)
+      - 我想查詢[Using Arrays to Analyze Survey Results](search_target)
+      - 我想查詢[Exception Handling: Processing the Incorrect Response](search_target)
+      - 我想查詢[The try Statement](search_target)
+      - 我想查詢[Executing the catch Block](search_target)
+      - 我想查詢[toString Method of the Exception Parameter](search_target)
+      - 我想查詢[Case Study: Card Shuffling and Dealing Simulation](search_target)
+      - 我想查詢[Enhanced for Statement](search_target)
+      - 我想查詢[Passing Arrays to Methods](search_target)
+      - 我想查詢[Pass-By-Value vs. Pass-By-Reference](search_target)
+      - 我想查詢[Multidimensional Arrays](search_target)
+      - 我想查詢[Introduction](search_target)
+      - 我想查詢[Time Class Case Study](search_target)
+      - 我想查詢[Controlling Access to Members](search_target)
+      - 我想查詢[Referring to the Current Object’s Members with the this Reference](search_target)
+      - 我想查詢[Time Class Case Study: Overloaded Constructors](search_target)
+      - 我想查詢[Default and No-Argument Constructors](search_target)
+      - 我想查詢[Notes on Set and Get Methods](search_target)
+      - 我想查詢[Composition (Aggregation)](search_target)
+      - 我想查詢[enum Types](search_target)
+      - 我想查詢[Garbage Collection](search_target)
+      - 我想查詢[static Class Members](search_target)
+      - 我想查詢[static Import](search_target)
+      - 我想查詢[final Instance Variables](search_target)
+      - 我想查詢[Package Access](search_target)
+      - 我想查詢[Introduction](search_target)
+      - 我想查詢[Superclasses and Subclasses](search_target)
+      - 我想查詢[protected Members](search_target)
+      - 我想查詢[Relationship Between Superclasses and Subclasses](search_target)
+      - 我想查詢[Creating and Using a CommissionEmployee Class](search_target)
+      - 我想查詢[Creating and Using a BasePlus-CommissionEmployee Class](search_target)
+      - 我想查詢[Creating a CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy](search_target)
+      - 我想查詢[CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy Using protected Instance Variables](search_target)
+      - 我想查詢[Constructors in Subclasses](search_target)
+      - 我想查詢[Override觀念釐清](search_target)
+      - 我想查詢[Introduction](search_target)
+      - 我想查詢[Polymorphism Examples](search_target)
+      - 我想查詢[Demonstrating Polymorphic Behavior](search_target)
+      - 我想查詢[Abstract Classes and Methods](search_target)
+      - 我想查詢[Case Study: Payroll System Using Polymorphism](search_target)
+      - 我想查詢[Abstract Superclass Employee](search_target)
+      - 我想查詢[Polymorphic Processing, Operator instanceof and Downcasting](search_target)
+      - 我想查詢[Summary of the Allowed Assignments Between Superclass and Subclass Variables](search_target)
+      - 我想查詢[final Methods and Classes](search_target)
+      - 我想查詢[A Deeper Explanation of Issues with Calling Methods from Constructors](search_target)
+      - 我想查詢[Creating and Using Interfaces](search_target)
+      - 我想查詢[Developing a Payable Hierarchy](search_target)
+      - 我想查詢[Interface Payable](search_target)
+      - 我想查詢[Class Invoice](search_target)
+      - 我想查詢[Modifying Class Employee to Implement Interface Payable](search_target)
+      - 我想查詢[Modifying Class SalariedEmployee for Use in the Payable Hierarchy](search_target)
+      - 我想查詢[Using Interface Payable to Process Invoices and Employees Polymorphically](search_target)
+      - 我想查詢[default Interface Methods](search_target)
+      - 我想查詢[Introduction](search_target)
+      - 我想查詢[Simple GUI-Based Input/Output with JOptionPane](search_target)
+      - 我想查詢[Overview of Swing Components](search_target)
+      - 我想查詢[Displaying Text and Images in a Window](search_target)
+      - 我想查詢[Text Fields and an Introduction to Event Handling with Nested Classes](search_target)
+      - 我想查詢[Event, Event Source, and Event Listener](search_target)
+      - 我想查詢[Common GUI Event Types and Listener Interfaces](search_target)
+      - 我想查詢[How Event Handling Works](search_target)
+      - 我想查詢[JButton](search_target)
+      - 我想查詢[Buttons That Maintain State](search_target)
+      - 我想查詢[JCheckBox](search_target)
+      - 我想查詢[JRadioButton](search_target)
+      - 我想查詢[JComboBox; Using an Anonymous Inner Class for Event Handling](search_target)
+      - 我想查詢[JList](search_target)
+      - 我想查詢[Mouse Event Handling](search_target)
+      - 我想查詢[Adapter Classes](search_target)
+      - 我想查詢[JPanel Subclass for Drawing with the Mouse](search_target)
+      - 我想查詢[Key Event Handling](search_target)
+      - 我想查詢[Introduction to Layout Managers](search_target)
+      - 我想查詢[Using Panels to Manage More Complex Layouts](search_target)
+      - 我想查詢[JTextArea](search_target)
+            - 什麼是[TIOBE Index for February 2022](search_target)
+      - 什麼是[TIOBE Index: Very Long Term History](search_target)
+      - 什麼是[Java跨平台特性](search_target)
+      - 什麼是[Java平台](search_target)
+      - 什麼是[安裝與執行Java程式的基本流程](search_target)
+      - 什麼是[Java版本歷史](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Your First Program in Java: Printing a Line of Text](search_target)
+      - 什麼是[Modifying Your First Java Program](search_target)
+      - 什麼是[Displaying Text with printf](search_target)
+      - 什麼是[Another Application: Adding Integers](search_target)
+      - 什麼是[import Declarations](search_target)
+      - 什麼是[Declaring and Creating a Scanner to Obtain User Input from the Keyboard](search_target)
+      - 什麼是[Declaring Variables to Store Integers](search_target)
+      - 什麼是[Prompting the User for Input](search_target)
+      - 什麼是[Obtaining an int as Input from the User](search_target)
+      - 什麼是[Displaying the Result of the Calculation](search_target)
+      - 什麼是[Memory Concepts](search_target)
+      - 什麼是[Java基本資料型態](search_target)
+      - 什麼是[Arithmetic](search_target)
+      - 什麼是[Decision Making: Equality and Relational Operators](search_target)
+      - 什麼是[Object](search_target)
+      - 什麼是[Class and Encapsulation](search_target)
+      - 什麼是[Class and Object Instances](search_target)
+      - 什麼是[Instance Variables, set Methods and get Methods](search_target)
+      - 什麼是[Account Class with an Instance Variable, a set Method and a get Method](search_target)
+      - 什麼是[AccountTest Class That Creates and Uses an Object of Class Account](search_target)
+      - 什麼是[Compiling and Executing an App with Multiple Classes](search_target)
+      - 什麼是[Account UML Class Diagram with an Instance Variable and set and get Methods](search_target)
+      - 什麼是[Additional Notes on Class AccountTest](search_target)
+      - 什麼是[Software Engineering with private Instance Variables and public set and get Methods](search_target)
+      - 什麼是[Primitive Types vs. Reference Types](search_target)
+      - 什麼是[Account Class: Initializing Objects with Constructors](search_target)
+      - 什麼是[Declaring an Account Constructor for Custom Object Initialization](search_target)
+      - 什麼是[Class AccountTest: Initializing Account Objects When They’re Created](search_target)
+      - 什麼是[Account Class with a Balance; Floating-Point Numbers and Type double](search_target)
+      - 什麼是[Account Class with a balance Instance Variable of Type double](search_target)
+      - 什麼是[AccountTest Class to Use Class Account](search_target)
+      - 什麼是[Primitive Types](search_target)
+      - 什麼是[Literal 文字](search_target)
+      - 什麼是[合法基本資料型態變數設定](search_target)
+      - 什麼是[資料型態轉換(Data Type Casting)](search_target)
+      - 什麼是[Package and Import](search_target)
+      - 什麼是[PATH and CLASSPATH環境變數](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Formulating Algorithms: Sentinel-Controlled Repetition](search_target)
+      - 什麼是[Essentials of Counter-Controlled Repetition](search_target)
+      - 什麼是[for Repetition Statement](search_target)
+      - 什麼是[switch Multiple-Selection Statement](search_target)
+      - 什麼是[Class AutoPolicy Case Study: Strings in switch Statements](search_target)
+      - 什麼是[break and continue Statements](search_target)
+      - 什麼是[Logical Operators](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Program Modules in Java](search_target)
+      - 什麼是[static Methods, static Fields and Class Math](search_target)
+      - 什麼是[Notes on Declaring and Using Methods](search_target)
+      - 什麼是[Argument Promotion and Casting](search_target)
+      - 什麼是[Case Study: Secure Random-Number Generation](search_target)
+      - 什麼是[Case Study: A Game of Chance; Introducing enum Types](search_target)
+      - 什麼是[Scope of Declarations](search_target)
+      - 什麼是[Method Overloading](search_target)
+      - 什麼是[Arrays](search_target)
+      - 什麼是[Declaring and Creating Arrays](search_target)
+      - 什麼是[Examples Using Arrays](search_target)
+      - 什麼是[Creating and Initializing an Array](search_target)
+      - 什麼是[Using an Array Initializer](search_target)
+      - 什麼是[Calculating the Values to Store in an Array](search_target)
+      - 什麼是[Using Arrays to Analyze Survey Results](search_target)
+      - 什麼是[Exception Handling: Processing the Incorrect Response](search_target)
+      - 什麼是[The try Statement](search_target)
+      - 什麼是[Executing the catch Block](search_target)
+      - 什麼是[toString Method of the Exception Parameter](search_target)
+      - 什麼是[Case Study: Card Shuffling and Dealing Simulation](search_target)
+      - 什麼是[Enhanced for Statement](search_target)
+      - 什麼是[Passing Arrays to Methods](search_target)
+      - 什麼是[Pass-By-Value vs. Pass-By-Reference](search_target)
+      - 什麼是[Multidimensional Arrays](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Time Class Case Study](search_target)
+      - 什麼是[Controlling Access to Members](search_target)
+      - 什麼是[Referring to the Current Object’s Members with the this Reference](search_target)
+      - 什麼是[Time Class Case Study: Overloaded Constructors](search_target)
+      - 什麼是[Default and No-Argument Constructors](search_target)
+      - 什麼是[Notes on Set and Get Methods](search_target)
+      - 什麼是[Composition (Aggregation)](search_target)
+      - 什麼是[enum Types](search_target)
+      - 什麼是[Garbage Collection](search_target)
+      - 什麼是[static Class Members](search_target)
+      - 什麼是[static Import](search_target)
+      - 什麼是[final Instance Variables](search_target)
+      - 什麼是[Package Access](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Superclasses and Subclasses](search_target)
+      - 什麼是[protected Members](search_target)
+      - 什麼是[Relationship Between Superclasses and Subclasses](search_target)
+      - 什麼是[Creating and Using a CommissionEmployee Class](search_target)
+      - 什麼是[Creating and Using a BasePlus-CommissionEmployee Class](search_target)
+      - 什麼是[Creating a CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy](search_target)
+      - 什麼是[CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy Using protected Instance Variables](search_target)
+      - 什麼是[Constructors in Subclasses](search_target)
+      - 什麼是[Override觀念釐清](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Polymorphism Examples](search_target)
+      - 什麼是[Demonstrating Polymorphic Behavior](search_target)
+      - 什麼是[Abstract Classes and Methods](search_target)
+      - 什麼是[Case Study: Payroll System Using Polymorphism](search_target)
+      - 什麼是[Abstract Superclass Employee](search_target)
+      - 什麼是[Polymorphic Processing, Operator instanceof and Downcasting](search_target)
+      - 什麼是[Summary of the Allowed Assignments Between Superclass and Subclass Variables](search_target)
+      - 什麼是[final Methods and Classes](search_target)
+      - 什麼是[A Deeper Explanation of Issues with Calling Methods from Constructors](search_target)
+      - 什麼是[Creating and Using Interfaces](search_target)
+      - 什麼是[Developing a Payable Hierarchy](search_target)
+      - 什麼是[Interface Payable](search_target)
+      - 什麼是[Class Invoice](search_target)
+      - 什麼是[Modifying Class Employee to Implement Interface Payable](search_target)
+      - 什麼是[Modifying Class SalariedEmployee for Use in the Payable Hierarchy](search_target)
+      - 什麼是[Using Interface Payable to Process Invoices and Employees Polymorphically](search_target)
+      - 什麼是[default Interface Methods](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Simple GUI-Based Input/Output with JOptionPane](search_target)
+      - 什麼是[Overview of Swing Components](search_target)
+      - 什麼是[Displaying Text and Images in a Window](search_target)
+      - 什麼是[Text Fields and an Introduction to Event Handling with Nested Classes](search_target)
+      - 什麼是[Event, Event Source, and Event Listener](search_target)
+      - 什麼是[Common GUI Event Types and Listener Interfaces](search_target)
+      - 什麼是[How Event Handling Works](search_target)
+      - 什麼是[JButton](search_target)
+      - 什麼是[Buttons That Maintain State](search_target)
+      - 什麼是[JCheckBox](search_target)
+      - 什麼是[JRadioButton](search_target)
+      - 什麼是[JComboBox; Using an Anonymous Inner Class for Event Handling](search_target)
+      - 什麼是[JList](search_target)
+      - 什麼是[Mouse Event Handling](search_target)
+      - 什麼是[Adapter Classes](search_target)
+      - 什麼是[JPanel Subclass for Drawing with the Mouse](search_target)
+      - 什麼是[Key Event Handling](search_target)
+      - 什麼是[Introduction to Layout Managers](search_target)
+      - 什麼是[Using Panels to Manage More Complex Layouts](search_target)
+      - 什麼是[JTextArea](search_target)
 
   # - intent: classmap_map
   #   examples: |
@@ -569,6 +725,12 @@ nlu:
 
   - intent: personal_score_object
     examples: |
+      - 我想查[exercise 0](score_query_target)
+      - 我想查[exercise 1](score_query_target)
+      - 我想查[exercise 2](score_query_target)
+      - 我想查[exercise 3](score_query_target)
+      - 我想查[exercise 4](score_query_target)
+      - 我想查[exercise 5](score_query_target)
       - 我想查[作業一](score_query_target)
       - 我想查[作業二](score_query_target)
       - 我想查[作業三](score_query_target)
@@ -615,6 +777,12 @@ nlu:
       - 我想查[小考九](score_query_target)的成績
       - 我想查[小考十](score_query_target)的成績
       - 我想查[專案互評](score_query_target)的成績
+      - [exercise 0](score_query_target)
+      - [exercise 1](score_query_target)
+      - [exercise 2](score_query_target)
+      - [exercise 3](score_query_target)
+      - [exercise 4](score_query_target)
+      - [exercise 5](score_query_target)
       - [作業一](score_query_target)
       - [作業二](score_query_target)
       - [作業三](score_query_target)
@@ -760,6 +928,54 @@ nlu:
       - 作業10
       - homework10
       - homework 10
+
+  - synonym: exercise_0
+    examples: |
+      - 練習0
+      - 第0次練習
+      - 練習0
+      - exercise0
+      - exercise 0
+
+  - synonym: exercise_1
+    examples: |
+      - 練習1
+      - 第1次練習
+      - 練習1
+      - exercise1
+      - exercise 1
+
+  - synonym: exercise_2
+    examples: |
+      - 練習2
+      - 第2次練習
+      - 練習2
+      - exercise2
+      - exercise 2
+
+  - synonym: exercise_3
+    examples: |
+      - 練習3
+      - 第3次練習
+      - 練習3
+      - exercise3
+      - exercise 3
+
+  - synonym: exercise_4
+    examples: |
+      - 練習4
+      - 第4次練習
+      - 練習4
+      - exercise4
+      - exercise 4
+
+  - synonym: exercise_5
+    examples: |
+      - 練習5
+      - 第5次練習
+      - 練習5
+      - exercise5
+      - exercise 5
 
   - synonym: midterm_exam
     examples: |
@@ -959,7 +1175,7 @@ nlu:
       - chapter 15
       - 第十五章
       - 第15章
-  
+
   - synonym: project
     examples: |
       - 專案成績
