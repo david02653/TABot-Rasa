@@ -297,22 +297,22 @@ nlu:
       - [chp fourteen](ppt_query_target) power point
       - [chp fifteen](ppt_query_target) power point
 
-  - intent: classmap_search
-    examples: |
-      - i want to query about classmap
-      - i want to query classmap
-      - query classmap
-      - search classmap
-      - classmap query
-      - classmap search
-      - I want to find the course map
-      - Check the course map
-      - Course map query
-      - Course map
-      - Check the course map
-      - Check course knowledge
-      - Query course knowledge
-      - Inquire about course related knowledge
+  # - intent: classmap_search
+  #   examples: |
+  #     - i want to query about classmap
+  #     - i want to query classmap
+  #     - query classmap
+  #     - search classmap
+  #     - classmap query
+  #     - classmap search
+  #     - I want to find the course map
+  #     - Check the course map
+  #     - Course map query
+  #     - Course map
+  #     - Check the course map
+  #     - Check course knowledge
+  #     - Query course knowledge
+  #     - Inquire about course related knowledge
 
   - intent: classmap_search_content
     examples: |

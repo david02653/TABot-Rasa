@@ -8,7 +8,7 @@ intents:
 - help
 - faq:
     use_entities: []
-- classmap_search
+# - classmap_search
 - classmap_search_content
 - classmap_ppt
 - classmap_ppt_content

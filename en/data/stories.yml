@@ -12,12 +12,12 @@ stories:
    - intent: help
    - action: utter_help
 
- - story: classmap search 1
-   steps:
-   - intent: classmap_search
-   - action: utter_confirm_classmap_search
-   - intent: classmap_search_content
-   - action: action_classmap_search
+#  - story: classmap search 1
+#    steps:
+#    - intent: classmap_search
+#    - action: utter_confirm_classmap_search
+#    - intent: classmap_search_content
+#    - action: action_classmap_search
 
  - story: classmap search 2
    steps:
