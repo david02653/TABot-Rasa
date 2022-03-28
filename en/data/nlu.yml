@@ -1,1020 +1,1128 @@
 version: "2.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: help
-  examples: |
-    - I need query function
-    - What's the function?
-    - What are the functions?
-    - What can you do?
-    - Tutorial
-    - how to use?
-    - Instructions
-    - illustrate
-    - getting Started
-
-# - intent: goodbye
-#   examples: |
-#     - good afternoon
-#     - cu
-#     - good by
-#     - cee you later
-#     - good night
-#     - bye
-#     - goodbye
-#     - have a nice day
-#     - see you around
-#     - bye bye
-#     - see you later
-
-- intent: suggest_review_pass
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - ok
-    - OK
-
-- intent: suggest_review_fail
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - NO
-
-- intent: faq/java_garbled_code
-  examples: |
-    - Why do garbled code pop out when i compile java program?
-    - what should i do with when garbled code show up while compiling java program?
-    - Why are there garbled characters when editing Java programs?
-    - What should I do if garbled codes appear in Java compilation?
-    - Java garbled problem
-    - Java garbled
-
-- intent: faq/chinese_annotation_compile
-  examples: |
-    - How to solve error about chinese annotation compile？
-    - something goes wrong when i try to compile program with chinese annotation on it, what should i do
-    - compile failed with chinese annotation
-    - How to solve the problem that Chinese annotations cannot be compile correctly?
-    - Cannot compile with Chinese annotations
-    - Adding Chinese annotation program will break
-    - Chinese annotation is abnormal
-    - Why can't you comment in Chinese
-    - What should I do if the Chinese annotation fails
-    - Chinese annotations cannot be compiled
-    - Unable to compile Chinese annotations
-
-- intent: faq/chinese_garbled
-  examples: |
-    - Why are garbled characters displayed when reading Chinese files?
-    - Why are garbled characters appearing when reading Chinese files?
-    - Garbled characters when reading Chinese files
-    - Chinese files are garbled
-    - Chinese file garbled problem
-
-- intent: faq/vector_arraylist_difference
-  examples: |
-    - what is the difference between vector and arraylist
-    - Is there any difference between arraylist and vector?
-    - what is the exact difference between vector and arraylist
-    - Expansion of arraylist and vector
-    - Expansion of array lists and vectors
-    - container of vector and arraylist
-    - container for vector and arraylist
-    - Vector and array list container
-
-- intent: faq/java_bean
-  examples: |
-    - what is java bean
-    - what can i do with java bean
-    - how java bean works
-    - how to use java bean
-    - why do i need java bean
-    - What is Java Bean? Why use Java Bean?
-    - What is the Java bean
-    - Is java bean useful?
-    - How to use java bean
-    - Why do you want a java bean
-    - Define java bean
-    - Definition of java bean
-    - How to use java bean
-    - java bean
-
-- intent: faq/package_import_path_classpath_difference
-  examples: |
-    - package, import, path, classpath, what is the difference
-    - why is there package, import, path and classpath
-    - explain difference between package, import, path and classpath
-    - What is the meaning and difference of package, import, path, classpath?
-    - Is there a difference between package and import, path and classpath?
-    - Is there any specific difference between import, classpath, path, and package?
-    - import,classpath,path,package
-    - The difference between import, classpath, path, package
-    - What is the difference between import, classpath, path, package
-    - How to distinguish import, classpath, path, package
-    - Distinguish import, classpath, path, package
-
-- intent: faq/garbage_collection
-  examples: |
-    - when will the program execute garbage collection?
-    - garbage collection when
-    - what is garbage collection
-    - how do garbage collection works
-    - When will garbage collection be carried out?
-    - When will the program carry out garbage collection
-    - When will garbage collection take place?
-    - When will garbage collection be executed
-    - Java's garbage collection mechanism
-    - Garbage collection mechanism of jvm
-    - Principle of garbage collection
-    - Why do we need garbage collection
-    - garbage collection
-
-- intent: faq/arraylist_to_array
-  examples: |
-    - how to convert arraylist to list
-    - can i convert arraylist to list
-    - convert arrarylist to list
-    - cast arrayList into list
-    - How to convert arraylist to array
-    - arraylist to array
-    - Convert arraylist to array
-
-- intent: faq/layout
-  examples: |
-    - how to define layout method
-    - i want to do some modify with layout, what should i do
-    - is there anyway to change object layout?
-    - How to customize the layout of components
-    - How to customize the layout, such as location and size
-    - How to change the layout of components
-    - How to lay out components
-    - How to arrange components
-    - How to configure the components
-    - How to typeset components
-    - Custom component layout
-    - Component layout
-
-- intent: faq/icon_transparency
-  examples: |
-    - how to create a transparent icon
-    - how to make icon transparency
-    - how to create transparenct icon
-    - How to create a translucent icon
-    - How to change the icon to translucent
-    - How to build a translucent icon
-    - Create semi-transparent icons
-    - Translucent icon
-    - The icon is changed to semi-transparent
-
-- intent: faq/source_usage
-  examples: |
-    - how to detect source usage with java
-    - how to check java source usage
-    - check status of java source usage
-    - How to detect the resource usage and performance of java
-    - How to see the performance of java and resource usage
-    - How to see the resource usage and performance of java
-    - Java's performance and resource usage
-    - Java's resource usage and performance
-
-- intent: faq/jdk1-5_feature
-  examples: |
-    - What are the new features of jdk1.5
-    - What's new in jdk1.5
-    - What new features are added to jdk1.5
-    - Features of jdk1.5
-    - jdk1.5
-
-- intent: faq/jdk1-6_feature
-  examples: |
-    - What are the new features of jdk1.6
-    - What's new in jdk1.6
-    - What new features are added to jdk1.6
-    - Features of jdk1.6
-    - jdk1.6
-
-- intent: faq/jdk1-7_feature
-  examples: |
-    - What are the new features of jdk1.7
-    - What's new in jdk1.7
-    - What new features are added to jdk1.7
-    - Features of jdk1.7
-    - jdk1.7
-
-- intent: faq/jdk1-8_feature
-  examples: |
-    - What new features are added to jdk1.8
-    - What are the new features of jdk1.8
-    - What's new in jdk1.8
-    - Features of jdk1.8
-    - jdk1.8
-
-- intent: classmap_ppt
-  examples: |
-    - search power point
-    - search ppt
-    - ppt information
-    - I'd like to query ppt
-    - class ppt
-    - query power point
-    - query ppt
-    - I want to inquire about the slideshow information
-    - Query slide information
-    - Slideshow information
-    - Course slides
-    - Course slide materials
-
-- intent: classmap_ppt_content
-  examples: |
-    - i want to checkout slides of [chapter one](ppt_query_target)
-    - i want to checkout slides of [chapter two](ppt_query_target)
-    - i want to checkout slides of [chapter three](ppt_query_target)
-    - i want to checkout slides of [chapter four](ppt_query_target)
-    - i want to checkout slides of [chapter five](ppt_query_target)
-    - i want to checkout slides of [chapter six](ppt_query_target)
-    - i want to checkout slides of [chapter seven](ppt_query_target)
-    - i want to checkout slides of [chapter eight](ppt_query_target)
-    - i want to checkout slides of [chapter nine](ppt_query_target)
-    - i want to checkout slides of [chapter ten](ppt_query_target)
-    - i want to checkout slides of [chapter eleven](ppt_query_target)
-    - i want to checkout slides of [chapter twelve](ppt_query_target)
-    - i want to checkout slides of [chapter thirteen](ppt_query_target)
-    - i want to checkout slides of [chapter fourteen](ppt_query_target)
-    - i want to checkout slides of [chapter fifteen](ppt_query_target)
-    - slides of [chapter1](ppt_query_target)
-    - slides of [chapter2](ppt_query_target)
-    - slides of [chapter3](ppt_query_target)
-    - slides of [chapter4](ppt_query_target)
-    - slides of [chapter5](ppt_query_target)
-    - slides of [chapter6](ppt_query_target)
-    - slides of [chapter7](ppt_query_target)
-    - slides of [chapter8](ppt_query_target)
-    - slides of [chapter9](ppt_query_target)
-    - slides of [chapter10](ppt_query_target)
-    - slides of [chapter11](ppt_query_target)
-    - slides of [chapter12](ppt_query_target)
-    - slides of [chapter13](ppt_query_target)
-    - slides of [chapter14](ppt_query_target)
-    - slides of [chapter15](ppt_query_target)
-    - [chp one](ppt_query_target) power point
-    - [chp two](ppt_query_target) power point
-    - [chp three](ppt_query_target) power point
-    - [chp four](ppt_query_target) power point
-    - [chp five](ppt_query_target) power point
-    - [chp six](ppt_query_target) power point
-    - [chp seven](ppt_query_target) power point
-    - [chp eight](ppt_query_target) power point
-    - [chp nine](ppt_query_target) power point
-    - [chp ten](ppt_query_target) power point
-    - [chp eleven](ppt_query_target) power point
-    - [chp twelve](ppt_query_target) power point
-    - [chp thirteen](ppt_query_target) power point
-    - [chp fourteen](ppt_query_target) power point
-    - [chp fifteen](ppt_query_target) power point
-
-- intent: classmap_search
-  examples: |
-    - i want to query about classmap
-    - i want to query classmap
-    - query classmap
-    - search classmap
-    - classmap query
-    - classmap search
-    - I want to find the course map
-    - Check the course map
-    - Course map query
-    - Course map
-    - Check the course map
-    - Check course knowledge
-    - Query course knowledge
-    - Inquire about course related knowledge
-
-- intent: classmap_search_content
-  examples: |
-    - what does [closure](search_target) means
-    - i want to search about [closure](search_target)
-    - what is [closure](search_target)
-    - what is [html](search_target)
-    - what is [css](search_target)
-    - i want to search what [css](search_target) means
-    - i want to know about [Arrays](search_target)
-    - what is [Introduction](search_target)
-    - what is [Introduction to Java Applications](search_target)
-    - what is [First Program in Java](search_target)
-    - what is [Modifying Your First Java Program](search_target)
-    - what is [printf](search_target)
-    - what is [print text](search_target)
-    - what is [Displaying Text with printf](search_target)
-    - what is [Another Application](search_target)
-    - what is [Memory Concepts](search_target)
-    - what is [Arithmetic](search_target)
-    - what is [Decision Making](search_target)
-    - what is [Instance Variables](search_target)
-    - what is [Variables](search_target)
-    - what is [Primitive Types](search_target)
-    - what is [Reference Types](search_target)
-    - what is [Initializing Objects with Constructors](search_target)
-    - what is [Account Class](search_target)
-    - what is [Account Class with a Balance](search_target)
-    - what is [Control](search_target)
-    - what is [Control Statements](search_target)
-    - what is [Sentinel-Controlled Repetition](search_target)
-    - what is [while loop](search_target)
-    - what is [Essentials of Counter-Controlled Repetition](search_target)
-    - what is [for loop](search_target)
-    - what is [for Repetition Statement](search_target)
-    - what is [Examples Using the for Statement](search_target)
-    - what is [switch Multiple-Selection Statement](search_target)
-    - what is [switch](search_target)
-    - what is [Strings in switch Statements](search_target)
-    - what is [break](search_target)
-    - what is [continue](search_target)
-    - what is [Logical Operators](search_target)
-    - what is [Methods](search_target)
-    - what is [Program Modules in Java](search_target)
-    - what is [Modules](search_target)
-    - what is [static Fields](search_target)
-    - what is [static Methods](search_target)
-    - what is [Class Math](search_target)
-    - what is [Notes on Declaring and Using Methods](search_target)
-    - what is [Argument Promotion and Casting](search_target)
-    - what is [Promotion](search_target)
-    - what is [Casting](search_target)
-    - what is [Secure Random-Number Generation](search_target)
-    - what is [Random](search_target)
-    - what is [enum](search_target)
-    - what is [Introducing enum Types](search_target)
-    - what is [Scope of Declarations](search_target)
-    - what is [Method Overloading](search_target)
-    - what is [Overload](search_target)
-    - what is [Variable-Length Argument Lists](search_target)
-    - what is [Command](search_target)
-    - what is [Using Command-Line Arguments](search_target)
-    - what is [Arrays](search_target)
-    - what is [Class Arrays](search_target)
-    - what is [Introduction to Collections and Class ArrayList](search_target)
-    - what is [ArrayList](search_target)
-    - what is [Classes and Objects](search_target)
-    - what is [Time Class Case Study](search_target)
-    - what is [Controlling Access to Members](search_target)
-    - what is [Referring to the Current Object's Members with the this Reference](search_target)
-    - what is [Overloaded Constructors](search_target)
-    - what is [Default and No-Argument Constructors](search_target)
-    - what is [Notes on Set and Get Methods](search_target)
-    - what is [Composition](search_target)
-    - what is [Aggregation](search_target)
-    - what is [enum Types](search_target)
-    - what is [Garbage Collection](search_target)
-    - what is [static Class Members](search_target)
-    - what is [Static Import](search_target)
-    - what is [final Instance Variables](search_target)
-    - what is [Package Access](search_target)
-    - what is [Inheritance](search_target)
-    - what is [Superclasses and Subclasses](search_target)
-    - what is [protected Members](search_target)
-    - what is [Relationship Between Superclasses and Subclasses](search_target)
-    - what is [Constructors in Subclasses](search_target)
-    - i want to search about [Introduction](search_target)
-    - i want to search about [Introduction to Java Applications](search_target)
-    - i want to search about [First Program in Java](search_target)
-    - i want to search about [Modifying Your First Java Program](search_target)
-    - i want to search about [printf](search_target)
-    - i want to search about [print text](search_target)
-    - i want to search about [Displaying Text with printf](search_target)
-    - i want to search about [Another Application](search_target)
-    - i want to search about [Memory Concepts](search_target)
-    - i want to search about [Arithmetic](search_target)
-    - i want to search about [Decision Making](search_target)
-    - i want to search about [Instance Variables](search_target)
-    - i want to search about [Variables](search_target)
-    - i want to search about [Primitive Types](search_target)
-    - i want to search about [Reference Types](search_target)
-    - i want to search about [Initializing Objects with Constructors](search_target)
-    - i want to search about [Account Class](search_target)
-    - i want to search about [Account Class with a Balance](search_target)
-    - i want to search about [Control](search_target)
-    - i want to search about [Control Statements](search_target)
-    - i want to search about [Sentinel-Controlled Repetition](search_target)
-    - i want to search about [while loop](search_target)
-    - i want to search about [Essentials of Counter-Controlled Repetition](search_target)
-    - i want to search about [for loop](search_target)
-    - i want to search about [for Repetition Statement](search_target)
-    - i want to search about [Examples Using the for Statement](search_target)
-    - i want to search about [switch Multiple-Selection Statement](search_target)
-    - i want to search about [switch](search_target)
-    - i want to search about [Strings in switch Statements](search_target)
-    - i want to search about [break](search_target)
-    - i want to search about [continue](search_target)
-    - i want to search about [Logical Operators](search_target)
-    - i want to search about [Methods](search_target)
-    - i want to search about [Program Modules in Java](search_target)
-    - i want to search about [Modules](search_target)
-    - i want to search about [static Fields](search_target)
-    - i want to search about [static Methods](search_target)
-    - i want to search about [Class Math](search_target)
-    - i want to search about [Notes on Declaring and Using Methods](search_target)
-    - i want to search about [Argument Promotion and Casting](search_target)
-    - i want to search about [Promotion](search_target)
-    - i want to search about [Casting](search_target)
-    - i want to search about [Secure Random-Number Generation](search_target)
-    - i want to search about [Random](search_target)
-    - i want to search about [enum](search_target)
-    - i want to search about [Introducing enum Types](search_target)
-    - i want to search about [Scope of Declarations](search_target)
-    - i want to search about [Method Overloading](search_target)
-    - i want to search about [Overload](search_target)
-    - i want to search about [Variable-Length Argument Lists](search_target)
-    - i want to search about [Command](search_target)
-    - i want to search about [Using Command-Line Arguments](search_target)
-    - i want to search about [Arrays](search_target)
-    - i want to search about [Class Arrays](search_target)
-    - i want to search about [Introduction to Collections and Class ArrayList](search_target)
-    - i want to search about [ArrayList](search_target)
-    - i want to search about [Classes and Objects](search_target)
-    - i want to search about [Time Class Case Study](search_target)
-    - i want to search about [Controlling Access to Members](search_target)
-    - i want to search about [Referring to the Current Object's Members with the this Reference](search_target)
-    - i want to search about [Overloaded Constructors](search_target)
-    - i want to search about [Default and No-Argument Constructors](search_target)
-    - i want to search about [Notes on Set and Get Methods](search_target)
-    - i want to search about [Composition](search_target)
-    - i want to search about [Aggregation](search_target)
-    - i want to search about [enum Types](search_target)
-    - i want to search about [Garbage Collection](search_target)
-    - i want to search about [static Class Members](search_target)
-    - i want to search about [Static Import](search_target)
-    - i want to search about [final Instance Variables](search_target)
-    - i want to search about [Package Access](search_target)
-    - i want to search about [Inheritance](search_target)
-    - i want to search about [Superclasses and Subclasses](search_target)
-    - i want to search about [protected Members](search_target)
-    - i want to search about [Relationship Between Superclasses and Subclasses](search_target)
-    - i want to search about [Constructors in Subclasses](search_target)
-    - i want to search what [Introduction](search_target) means
-    - i want to search what [Introduction to Java Applications](search_target) means
-    - i want to search what [First Program in Java](search_target) means
-    - i want to search what [Modifying Your First Java Program](search_target) means
-    - i want to search what [printf](search_target) means
-    - i want to search what [print text](search_target) means
-    - i want to search what [Displaying Text with printf](search_target) means
-    - i want to search what [Another Application](search_target) means
-    - i want to search what [Memory Concepts](search_target) means
-    - i want to search what [Arithmetic](search_target) means
-    - i want to search what [Decision Making](search_target) means
-    - i want to search what [Instance Variables](search_target) means
-    - i want to search what [Variables](search_target) means
-    - i want to search what [Primitive Types](search_target) means
-    - i want to search what [Reference Types](search_target) means
-    - i want to search what [Initializing Objects with Constructors](search_target) means
-    - i want to search what [Account Class](search_target) means
-    - i want to search what [Account Class with a Balance](search_target) means
-    - i want to search what [Control](search_target) means
-    - i want to search what [Control Statements](search_target) means
-    - i want to search what [Sentinel-Controlled Repetition](search_target) means
-    - i want to search what [while loop](search_target) means
-    - i want to search what [Essentials of Counter-Controlled Repetition](search_target) means
-    - i want to search what [for loop](search_target) means
-    - i want to search what [for Repetition Statement](search_target) means
-    - i want to search what [Examples Using the for Statement](search_target) means
-    - i want to search what [switch Multiple-Selection Statement](search_target) means
-    - i want to search what [switch](search_target) means
-    - i want to search what [Strings in switch Statements](search_target) means
-    - i want to search what [break](search_target) means
-    - i want to search what [continue](search_target) means
-    - i want to search what [Logical Operators](search_target) means
-    - i want to search what [Methods](search_target) means
-    - i want to search what [Program Modules in Java](search_target) means
-    - i want to search what [Modules](search_target) means
-    - i want to search what [static Fields](search_target) means
-    - i want to search what [static Methods](search_target) means
-    - i want to search what [Class Math](search_target) means
-    - i want to search what [Notes on Declaring and Using Methods](search_target) means
-    - i want to search what [Argument Promotion and Casting](search_target) means
-    - i want to search what [Promotion](search_target) means
-    - i want to search what [Casting](search_target) means
-    - i want to search what [Secure Random-Number Generation](search_target) means
-    - i want to search what [Random](search_target) means
-    - i want to search what [enum](search_target) means
-    - i want to search what [Introducing enum Types](search_target) means
-    - i want to search what [Scope of Declarations](search_target) means
-    - i want to search what [Method Overloading](search_target) means
-    - i want to search what [Overload](search_target) means
-    - i want to search what [Variable-Length Argument Lists](search_target) means
-    - i want to search what [Command](search_target) means
-    - i want to search what [Using Command-Line Arguments](search_target) means
-    - i want to search what [Arrays](search_target) means
-    - i want to search what [Class Arrays](search_target) means
-    - i want to search what [Introduction to Collections and Class ArrayList](search_target) means
-    - i want to search what [ArrayList](search_target) means
-    - i want to search what [Classes and Objects](search_target) means
-    - i want to search what [Time Class Case Study](search_target) means
-    - i want to search what [Controlling Access to Members](search_target) means
-    - i want to search what [Referring to the Current Object's Members with the this Reference](search_target) means
-    - i want to search what [Overloaded Constructors](search_target) means
-    - i want to search what [Default and No-Argument Constructors](search_target) means
-    - i want to search what [Notes on Set and Get Methods](search_target) means
-    - i want to search what [Composition](search_target) means
-    - i want to search what [Aggregation](search_target) means
-    - i want to search what [enum Types](search_target) means
-    - i want to search what [Garbage Collection](search_target) means
-    - i want to search what [static Class Members](search_target) means
-    - i want to search what [Static Import](search_target) means
-    - i want to search what [final Instance Variables](search_target) means
-    - i want to search what [Package Access](search_target) means
-    - i want to search what [Inheritance](search_target) means
-    - i want to search what [Superclasses and Subclasses](search_target) means
-    - i want to search what [protected Members](search_target) means
-    - i want to search what [Relationship Between Superclasses and Subclasses](search_target) means
-    - i want to search what [Constructors in Subclasses](search_target) means
-    - what does [Introduction](search_target) means
-    - what does [Introduction to Java Applications](search_target) means
-    - what does [First Program in Java](search_target) means
-    - what does [Modifying Your First Java Program](search_target) means
-    - what does [printf](search_target) means
-    - what does [print text](search_target) means
-    - what does [Displaying Text with printf](search_target) means
-    - what does [Another Application](search_target) means
-    - what does [Memory Concepts](search_target) means
-    - what does [Arithmetic](search_target) means
-    - what does [Decision Making](search_target) means
-    - what does [Instance Variables](search_target) means
-    - what does [Variables](search_target) means
-    - what does [Primitive Types](search_target) means
-    - what does [Reference Types](search_target) means
-    - what does [Initializing Objects with Constructors](search_target) means
-    - what does [Account Class](search_target) means
-    - what does [Account Class with a Balance](search_target) means
-    - what does [Control](search_target) means
-    - what does [Control Statements](search_target) means
-    - what does [Sentinel-Controlled Repetition](search_target) means
-    - what does [while loop](search_target) means
-    - what does [Essentials of Counter-Controlled Repetition](search_target) means
-    - what does [for loop](search_target) means
-    - what does [for Repetition Statement](search_target) means
-    - what does [Examples Using the for Statement](search_target) means
-    - what does [switch Multiple-Selection Statement](search_target) means
-    - what does [switch](search_target) means
-    - what does [Strings in switch Statements](search_target) means
-    - what does [break](search_target) means
-    - what does [continue](search_target) means
-    - what does [Logical Operators](search_target) means
-    - what does [Methods](search_target) means
-    - what does [Program Modules in Java](search_target) means
-    - what does [Modules](search_target) means
-    - what does [static Fields](search_target) means
-    - what does [static Methods](search_target) means
-    - what does [Class Math](search_target) means
-    - what does [Notes on Declaring and Using Methods](search_target) means
-    - what does [Argument Promotion and Casting](search_target) means
-    - what does [Promotion](search_target) means
-    - what does [Casting](search_target) means
-    - what does [Secure Random-Number Generation](search_target) means
-    - what does [Random](search_target) means
-    - what does [enum](search_target) means
-    - what does [Introducing enum Types](search_target) means
-    - what does [Scope of Declarations](search_target) means
-    - what does [Method Overloading](search_target) means
-    - what does [Overload](search_target) means
-    - what does [Variable-Length Argument Lists](search_target) means
-    - what does [Command](search_target) means
-    - what does [Using Command-Line Arguments](search_target) means
-    - what does [Arrays](search_target) means
-    - what does [Class Arrays](search_target) means
-    - what does [Introduction to Collections and Class ArrayList](search_target) means
-    - what does [ArrayList](search_target) means
-    - what does [Classes and Objects](search_target) means
-    - what does [Time Class Case Study](search_target) means
-    - what does [Controlling Access to Members](search_target) means
-    - what does [Referring to the Current Object's Members with the this Reference](search_target) means
-    - what does [Overloaded Constructors](search_target) means
-    - what does [Default and No-Argument Constructors](search_target) means
-    - what does [Notes on Set and Get Methods](search_target) means
-    - what does [Composition](search_target) means
-    - what does [Aggregation](search_target) means
-    - what does [enum Types](search_target) means
-    - what does [Garbage Collection](search_target) means
-    - what does [static Class Members](search_target) means
-    - what does [Static Import](search_target) means
-    - what does [final Instance Variables](search_target) means
-    - what does [Package Access](search_target) means
-    - what does [Inheritance](search_target) means
-    - what does [Superclasses and Subclasses](search_target) means
-    - what does [protected Members](search_target) means
-    - what does [Relationship Between Superclasses and Subclasses](search_target) means
-    - what does [Constructors in Subclasses](search_target) means
-
-
-- intent: classmap_suggest
-  examples: |
-    - i want to recommand some textbook material
-    - i think i find something useful as textbook
-    - suggest textbook
-    - suggest textbook material
-    - how about add this into textbook
-
-- intent: personal_score_query
-  examples: |
-    - i want to search my personal score
-    - i want to check my personal score
-    - i want to check my personal grade
-    - search personal score
-    - search my personal grade
-    - search my personal score
-    - query my personal score
-    - search my score
-    - query my score
-    - check my score
-    - check my grade
-
-- intent: personal_score_object
-  examples: |
-    - i want to query my grade of [homework 1](score_query_target)
-    - i want to query my grade of [homework 2](score_query_target)
-    - i want to query my grade of [homework 3](score_query_target)
-    - i want to query my grade of [homework 4](score_query_target)
-    - i want to query my grade of [homework 5](score_query_target)
-    - i want to query my grade of [homework 6](score_query_target)
-    - i want to query my grade of [homework 7](score_query_target)
-    - i want to query my grade of [homework 8](score_query_target)
-    - i want to query my grade of [homework 9](score_query_target)
-    - i want to query my grade of [homework 10](score_query_target)
-    - i want to query my grade of [midterm exam](score_query_target)
-    - i want to query my grade of [final exam](score_query_target)
-    - i want to query my grade of [quiz 1](score_query_target)
-    - i want to query my grade of [quiz 2](score_query_target)
-    - i want to query my grade of [quiz 3](score_query_target)
-    - i want to query my grade of [quiz 4](score_query_target)
-    - i want to query my grade of [quiz 5](score_query_target)
-    - i want to query my grade of [quiz 6](score_query_target)
-    - i want to query my grade of [quiz 7](score_query_target)
-    - i want to query my grade of [quiz 8](score_query_target)
-    - i want to query my grade of [quiz 9](score_query_target)
-    - i want to query my grade of [quiz 10](score_query_target)
-    - query my grade of [homework 1](score_query_target)
-    - query my grade of [homework 2](score_query_target)
-    - query my grade of [homework 3](score_query_target)
-    - query my grade of [homework 4](score_query_target)
-    - query my grade of [homework 5](score_query_target)
-    - query my grade of [homework 6](score_query_target)
-    - query my grade of [homework 7](score_query_target)
-    - query my grade of [homework 8](score_query_target)
-    - query my grade of [homework 9](score_query_target)
-    - query my grade of [homework 10](score_query_target)
-    - query my grade of [midterm exam](score_query_target)
-    - query my grade of [final exam](score_query_target)
-    - query my grade of [quiz 1](score_query_target)
-    - query my grade of [quiz 2](score_query_target)
-    - query my grade of [quiz 3](score_query_target)
-    - query my grade of [quiz 4](score_query_target)
-    - query my grade of [quiz 5](score_query_target)
-    - query my grade of [quiz 6](score_query_target)
-    - query my grade of [quiz 7](score_query_target)
-    - query my grade of [quiz 8](score_query_target)
-    - query my grade of [quiz 9](score_query_target)
-    - query my grade of [quiz 10](score_query_target)
-    - query my grade of [peer evaluation](score_query_target)
-    - query my grade of [project evaluation](score_query_target)
-    - [homework 1](score_query_target)
-    - [homework 2](score_query_target)
-    - [homework 3](score_query_target)
-    - [homework 4](score_query_target)
-    - [homework 5](score_query_target)
-    - [homework 6](score_query_target)
-    - [homework 7](score_query_target)
-    - [homework 8](score_query_target)
-    - [homework 9](score_query_target)
-    - [homework 10](score_query_target)
-    - [midterm exam](score_query_target)
-    - [final exam](score_query_target)
-    - [quiz 1](score_query_target)
-    - [quiz 2](score_query_target)
-    - [quiz 3](score_query_target)
-    - [quiz 4](score_query_target)
-    - [quiz 5](score_query_target)
-    - [quiz 6](score_query_target)
-    - [quiz 7](score_query_target)
-    - [quiz 8](score_query_target)
-    - [quiz 9](score_query_target)
-    - [quiz 10](score_query_target)
-    - [peer evaluation](score_query_target)
-    - [project evaluation](score_query_target)
-
-- intent: personal_quiz_query
-  examples: |
-    - query personal quiz
-    - personal quiz query
-    - personal quiz
-    - search personal quiz
-    - Personal examination question inquiry
-    - Query individual exam questions
-    - Individual exam questions
-    - Recommend personalized exam questions
-    - Practice personalized exam questions
-    - Personalized exam review
-    - Practice personalized questions
-    - Practice questions
-    - Practice exam questions
-    - Exam Questions Review
-
-- intent: personal_textbook_query
-  examples: |
-    - query personal textbook
-    - search personal textbook
-    - personal textbook
-    - Query personal teaching materials
-    - Personal teaching materials
-    - View personal textbooks
-    - Recommend personalized teaching materials
-    - Practice personalized textbooks
-    - Personalized textbook review
-    - Practice personalized textbooks
-    - Practice materials
-    - Textbook review
-
-- synonym: homework_1
-  examples: |
-    - homework 1
-    - homework1
-    - homework one
-
-- synonym: homework_2
-  examples: |
-    - homework two
-    - homework 2
-    - homework2
-
-- synonym: homework_3
-  examples: |
-    - homework3
-    - homework 3
-    - homework three
-
-- synonym: homework_4
-  examples: |
-    - homework four
-    - homework4
-    - homework 4
-
-- synonym: homework_5
-  examples: |
-    - homework five
-    - homework5
-    - homework 5
-
-- synonym: homework_6
-  examples: |
-    - homework six
-    - homework6
-    - homework 6
-
-- synonym: homework_7
-  examples: |
-    - homework seven
-    - homework7
-    - homework 7
-
-- synonym: homework_8
-  examples: |
-    - homework eight
-    - homework8
-    - homework 8
-
-- synonym: homework_9
-  examples: |
-    - homework nine
-    - homework9
-    - homework 9
-
-- synonym: homework_10
-  examples: |
-    - homework ten
-    - homework10
-    - homework 10
-
-- synonym: midterm_exam
-  examples: |
-    - midterm exam
-    - midterm
-    - mid
-
-- synonym: final_exam
-  examples: |
-    - final exam
-    - final
-    - fin
-
-- synonym: quiz_1
-  examples: |
-    - quiz one
-    - quiz 1
-    - quiz1
-
-- synonym: quiz_2
-  examples: |
-    - quiz two
-    - quiz 2
-    - quiz2
-
-- synonym: quiz_3
-  examples: |
-    - quiz three
-    - quiz 3
-    - quiz3
-
-- synonym: quiz_4
-  examples: |
-    - quiz four
-    - quiz 4
-    - quiz4
-
-- synonym: quiz_5
-  examples: |
-    - quiz five
-    - quiz 5
-    - quiz5
-
-- synonym: quiz_6
-  examples: |
-    - quiz six
-    - quiz 6
-    - quiz6
-
-- synonym: quiz_7
-  examples: |
-    - quiz seven
-    - quiz 7
-    - quiz7
-
-- synonym: quiz_8
-  examples: |
-    - quiz eight
-    - quiz 8
-    - quiz8
-
-- synonym: quiz_9
-  examples: |
-    - quiz nine
-    - quiz 9
-    - quiz9
-
-- synonym: quiz_10
-  examples: |
-    - quiz ten
-    - quiz 10
-    - quiz10
-
-- synonym: chapter_1
-  examples: |
-    - chapter1
-    - chapter 1
-    - chapter one
-    - chp one
-    - chp1
-
-- synonym: chapter_2
-  examples: |
-    - chapter2
-    - chapter 2
-    - chapter two
-    - chp2
-    - chp two
-
-- synonym: chapter_3
-  examples: |
-    - chapter3
-    - chapter 3
-    - chapter three
-    - chp three
-    - chp3
-
-- synonym: chapter_4
-  examples: |
-    - chapter4
-    - chapter 4
-    - chapter four
-    - chp four
-    - chp4
-
-- synonym: chapter_5
-  examples: |
-    - chapter5
-    - chapter 5
-    - chp five
-    - chp5
-    - chapter five
-
-- synonym: chapter_6
-  examples: |
-    - chapter6
-    - chapter 6
-    - chapter six
-    - chp six
-    - chp6
-
-- synonym: chapter_7
-  examples: |
-    - chapter7
-    - chapter 7
-    - chapter seven
-    - chp7
-    - chp seven
-
-- synonym: chapter_8
-  examples: |
-    - chapter8
-    - chapter 8
-    - chp8
-    - chapter eight
-    - chp eight
-
-- synonym: chapter_9
-  examples: |
-    - chapter9
-    - chapter 9
-    - chp nine
-    - chapter nine
-    - chp9
-
-- synonym: chapter_10
-  examples: |
-    - chapter10
-    - chapter 10
-    - chapter ten
-    - chp ten
-    - chp10
-
-- synonym: chapter_11
-  examples: |
-    - chapter11
-    - chapter 11
-    - chaper eleven
-    - chp11
-    - chp eleven
-
-- synonym: chapter_12
-  examples: |
-    - chapter12
-    - chapter 12
-    - chapter twelve
-    - chp12
-    - chp twelve
-
-- synonym: chapter_13
-  examples: |
-    - chapter13
-    - chapter 13
-    - chapter thirteen
-    - chp13
-    - chp thirteen
-
-- synonym: chapter_14
-  examples: |
-    - chapter14
-    - chapter 14
-    - chp14
-    - chapter fourteen
-    - chp fourteen
-
-- synonym: chapter_15
-  examples: |
-    - chapter15
-    - chapter 15
-    - chp15
-    - chp fifteen
-    - chapter fifteen
-
-- synonym: project
-  examples: |
-    - peer assessment
-    - project evaluation
-    - project score
-    - evaluation score
-    - peer assessment score
-    - peer assessment grade
-    - project grade
-    - project evaluation grade
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: help
+    examples: |
+      - I need query function
+      - What's the function?
+      - What are the functions?
+      - What can you do?
+      - Tutorial
+      - how to use?
+      - Instructions
+      - illustrate
+      - getting Started
+
+  # - intent: goodbye
+  #   examples: |
+  #     - good afternoon
+  #     - cu
+  #     - good by
+  #     - cee you later
+  #     - good night
+  #     - bye
+  #     - goodbye
+  #     - have a nice day
+  #     - see you around
+  #     - bye bye
+  #     - see you later
+
+  - intent: suggest_review_pass
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - ok
+      - OK
+
+  - intent: suggest_review_fail
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - NO
+
+  - intent: faq/java_garbled_code
+    examples: |
+      - Why do garbled code pop out when i compile java program?
+      - what should i do with when garbled code show up while compiling java program?
+      - Why are there garbled characters when editing Java programs?
+      - What should I do if garbled codes appear in Java compilation?
+      - Java garbled problem
+      - Java garbled
+
+  - intent: faq/chinese_annotation_compile
+    examples: |
+      - How to solve error about chinese annotation compile？
+      - something goes wrong when i try to compile program with chinese annotation on it, what should i do
+      - compile failed with chinese annotation
+      - How to solve the problem that Chinese annotations cannot be compile correctly?
+      - Cannot compile with Chinese annotations
+      - Adding Chinese annotation program will break
+      - Chinese annotation is abnormal
+      - Why can't you comment in Chinese
+      - What should I do if the Chinese annotation fails
+      - Chinese annotations cannot be compiled
+      - Unable to compile Chinese annotations
+
+  - intent: faq/chinese_garbled
+    examples: |
+      - Why are garbled characters displayed when reading Chinese files?
+      - Why are garbled characters appearing when reading Chinese files?
+      - Garbled characters when reading Chinese files
+      - Chinese files are garbled
+      - Chinese file garbled problem
+
+  - intent: faq/vector_arraylist_difference
+    examples: |
+      - what is the difference between vector and arraylist
+      - Is there any difference between arraylist and vector?
+      - what is the exact difference between vector and arraylist
+      - Expansion of arraylist and vector
+      - Expansion of array lists and vectors
+      - container of vector and arraylist
+      - container for vector and arraylist
+      - Vector and array list container
+
+  - intent: faq/java_bean
+    examples: |
+      - what is java bean
+      - what can i do with java bean
+      - how java bean works
+      - how to use java bean
+      - why do i need java bean
+      - What is Java Bean? Why use Java Bean?
+      - What is the Java bean
+      - Is java bean useful?
+      - How to use java bean
+      - Why do you want a java bean
+      - Define java bean
+      - Definition of java bean
+      - How to use java bean
+      - java bean
+
+  - intent: faq/package_import_path_classpath_difference
+    examples: |
+      - package, import, path, classpath, what is the difference
+      - why is there package, import, path and classpath
+      - explain difference between package, import, path and classpath
+      - What is the meaning and difference of package, import, path, classpath?
+      - Is there a difference between package and import, path and classpath?
+      - Is there any specific difference between import, classpath, path, and package?
+      - import,classpath,path,package
+      - The difference between import, classpath, path, package
+      - What is the difference between import, classpath, path, package
+      - How to distinguish import, classpath, path, package
+      - Distinguish import, classpath, path, package
+
+  - intent: faq/garbage_collection
+    examples: |
+      - when will the program execute garbage collection?
+      - garbage collection when
+      - what is garbage collection
+      - how do garbage collection works
+      - When will garbage collection be carried out?
+      - When will the program carry out garbage collection
+      - When will garbage collection take place?
+      - When will garbage collection be executed
+      - Java's garbage collection mechanism
+      - Garbage collection mechanism of jvm
+      - Principle of garbage collection
+      - Why do we need garbage collection
+      - garbage collection
+
+  - intent: faq/arraylist_to_array
+    examples: |
+      - how to convert arraylist to list
+      - can i convert arraylist to list
+      - convert arrarylist to list
+      - cast arrayList into list
+      - How to convert arraylist to array
+      - arraylist to array
+      - Convert arraylist to array
+
+  - intent: faq/layout
+    examples: |
+      - how to define layout method
+      - i want to do some modify with layout, what should i do
+      - is there anyway to change object layout?
+      - How to customize the layout of components
+      - How to customize the layout, such as location and size
+      - How to change the layout of components
+      - How to lay out components
+      - How to arrange components
+      - How to configure the components
+      - How to typeset components
+      - Custom component layout
+      - Component layout
+
+  - intent: faq/icon_transparency
+    examples: |
+      - how to create a transparent icon
+      - how to make icon transparency
+      - how to create transparenct icon
+      - How to create a translucent icon
+      - How to change the icon to translucent
+      - How to build a translucent icon
+      - Create semi-transparent icons
+      - Translucent icon
+      - The icon is changed to semi-transparent
+
+  - intent: faq/source_usage
+    examples: |
+      - how to detect source usage with java
+      - how to check java source usage
+      - check status of java source usage
+      - How to detect the resource usage and performance of java
+      - How to see the performance of java and resource usage
+      - How to see the resource usage and performance of java
+      - Java's performance and resource usage
+      - Java's resource usage and performance
+
+  - intent: faq/jdk1-5_feature
+    examples: |
+      - What are the new features of jdk1.5
+      - What's new in jdk1.5
+      - What new features are added to jdk1.5
+      - Features of jdk1.5
+      - jdk1.5
+
+  - intent: faq/jdk1-6_feature
+    examples: |
+      - What are the new features of jdk1.6
+      - What's new in jdk1.6
+      - What new features are added to jdk1.6
+      - Features of jdk1.6
+      - jdk1.6
+
+  - intent: faq/jdk1-7_feature
+    examples: |
+      - What are the new features of jdk1.7
+      - What's new in jdk1.7
+      - What new features are added to jdk1.7
+      - Features of jdk1.7
+      - jdk1.7
+
+  - intent: faq/jdk1-8_feature
+    examples: |
+      - What new features are added to jdk1.8
+      - What are the new features of jdk1.8
+      - What's new in jdk1.8
+      - Features of jdk1.8
+      - jdk1.8
+
+  - intent: classmap_ppt
+    examples: |
+      - search power point
+      - search ppt
+      - ppt information
+      - I'd like to query ppt
+      - class ppt
+      - query power point
+      - query ppt
+      - I want to inquire about the slideshow information
+      - Query slide information
+      - Slideshow information
+      - Course slides
+      - Course slide materials
+
+  - intent: classmap_ppt_content
+    examples: |
+      - i want to checkout slides of [chapter one](ppt_query_target)
+      - i want to checkout slides of [chapter two](ppt_query_target)
+      - i want to checkout slides of [chapter three](ppt_query_target)
+      - i want to checkout slides of [chapter four](ppt_query_target)
+      - i want to checkout slides of [chapter five](ppt_query_target)
+      - i want to checkout slides of [chapter six](ppt_query_target)
+      - i want to checkout slides of [chapter seven](ppt_query_target)
+      - i want to checkout slides of [chapter eight](ppt_query_target)
+      - i want to checkout slides of [chapter nine](ppt_query_target)
+      - i want to checkout slides of [chapter ten](ppt_query_target)
+      - i want to checkout slides of [chapter eleven](ppt_query_target)
+      - i want to checkout slides of [chapter twelve](ppt_query_target)
+      - i want to checkout slides of [chapter thirteen](ppt_query_target)
+      - i want to checkout slides of [chapter fourteen](ppt_query_target)
+      - i want to checkout slides of [chapter fifteen](ppt_query_target)
+      - slides of [chapter1](ppt_query_target)
+      - slides of [chapter2](ppt_query_target)
+      - slides of [chapter3](ppt_query_target)
+      - slides of [chapter4](ppt_query_target)
+      - slides of [chapter5](ppt_query_target)
+      - slides of [chapter6](ppt_query_target)
+      - slides of [chapter7](ppt_query_target)
+      - slides of [chapter8](ppt_query_target)
+      - slides of [chapter9](ppt_query_target)
+      - slides of [chapter10](ppt_query_target)
+      - slides of [chapter11](ppt_query_target)
+      - slides of [chapter12](ppt_query_target)
+      - slides of [chapter13](ppt_query_target)
+      - slides of [chapter14](ppt_query_target)
+      - slides of [chapter15](ppt_query_target)
+      - [chp one](ppt_query_target) power point
+      - [chp two](ppt_query_target) power point
+      - [chp three](ppt_query_target) power point
+      - [chp four](ppt_query_target) power point
+      - [chp five](ppt_query_target) power point
+      - [chp six](ppt_query_target) power point
+      - [chp seven](ppt_query_target) power point
+      - [chp eight](ppt_query_target) power point
+      - [chp nine](ppt_query_target) power point
+      - [chp ten](ppt_query_target) power point
+      - [chp eleven](ppt_query_target) power point
+      - [chp twelve](ppt_query_target) power point
+      - [chp thirteen](ppt_query_target) power point
+      - [chp fourteen](ppt_query_target) power point
+      - [chp fifteen](ppt_query_target) power point
+
+  - intent: classmap_search
+    examples: |
+      - i want to query about classmap
+      - i want to query classmap
+      - query classmap
+      - search classmap
+      - classmap query
+      - classmap search
+      - I want to find the course map
+      - Check the course map
+      - Course map query
+      - Course map
+      - Check the course map
+      - Check course knowledge
+      - Query course knowledge
+      - Inquire about course related knowledge
+
+  - intent: classmap_search_content
+    examples: |
+      - [TIOBE Index for February 2022](search_target)
+      - [TIOBE Index: Very Long Term History](search_target)
+      - [Java跨平台特性](search_target)
+      - [Java平台](search_target)
+      - [安裝與執行Java程式的基本流程](search_target)
+      - [Java版本歷史](search_target)
+      - [Introduction](search_target)
+      - [Your First Program in Java: Printing a Line of Text](search_target)
+      - [Modifying Your First Java Program](search_target)
+      - [Displaying Text with printf](search_target)
+      - [Another Application: Adding Integers](search_target)
+      - [import Declarations](search_target)
+      - [Declaring and Creating a Scanner to Obtain User Input from the Keyboard](search_target)
+      - [Declaring Variables to Store Integers](search_target)
+      - [Prompting the User for Input](search_target)
+      - [Obtaining an int as Input from the User](search_target)
+      - [Displaying the Result of the Calculation](search_target)
+      - [Memory Concepts](search_target)
+      - [Java基本資料型態](search_target)
+      - [Arithmetic](search_target)
+      - [Decision Making: Equality and Relational Operators](search_target)
+      - [Object](search_target)
+      - [Class and Encapsulation](search_target)
+      - [Class and Object Instances](search_target)
+      - [Instance Variables, set Methods and get Methods](search_target)
+      - [Account Class with an Instance Variable, a set Method and a get Method](search_target)
+      - [AccountTest Class That Creates and Uses an Object of Class Account](search_target)
+      - [Compiling and Executing an App with Multiple Classes](search_target)
+      - [Account UML Class Diagram with an Instance Variable and set and get Methods](search_target)
+      - [Additional Notes on Class AccountTest](search_target)
+      - [Software Engineering with private Instance Variables and public set and get Methods](search_target)
+      - [Primitive Types vs. Reference Types](search_target)
+      - [Account Class: Initializing Objects with Constructors](search_target)
+      - [Declaring an Account Constructor for Custom Object Initialization](search_target)
+      - [Class AccountTest: Initializing Account Objects When They’re Created](search_target)
+      - [Account Class with a Balance; Floating-Point Numbers and Type double](search_target)
+      - [Account Class with a balance Instance Variable of Type double](search_target)
+      - [AccountTest Class to Use Class Account](search_target)
+      - [Primitive Types](search_target)
+      - [Literal 文字](search_target)
+      - [合法基本資料型態變數設定](search_target)
+      - [資料型態轉換(Data Type Casting)](search_target)
+      - [Package and Import](search_target)
+      - [PATH and CLASSPATH環境變數](search_target)
+      - [Introduction](search_target)
+      - [Formulating Algorithms: Sentinel-Controlled Repetition](search_target)
+      - [Essentials of Counter-Controlled Repetition](search_target)
+      - [for Repetition Statement](search_target)
+      - [switch Multiple-Selection Statement](search_target)
+      - [Class AutoPolicy Case Study: Strings in switch Statements](search_target)
+      - [break and continue Statements](search_target)
+      - [Logical Operators](search_target)
+      - [Introduction](search_target)
+      - [Program Modules in Java](search_target)
+      - [static Methods, static Fields and Class Math](search_target)
+      - [Notes on Declaring and Using Methods](search_target)
+      - [Argument Promotion and Casting](search_target)
+      - [Case Study: Secure Random-Number Generation](search_target)
+      - [Case Study: A Game of Chance; Introducing enum Types](search_target)
+      - [Scope of Declarations](search_target)
+      - [Method Overloading](search_target)
+      - [Arrays](search_target)
+      - [Declaring and Creating Arrays](search_target)
+      - [Examples Using Arrays](search_target)
+      - [Creating and Initializing an Array](search_target)
+      - [Using an Array Initializer](search_target)
+      - [Calculating the Values to Store in an Array](search_target)
+      - [Using Arrays to Analyze Survey Results](search_target)
+      - [Exception Handling: Processing the Incorrect Response](search_target)
+      - [The try Statement](search_target)
+      - [Executing the catch Block](search_target)
+      - [toString Method of the Exception Parameter](search_target)
+      - [Case Study: Card Shuffling and Dealing Simulation](search_target)
+      - [Enhanced for Statement](search_target)
+      - [Passing Arrays to Methods](search_target)
+      - [Pass-By-Value vs. Pass-By-Reference](search_target)
+      - [Multidimensional Arrays](search_target)
+      - [Introduction](search_target)
+      - [Time Class Case Study](search_target)
+      - [Controlling Access to Members](search_target)
+      - [Referring to the Current Object’s Members with the this Reference](search_target)
+      - [Time Class Case Study: Overloaded Constructors](search_target)
+      - [Default and No-Argument Constructors](search_target)
+      - [Notes on Set and Get Methods](search_target)
+      - [Composition (Aggregation)](search_target)
+      - [enum Types](search_target)
+      - [Garbage Collection](search_target)
+      - [static Class Members](search_target)
+      - [static Import](search_target)
+      - [final Instance Variables](search_target)
+      - [Package Access](search_target)
+      - [Introduction](search_target)
+      - [Superclasses and Subclasses](search_target)
+      - [protected Members](search_target)
+      - [Relationship Between Superclasses and Subclasses](search_target)
+      - [Creating and Using a CommissionEmployee Class](search_target)
+      - [Creating and Using a BasePlus-CommissionEmployee Class](search_target)
+      - [Creating a CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy](search_target)
+      - [CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy Using protected Instance Variables](search_target)
+      - [Constructors in Subclasses](search_target)
+      - [Override觀念釐清](search_target)
+      - [Introduction](search_target)
+      - [Polymorphism Examples](search_target)
+      - [Demonstrating Polymorphic Behavior](search_target)
+      - [Abstract Classes and Methods](search_target)
+      - [Case Study: Payroll System Using Polymorphism](search_target)
+      - [Abstract Superclass Employee](search_target)
+      - [Polymorphic Processing, Operator instanceof and Downcasting](search_target)
+      - [Summary of the Allowed Assignments Between Superclass and Subclass Variables](search_target)
+      - [final Methods and Classes](search_target)
+      - [A Deeper Explanation of Issues with Calling Methods from Constructors](search_target)
+      - [Creating and Using Interfaces](search_target)
+      - [Developing a Payable Hierarchy](search_target)
+      - [Interface Payable](search_target)
+      - [Class Invoice](search_target)
+      - [Modifying Class Employee to Implement Interface Payable](search_target)
+      - [Modifying Class SalariedEmployee for Use in the Payable Hierarchy](search_target)
+      - [Using Interface Payable to Process Invoices and Employees Polymorphically](search_target)
+      - [default Interface Methods](search_target)
+      - [Introduction](search_target)
+      - [Simple GUI-Based Input/Output with JOptionPane](search_target)
+      - [Overview of Swing Components](search_target)
+      - [Displaying Text and Images in a Window](search_target)
+      - [Text Fields and an Introduction to Event Handling with Nested Classes](search_target)
+      - [Event, Event Source, and Event Listener](search_target)
+      - [Common GUI Event Types and Listener Interfaces](search_target)
+      - [How Event Handling Works](search_target)
+      - [JButton](search_target)
+      - [Buttons That Maintain State](search_target)
+      - [JCheckBox](search_target)
+      - [JRadioButton](search_target)
+      - [JComboBox; Using an Anonymous Inner Class for Event Handling](search_target)
+      - [JList](search_target)
+      - [Mouse Event Handling](search_target)
+      - [Adapter Classes](search_target)
+      - [JPanel Subclass for Drawing with the Mouse](search_target)
+      - [Key Event Handling](search_target)
+      - [Introduction to Layout Managers](search_target)
+      - [Using Panels to Manage More Complex Layouts](search_target)
+      - [JTextArea](search_target)
+      - what is [TIOBE Index for February 2022](search_target)
+      - what is [TIOBE Index: Very Long Term History](search_target)
+      - what is [Java跨平台特性](search_target)
+      - what is [Java平台](search_target)
+      - what is [安裝與執行Java程式的基本流程](search_target)
+      - what is [Java版本歷史](search_target)
+      - what is [Introduction](search_target)
+      - what is [Your First Program in Java: Printing a Line of Text](search_target)
+      - what is [Modifying Your First Java Program](search_target)
+      - what is [Displaying Text with printf](search_target)
+      - what is [Another Application: Adding Integers](search_target)
+      - what is [import Declarations](search_target)
+      - what is [Declaring and Creating a Scanner to Obtain User Input from the Keyboard](search_target)
+      - what is [Declaring Variables to Store Integers](search_target)
+      - what is [Prompting the User for Input](search_target)
+      - what is [Obtaining an int as Input from the User](search_target)
+      - what is [Displaying the Result of the Calculation](search_target)
+      - what is [Memory Concepts](search_target)
+      - what is [Java基本資料型態](search_target)
+      - what is [Arithmetic](search_target)
+      - what is [Decision Making: Equality and Relational Operators](search_target)
+      - what is [Object](search_target)
+      - what is [Class and Encapsulation](search_target)
+      - what is [Class and Object Instances](search_target)
+      - what is [Instance Variables, set Methods and get Methods](search_target)
+      - what is [Account Class with an Instance Variable, a set Method and a get Method](search_target)
+      - what is [AccountTest Class That Creates and Uses an Object of Class Account](search_target)
+      - what is [Compiling and Executing an App with Multiple Classes](search_target)
+      - what is [Account UML Class Diagram with an Instance Variable and set and get Methods](search_target)
+      - what is [Additional Notes on Class AccountTest](search_target)
+      - what is [Software Engineering with private Instance Variables and public set and get Methods](search_target)
+      - what is [Primitive Types vs. Reference Types](search_target)
+      - what is [Account Class: Initializing Objects with Constructors](search_target)
+      - what is [Declaring an Account Constructor for Custom Object Initialization](search_target)
+      - what is [Class AccountTest: Initializing Account Objects When They’re Created](search_target)
+      - what is [Account Class with a Balance; Floating-Point Numbers and Type double](search_target)
+      - what is [Account Class with a balance Instance Variable of Type double](search_target)
+      - what is [AccountTest Class to Use Class Account](search_target)
+      - what is [Primitive Types](search_target)
+      - what is [Literal 文字](search_target)
+      - what is [合法基本資料型態變數設定](search_target)
+      - what is [資料型態轉換(Data Type Casting)](search_target)
+      - what is [Package and Import](search_target)
+      - what is [PATH and CLASSPATH環境變數](search_target)
+      - what is [Introduction](search_target)
+      - what is [Formulating Algorithms: Sentinel-Controlled Repetition](search_target)
+      - what is [Essentials of Counter-Controlled Repetition](search_target)
+      - what is [for Repetition Statement](search_target)
+      - what is [switch Multiple-Selection Statement](search_target)
+      - what is [Class AutoPolicy Case Study: Strings in switch Statements](search_target)
+      - what is [break and continue Statements](search_target)
+      - what is [Logical Operators](search_target)
+      - what is [Introduction](search_target)
+      - what is [Program Modules in Java](search_target)
+      - what is [static Methods, static Fields and Class Math](search_target)
+      - what is [Notes on Declaring and Using Methods](search_target)
+      - what is [Argument Promotion and Casting](search_target)
+      - what is [Case Study: Secure Random-Number Generation](search_target)
+      - what is [Case Study: A Game of Chance; Introducing enum Types](search_target)
+      - what is [Scope of Declarations](search_target)
+      - what is [Method Overloading](search_target)
+      - what is [Arrays](search_target)
+      - what is [Declaring and Creating Arrays](search_target)
+      - what is [Examples Using Arrays](search_target)
+      - what is [Creating and Initializing an Array](search_target)
+      - what is [Using an Array Initializer](search_target)
+      - what is [Calculating the Values to Store in an Array](search_target)
+      - what is [Using Arrays to Analyze Survey Results](search_target)
+      - what is [Exception Handling: Processing the Incorrect Response](search_target)
+      - what is [The try Statement](search_target)
+      - what is [Executing the catch Block](search_target)
+      - what is [toString Method of the Exception Parameter](search_target)
+      - what is [Case Study: Card Shuffling and Dealing Simulation](search_target)
+      - what is [Enhanced for Statement](search_target)
+      - what is [Passing Arrays to Methods](search_target)
+      - what is [Pass-By-Value vs. Pass-By-Reference](search_target)
+      - what is [Multidimensional Arrays](search_target)
+      - what is [Introduction](search_target)
+      - what is [Time Class Case Study](search_target)
+      - what is [Controlling Access to Members](search_target)
+      - what is [Referring to the Current Object’s Members with the this Reference](search_target)
+      - what is [Time Class Case Study: Overloaded Constructors](search_target)
+      - what is [Default and No-Argument Constructors](search_target)
+      - what is [Notes on Set and Get Methods](search_target)
+      - what is [Composition (Aggregation)](search_target)
+      - what is [enum Types](search_target)
+      - what is [Garbage Collection](search_target)
+      - what is [static Class Members](search_target)
+      - what is [static Import](search_target)
+      - what is [final Instance Variables](search_target)
+      - what is [Package Access](search_target)
+      - what is [Introduction](search_target)
+      - what is [Superclasses and Subclasses](search_target)
+      - what is [protected Members](search_target)
+      - what is [Relationship Between Superclasses and Subclasses](search_target)
+      - what is [Creating and Using a CommissionEmployee Class](search_target)
+      - what is [Creating and Using a BasePlus-CommissionEmployee Class](search_target)
+      - what is [Creating a CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy](search_target)
+      - what is [CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy Using protected Instance Variables](search_target)
+      - what is [Constructors in Subclasses](search_target)
+      - what is [Override觀念釐清](search_target)
+      - what is [Introduction](search_target)
+      - what is [Polymorphism Examples](search_target)
+      - what is [Demonstrating Polymorphic Behavior](search_target)
+      - what is [Abstract Classes and Methods](search_target)
+      - what is [Case Study: Payroll System Using Polymorphism](search_target)
+      - what is [Abstract Superclass Employee](search_target)
+      - what is [Polymorphic Processing, Operator instanceof and Downcasting](search_target)
+      - what is [Summary of the Allowed Assignments Between Superclass and Subclass Variables](search_target)
+      - what is [final Methods and Classes](search_target)
+      - what is [A Deeper Explanation of Issues with Calling Methods from Constructors](search_target)
+      - what is [Creating and Using Interfaces](search_target)
+      - what is [Developing a Payable Hierarchy](search_target)
+      - what is [Interface Payable](search_target)
+      - what is [Class Invoice](search_target)
+      - what is [Modifying Class Employee to Implement Interface Payable](search_target)
+      - what is [Modifying Class SalariedEmployee for Use in the Payable Hierarchy](search_target)
+      - what is [Using Interface Payable to Process Invoices and Employees Polymorphically](search_target)
+      - what is [default Interface Methods](search_target)
+      - what is [Introduction](search_target)
+      - what is [Simple GUI-Based Input/Output with JOptionPane](search_target)
+      - what is [Overview of Swing Components](search_target)
+      - what is [Displaying Text and Images in a Window](search_target)
+      - what is [Text Fields and an Introduction to Event Handling with Nested Classes](search_target)
+      - what is [Event, Event Source, and Event Listener](search_target)
+      - what is [Common GUI Event Types and Listener Interfaces](search_target)
+      - what is [How Event Handling Works](search_target)
+      - what is [JButton](search_target)
+      - what is [Buttons That Maintain State](search_target)
+      - what is [JCheckBox](search_target)
+      - what is [JRadioButton](search_target)
+      - what is [JComboBox; Using an Anonymous Inner Class for Event Handling](search_target)
+      - what is [JList](search_target)
+      - what is [Mouse Event Handling](search_target)
+      - what is [Adapter Classes](search_target)
+      - what is [JPanel Subclass for Drawing with the Mouse](search_target)
+      - what is [Key Event Handling](search_target)
+      - what is [Introduction to Layout Managers](search_target)
+      - what is [Using Panels to Manage More Complex Layouts](search_target)
+      - what is [JTextArea](search_target)
+      - 什麼是[TIOBE Index for February 2022](search_target)
+      - 什麼是[TIOBE Index: Very Long Term History](search_target)
+      - 什麼是[Java跨平台特性](search_target)
+      - 什麼是[Java平台](search_target)
+      - 什麼是[安裝與執行Java程式的基本流程](search_target)
+      - 什麼是[Java版本歷史](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Your First Program in Java: Printing a Line of Text](search_target)
+      - 什麼是[Modifying Your First Java Program](search_target)
+      - 什麼是[Displaying Text with printf](search_target)
+      - 什麼是[Another Application: Adding Integers](search_target)
+      - 什麼是[import Declarations](search_target)
+      - 什麼是[Declaring and Creating a Scanner to Obtain User Input from the Keyboard](search_target)
+      - 什麼是[Declaring Variables to Store Integers](search_target)
+      - 什麼是[Prompting the User for Input](search_target)
+      - 什麼是[Obtaining an int as Input from the User](search_target)
+      - 什麼是[Displaying the Result of the Calculation](search_target)
+      - 什麼是[Memory Concepts](search_target)
+      - 什麼是[Java基本資料型態](search_target)
+      - 什麼是[Arithmetic](search_target)
+      - 什麼是[Decision Making: Equality and Relational Operators](search_target)
+      - 什麼是[Object](search_target)
+      - 什麼是[Class and Encapsulation](search_target)
+      - 什麼是[Class and Object Instances](search_target)
+      - 什麼是[Instance Variables, set Methods and get Methods](search_target)
+      - 什麼是[Account Class with an Instance Variable, a set Method and a get Method](search_target)
+      - 什麼是[AccountTest Class That Creates and Uses an Object of Class Account](search_target)
+      - 什麼是[Compiling and Executing an App with Multiple Classes](search_target)
+      - 什麼是[Account UML Class Diagram with an Instance Variable and set and get Methods](search_target)
+      - 什麼是[Additional Notes on Class AccountTest](search_target)
+      - 什麼是[Software Engineering with private Instance Variables and public set and get Methods](search_target)
+      - 什麼是[Primitive Types vs. Reference Types](search_target)
+      - 什麼是[Account Class: Initializing Objects with Constructors](search_target)
+      - 什麼是[Declaring an Account Constructor for Custom Object Initialization](search_target)
+      - 什麼是[Class AccountTest: Initializing Account Objects When They’re Created](search_target)
+      - 什麼是[Account Class with a Balance; Floating-Point Numbers and Type double](search_target)
+      - 什麼是[Account Class with a balance Instance Variable of Type double](search_target)
+      - 什麼是[AccountTest Class to Use Class Account](search_target)
+      - 什麼是[Primitive Types](search_target)
+      - 什麼是[Literal 文字](search_target)
+      - 什麼是[合法基本資料型態變數設定](search_target)
+      - 什麼是[資料型態轉換(Data Type Casting)](search_target)
+      - 什麼是[Package and Import](search_target)
+      - 什麼是[PATH and CLASSPATH環境變數](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Formulating Algorithms: Sentinel-Controlled Repetition](search_target)
+      - 什麼是[Essentials of Counter-Controlled Repetition](search_target)
+      - 什麼是[for Repetition Statement](search_target)
+      - 什麼是[switch Multiple-Selection Statement](search_target)
+      - 什麼是[Class AutoPolicy Case Study: Strings in switch Statements](search_target)
+      - 什麼是[break and continue Statements](search_target)
+      - 什麼是[Logical Operators](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Program Modules in Java](search_target)
+      - 什麼是[static Methods, static Fields and Class Math](search_target)
+      - 什麼是[Notes on Declaring and Using Methods](search_target)
+      - 什麼是[Argument Promotion and Casting](search_target)
+      - 什麼是[Case Study: Secure Random-Number Generation](search_target)
+      - 什麼是[Case Study: A Game of Chance; Introducing enum Types](search_target)
+      - 什麼是[Scope of Declarations](search_target)
+      - 什麼是[Method Overloading](search_target)
+      - 什麼是[Arrays](search_target)
+      - 什麼是[Declaring and Creating Arrays](search_target)
+      - 什麼是[Examples Using Arrays](search_target)
+      - 什麼是[Creating and Initializing an Array](search_target)
+      - 什麼是[Using an Array Initializer](search_target)
+      - 什麼是[Calculating the Values to Store in an Array](search_target)
+      - 什麼是[Using Arrays to Analyze Survey Results](search_target)
+      - 什麼是[Exception Handling: Processing the Incorrect Response](search_target)
+      - 什麼是[The try Statement](search_target)
+      - 什麼是[Executing the catch Block](search_target)
+      - 什麼是[toString Method of the Exception Parameter](search_target)
+      - 什麼是[Case Study: Card Shuffling and Dealing Simulation](search_target)
+      - 什麼是[Enhanced for Statement](search_target)
+      - 什麼是[Passing Arrays to Methods](search_target)
+      - 什麼是[Pass-By-Value vs. Pass-By-Reference](search_target)
+      - 什麼是[Multidimensional Arrays](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Time Class Case Study](search_target)
+      - 什麼是[Controlling Access to Members](search_target)
+      - 什麼是[Referring to the Current Object’s Members with the this Reference](search_target)
+      - 什麼是[Time Class Case Study: Overloaded Constructors](search_target)
+      - 什麼是[Default and No-Argument Constructors](search_target)
+      - 什麼是[Notes on Set and Get Methods](search_target)
+      - 什麼是[Composition (Aggregation)](search_target)
+      - 什麼是[enum Types](search_target)
+      - 什麼是[Garbage Collection](search_target)
+      - 什麼是[static Class Members](search_target)
+      - 什麼是[static Import](search_target)
+      - 什麼是[final Instance Variables](search_target)
+      - 什麼是[Package Access](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Superclasses and Subclasses](search_target)
+      - 什麼是[protected Members](search_target)
+      - 什麼是[Relationship Between Superclasses and Subclasses](search_target)
+      - 什麼是[Creating and Using a CommissionEmployee Class](search_target)
+      - 什麼是[Creating and Using a BasePlus-CommissionEmployee Class](search_target)
+      - 什麼是[Creating a CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy](search_target)
+      - 什麼是[CommissionEmployee–BasePlusCommissionEmployee Inheritance Hierarchy Using protected Instance Variables](search_target)
+      - 什麼是[Constructors in Subclasses](search_target)
+      - 什麼是[Override觀念釐清](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Polymorphism Examples](search_target)
+      - 什麼是[Demonstrating Polymorphic Behavior](search_target)
+      - 什麼是[Abstract Classes and Methods](search_target)
+      - 什麼是[Case Study: Payroll System Using Polymorphism](search_target)
+      - 什麼是[Abstract Superclass Employee](search_target)
+      - 什麼是[Polymorphic Processing, Operator instanceof and Downcasting](search_target)
+      - 什麼是[Summary of the Allowed Assignments Between Superclass and Subclass Variables](search_target)
+      - 什麼是[final Methods and Classes](search_target)
+      - 什麼是[A Deeper Explanation of Issues with Calling Methods from Constructors](search_target)
+      - 什麼是[Creating and Using Interfaces](search_target)
+      - 什麼是[Developing a Payable Hierarchy](search_target)
+      - 什麼是[Interface Payable](search_target)
+      - 什麼是[Class Invoice](search_target)
+      - 什麼是[Modifying Class Employee to Implement Interface Payable](search_target)
+      - 什麼是[Modifying Class SalariedEmployee for Use in the Payable Hierarchy](search_target)
+      - 什麼是[Using Interface Payable to Process Invoices and Employees Polymorphically](search_target)
+      - 什麼是[default Interface Methods](search_target)
+      - 什麼是[Introduction](search_target)
+      - 什麼是[Simple GUI-Based Input/Output with JOptionPane](search_target)
+      - 什麼是[Overview of Swing Components](search_target)
+      - 什麼是[Displaying Text and Images in a Window](search_target)
+      - 什麼是[Text Fields and an Introduction to Event Handling with Nested Classes](search_target)
+      - 什麼是[Event, Event Source, and Event Listener](search_target)
+      - 什麼是[Common GUI Event Types and Listener Interfaces](search_target)
+      - 什麼是[How Event Handling Works](search_target)
+      - 什麼是[JButton](search_target)
+      - 什麼是[Buttons That Maintain State](search_target)
+      - 什麼是[JCheckBox](search_target)
+      - 什麼是[JRadioButton](search_target)
+      - 什麼是[JComboBox; Using an Anonymous Inner Class for Event Handling](search_target)
+      - 什麼是[JList](search_target)
+      - 什麼是[Mouse Event Handling](search_target)
+      - 什麼是[Adapter Classes](search_target)
+      - 什麼是[JPanel Subclass for Drawing with the Mouse](search_target)
+      - 什麼是[Key Event Handling](search_target)
+      - 什麼是[Introduction to Layout Managers](search_target)
+      - 什麼是[Using Panels to Manage More Complex Layouts](search_target)
+      - 什麼是[JTextArea](search_target)
+
+  - intent: classmap_suggest
+    examples: |
+      - i want to recommand some textbook material
+      - i think i find something useful as textbook
+      - suggest textbook
+      - suggest textbook material
+      - how about add this into textbook
+
+  - intent: personal_score_query
+    examples: |
+      - i want to search my personal score
+      - i want to check my personal score
+      - i want to check my personal grade
+      - search personal score
+      - search my personal grade
+      - search my personal score
+      - query my personal score
+      - search my score
+      - query my score
+      - check my score
+      - check my grade
+
+  - intent: personal_score_object
+    examples: |
+      - i want to query my grade of [homework 1](score_query_target)
+      - i want to query my grade of [homework 2](score_query_target)
+      - i want to query my grade of [homework 3](score_query_target)
+      - i want to query my grade of [homework 4](score_query_target)
+      - i want to query my grade of [homework 5](score_query_target)
+      - i want to query my grade of [homework 6](score_query_target)
+      - i want to query my grade of [homework 7](score_query_target)
+      - i want to query my grade of [homework 8](score_query_target)
+      - i want to query my grade of [homework 9](score_query_target)
+      - i want to query my grade of [homework 10](score_query_target)
+      - i want to query my grade of [midterm exam](score_query_target)
+      - i want to query my grade of [final exam](score_query_target)
+      - i want to query my grade of [quiz 1](score_query_target)
+      - i want to query my grade of [quiz 2](score_query_target)
+      - i want to query my grade of [quiz 3](score_query_target)
+      - i want to query my grade of [quiz 4](score_query_target)
+      - i want to query my grade of [quiz 5](score_query_target)
+      - i want to query my grade of [quiz 6](score_query_target)
+      - i want to query my grade of [quiz 7](score_query_target)
+      - i want to query my grade of [quiz 8](score_query_target)
+      - i want to query my grade of [quiz 9](score_query_target)
+      - i want to query my grade of [quiz 10](score_query_target)
+      - query my grade of [homework 1](score_query_target)
+      - query my grade of [homework 2](score_query_target)
+      - query my grade of [homework 3](score_query_target)
+      - query my grade of [homework 4](score_query_target)
+      - query my grade of [homework 5](score_query_target)
+      - query my grade of [homework 6](score_query_target)
+      - query my grade of [homework 7](score_query_target)
+      - query my grade of [homework 8](score_query_target)
+      - query my grade of [homework 9](score_query_target)
+      - query my grade of [homework 10](score_query_target)
+      - query my grade of [midterm exam](score_query_target)
+      - query my grade of [final exam](score_query_target)
+      - query my grade of [quiz 1](score_query_target)
+      - query my grade of [quiz 2](score_query_target)
+      - query my grade of [quiz 3](score_query_target)
+      - query my grade of [quiz 4](score_query_target)
+      - query my grade of [quiz 5](score_query_target)
+      - query my grade of [quiz 6](score_query_target)
+      - query my grade of [quiz 7](score_query_target)
+      - query my grade of [quiz 8](score_query_target)
+      - query my grade of [quiz 9](score_query_target)
+      - query my grade of [quiz 10](score_query_target)
+      - query my grade of [peer evaluation](score_query_target)
+      - query my grade of [project evaluation](score_query_target)
+      - [homework 1](score_query_target)
+      - [homework 2](score_query_target)
+      - [homework 3](score_query_target)
+      - [homework 4](score_query_target)
+      - [homework 5](score_query_target)
+      - [homework 6](score_query_target)
+      - [homework 7](score_query_target)
+      - [homework 8](score_query_target)
+      - [homework 9](score_query_target)
+      - [homework 10](score_query_target)
+      - [midterm exam](score_query_target)
+      - [final exam](score_query_target)
+      - [quiz 1](score_query_target)
+      - [quiz 2](score_query_target)
+      - [quiz 3](score_query_target)
+      - [quiz 4](score_query_target)
+      - [quiz 5](score_query_target)
+      - [quiz 6](score_query_target)
+      - [quiz 7](score_query_target)
+      - [quiz 8](score_query_target)
+      - [quiz 9](score_query_target)
+      - [quiz 10](score_query_target)
+      - [peer evaluation](score_query_target)
+      - [project evaluation](score_query_target)
+
+  - intent: personal_quiz_query
+    examples: |
+      - query personal quiz
+      - personal quiz query
+      - personal quiz
+      - search personal quiz
+      - Personal examination question inquiry
+      - Query individual exam questions
+      - Individual exam questions
+      - Recommend personalized exam questions
+      - Practice personalized exam questions
+      - Personalized exam review
+      - Practice personalized questions
+      - Practice questions
+      - Practice exam questions
+      - Exam Questions Review
+
+  - intent: personal_textbook_query
+    examples: |
+      - query personal textbook
+      - search personal textbook
+      - personal textbook
+      - Query personal teaching materials
+      - Personal teaching materials
+      - View personal textbooks
+      - Recommend personalized teaching materials
+      - Practice personalized textbooks
+      - Personalized textbook review
+      - Practice personalized textbooks
+      - Practice materials
+      - Textbook review
+
+  - synonym: homework_1
+    examples: |
+      - homework 1
+      - homework1
+      - homework one
+
+  - synonym: homework_2
+    examples: |
+      - homework two
+      - homework 2
+      - homework2
+
+  - synonym: homework_3
+    examples: |
+      - homework3
+      - homework 3
+      - homework three
+
+  - synonym: homework_4
+    examples: |
+      - homework four
+      - homework4
+      - homework 4
+
+  - synonym: homework_5
+    examples: |
+      - homework five
+      - homework5
+      - homework 5
+
+  - synonym: homework_6
+    examples: |
+      - homework six
+      - homework6
+      - homework 6
+
+  - synonym: homework_7
+    examples: |
+      - homework seven
+      - homework7
+      - homework 7
+
+  - synonym: homework_8
+    examples: |
+      - homework eight
+      - homework8
+      - homework 8
+
+  - synonym: homework_9
+    examples: |
+      - homework nine
+      - homework9
+      - homework 9
+
+  - synonym: homework_10
+    examples: |
+      - homework ten
+      - homework10
+      - homework 10
+
+  - synonym: midterm_exam
+    examples: |
+      - midterm exam
+      - midterm
+      - mid
+
+  - synonym: final_exam
+    examples: |
+      - final exam
+      - final
+      - fin
+
+  - synonym: quiz_1
+    examples: |
+      - quiz one
+      - quiz 1
+      - quiz1
+
+  - synonym: quiz_2
+    examples: |
+      - quiz two
+      - quiz 2
+      - quiz2
+
+  - synonym: quiz_3
+    examples: |
+      - quiz three
+      - quiz 3
+      - quiz3
+
+  - synonym: quiz_4
+    examples: |
+      - quiz four
+      - quiz 4
+      - quiz4
+
+  - synonym: quiz_5
+    examples: |
+      - quiz five
+      - quiz 5
+      - quiz5
+
+  - synonym: quiz_6
+    examples: |
+      - quiz six
+      - quiz 6
+      - quiz6
+
+  - synonym: quiz_7
+    examples: |
+      - quiz seven
+      - quiz 7
+      - quiz7
+
+  - synonym: quiz_8
+    examples: |
+      - quiz eight
+      - quiz 8
+      - quiz8
+
+  - synonym: quiz_9
+    examples: |
+      - quiz nine
+      - quiz 9
+      - quiz9
+
+  - synonym: quiz_10
+    examples: |
+      - quiz ten
+      - quiz 10
+      - quiz10
+
+  - synonym: chapter_1
+    examples: |
+      - chapter1
+      - chapter 1
+      - chapter one
+      - chp one
+      - chp1
+
+  - synonym: chapter_2
+    examples: |
+      - chapter2
+      - chapter 2
+      - chapter two
+      - chp2
+      - chp two
+
+  - synonym: chapter_3
+    examples: |
+      - chapter3
+      - chapter 3
+      - chapter three
+      - chp three
+      - chp3
+
+  - synonym: chapter_4
+    examples: |
+      - chapter4
+      - chapter 4
+      - chapter four
+      - chp four
+      - chp4
+
+  - synonym: chapter_5
+    examples: |
+      - chapter5
+      - chapter 5
+      - chp five
+      - chp5
+      - chapter five
+
+  - synonym: chapter_6
+    examples: |
+      - chapter6
+      - chapter 6
+      - chapter six
+      - chp six
+      - chp6
+
+  - synonym: chapter_7
+    examples: |
+      - chapter7
+      - chapter 7
+      - chapter seven
+      - chp7
+      - chp seven
+
+  - synonym: chapter_8
+    examples: |
+      - chapter8
+      - chapter 8
+      - chp8
+      - chapter eight
+      - chp eight
+
+  - synonym: chapter_9
+    examples: |
+      - chapter9
+      - chapter 9
+      - chp nine
+      - chapter nine
+      - chp9
+
+  - synonym: chapter_10
+    examples: |
+      - chapter10
+      - chapter 10
+      - chapter ten
+      - chp ten
+      - chp10
+
+  - synonym: chapter_11
+    examples: |
+      - chapter11
+      - chapter 11
+      - chaper eleven
+      - chp11
+      - chp eleven
+
+  - synonym: chapter_12
+    examples: |
+      - chapter12
+      - chapter 12
+      - chapter twelve
+      - chp12
+      - chp twelve
+
+  - synonym: chapter_13
+    examples: |
+      - chapter13
+      - chapter 13
+      - chapter thirteen
+      - chp13
+      - chp thirteen
+
+  - synonym: chapter_14
+    examples: |
+      - chapter14
+      - chapter 14
+      - chp14
+      - chapter fourteen
+      - chp fourteen
+
+  - synonym: chapter_15
+    examples: |
+      - chapter15
+      - chapter 15
+      - chp15
+      - chp fifteen
+      - chapter fifteen
+
+  - synonym: project
+    examples: |
+      - peer assessment
+      - project evaluation
+      - project score
+      - evaluation score
+      - peer assessment score
+      - peer assessment grade
+      - project grade
+      - project evaluation grade
