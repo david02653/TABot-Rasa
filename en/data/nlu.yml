@@ -297,22 +297,22 @@ nlu:
       - [chp fourteen](ppt_query_target) power point
       - [chp fifteen](ppt_query_target) power point
 
-  - intent: classmap_search
-    examples: |
-      - i want to query about classmap
-      - i want to query classmap
-      - query classmap
-      - search classmap
-      - classmap query
-      - classmap search
-      - I want to find the course map
-      - Check the course map
-      - Course map query
-      - Course map
-      - Check the course map
-      - Check course knowledge
-      - Query course knowledge
-      - Inquire about course related knowledge
+  # - intent: classmap_search
+  #   examples: |
+  #     - i want to query about classmap
+  #     - i want to query classmap
+  #     - query classmap
+  #     - search classmap
+  #     - classmap query
+  #     - classmap search
+  #     - I want to find the course map
+  #     - Check the course map
+  #     - Course map query
+  #     - Course map
+  #     - Check the course map
+  #     - Check course knowledge
+  #     - Query course knowledge
+  #     - Inquire about course related knowledge
 
   - intent: classmap_search_content
     examples: |
@@ -777,6 +777,11 @@ nlu:
       - i want to query my grade of [exercise 3](score_query_target)
       - i want to query my grade of [exercise 4](score_query_target)
       - i want to query my grade of [exercise 5](score_query_target)
+      - i want to query my grade of [exercise 6](score_query_target)
+      - i want to query my grade of [exercise 7](score_query_target)
+      - i want to query my grade of [exercise 8](score_query_target)
+      - i want to query my grade of [exercise 9](score_query_target)
+      - i want to query my grade of [exercise 10](score_query_target)
       - i want to query my grade of [midterm exam](score_query_target)
       - i want to query my grade of [final exam](score_query_target)
       - i want to query my grade of [quiz 1](score_query_target)
@@ -805,6 +810,11 @@ nlu:
       - query my grade of [exercise 3](score_query_target)
       - query my grade of [exercise 4](score_query_target)
       - query my grade of [exercise 5](score_query_target)
+      - query my grade of [exercise 6](score_query_target)
+      - query my grade of [exercise 7](score_query_target)
+      - query my grade of [exercise 8](score_query_target)
+      - query my grade of [exercise 9](score_query_target)
+      - query my grade of [exercise 10](score_query_target)
       - query my grade of [midterm exam](score_query_target)
       - query my grade of [final exam](score_query_target)
       - query my grade of [quiz 1](score_query_target)
@@ -835,6 +845,11 @@ nlu:
       - [exercise 3](score_query_target)
       - [exercise 4](score_query_target)
       - [exercise 5](score_query_target)
+      - [exercise 6](score_query_target)
+      - [exercise 7](score_query_target)
+      - [exercise 8](score_query_target)
+      - [exercise 9](score_query_target)
+      - [exercise 10](score_query_target)
       - [midterm exam](score_query_target)
       - [final exam](score_query_target)
       - [quiz 1](score_query_target)
@@ -941,6 +956,61 @@ nlu:
       - homework ten
       - homework10
       - homework 10
+
+  - synonym: exercise_0
+    examples: |
+      - exercise0
+      - exercise 0
+
+  - synonym: exercise_1
+    examples: |
+      - exercise1
+      - exercise 1
+
+  - synonym: exercise_2
+    examples: |
+      - exercise2
+      - exercise 2
+
+  - synonym: exercise_3
+    examples: |
+      - exercise3
+      - exercise 3
+
+  - synonym: exercise_4
+    examples: |
+      - exercise4
+      - exercise 4
+
+  - synonym: exercise_5
+    examples: |
+      - exercise5
+      - exercise 5
+
+  - synonym: exercise_6
+    examples: |
+      - exercise6
+      - exercise 6
+
+  - synonym: exercise_7
+    examples: |
+      - exercise7
+      - exercise 7
+
+  - synonym: exercise_8
+    examples: |
+      - exercise8
+      - exercise 8
+
+  - synonym: exercise_9
+    examples: |
+      - exercise9
+      - exercise 9
+
+  - synonym: exercise_10
+    examples: |
+      - exercise10
+      - exercise 10
 
   - synonym: midterm_exam
     examples: |

@@ -4,21 +4,21 @@ session_config:
   carry_over_slots_to_new_session: true
 
 intents:
-- greet
-- help
-- faq:
-    use_entities: []
-- classmap_search
-- classmap_search_content
-- classmap_ppt
-- classmap_ppt_content
-- personal_score_query
-- personal_score_object
-- classmap_suggest
-- suggest_review_pass
-- suggest_review_fail
-- personal_quiz_query
-- personal_textbook_query
+  - greet
+  - help
+  - faq:
+      use_entities: []
+  # - classmap_search
+  - classmap_search_content
+  - classmap_ppt
+  - classmap_ppt_content
+  - personal_score_query
+  - personal_score_object
+  - classmap_suggest
+  - suggest_review_pass
+  - suggest_review_fail
+  - personal_quiz_query
+  - personal_textbook_query
 
 # - action_greet
 # - action_suggest_review_pass
@@ -28,123 +28,122 @@ intents:
 # - action_classmap_ppt
 
 entities:
-- score_query_target
-- ppt_query_target
-- search_target
+  - score_query_target
+  - ppt_query_target
+  - search_target
 
 responses:
   utter_greet:
-  - custom:
-      intent: greet
-      endOfChat: True
+    - custom:
+        intent: greet
+        endOfChat: True
   utter_temp_help:
-  - custom:
-      intent: help
-      endOfChat: True
+    - custom:
+        intent: help
+        endOfChat: True
 
   utter_confirm_personal_score_query:
-  - custom:
-      intent: confirm_personal_score_query
-      responseMessage: "好喔, 那麼你想查的是哪個成績呢"
-      endOfChat: False
+    - custom:
+        intent: confirm_personal_score_query
+        responseMessage: "好喔, 那麼你想查的是哪個成績呢"
+        endOfChat: False
   utter_confirm_classmap_ppt_query:
-  - custom:
-      intent: confirm_classmap_ppt_query
-      responseMessage: "好的, 你想查詢哪個章節的投影片"
-      endOfChat: False
+    - custom:
+        intent: confirm_classmap_ppt_query
+        responseMessage: "好的, 你想查詢哪個章節的投影片"
+        endOfChat: False
   utter_confirm_classmap_search:
-  - custom:
-      intent: confirm_classmap_search
-      responseMessage: "ok, 你想查詢什麼"
-      endOfChat: False
+    - custom:
+        intent: confirm_classmap_search
+        responseMessage: "ok, 你想查詢什麼"
+        endOfChat: False
   utter_classmap_suggest:
-  - custom:
-      intent: classmap_suggest
-      responseMessage: "ok, 你想推薦什麼"
-      endOfChat: True
+    - custom:
+        intent: classmap_suggest
+        responseMessage: "ok, 你想推薦什麼"
+        endOfChat: True
   utter_personal_quiz_query:
-  - custom:
-      intent: personal_quiz_query
-      endOfChat: True
+    - custom:
+        intent: personal_quiz_query
+        endOfChat: True
   utter_personal_textbook_query:
-  - custom:
-      intent: personal_textbook_query
-      endOfChat: True
-  
-# add chinese_garbled
+    - custom:
+        intent: personal_textbook_query
+        endOfChat: True
+
+  # add chinese_garbled
   utter_faq/java_garbled_code:
-  - custom:
-      intent: faq/java_garbled_code
-      endOfChat: True
+    - custom:
+        intent: faq/java_garbled_code
+        endOfChat: True
   utter_faq/chinese_annotation_compile:
-  - custom:
-      intent: faq/chinese_annotation_compile
-      endOfChat: True
+    - custom:
+        intent: faq/chinese_annotation_compile
+        endOfChat: True
   utter_faq/chinese_garbled:
-  - custom:
-      intent: faq/chinese_garbled
-      endOfChat: True
+    - custom:
+        intent: faq/chinese_garbled
+        endOfChat: True
   utter_faq/vector_arraylist_difference:
-  - custom:
-      intent: faq/vector_arraylist_difference
-      endOfChat: True
+    - custom:
+        intent: faq/vector_arraylist_difference
+        endOfChat: True
   utter_faq/java_bean:
-  - custom:
-      intent: faq/java_bean
-      endOfChat: True
+    - custom:
+        intent: faq/java_bean
+        endOfChat: True
   utter_faq/package_import_path_classpath_difference:
-  - custom:
-      intent: faq/package_import_path_classpath_difference
-      endOfChat: True
+    - custom:
+        intent: faq/package_import_path_classpath_difference
+        endOfChat: True
   utter_faq/garbage_collection:
-  - custom:
-      intent: faq/garbage_collection
-      endOfChat: True
+    - custom:
+        intent: faq/garbage_collection
+        endOfChat: True
   utter_faq/arraylist_to_array:
-  - custom:
-      intent: faq/arraylist_to_array
-      endOfChat: True
+    - custom:
+        intent: faq/arraylist_to_array
+        endOfChat: True
   utter_faq/layout:
-  - custom:
-      intent: faq/layout
-      endOfChat: True
+    - custom:
+        intent: faq/layout
+        endOfChat: True
   utter_faq/icon_transparency:
-  - custom:
-      intent: faq/icon_transparency
-      endOfChat: True
+    - custom:
+        intent: faq/icon_transparency
+        endOfChat: True
   utter_faq/source_usage:
-  - custom:
-      intent: faq/source_usage
-      endOfChat: True
+    - custom:
+        intent: faq/source_usage
+        endOfChat: True
   utter_faq/jdk1.5_feature:
-  - custom:
-      intent: faq/jdk1.5_feature
-      endOfChat: True
+    - custom:
+        intent: faq/jdk1.5_feature
+        endOfChat: True
   utter_faq/jdk1.6_feature:
-  - custom:
-      intent: faq/jdk1.6_feature
-      endOfChat: True
+    - custom:
+        intent: faq/jdk1.6_feature
+        endOfChat: True
   utter_faq/jdk1.7_feature:
-  - custom:
-      intent: faq/jdk1.7_feature
-      endOfChat: True
+    - custom:
+        intent: faq/jdk1.7_feature
+        endOfChat: True
   utter_faq/jdk1.8_feature:
-  - custom:
-      intent: faq/jdk1.8_feature
-      endOfChat: True
+    - custom:
+        intent: faq/jdk1.8_feature
+        endOfChat: True
 
 actions:
-- action_greet
-- action_suggest_review_pass
-- action_suggest_review_fail
-- action_personal_score_query
-- action_classmap_search
-- action_classmap_ppt
+  - action_greet
+  - action_suggest_review_pass
+  - action_suggest_review_fail
+  - action_personal_score_query
+  - action_classmap_search
+  - action_classmap_ppt
 # - utter_faq/java_garbled_code
 # - utter_faq/chinese_annotation_compile
 # - utter_faq/vector_arraylist_difference
 # - utter_faq/java_bean
-
 
 # - classmap_ask
 # - classmap_ask_content

@@ -259,16 +259,16 @@ nlu:
       - [第十四章](ppt_query_target)的投影片
       - [第十五章](ppt_query_target)的投影片
 
-  - intent: classmap_search
-    examples: |
-      - 我想查尋課程地圖
-      - 查詢課程地圖
-      - 課程地圖查詢
-      - 課程地圖
-      - 查課程地圖
-      - 查課程知識
-      - 查詢課程知識
-      - 查詢課程相關知識
+  # - intent: classmap_search
+  #   examples: |
+  #     - 我想查尋課程地圖
+  #     - 查詢課程地圖
+  #     - 課程地圖查詢
+  #     - 課程地圖
+  #     - 查課程地圖
+  #     - 查課程知識
+  #     - 查詢課程知識
+  #     - 查詢課程相關知識
 
   - intent: classmap_search_content
     examples: |
@@ -731,6 +731,11 @@ nlu:
       - 我想查[exercise 3](score_query_target)
       - 我想查[exercise 4](score_query_target)
       - 我想查[exercise 5](score_query_target)
+      - 我想查[exercise 6](score_query_target)
+      - 我想查[exercise 7](score_query_target)
+      - 我想查[exercise 8](score_query_target)
+      - 我想查[exercise 9](score_query_target)
+      - 我想查[exercise 10](score_query_target)
       - 我想查[作業一](score_query_target)
       - 我想查[作業二](score_query_target)
       - 我想查[作業三](score_query_target)
@@ -783,6 +788,11 @@ nlu:
       - [exercise 3](score_query_target)
       - [exercise 4](score_query_target)
       - [exercise 5](score_query_target)
+      - [exercise 6](score_query_target)
+      - [exercise 7](score_query_target)
+      - [exercise 8](score_query_target)
+      - [exercise 9](score_query_target)
+      - [exercise 10](score_query_target)
       - [作業一](score_query_target)
       - [作業二](score_query_target)
       - [作業三](score_query_target)
@@ -976,6 +986,46 @@ nlu:
       - 練習5
       - exercise5
       - exercise 5
+
+  - synonym: exercise_6
+    examples: |
+      - 練習6
+      - 第6次練習
+      - 練習6
+      - exercise6
+      - exercise 6
+
+  - synonym: exercise_7
+    examples: |
+      - 練習7
+      - 第7次練習
+      - 練習7
+      - exercise7
+      - exercise 7
+
+  - synonym: exercise_8
+    examples: |
+      - 練習8
+      - 第8次練習
+      - 練習8
+      - exercise8
+      - exercise 8
+
+  - synonym: exercise_9
+    examples: |
+      - 練習9
+      - 第9次練習
+      - 練習9
+      - exercise9
+      - exercise 9
+
+  - synonym: exercise_10
+    examples: |
+      - 練習10
+      - 第10次練習
+      - 練習10
+      - exercise10
+      - exercise 10
 
   - synonym: midterm_exam
     examples: |
