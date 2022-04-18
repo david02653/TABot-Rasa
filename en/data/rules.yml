@@ -1,8 +1,7 @@
 version: "2.0"
 
 rules:
-
-- rule: frequent ask question
-  steps:
-  - intent: faq
-  - action: utter_faq
+  - rule: frequent ask question
+    steps:
+      - intent: faq
+      - action: utter_faq

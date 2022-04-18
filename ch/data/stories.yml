@@ -1,91 +1,91 @@
 version: "2.0"
 stories:
- - story: greet test
-   steps:
-   - intent: greet
-   - action: utter_greet
+  - story: greet test
+    steps:
+      - intent: greet
+      - action: utter_greet
 
- - story: help test
-   steps:
-   - intent: help
-   - action: utter_temp_help
+  - story: help test
+    steps:
+      - intent: help
+      - action: utter_temp_help
 
-#  - story: classmap ask 1
-#    steps:
-#    - intent: classmap_ask
-#    - action: confirm_classmap_ask
-#    - intent: classmap_ask_content
-#    - action: action_classmap_ask
+  #  - story: classmap ask 1
+  #    steps:
+  #    - intent: classmap_ask
+  #    - action: confirm_classmap_ask
+  #    - intent: classmap_ask_content
+  #    - action: action_classmap_ask
 
-#  - story: classmap ask 2
-#    steps:
-#    - intent: classmap_ask
-#    - action: action_classmap_ask
+  #  - story: classmap ask 2
+  #    steps:
+  #    - intent: classmap_ask
+  #    - action: action_classmap_ask
 
- - story: classmap ppt 1
-   steps:
-   - intent: classmap_ppt
-   - action: utter_confirm_classmap_ppt_query
-   - intent: classmap_ppt_content
-   - action: action_classmap_ppt
+  - story: classmap ppt 1
+    steps:
+      - intent: classmap_ppt
+      - action: utter_confirm_classmap_ppt_query
+      - intent: classmap_ppt_content
+      - action: action_classmap_ppt
 
- - story: classmap ppt 2
-   steps:
-   - intent: classmap_ppt_content
-   - action: action_classmap_ppt
+  - story: classmap ppt 2
+    steps:
+      - intent: classmap_ppt_content
+      - action: action_classmap_ppt
 
-#  - story: classmap search 1
-#    steps:
-#    - intent: classmap_search
-#    - action: utter_confirm_classmap_search
-#    - intent: classmap_search_content
-#    - action: action_classmap_search
+  #  - story: classmap search 1
+  #    steps:
+  #    - intent: classmap_search
+  #    - action: utter_confirm_classmap_search
+  #    - intent: classmap_search_content
+  #    - action: action_classmap_search
 
- - story: classmap search 2
-   steps:
-   - intent: classmap_search_content
-   - action: action_classmap_search
+  - story: classmap search 2
+    steps:
+      - intent: classmap_search_content
+      - action: action_classmap_search
 
-#  - story: classmap suggest 1
-#    steps:
-#    - intent: classmap_suggest
-#    - action: confirm_classmap_suggest
-#    - intent: classmap_suggest_content
-#    - action: action_classmap_suggest
+  #  - story: classmap suggest 1
+  #    steps:
+  #    - intent: classmap_suggest
+  #    - action: confirm_classmap_suggest
+  #    - intent: classmap_suggest_content
+  #    - action: action_classmap_suggest
 
- - story: classmap suggest
-   steps:
-   - intent: classmap_suggest
-   - action: utter_classmap_suggest
+  - story: classmap suggest
+    steps:
+      - intent: classmap_suggest
+      - action: utter_classmap_suggest
 
- - story: query personal score 1
-   steps:
-   - intent: personal_score_query
-   - action: utter_confirm_personal_score_query
-   - intent: personal_score_object
-   - action: action_personal_score_query
+  - story: query personal score 1
+    steps:
+      - intent: personal_score_query
+      - action: utter_confirm_personal_score_query
+      - intent: personal_score_object
+      - action: action_personal_score_query
 
- - story: query personal score 2
-   steps:
-   - intent: personal_score_object
-   - action: action_personal_score_query
+  - story: query personal score 2
+    steps:
+      - intent: personal_score_object
+      - action: action_personal_score_query
 
- - story: query personal textboot
-   steps:
-   - intent: personal_textbook_query
-   - action: utter_personal_textbook_query
+  #  - story: query personal textboot
+  #    steps:
+  #    - intent: personal_textbook_query
+  #    - action: utter_personal_textbook_query
 
- - story: query personal quiz
-   steps:
-   - intent: personal_quiz_query
-   - action: utter_personal_quiz_query
+  - story: query personal quiz
+    steps:
+      - intent: personal_quiz_query
+      - action: utter_personal_quiz_query
 
- - story: review suggestion as pass
-   steps:
-   - intent: suggest_review_pass
-   - action: action_suggest_review_pass
+  - story: review suggestion as pass
+    steps:
+      - intent: suggest_review_pass
+      - action: action_suggest_review_pass
 
- - story: review suggestion as fail
-   steps:
-   - intent: suggest_review_fail
-   - action: action_suggest_review_fail
+  - story: review suggestion as fail
+    steps:
+      - intent: suggest_review_fail
+      - action: action_suggest_review_fail

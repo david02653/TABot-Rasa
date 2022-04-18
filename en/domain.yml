@@ -15,7 +15,7 @@ intents:
   - suggest_review_pass
   - suggest_review_fail
   - personal_quiz_query
-  - personal_textbook_query
+  # - personal_textbook_query
 
 entities:
   - score_query_target
@@ -45,11 +45,11 @@ responses:
         intent: confirm_classmap_ppt_query
         responseMessage: got it, which chapter are you looking for?
         endOfChat: False
-  utter_confirm_classmap_search:
-    - custom:
-        intent: confirm_classmap_search
-        responseMessage: okay, what can i help you?
-        endOfChat: False
+  # utter_confirm_classmap_search:
+  #   - custom:
+  #       intent: confirm_classmap_search
+  #       responseMessage: okay, what can i help you?
+  #       endOfChat: False
   utter_classmap_suggest:
     - custom:
         intent: classmap_suggest
@@ -59,10 +59,11 @@ responses:
     - custom:
         intent: personal_quiz_query
         endOfChat: True
-  utter_personal_textbook_query:
-    - custom:
-        intent: personal_textbook_query
-        endOfChat: True
+  # coming soon
+  # utter_personal_textbook_query:
+  #   - custom:
+  #       intent: personal_textbook_query
+  #       endOfChat: True
 
   # add chinese_garbled
   utter_faq/java_garbled_code:

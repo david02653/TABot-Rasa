@@ -882,20 +882,21 @@ nlu:
       - Practice exam questions
       - Exam Questions Review
 
-  - intent: personal_textbook_query
-    examples: |
-      - query personal textbook
-      - search personal textbook
-      - personal textbook
-      - Query personal teaching materials
-      - Personal teaching materials
-      - View personal textbooks
-      - Recommend personalized teaching materials
-      - Practice personalized textbooks
-      - Personalized textbook review
-      - Practice personalized textbooks
-      - Practice materials
-      - Textbook review
+  # coming soon
+  # - intent: personal_textbook_query
+  #   examples: |
+  #     - query personal textbook
+  #     - search personal textbook
+  #     - personal textbook
+  #     - Query personal teaching materials
+  #     - Personal teaching materials
+  #     - View personal textbooks
+  #     - Recommend personalized teaching materials
+  #     - Practice personalized textbooks
+  #     - Personalized textbook review
+  #     - Practice personalized textbooks
+  #     - Practice materials
+  #     - Textbook review
 
   - synonym: homework_1
     examples: |

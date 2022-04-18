@@ -830,17 +830,18 @@ nlu:
       - 練習考題
       - 考題複習
 
-  - intent: personal_textbook_query
-    examples: |
-      - 查詢個人教材
-      - 個人教材
-      - 看個人教材
-      - 推薦個人化教材
-      - 練習個人化教材
-      - 個人化教材複習
-      - 練習個人化教材
-      - 練習教材
-      - 教材複習
+  # Coming soon
+  # - intent: personal_textbook_query
+  #   examples: |
+  #     - 查詢個人教材
+  #     - 個人教材
+  #     - 看個人教材
+  #     - 推薦個人化教材
+  #     - 練習個人化教材
+  #     - 個人化教材複習
+  #     - 練習個人化教材
+  #     - 練習教材
+  #     - 教材複習
 
   # - faq
   # - classmap_ask
