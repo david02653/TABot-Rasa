@@ -261,7 +261,6 @@ nlu:
       - i want to checkout slides of [chapter eight](ppt_query_target)
       - i want to checkout slides of [chapter nine](ppt_query_target)
       - i want to checkout slides of [chapter ten](ppt_query_target)
-      - i want to checkout slides of [chapter eleven](ppt_query_target)
       - i want to checkout slides of [chapter twelve](ppt_query_target)
       - i want to checkout slides of [chapter thirteen](ppt_query_target)
       - i want to checkout slides of [chapter fourteen](ppt_query_target)
@@ -276,7 +275,6 @@ nlu:
       - slides of [chapter8](ppt_query_target)
       - slides of [chapter9](ppt_query_target)
       - slides of [chapter10](ppt_query_target)
-      - slides of [chapter11](ppt_query_target)
       - slides of [chapter12](ppt_query_target)
       - slides of [chapter13](ppt_query_target)
       - slides of [chapter14](ppt_query_target)
@@ -291,7 +289,6 @@ nlu:
       - [chp eight](ppt_query_target) power point
       - [chp nine](ppt_query_target) power point
       - [chp ten](ppt_query_target) power point
-      - [chp eleven](ppt_query_target) power point
       - [chp twelve](ppt_query_target) power point
       - [chp thirteen](ppt_query_target) power point
       - [chp fourteen](ppt_query_target) power point
@@ -1025,6 +1022,17 @@ nlu:
       - final
       - fin
 
+  - synonym: project
+    examples: |
+      - peer assessment
+      - project evaluation
+      - project score
+      - evaluation score
+      - peer assessment score
+      - peer assessment grade
+      - project grade
+      - project evaluation grade
+
   - synonym: quiz_1
     examples: |
       - quiz one
@@ -1085,133 +1093,130 @@ nlu:
       - quiz 10
       - quiz10
 
-  - synonym: chapter_1
+  - synonym: lesson_0
     examples: |
+      - lesson 0
       - chapter1
       - chapter 1
       - chapter one
       - chp one
       - chp1
 
-  - synonym: chapter_2
+  - synonym: lesson_1
     examples: |
+      - lesson 1
       - chapter2
       - chapter 2
       - chapter two
       - chp2
       - chp two
 
-  - synonym: chapter_3
+  - synonym: lesson_2
     examples: |
+      - lesson 2
       - chapter3
       - chapter 3
       - chapter three
       - chp three
       - chp3
 
-  - synonym: chapter_4
+  - synonym: lesson_3
     examples: |
       - chapter4
-      - chapter 4
-      - chapter four
-      - chp four
-      - chp4
-
-  - synonym: chapter_5
-    examples: |
       - chapter5
+      - chapter 4
       - chapter 5
-      - chp five
-      - chp5
+      - chapter four
       - chapter five
+      - chp four
+      - chp five
+      - chp4
+      - chp5
 
-  - synonym: chapter_6
+  - synonym: lesson_4
     examples: |
       - chapter6
       - chapter 6
-      - chapter six
       - chp six
       - chp6
+      - chapter six
 
-  - synonym: chapter_7
+  - synonym: lesson_5
     examples: |
       - chapter7
       - chapter 7
       - chapter seven
-      - chp7
       - chp seven
+      - chp7
 
-  - synonym: chapter_8
+  - synonym: lesson_6
     examples: |
       - chapter8
       - chapter 8
-      - chp8
       - chapter eight
+      - chp8
       - chp eight
 
-  - synonym: chapter_9
+  - synonym: lesson_7
     examples: |
       - chapter9
       - chapter 9
-      - chp nine
-      - chapter nine
       - chp9
+      - chapter nine
+      - chp nine
 
-  - synonym: chapter_10
+  - synonym: lesson_8
     examples: |
       - chapter10
       - chapter 10
-      - chapter ten
       - chp ten
+      - chapter ten
       - chp10
 
-  - synonym: chapter_11
-    examples: |
-      - chapter11
-      - chapter 11
-      - chaper eleven
-      - chp11
-      - chp eleven
-
-  - synonym: chapter_12
+  - synonym: lesson_9
     examples: |
       - chapter12
       - chapter 12
       - chapter twelve
-      - chp12
       - chp twelve
+      - chp12
 
-  - synonym: chapter_13
-    examples: |
-      - chapter13
-      - chapter 13
-      - chapter thirteen
-      - chp13
-      - chp thirteen
+  # - synonym: lesson_11
+  #   examples: |
+  #     - chapter11
+  #     - chapter 11
+  #     - chapter eleven
+  #     - chp11
+  #     - chp eleven
 
-  - synonym: chapter_14
-    examples: |
-      - chapter14
-      - chapter 14
-      - chp14
-      - chapter fourteen
-      - chp fourteen
+  # - synonym: lesson_12
+  #   examples: |
+  #     - chapter12
+  #     - chapter 12
+  #     - chapter twelve
+  #     - chp12
+  #     - chp twelve
 
-  - synonym: chapter_15
-    examples: |
-      - chapter15
-      - chapter 15
-      - chp15
-      - chp fifteen
-      - chapter fifteen
+  # - synonym: lesson_13
+  #   examples: |
+  #     - chapter13
+  #     - chapter 13
+  #     - chapter thirteen
+  #     - chp13
+  #     - chp thirteen
 
-  - synonym: project
-    examples: |
-      - peer assessment
-      - project evaluation
-      - project score
-      - evaluation score
-      - peer assessment score
-      - peer assessment grade
-      - project grade
-      - project evaluation grade
+  # - synonym: lesson_14
+  #   examples: |
+  #     - chapter14
+  #     - chapter 14
+  #     - chp14
+  #     - chapter fourteen
+  #     - chp fourteen
+
+  # - synonym: lesson_15
+  #   examples: |
+  #     - chapter15
+  #     - chapter 15
+  #     - chp15
+  #     - chp fifteen
+  #     - chapter fifteen

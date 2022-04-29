@@ -223,7 +223,6 @@ nlu:
       - 我想查[第八章](ppt_query_target)的投影片
       - 我想查[第九章](ppt_query_target)的投影片
       - 我想查[第十章](ppt_query_target)的投影片
-      - 我想查[第十一章](ppt_query_target)的投影片
       - 我想查[第十二章](ppt_query_target)的投影片
       - 我想查[第十三章](ppt_query_target)的投影片
       - 我想查[第十四章](ppt_query_target)的投影片
@@ -238,7 +237,6 @@ nlu:
       - [第八章](ppt_query_target)
       - [第九章](ppt_query_target)
       - [第十章](ppt_query_target)
-      - [第十一章](ppt_query_target)
       - [第十二章](ppt_query_target)
       - [第十三章](ppt_query_target)
       - [第十四章](ppt_query_target)
@@ -253,7 +251,6 @@ nlu:
       - [第八章](ppt_query_target)的投影片
       - [第九章](ppt_query_target)的投影片
       - [第十章](ppt_query_target)的投影片
-      - [第十一章](ppt_query_target)的投影片
       - [第十二章](ppt_query_target)的投影片
       - [第十三章](ppt_query_target)的投影片
       - [第十四章](ppt_query_target)的投影片
@@ -1042,6 +1039,15 @@ nlu:
       - final exam
       - final
 
+  - synonym: project
+    examples: |
+      - 專案成績
+      - 專案互評
+      - 專案互評成績
+      - 互評成績
+      - 互評
+      - 專案
+
   - synonym: quiz_1
     examples: |
       - 小考一
@@ -1122,116 +1128,121 @@ nlu:
       - quiz 10
       - quiz10
 
-  - synonym: chapter_1
+  - synonym: lesson_0
     examples: |
+      - lesson 0
       - chapter1
       - chapter 1
       - 第一章
       - 第1章
 
-  - synonym: chapter_2
+  - synonym: lesson_1
     examples: |
+      - lesson 1
       - chapter2
       - chapter 2
       - 第二章
       - 第2章
 
-  - synonym: chapter_3
+  - synonym: lesson_2
     examples: |
+      - lesson 2
       - chapter3
       - chapter 3
       - 第三章
       - 第3章
 
-  - synonym: chapter_4
+  - synonym: lesson_3
     examples: |
+      - lesson 3
       - chapter4
-      - chapter 4
-      - 第四章
-      - 第4章
-
-  - synonym: chapter_5
-    examples: |
       - chapter5
+      - chapter 4
       - chapter 5
+      - 第四章
       - 第五章
+      - 第4章
       - 第5章
 
-  - synonym: chapter_6
+  - synonym: lesson_4
     examples: |
+      - lesson 4
       - chapter6
       - chapter 6
       - 第六章
       - 第6章
 
-  - synonym: chapter_7
+  - synonym: lesson_5
     examples: |
+      - lesson 5
       - chapter7
       - chapter 7
       - 第七章
       - 第7章
 
-  - synonym: chapter_8
+  - synonym: chapter_6
     examples: |
+      - lesson 6
       - chapter8
       - chapter 8
       - 第八章
       - 第8章
 
-  - synonym: chapter_9
+  - synonym: lesson_7
     examples: |
+      - lesson 7
       - chapter9
       - chapter 9
       - 第九章
       - 第9章
 
-  - synonym: chapter_10
+  - synonym: lesson_8
     examples: |
+      - lesson 8
       - chapter10
       - chapter 10
       - 第十章
       - 第10章
 
-  - synonym: chapter_11
+  - synonym: lesson_9
     examples: |
-      - chapter11
-      - chapter 11
-      - 第十一章
-      - 第11章
-
-  - synonym: chapter_12
-    examples: |
+      - lesson 9
       - chapter12
       - chapter 12
       - 第十二章
       - 第12章
 
-  - synonym: chapter_13
-    examples: |
-      - chapter13
-      - chapter 13
-      - 第十三章
-      - 第13章
+  # - synonym: lesson_11
+  #   examples: |
+  #     - chapter11
+  #     - chapter 11
+  #     - 第十一章
+  #     - 第11章
 
-  - synonym: chapter_14
-    examples: |
-      - chapter14
-      - chapter 14
-      - 第十四章
-      - 第14章
+  # - synonym: lesson_12
+  #   examples: |
+  #     - chapter12
+  #     - chapter 12
+  #     - 第十二章
+  #     - 第12章
 
-  - synonym: chapter_15
-    examples: |
-      - chapter15
-      - chapter 15
-      - 第十五章
-      - 第15章
+  # - synonym: lesson_13
+  #   examples: |
+  #     - chapter13
+  #     - chapter 13
+  #     - 第十三章
+  #     - 第13章
 
-  - synonym: project
-    examples: |
-      - 專案成績
-      - 專案互評
-      - 專案互評成績
-      - 互評成績
-      - 互評
-      - 專案
+  # - synonym: lesson_14
+  #   examples: |
+  #     - chapter14
+  #     - chapter 14
+  #     - 第十四章
+  #     - 第14章
+
+  # - synonym: lesson_15
+  #   examples: |
+  #     - chapter15
+  #     - chapter 15
+  #     - 第十五章
+  #     - 第15章
