@@ -736,7 +736,7 @@ nlu:
 
   - intent: classmap_suggest
     examples: |
-      - i want to recommand some textbook material
+      - i want to recommend some textbook material
       - i think i find something useful as textbook
       - suggest textbook
       - suggest textbook material
@@ -758,6 +758,8 @@ nlu:
 
   - intent: personal_score_object
     examples: |
+      - i want to query my grade of [Attendance](score_query_target)
+      - i want to query my grade of [performance grades](score_query_target)
       - i want to query my grade of [homework 1](score_query_target)
       - i want to query my grade of [homework 2](score_query_target)
       - i want to query my grade of [homework 3](score_query_target)
@@ -780,6 +782,7 @@ nlu:
       - i want to query my grade of [exercise 9](score_query_target)
       - i want to query my grade of [exercise 10](score_query_target)
       - i want to query my grade of [midterm exam](score_query_target)
+      - i want to query my grade of [midterm make-up exam](score_query_target)
       - i want to query my grade of [final exam](score_query_target)
       - i want to query my grade of [quiz 1](score_query_target)
       - i want to query my grade of [quiz 2](score_query_target)
@@ -791,6 +794,9 @@ nlu:
       - i want to query my grade of [quiz 8](score_query_target)
       - i want to query my grade of [quiz 9](score_query_target)
       - i want to query my grade of [quiz 10](score_query_target)
+      - i want to query my grade of [Interim Project Report](score_query_target)
+      - query my grade of [Attendance](score_query_target)
+      - query my grade of [performance grades](score_query_target)
       - query my grade of [homework 1](score_query_target)
       - query my grade of [homework 2](score_query_target)
       - query my grade of [homework 3](score_query_target)
@@ -813,6 +819,7 @@ nlu:
       - query my grade of [exercise 9](score_query_target)
       - query my grade of [exercise 10](score_query_target)
       - query my grade of [midterm exam](score_query_target)
+      - query my grade of [midterm make-up exam](score_query_target)
       - query my grade of [final exam](score_query_target)
       - query my grade of [quiz 1](score_query_target)
       - query my grade of [quiz 2](score_query_target)
@@ -824,8 +831,11 @@ nlu:
       - query my grade of [quiz 8](score_query_target)
       - query my grade of [quiz 9](score_query_target)
       - query my grade of [quiz 10](score_query_target)
+      - query my grade of [Interim Project Report](score_query_target)
       - query my grade of [peer evaluation](score_query_target)
       - query my grade of [project evaluation](score_query_target)
+      - [Attendance](score_query_target)
+      - [performance grades](score_query_target)
       - [homework 1](score_query_target)
       - [homework 2](score_query_target)
       - [homework 3](score_query_target)
@@ -848,6 +858,7 @@ nlu:
       - [exercise 9](score_query_target)
       - [exercise 10](score_query_target)
       - [midterm exam](score_query_target)
+      - [midterm make-up exam](score_query_target)
       - [final exam](score_query_target)
       - [quiz 1](score_query_target)
       - [quiz 2](score_query_target)
@@ -859,6 +870,7 @@ nlu:
       - [quiz 8](score_query_target)
       - [quiz 9](score_query_target)
       - [quiz 10](score_query_target)
+      - [Interim Project Report](score_query_target)
       - [peer evaluation](score_query_target)
       - [project evaluation](score_query_target)
 
@@ -895,132 +907,152 @@ nlu:
   #     - Practice materials
   #     - Textbook review
 
-  - synonym: homework_1
+  - synonym: 點名成績
+    examples: |
+      - Attendance
+
+  - synonym: 課堂表現成績
+    examples: |
+      - performance grades
+
+  - synonym: Homework 1
     examples: |
       - homework 1
       - homework1
       - homework one
 
-  - synonym: homework_2
+  - synonym: Homework 2
     examples: |
       - homework two
       - homework 2
       - homework2
 
-  - synonym: homework_3
+  - synonym: Homework 3
     examples: |
       - homework3
       - homework 3
       - homework three
 
-  - synonym: homework_4
+  - synonym: Homework 4
     examples: |
       - homework four
       - homework4
       - homework 4
 
-  - synonym: homework_5
+  - synonym: Homework 5
     examples: |
       - homework five
       - homework5
       - homework 5
 
-  - synonym: homework_6
+  - synonym: Homework 6
     examples: |
       - homework six
       - homework6
       - homework 6
 
-  - synonym: homework_7
+  - synonym: Homework 7
     examples: |
       - homework seven
       - homework7
       - homework 7
 
-  - synonym: homework_8
+  - synonym: Homework 8
     examples: |
       - homework eight
       - homework8
       - homework 8
 
-  - synonym: homework_9
+  - synonym: Homework 9
     examples: |
       - homework nine
       - homework9
       - homework 9
 
-  - synonym: homework_10
+  - synonym: Homework 10
     examples: |
       - homework ten
       - homework10
       - homework 10
 
-  - synonym: exercise_0
+  - synonym: Exercise 0
     examples: |
       - exercise0
       - exercise 0
 
-  - synonym: exercise_1
+  - synonym: Exercise 1
     examples: |
       - exercise1
       - exercise 1
 
-  - synonym: exercise_2
+  - synonym: Exercise 2
     examples: |
       - exercise2
       - exercise 2
 
-  - synonym: exercise_3
+  - synonym: Exercise 3
     examples: |
       - exercise3
       - exercise 3
 
-  - synonym: exercise_4
+  - synonym: Exercise 4
     examples: |
       - exercise4
       - exercise 4
 
-  - synonym: exercise_5
+  - synonym: Exercise 5
     examples: |
       - exercise5
       - exercise 5
 
-  - synonym: exercise_6
+  - synonym: Exercise 6
     examples: |
       - exercise6
       - exercise 6
 
-  - synonym: exercise_7
+  - synonym: Exercise 7
     examples: |
       - exercise7
       - exercise 7
 
-  - synonym: exercise_8
+  - synonym: Exercise 8
     examples: |
       - exercise8
       - exercise 8
 
-  - synonym: exercise_9
+  - synonym: Exercise 9
     examples: |
       - exercise9
       - exercise 9
 
-  - synonym: exercise_10
+  - synonym: Exercise 10
     examples: |
       - exercise10
       - exercise 10
 
-  - synonym: midterm_exam
+  - synonym: Midterm
     examples: |
       - midterm exam
       - midterm
       - mid
+
+  - synonym: 期中補考
+    examples: |
+      - midterm make-up exam
+      - midterm make-up
+      - midterm make up
 
   - synonym: final_exam
     examples: |
       - final exam
       - final
       - fin
+
+  - synonym: 期中專案報告
+    examples: |
+      - Interim Project Report
+      - Interim Project
+      - Interim Report
 
   - synonym: project
     examples: |
@@ -1033,25 +1065,25 @@ nlu:
       - project grade
       - project evaluation grade
 
-  - synonym: quiz_1
+  - synonym: Java基本語法
     examples: |
       - quiz one
       - quiz 1
       - quiz1
 
-  - synonym: quiz_2
+  - synonym: 函式與陣列
     examples: |
       - quiz two
       - quiz 2
       - quiz2
 
-  - synonym: quiz_3
+  - synonym: Eclipse+Maven
     examples: |
       - quiz three
       - quiz 3
       - quiz3
 
-  - synonym: quiz_4
+  - synonym: Java GUI and Exception Handling
     examples: |
       - quiz four
       - quiz 4

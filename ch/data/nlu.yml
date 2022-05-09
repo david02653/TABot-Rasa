@@ -722,6 +722,8 @@ nlu:
 
   - intent: personal_score_object
     examples: |
+      - 我想查[點名成績](score_query_target)
+      - 我想查[課堂表現成績](score_query_target)
       - 我想查[exercise 0](score_query_target)
       - 我想查[exercise 1](score_query_target)
       - 我想查[exercise 2](score_query_target)
@@ -744,6 +746,7 @@ nlu:
       - 我想查[作業九](score_query_target)
       - 我想查[作業十](score_query_target)
       - 我想查[期中考](score_query_target)
+      - 我想查[期中補考](score_query_target)
       - 我想查[期末考](score_query_target)
       - 我想查[小考一](score_query_target)
       - 我想查[小考二](score_query_target)
@@ -778,7 +781,10 @@ nlu:
       - 我想查[小考八](score_query_target)的成績
       - 我想查[小考九](score_query_target)的成績
       - 我想查[小考十](score_query_target)的成績
+      - 我想查[期中專案報告](score_query_target)的成績
       - 我想查[專案互評](score_query_target)的成績
+      - [點名成績](score_query_target)
+      - [課堂表現成績](score_query_target)
       - [exercise 0](score_query_target)
       - [exercise 1](score_query_target)
       - [exercise 2](score_query_target)
@@ -801,6 +807,7 @@ nlu:
       - [作業九](score_query_target)
       - [作業十](score_query_target)
       - [期中考](score_query_target)
+      - [期中補考](score_query_target)
       - [期末考](score_query_target)
       - [小考一](score_query_target)
       - [小考二](score_query_target)
@@ -812,6 +819,7 @@ nlu:
       - [小考八](score_query_target)
       - [小考九](score_query_target)
       - [小考十](score_query_target)
+      - [期中專案報告](score_query_target)
       - [專案互評](score_query_target)
 
   - intent: personal_quiz_query
@@ -857,7 +865,15 @@ nlu:
   # - personal_textbook_query
   # - suggest_review
 
-  - synonym: homework_1
+  - synonym: 點名成績
+    examples: |
+      - 點名成績
+
+  - synonym: 課堂表現成績
+    examples: |
+      - 課堂表現成績
+
+  - synonym: Homework 1
     examples: |
       - 作業一
       - 第一次作業
@@ -865,7 +881,7 @@ nlu:
       - homework1
       - homework 1
 
-  - synonym: homework_2
+  - synonym: Homework 2
     examples: |
       - 作業二
       - 第二次作業
@@ -873,7 +889,7 @@ nlu:
       - homework 2
       - homework2
 
-  - synonym: homework_3
+  - synonym: Homework 3
     examples: |
       - 作業三
       - 第三次作業
@@ -881,7 +897,7 @@ nlu:
       - homework3
       - homework 3
 
-  - synonym: homework_4
+  - synonym: Homework 4
     examples: |
       - 作業四
       - 第四次作業
@@ -889,7 +905,7 @@ nlu:
       - homework4
       - homework 4
 
-  - synonym: homework_5
+  - synonym: Homework 5
     examples: |
       - 作業五
       - 第五次作業
@@ -897,7 +913,7 @@ nlu:
       - homework5
       - homework 5
 
-  - synonym: homework_6
+  - synonym: Homework 6
     examples: |
       - 作業六
       - 第六次作業
@@ -905,7 +921,7 @@ nlu:
       - homework6
       - homework 6
 
-  - synonym: homework_7
+  - synonym: Homework 7
     examples: |
       - 作業七
       - 第七次作業
@@ -913,7 +929,7 @@ nlu:
       - homework7
       - homework 7
 
-  - synonym: homework_8
+  - synonym: Homework 8
     examples: |
       - 作業八
       - 第八次作業
@@ -921,7 +937,7 @@ nlu:
       - homework8
       - homework 8
 
-  - synonym: homework_9
+  - synonym: Homework 9
     examples: |
       - 作業九
       - 第九次作業
@@ -929,7 +945,7 @@ nlu:
       - homework9
       - homework 9
 
-  - synonym: homework_10
+  - synonym: Homework 10
     examples: |
       - 作業十
       - 第十次作業
@@ -937,7 +953,7 @@ nlu:
       - homework10
       - homework 10
 
-  - synonym: exercise_0
+  - synonym: Exercise 0
     examples: |
       - 練習0
       - 第0次練習
@@ -945,7 +961,7 @@ nlu:
       - exercise0
       - exercise 0
 
-  - synonym: exercise_1
+  - synonym: Exercise 1
     examples: |
       - 練習1
       - 第1次練習
@@ -953,7 +969,7 @@ nlu:
       - exercise1
       - exercise 1
 
-  - synonym: exercise_2
+  - synonym: Exercise 2
     examples: |
       - 練習2
       - 第2次練習
@@ -961,7 +977,7 @@ nlu:
       - exercise2
       - exercise 2
 
-  - synonym: exercise_3
+  - synonym: Exercise 3
     examples: |
       - 練習3
       - 第3次練習
@@ -969,7 +985,7 @@ nlu:
       - exercise3
       - exercise 3
 
-  - synonym: exercise_4
+  - synonym: Exercise 4
     examples: |
       - 練習4
       - 第4次練習
@@ -977,7 +993,7 @@ nlu:
       - exercise4
       - exercise 4
 
-  - synonym: exercise_5
+  - synonym: Exercise 5
     examples: |
       - 練習5
       - 第5次練習
@@ -985,7 +1001,7 @@ nlu:
       - exercise5
       - exercise 5
 
-  - synonym: exercise_6
+  - synonym: Exercise 6
     examples: |
       - 練習6
       - 第6次練習
@@ -993,7 +1009,7 @@ nlu:
       - exercise6
       - exercise 6
 
-  - synonym: exercise_7
+  - synonym: Exercise 7
     examples: |
       - 練習7
       - 第7次練習
@@ -1001,7 +1017,7 @@ nlu:
       - exercise7
       - exercise 7
 
-  - synonym: exercise_8
+  - synonym: Exercise 8
     examples: |
       - 練習8
       - 第8次練習
@@ -1009,7 +1025,7 @@ nlu:
       - exercise8
       - exercise 8
 
-  - synonym: exercise_9
+  - synonym: Exercise 9
     examples: |
       - 練習9
       - 第9次練習
@@ -1017,7 +1033,7 @@ nlu:
       - exercise9
       - exercise 9
 
-  - synonym: exercise_10
+  - synonym: Exercise 10
     examples: |
       - 練習10
       - 第10次練習
@@ -1025,12 +1041,16 @@ nlu:
       - exercise10
       - exercise 10
 
-  - synonym: midterm_exam
+  - synonym: Midterm
     examples: |
       - 期中考
       - 期中
       - midterm exam
       - midterm
+
+  - synonym: 期中補考
+    examples: |
+      - 期中補考
 
   - synonym: final_exam
     examples: |
@@ -1038,6 +1058,10 @@ nlu:
       - 期末
       - final exam
       - final
+
+  - synonym: 期中專案報告
+    examples: |
+      - 期中專案報告
 
   - synonym: project
     examples: |
@@ -1048,37 +1072,41 @@ nlu:
       - 互評
       - 專案
 
-  - synonym: quiz_1
+  - synonym: Java基本語法
     examples: |
       - 小考一
       - 第一次小考
       - 小考1
       - quiz 1
       - quiz1
+      - Java基本語法
 
-  - synonym: quiz_2
+  - synonym: 函式與陣列
     examples: |
       - 小考二
       - 第二次小考
       - 小考2
       - quiz 2
       - quiz2
+      - 函式與陣列
 
-  - synonym: quiz_3
+  - synonym: Eclipse+Maven
     examples: |
       - 小考三
       - 第三次小考
       - 小考3
       - quiz 3
       - quiz3
+      - Eclipse+Maven
 
-  - synonym: quiz_4
+  - synonym: Java GUI and Exception Handling
     examples: |
       - 小考四
       - 第四次小考
       - 小考4
       - quiz 4
       - quiz4
+      - Java GUI and Exception Handling
 
   - synonym: quiz_5
     examples: |
