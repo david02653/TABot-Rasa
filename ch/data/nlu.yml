@@ -955,7 +955,7 @@ nlu:
 
   - synonym: Exercise 0
     examples: |
-      - 練習0
+      - 練習 0
       - 第0次練習
       - 練習0
       - exercise0
