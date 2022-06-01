@@ -9,7 +9,7 @@ services:
     networks: ["rasa-network"]
     user: root
     ports:
-      - "5005:5005"
+      - "10028:5005"
     volumes:
       - "./ch/:/app/"
     depends_on:
@@ -30,7 +30,7 @@ services:
     networks: ["rasa-network"]
     user: root
     ports:
-      - "5006:5005"
+      - "10029:5005"
     volumes:
       - "./en/:/app/"
     depends_on:
