@@ -1,12 +1,12 @@
-version: '3.0'
+version: "3.0"
 
 services:
   rasa:
     # image: rasa/rasa:2.8.5-full
     image: tabot/ch-rasa:v0.1
     container_name: tabot-rasa-ch
-  #  restart: always
-    networks: ['rasa-network']
+    #  restart: always
+    networks: ["rasa-network"]
     user: root
     ports:
       - "5005:5005"
@@ -26,8 +26,8 @@ services:
   action_server:
     image: tabot/ch-action:v0.1
     container_name: tabot-action
-#    restart: always
-    networks: ['rasa-network']
+    #    restart: always
+    networks: ["rasa-network"]
     ports:
       - "5055:5055"
     volumes:
@@ -38,4 +38,4 @@ services:
       - actions
       - -vv
 
-networks: {rasa-network: {}}
+networks: { rasa-network: {} }
